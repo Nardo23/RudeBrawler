@@ -1,0 +1,782 @@
+fileFormatVersion: 2
+guid: f64a911fe19525a4da17232dfb28249e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: albeeSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10800
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.19}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26cc2cefcbde09d4ba321282a794044f
+      internalID: -675471589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_1
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 10800
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.19}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 075a4c70ddaf70a4aa37a27d8cba8283
+      internalID: -534820593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_2
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 10800
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.19}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5fd4cc6316fdf04995c2e852ea99179
+      internalID: 275900874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_3
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 10800
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.19}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50cdade54eae0d0459cb0afc1913e256
+      internalID: -835869195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_4
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 10800
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.19}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24a08fb25acb81c4d8fdd8ad3cbbd41b
+      internalID: 2111103525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_5
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 10800
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.19}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04ec6bc3e5996a46b32eb3fd7ca8cd9
+      internalID: -730400826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_6
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 10800
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.19}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60583598a22af2145beb8b431128e5b6
+      internalID: 507457724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_7
+      rect:
+        serializedVersion: 2
+        x: 8400
+        y: 10800
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.19}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bafb8a519c05ef74abddf65aff2ba9df
+      internalID: -12055813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_8
+      rect:
+        serializedVersion: 2
+        x: 9600
+        y: 10800
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.19}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8b2ea2d653de964cacff042b9da4fb9
+      internalID: -933192062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_9
+      rect:
+        serializedVersion: 2
+        x: 10800
+        y: 10800
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.19}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa124924673c36488f5625f1147ed35
+      internalID: -186731104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9600
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.19}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb66c2bc13f3ee4da7de54698a40345
+      internalID: -185606751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_11
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 9600
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.19}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d442df2d1dfd1478cc36319dba0d08
+      internalID: 966249913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_12
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 9600
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.19}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8210cd67a8004b242b5694b05740bba4
+      internalID: 864457597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_13
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 9600
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.19}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 623a33f65e7d4fd49abf9cb33b935b02
+      internalID: 1571765469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_14
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 9600
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.19}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a493c5b4cfeec3640b5bada5cbdf194d
+      internalID: -402561758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_15
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 9600
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.19}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e2a1c081f8f46548a71f832be75a6f7
+      internalID: -494990448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_16
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 9600
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.19}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f7be9e87a04364ab9f2deedd4c1475
+      internalID: -1784696288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_17
+      rect:
+        serializedVersion: 2
+        x: 8400
+        y: 9600
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.19}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9e7d6e760d7e744a950eb4e381adf1
+      internalID: 1297991505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_18
+      rect:
+        serializedVersion: 2
+        x: 9600
+        y: 9600
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.19}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4dd1f134d9381f4097514231fee7a7e
+      internalID: -1407719694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_19
+      rect:
+        serializedVersion: 2
+        x: 10800
+        y: 9600
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.19}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a58df7347433ac46ba202ed69ecad50
+      internalID: 1644055176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8400
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.19}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f35edc3218d830479d71cc72d1b41cd
+      internalID: 158171574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_21
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 8400
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.19}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad3923bca8473ca43abb2fcf4ca90a81
+      internalID: -216644069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_22
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 8400
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.19}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2543ea54929a45c438769a06a63228d3
+      internalID: 1120438206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_23
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 8400
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.19}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 211a839027ea81944821839700564612
+      internalID: 115935500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_24
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 8400
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.19}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90a608fa2d31e0e4383fb2e27f768602
+      internalID: -685942673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_25
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 8400
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.19}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0811e94a195b55a49bcccf9f46ddb868
+      internalID: 61774064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_26
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 8400
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.19}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d321586237b6da64aa93e55413683f2c
+      internalID: 583782809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_27
+      rect:
+        serializedVersion: 2
+        x: 8400
+        y: 8400
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.19}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0dae4f32ae0645459a3e8a723791ea2
+      internalID: -1201215761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      albeeSheet_0: -675471589
+      albeeSheet_1: -534820593
+      albeeSheet_10: -185606751
+      albeeSheet_11: 966249913
+      albeeSheet_12: 864457597
+      albeeSheet_13: 1571765469
+      albeeSheet_14: -402561758
+      albeeSheet_15: -494990448
+      albeeSheet_16: -1784696288
+      albeeSheet_17: 1297991505
+      albeeSheet_18: -1407719694
+      albeeSheet_19: 1644055176
+      albeeSheet_2: 275900874
+      albeeSheet_20: 158171574
+      albeeSheet_21: -216644069
+      albeeSheet_22: 1120438206
+      albeeSheet_23: 115935500
+      albeeSheet_24: -685942673
+      albeeSheet_25: 61774064
+      albeeSheet_26: 583782809
+      albeeSheet_27: -1201215761
+      albeeSheet_3: -835869195
+      albeeSheet_4: 2111103525
+      albeeSheet_5: -730400826
+      albeeSheet_6: 507457724
+      albeeSheet_7: -12055813
+      albeeSheet_8: -933192062
+      albeeSheet_9: -186731104
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

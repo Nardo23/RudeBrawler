@@ -514,7 +514,7 @@ TextureImporter:
         width: 1200
         height: 1200
       alignment: 9
-      pivot: {x: 0.4191667, y: 0.19}
+      pivot: {x: 0.6333333, y: 0.19}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -535,7 +535,7 @@ TextureImporter:
         width: 1200
         height: 1200
       alignment: 9
-      pivot: {x: 0.4191667, y: 0.19}
+      pivot: {x: 0.6333333, y: 0.19}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -556,7 +556,7 @@ TextureImporter:
         width: 1200
         height: 1200
       alignment: 9
-      pivot: {x: 0.4191667, y: 0.19}
+      pivot: {x: 0.6333333, y: 0.19}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -577,7 +577,7 @@ TextureImporter:
         width: 1200
         height: 1200
       alignment: 9
-      pivot: {x: 0.4191667, y: 0.19}
+      pivot: {x: 0.5833333, y: 0.19}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -598,7 +598,7 @@ TextureImporter:
         width: 1200
         height: 1200
       alignment: 9
-      pivot: {x: 0.4191667, y: 0.19}
+      pivot: {x: 0.5833333, y: 0.19}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -619,7 +619,7 @@ TextureImporter:
         width: 1200
         height: 1200
       alignment: 9
-      pivot: {x: 0.4191667, y: 0.19}
+      pivot: {x: 0.48333332, y: 0.19}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -640,7 +640,7 @@ TextureImporter:
         width: 1200
         height: 1200
       alignment: 9
-      pivot: {x: 0.4191667, y: 0.19}
+      pivot: {x: 0.46666667, y: 0.19}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -661,7 +661,7 @@ TextureImporter:
         width: 1200
         height: 1200
       alignment: 9
-      pivot: {x: 0.4191667, y: 0.19}
+      pivot: {x: 0.41916665, y: 0.19}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -736,6 +736,258 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: albeeSheet_28
+      rect:
+        serializedVersion: 2
+        x: 9600
+        y: 8400
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.19}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cc0c248ab1dec7449574585e08a0729
+      internalID: -71274242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_29
+      rect:
+        serializedVersion: 2
+        x: 10800
+        y: 8400
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.41916665, y: 0.19}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e1f7eaca113e6a498507123b0989039
+      internalID: -2016796811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7200
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.41916665, y: 0.20666666}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b57cfe7ff562afb4f95ab5fb81b83930
+      internalID: -383750453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_31
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 7200
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.41916665, y: 0.20666666}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d1316d4ddd21494b8bfa2533cda9d32
+      internalID: -1791214826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_32
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 7200
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.41916665, y: 0.20666666}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c3943b0cb04ee2449b55f93ca109ffc
+      internalID: -1582383190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_33
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 7200
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.41916665, y: 0.20666666}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49287e55f64308243b46cd4f20cd12f7
+      internalID: 1989997614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_34
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 7200
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.41916665, y: 0.215}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beb19d2fe4ec3614cb97dc524ddcfca1
+      internalID: 183682057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_35
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 7200
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.41916665, y: 0.20666666}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 743c2f4f98ab802419bd2c1722f96ea9
+      internalID: -502639587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_36
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 7200
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.41916665, y: 0.20666666}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7dc42d3e2432104a8ce9e18124df981
+      internalID: -1739334257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_37
+      rect:
+        serializedVersion: 2
+        x: 8400
+        y: 7200
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.41916665, y: 0.20666666}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49512fc004c04ff459e266fb632999c7
+      internalID: -1117811877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_38
+      rect:
+        serializedVersion: 2
+        x: 9594
+        y: 7200
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.41916665, y: 0.20666666}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cecf3a22c0bfec4c809ab5e78b88933
+      internalID: -1235993614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_39
+      rect:
+        serializedVersion: 2
+        x: 10800
+        y: 7200
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.41916665, y: 0.20666666}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8014cb161e83674a8491e3ab908dd6d
+      internalID: -677866492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -768,7 +1020,19 @@ TextureImporter:
       albeeSheet_25: 61774064
       albeeSheet_26: 583782809
       albeeSheet_27: -1201215761
+      albeeSheet_28: -71274242
+      albeeSheet_29: -2016796811
       albeeSheet_3: -835869195
+      albeeSheet_30: -383750453
+      albeeSheet_31: -1791214826
+      albeeSheet_32: -1582383190
+      albeeSheet_33: 1989997614
+      albeeSheet_34: 183682057
+      albeeSheet_35: -502639587
+      albeeSheet_36: -1739334257
+      albeeSheet_37: -1117811877
+      albeeSheet_38: -1235993614
+      albeeSheet_39: -677866492
       albeeSheet_4: 2111103525
       albeeSheet_5: -730400826
       albeeSheet_6: 507457724

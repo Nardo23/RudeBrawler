@@ -227,7 +227,7 @@ Transform:
   m_GameObject: {fileID: 208579155}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.38, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.61109, y: 0.61109, z: 0.61109}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -369,7 +369,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.08}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -380,7 +380,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 1.41}
   m_EdgeRadius: 0
 --- !u!4 &480493733
 Transform:
@@ -660,7 +660,7 @@ MonoBehaviour:
   currentJumps: 0
   onBase: 0
   jumpDetector: {fileID: 1745422753}
-  detectionDistance: 0.3
+  detectionDistance: 0.1
   detectLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -846,7 +846,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -402561758, guid: f64a911fe19525a4da17232dfb28249e, type: 3}
+  m_Sprite: {fileID: -71274242, guid: f64a911fe19525a4da17232dfb28249e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1043,7 +1043,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!50 &1344612679
 Rigidbody2D:
   serializedVersion: 4
@@ -1210,7 +1210,7 @@ Transform:
   m_GameObject: {fileID: 1529553217}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.16, y: 0.42, z: 0}
+  m_LocalPosition: {x: -0.16, y: 0, z: 0}
   m_LocalScale: {x: 0.61109, y: 0.61109, z: 0.61109}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1253,8 +1253,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CharRb: {fileID: 956262714}
+  moveScript: {fileID: 956262712}
+  deltaPosition: {x: 0, y: 0, z: 0}
   input: {fileID: 956262713}
   maxTimeTillIdle: 1
+  attackCountMax: 2
 --- !u!1 &1745422752
 GameObject:
   m_ObjectHideFlags: 0

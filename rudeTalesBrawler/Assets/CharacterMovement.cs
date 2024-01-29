@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
 {
-    [SerializeField] private bool canMove = true;
+    public bool canMove = true;
     [Tooltip(("If your character does not jump, ignore all below 'Jumping' Character"))]
     [SerializeField] private bool doesCharacterJump = false;
 
@@ -20,7 +20,7 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private float jumpVal = 10f;
     [SerializeField] private int possibleJumps = 1;
     [SerializeField] private int currentJumps = 0;
-    [SerializeField] private bool onBase = false;
+    [SerializeField] public bool onBase = false;
     [SerializeField] private Transform jumpDetector;
     [SerializeField] private float detectionDistance;
     [SerializeField] private LayerMask detectLayer;
@@ -60,6 +60,7 @@ public class CharacterMovement : MonoBehaviour
         {
             jump = true;
         }
+        
     }
 
     private void FixedUpdate()
@@ -69,11 +70,12 @@ public class CharacterMovement : MonoBehaviour
     
     private void Move()
     {
-        if (!onBase && doesCharacterJump && charRB.velocity.y <= 0)
+        if (!onBase && doesCharacterJump && charRB.velocity.y <= 4) //pay attention to the float used to determine when to check for base
         {
             detectBase();
         }
 
+        
         if (canMove)
         {
             Vector3 targetVelocity = new Vector2(controls.HorizontalMove * hSpeed, controls.VerticalMove * vSpeed);
@@ -88,7 +90,7 @@ public class CharacterMovement : MonoBehaviour
                 {
                     
                     // charRB.velocity = baseRB.velocity;
-                    charRB.velocity = Vector2.zero;
+                    //charRB.velocity = Vector2.zero;
                     
                     // vertical check
                     if (charRB.transform.localPosition != charDefaultRelPos)
@@ -143,6 +145,10 @@ public class CharacterMovement : MonoBehaviour
                 flip();
             }
         }
+        else
+        {
+            baseRB.velocity = Vector3.SmoothDamp(baseRB.velocity, Vector3.zero, ref velocity, .1f);
+        }
     }
 
     private void flip()
@@ -159,16 +165,18 @@ public class CharacterMovement : MonoBehaviour
             onBase = true;
             charRB.isKinematic = true;
             currentJumps = 0;
-            // charRB.velocity = Vector2.zero;
-            // baseRB.velocity = Vector2.zero;
+            charRB.transform.localPosition = new Vector3(charRB.transform.localPosition.x, charDefaultRelPos.y, charRB.transform.localPosition.z);
+            charRB.velocity = Vector2.zero;
+            baseRB.velocity = Vector2.zero;
             Debug.Log("setting velocity to zero");
         }
-        if(charRB.transform.localPosition.y < baseRB.transform.localPosition.y)
+        if(charRB.transform.localPosition.y+charDefaultRelPos.y < baseRB.transform.localPosition.y)
         {
             charRB.transform.localPosition = new Vector3 (charRB.transform.localPosition.x, charDefaultRelPos.y, charRB.transform.localPosition.z);
             onBase = true;
             charRB.isKinematic = true;
             currentJumps = 0;
+            //Debug.Log("AAARGGGRHRHRHR");
         }
     }
 

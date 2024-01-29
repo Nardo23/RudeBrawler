@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.10" tiledversion="1.10.1" name="albee" tilewidth="1200" tileheight="1200" tilecount="28" columns="0">
+<tileset version="1.10" tiledversion="1.10.1" name="albee" tilewidth="1200" tileheight="1200" tilecount="30" columns="0">
  <grid orientation="orthogonal" width="1" height="1"/>
  <tile id="0">
   <image width="1200" height="1200" source="run/albee run0000.png"/>
@@ -84,5 +84,11 @@
  </tile>
  <tile id="27">
   <image width="1200" height="1200" source="attack1/albee attack10015.png"/>
+ </tile>
+ <tile id="28">
+  <image width="1200" height="1200" source="attack1/albee attack10003b.png"/>
+ </tile>
+ <tile id="29">
+  <image width="1200" height="1200" source="attack1/albee attack10016.png"/>
  </tile>
 </tileset>

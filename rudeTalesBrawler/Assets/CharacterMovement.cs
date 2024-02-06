@@ -29,8 +29,10 @@ public class CharacterMovement : MonoBehaviour
     
     private bool jump;
 
-    
-
+    public ParticleSystem runParticlesR;
+    public ParticleSystem runParticlesL;
+    public ParticleSystem jumpParticleL;
+    public ParticleSystem jumpParticleR;
 
     private bool facingRight = true;
     private Vector3 velocity = Vector3.zero;
@@ -128,7 +130,7 @@ public class CharacterMovement : MonoBehaviour
                 // --- horizontal position check
                 if (charRB.transform.localPosition != charDefaultRelPos)
                 {
-                    print("pos diff- local: " + charRB.transform.localPosition + "  --default: " + charDefaultRelPos );
+                    //print("pos diff- local: " + charRB.transform.localPosition + "  --default: " + charDefaultRelPos );
                     var charTransform = charRB.transform;
                     charTransform.localPosition = new Vector2(charDefaultRelPos.x,
                         charTransform.localPosition.y);
@@ -137,13 +139,22 @@ public class CharacterMovement : MonoBehaviour
             // --- 
 
             // rotate if we're facing the wrong way
-            if (controls.HorizontalMove > 0 && !facingRight)
+            if (onBase)
             {
-                flip();
-            } else if(controls.HorizontalMove < 0 && facingRight)
-            {
-                flip();
+                if (controls.HorizontalMove > 0 && !facingRight)
+                {
+                    
+                    flip();
+                    runParticlesR.Play();
+                }
+                else if (controls.HorizontalMove < 0 && facingRight)
+                {
+                    
+                    flip();
+                    runParticlesL.Play();
+                }
             }
+            
         }
         else
         {
@@ -155,6 +166,8 @@ public class CharacterMovement : MonoBehaviour
     {
         facingRight = !facingRight;
         transform.Rotate(0, 180, 0);
+        
+        
     }
 
     private void detectBase()
@@ -168,6 +181,19 @@ public class CharacterMovement : MonoBehaviour
             charRB.transform.localPosition = new Vector3(charRB.transform.localPosition.x, charDefaultRelPos.y, charRB.transform.localPosition.z);
             charRB.velocity = Vector2.zero;
             baseRB.velocity = Vector2.zero;
+            if (facingRight)
+            {
+                Debug.Log("runR, jumpL");
+                runParticlesR.Play();
+                jumpParticleL.Play();
+            }
+            else
+            {
+                Debug.Log("runL, jumpR");
+                runParticlesL.Play();
+                jumpParticleR.Play();
+            }
+            
             Debug.Log("setting velocity to zero");
         }
         if(charRB.transform.localPosition.y+charDefaultRelPos.y < baseRB.transform.localPosition.y)

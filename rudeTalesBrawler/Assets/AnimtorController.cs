@@ -55,6 +55,7 @@ public class AnimtorController : MonoBehaviour
         if(Mathf.Abs(controls.HorizontalMove) > 0 || Mathf.Abs(controls.VerticalMove) > 0)
         {
             moving = true;
+            
         }
         else 
         {
@@ -76,12 +77,17 @@ public class AnimtorController : MonoBehaviour
             //CharRb.velocity = Vector3.zero;
             moveScript.canMove = false;
         }
+        
 
 
     }
     
     void landedCheck()
     {
+        if (!moveScript.onBase)
+        {
+            attackCount = 0;
+        }
         if(!prevGrounded && moveScript.onBase)
         {
             attacking = false;
@@ -116,7 +122,7 @@ public class AnimtorController : MonoBehaviour
 
     void endAttack()
     {
-        Debug.Log("piss");
+        //Debug.Log("piss");
         moveScript.canMove = true;
         attacking = false;
     }
@@ -146,7 +152,7 @@ public class AnimtorController : MonoBehaviour
             i = -1;
         //CharRb.velocity = Vector3.zero;
         CharRb.velocity = new Vector3(i * distance, 0, 0);
-        Debug.Log("distance: " + distance);
+        //Debug.Log("distance: " + distance);
     }
 
 }

@@ -934,7 +934,7 @@ TextureImporter:
         width: 1200
         height: 1200
       alignment: 9
-      pivot: {x: 0.41916665, y: 0.20666666}
+      pivot: {x: 0.4191667, y: 0.2066667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -988,6 +988,90 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: albeeSheet_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6000
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.2066667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e48fc8344040b9c4ca2647b7977833bb
+      internalID: 1716104919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_41
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 6000
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.2066667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3010e629b88bfd344a7081d7b478afec
+      internalID: -919161101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_42
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 6000
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.2066667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e8d59bd3e36895428399e9a7d9aff08
+      internalID: 302371017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_43
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 6000
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.2066667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 154cf59df2369f64b83670ecf4162700
+      internalID: -1201987518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1034,6 +1118,10 @@ TextureImporter:
       albeeSheet_38: -1235993614
       albeeSheet_39: -677866492
       albeeSheet_4: 2111103525
+      albeeSheet_40: 1716104919
+      albeeSheet_41: -919161101
+      albeeSheet_42: 302371017
+      albeeSheet_43: -1201987518
       albeeSheet_5: -730400826
       albeeSheet_6: 507457724
       albeeSheet_7: -12055813

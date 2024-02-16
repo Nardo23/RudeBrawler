@@ -5172,6 +5172,7 @@ GameObject:
   - component: {fileID: 208579156}
   - component: {fileID: 208579158}
   - component: {fileID: 208579157}
+  - component: {fileID: 208579159}
   m_Layer: 6
   m_Name: shadow
   m_TagString: Untagged
@@ -5281,6 +5282,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &208579159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208579155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cce6f5632a26f84785ac788ea617064, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rends:
+  - {fileID: 208579158}
+  - {fileID: 964150019}
+  offset: 0
 --- !u!1 &480493731
 GameObject:
   m_ObjectHideFlags: 0
@@ -5372,6 +5389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 1
+  damage: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -5603,7 +5621,6 @@ GameObject:
   - component: {fileID: 956262714}
   - component: {fileID: 956262713}
   - component: {fileID: 956262712}
-  - component: {fileID: 956262716}
   - component: {fileID: 956262717}
   m_Layer: 0
   m_Name: AlbeeHolder
@@ -5710,24 +5727,6 @@ Transform:
   - {fileID: 1713054237}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &956262716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 956262711}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69c961529e06eba48b8cb058c9e6aa0d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canAttack: 1
-  inLineCollider: {fileID: 480493732}
-  enemyLayer:
-    serializedVersion: 2
-    m_Bits: 128
-  cols: []
 --- !u!58 &956262717
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6102,6 +6101,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1269727025 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2476716743249219990, guid: 764ab0113f85ef04795bc753c352e73e, type: 3}
+  m_PrefabInstance: {fileID: 2232550715485279170}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1269727031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269727025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a82252e2d7c5a224c86d6fefa0431eb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 50
+  enemyAnimScript: {fileID: 1304262753}
 --- !u!1 &1295572403
 GameObject:
   m_ObjectHideFlags: 0
@@ -6203,6 +6221,17 @@ MonoBehaviour:
   m_Area: 0
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!114 &1304262753 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7509971228403487804, guid: 764ab0113f85ef04795bc753c352e73e, type: 3}
+  m_PrefabInstance: {fileID: 2232550715485279170}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d249475fec30788428b1ce63e80820e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1327225912
 GameObject:
   m_ObjectHideFlags: 0
@@ -21071,10 +21100,6 @@ PrefabInstance:
       value: GoblinHolder
       objectReference: {fileID: 0}
     - target: {fileID: 3111897459039070162, guid: 764ab0113f85ef04795bc753c352e73e, type: 3}
-      propertyPath: onBase
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3111897459039070162, guid: 764ab0113f85ef04795bc753c352e73e, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 956262715}
@@ -21125,7 +21150,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2476716743249219990, guid: 764ab0113f85ef04795bc753c352e73e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1269727031}
   m_SourcePrefab: {fileID: 100100000, guid: 764ab0113f85ef04795bc753c352e73e, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

@@ -265,6 +265,7 @@ GameObject:
   - component: {fileID: 7233603564666826490}
   - component: {fileID: 183110136423416738}
   - component: {fileID: 2286588577467327937}
+  - component: {fileID: 8363650092441761227}
   - component: {fileID: 1582508422834288009}
   m_Layer: 6
   m_Name: EnemyShadow
@@ -375,6 +376,22 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 4.1000004, y: 1.37}
   m_Direction: 1
+--- !u!114 &8363650092441761227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4851671849535081573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cce6f5632a26f84785ac788ea617064, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rends:
+  - {fileID: 183110136423416738}
+  - {fileID: 2317998575735166890}
+  offset: 0
 --- !u!95 &1582508422834288009
 Animator:
   serializedVersion: 5
@@ -470,6 +487,7 @@ MonoBehaviour:
   agent: {fileID: 7403413832914012637}
   attackFrequency: 1.5
   numberOfAttackAnims: 2
+  deltaPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &7482577959944673738
 GameObject:
   m_ObjectHideFlags: 0

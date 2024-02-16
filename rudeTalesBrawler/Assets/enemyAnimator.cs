@@ -15,7 +15,7 @@ public class enemyAnimator : MonoBehaviour
     public int numberOfAttackAnims;
     float timer = 0;
     public Vector3 deltaPosition;
-
+    bool alive = true;
     void Start()
     {
         anim = GetComponent<Animator>();
@@ -35,25 +35,40 @@ public class enemyAnimator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (alive)
+            tick();
+    }
+
+    void tick()
+    {
         anim.SetBool("Grounded", enemyScript.onBase);
 
         //check if moving
 
         //Debug.Log("gob vel: " + agent.velocity);
-        if(Mathf.Abs(agent.velocity.x)>.4f || Mathf.Abs(agent.velocity.y) > .4f)
+
+        if (!enemyScript.isInteracting)
         {
-            anim.SetBool("Moving", true);
+            if (Mathf.Abs(agent.velocity.x) > .4f || Mathf.Abs(agent.velocity.y) > .4f)
+            {
+                anim.SetBool("Moving", true);
+            }
+            else
+            {
+                anim.SetBool("Moving", false);
+            }
         }
         else
         {
             anim.SetBool("Moving", false);
         }
 
+
         if (enemyScript.inRange)
         {
             attack();
         }
-
     }
 
     void attack()
@@ -83,8 +98,23 @@ public class enemyAnimator : MonoBehaviour
         {
             enemyScript.faceRight();
         }
-        anim.Play("hit");
+        //anim.Play("hit");
+        anim.SetTrigger("Hit");
+        Debug.Log("hit");
     }
+
+    public void die()
+    {
+        Debug.Log("die");
+        anim.SetTrigger("Die");
+        anim.SetBool("Moving", false);
+        alive = false;
+    }
+    void deleteEnemy()
+    {
+        Destroy(charRb.gameObject);
+    }
+
     private void OnAnimatorMove()
     {
         deltaPosition = anim.deltaPosition/ Time.deltaTime;

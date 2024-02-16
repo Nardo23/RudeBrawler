@@ -6,7 +6,7 @@ public class hitboxDamage : MonoBehaviour
 {
     public bool isPlayer;
 
-    
+    public int damage; // value changed by different attack animations
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -21,6 +21,13 @@ public class hitboxDamage : MonoBehaviour
                     Debug.Log("ggg");                  
                     u.hurt(transform.position.x);
                 }
+                enemyHealth h = collision.gameObject.GetComponentInParent<enemyHealth>();
+                if(h != null)
+                {
+                    
+                    h.changeHealth(-damage);
+                }
+
 
             }
         }

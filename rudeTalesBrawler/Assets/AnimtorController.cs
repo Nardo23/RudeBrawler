@@ -49,18 +49,34 @@ public class AnimtorController : MonoBehaviour
             attackbuffered = false;
             startAttack();
         }
-        
-        
+
+
         //check if moving
-        if(Mathf.Abs(controls.HorizontalMove) > 0 || Mathf.Abs(controls.VerticalMove) > 0)
+        if (moving)
         {
+            if (Mathf.Abs(CharRb.velocity.x) > 1f || Mathf.Abs(CharRb.velocity.y) > 1f)
+            {
+                moving = true;
+
+            }
+            else
+            {
+                moving = false;
+            }
+        }
+        else
+        {
+            if(Mathf.Abs(controls.HorizontalMove) > 0 || Mathf.Abs(controls.VerticalMove) > 0)
+            {
             moving = true;
             
-        }
-        else 
-        {
+            }
+            else 
+            {
             moving = false;
+            }
         }
+        
         idleTimer();
 
 
@@ -87,6 +103,7 @@ public class AnimtorController : MonoBehaviour
         if (!moveScript.onBase)
         {
             attackCount = 0;
+            attackbuffered = false;
         }
         if(!prevGrounded && moveScript.onBase)
         {

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7403413832914012637}
   - component: {fileID: 2451757764069183319}
   - component: {fileID: 6747052677940212129}
+  - component: {fileID: 1725039551781994903}
   m_Layer: 0
   m_Name: GoblinHolder
   m_TagString: Untagged
@@ -118,7 +119,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.3
+  m_Radius: 0.1
 --- !u!50 &6747052677940212129
 Rigidbody2D:
   serializedVersion: 4
@@ -146,6 +147,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1725039551781994903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2476716743249219990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a82252e2d7c5a224c86d6fefa0431eb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 50
+  enemyAnimScript: {fileID: 7509971228403487804}
 --- !u!1 &3180960443571751609
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,7 +530,7 @@ Transform:
   m_GameObject: {fileID: 7482577959944673738}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 10.31, z: 0}
+  m_LocalPosition: {x: 0, y: 18.96, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

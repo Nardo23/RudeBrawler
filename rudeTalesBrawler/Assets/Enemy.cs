@@ -64,7 +64,6 @@ public class Enemy : MonoBehaviour
             }
         }
 
-
     }
 
     public void faceLeft()

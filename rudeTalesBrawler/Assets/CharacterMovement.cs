@@ -10,6 +10,7 @@ public class CharacterMovement : MonoBehaviour
 
     [Header("Base / Root")]
     [SerializeField] private Rigidbody2D baseRB;
+    CircleCollider2D baseCol;
     [SerializeField] private float hSpeed = 10f;
     [SerializeField] private float vSpeed = 6f;
     [Range(0, 1.0f)]
@@ -36,12 +37,13 @@ public class CharacterMovement : MonoBehaviour
 
     private bool facingRight = true;
     private Vector3 velocity = Vector3.zero;
-
+   
     PlayerInput input;
     Controls controls = new Controls();
     
     // 
-    private Vector3 charDefaultRelPos, baseDefPos; 
+    private Vector3 charDefaultRelPos, baseDefPos;
+
 
     // Start is called before the first frame update
     private void Awake()
@@ -52,6 +54,7 @@ public class CharacterMovement : MonoBehaviour
     private void Start()
     {
         charDefaultRelPos = charRB.transform.localPosition;
+        baseCol = GetComponent<CircleCollider2D>();
         
     }
     
@@ -62,7 +65,7 @@ public class CharacterMovement : MonoBehaviour
         {
             jump = true;
         }
-        
+        //Debug.Log("jump " + jump);
     }
 
     private void FixedUpdate()
@@ -80,7 +83,8 @@ public class CharacterMovement : MonoBehaviour
         
         if (canMove)
         {
-            Vector3 targetVelocity = new Vector2(controls.HorizontalMove * hSpeed, controls.VerticalMove * vSpeed);
+            Vector2 piss = new Vector2(controls.HorizontalMove, controls.VerticalMove).normalized;
+            Vector3 targetVelocity = new Vector2(piss.x * hSpeed, piss.y * vSpeed);
 
             Vector2 _velocity = Vector3.SmoothDamp(baseRB.velocity, targetVelocity, ref velocity, movementSmooth);
             baseRB.velocity = _velocity;
@@ -90,10 +94,10 @@ public class CharacterMovement : MonoBehaviour
             {
                 if (onBase)
                 {
-                    
+                    //baseCol.isTrigger = false;
                     // charRB.velocity = baseRB.velocity;
                     //charRB.velocity = Vector2.zero;
-                    
+
                     // vertical check
                     if (charRB.transform.localPosition != charDefaultRelPos)
                     {
@@ -101,6 +105,10 @@ public class CharacterMovement : MonoBehaviour
                         charTransform.localPosition = new Vector2(charTransform.localPosition.x,
                             charDefaultRelPos.y);
                     }
+
+                    this.gameObject.layer = 0; // set the layer back to default when grounded
+                    charRB.drag = 3;
+                    charRB.velocity = Vector2.zero;
                 }
                 else
                 {
@@ -113,15 +121,33 @@ public class CharacterMovement : MonoBehaviour
                     // { // moving upward from jump
                     //     // charRB.gravityScale = jumpingGravityScale;
                     // }
-                
+
+                    
+                        
+                    
+                    if(charRB.velocity.y < 0)
+                    {
+                        charRB.drag = 1 + baseRB.velocity.y / vSpeed*3;
+                    }
+                    else
+                        charRB.drag = 1 - baseRB.velocity.y / vSpeed*3;
+
                     charRB.velocity = new Vector2(_velocity.x, charRB.velocity.y);
+                    
+                    //baseCol.isTrigger=true;
+                    this.gameObject.layer = 9; // layer nine is the jumping layer. this layer wont collide with jumpable layer
+                                   
+                    
+                    
                 }
 
                 if (jump)
                 {
                     charRB.isKinematic = false;
+                    charRB.velocity = Vector2.zero;
                     charRB.AddForce(Vector2.up * jumpVal, ForceMode2D.Impulse);
                     charRB.gravityScale = jumpingGravityScale;
+                    charRB.drag = 1 - baseRB.velocity.y / vSpeed;
                     jump = false;
                     currentJumps++;
                     onBase = false;

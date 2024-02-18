@@ -15,8 +15,8 @@ TagManager:
   - UI
   - Base
   - Enemy
-  - 
-  - 
+  - Jumpable
+  - jumping
   - 
   - 
   - 
@@ -48,4 +48,7 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: foreground
+    uniqueID: 2276952607
     locked: 0

@@ -19,8 +19,9 @@ public class AnimtorController : MonoBehaviour
     int attackCount = 0;
     public int attackCountMax;
     bool prevGrounded;
-   
+    bool alive = true;
     Controls controls = new Controls();
+    float enemyXposFromHit;
     // Start is called before the first frame update
     void Start()
     {
@@ -68,24 +69,27 @@ public class AnimtorController : MonoBehaviour
         {
             if(Mathf.Abs(controls.HorizontalMove) > 0 || Mathf.Abs(controls.VerticalMove) > 0)
             {
-            moving = true;
+                moving = true;
             
             }
             else 
             {
-            moving = false;
+                moving = false;
             }
         }
         
-        idleTimer();
+        if(moving && !attacking)
+        {
+            attackCount = 0;
+        }
 
+        idleTimer();
 
         anim.SetBool("attacking", attacking);
         anim.SetBool("moving", moving);
         anim.SetInteger("attackCount", attackCount);
         anim.SetBool("grounded", moveScript.onBase);
         anim.SetFloat("jumpVel", jumpRb.velocity.y);
-
 
         landedCheck();// has to be before this if but after everything else
         if(moveScript.onBase && attacking)
@@ -94,8 +98,6 @@ public class AnimtorController : MonoBehaviour
             moveScript.canMove = false;
         }
         
-
-
     }
     
     void landedCheck()
@@ -155,6 +157,57 @@ public class AnimtorController : MonoBehaviour
         if (attackCount > attackCountMax)
             attackCount = 1;
         //Debug.Log("attackCount: " + attackCount);
+    }
+
+    public void hurt(float xPos)
+    {
+        if (xPos < transform.position.x)
+        {
+            if (moveScript.facingRight) //hit from behind
+            {
+                anim.SetTrigger("HitB");
+            }
+            else                        //hit from front
+            {
+                anim.SetTrigger("HitF");
+            }
+        }
+        else
+        {
+            if(moveScript.facingRight)  //hit from front
+            {
+                anim.SetTrigger("HitF");
+            }
+            else                        //hit from behind
+            {
+                anim.SetTrigger("HitB");
+            }
+        }
+        moveScript.canMove = false;  // add endattack function to ends of hit animation to allow character to move again
+        enemyXposFromHit = xPos;
+    }
+    public void die()
+    {
+        if (enemyXposFromHit > CharRb.transform.position.x) // enemy on right
+        {
+            if (!moveScript.facingRight)
+            {
+                moveScript.flip();
+            }
+        }
+        else                                               // enemy on left
+        {
+            if (moveScript.facingRight)
+                moveScript.flip();
+
+        }
+
+        Debug.Log("die");
+        anim.SetTrigger("Die");
+        anim.SetBool("moving", false);
+        alive = false;
+        moveScript.canMove = false; // will have to reEnable on respawn
+        
     }
     private void OnAnimatorMove()
     {

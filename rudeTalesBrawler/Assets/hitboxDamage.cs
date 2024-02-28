@@ -18,7 +18,7 @@ public class hitboxDamage : MonoBehaviour
                 enemyAnimator u = collision.gameObject.GetComponentInParent<enemyAnimator>();
                 if (u != null)
                 {
-                    Debug.Log("ggg");                  
+                    //Debug.Log("ggg");                  
                     u.hurt(transform.position.x);
                 }
                 enemyHealth h = collision.gameObject.GetComponentInParent<enemyHealth>();
@@ -35,6 +35,16 @@ public class hitboxDamage : MonoBehaviour
         {
             if (collision.tag == "PlayerHurt")
             {
+                AnimtorController c = collision.gameObject.GetComponentInParent<AnimtorController>();
+                if (c != null)
+                {
+                    c.hurt(transform.position.x);
+                }
+                PlayerHealth p = collision.gameObject.GetComponentInParent<PlayerHealth>();
+                if (p != null)
+                {
+                    p.changeHealth(-damage);
+                }
 
             }
         }

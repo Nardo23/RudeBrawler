@@ -35,7 +35,7 @@ public class CharacterMovement : MonoBehaviour
     public ParticleSystem jumpParticleL;
     public ParticleSystem jumpParticleR;
 
-    private bool facingRight = true;
+    [HideInInspector] public bool facingRight = true;
     private Vector3 velocity = Vector3.zero;
    
     PlayerInput input;
@@ -188,7 +188,7 @@ public class CharacterMovement : MonoBehaviour
         }
     }
 
-    private void flip()
+    public void flip()
     {
         facingRight = !facingRight;
         transform.Rotate(0, 180, 0);

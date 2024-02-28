@@ -80,6 +80,7 @@ public class enemyAnimator : MonoBehaviour
             timer = 0f;
             int attackNum = Random.Range(1, numberOfAttackAnims+1);
             //Debug.Log(attackNum);
+            enemyScript.faceTarget();
             anim.SetInteger("AttackCount", attackNum);
             anim.SetTrigger("Attack");
 

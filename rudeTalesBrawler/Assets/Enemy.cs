@@ -20,6 +20,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float detectionDistance;
     [SerializeField] private LayerMask detectLayer;
     public bool inRange = false;
+    [HideInInspector]public bool facingRight = false;
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -69,12 +70,25 @@ public class Enemy : MonoBehaviour
     public void faceLeft()
     {
         transform.rotation = Quaternion.Euler(0, 0, 0);
+        facingRight = false;
     }
     public void faceRight()
     {
         transform.rotation = Quaternion.Euler(0, 180, 0);
+        facingRight = true;
     }
 
+    public void faceTarget()
+    {
+        if(target.transform.position.x < transform.position.x)
+        {
+            faceLeft();
+        }
+        if(target.transform.position.x > transform.position.x)
+        {
+            faceRight();
+        }
+    }
     void movement()
     {
         float distance = Vector3.Distance(transform.position, target.position);

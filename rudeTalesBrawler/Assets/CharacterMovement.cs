@@ -40,7 +40,14 @@ public class CharacterMovement : MonoBehaviour
    
     PlayerInput input;
     Controls controls = new Controls();
-    
+    public bool runBoost = false;
+    bool prevFacingRight = true;
+    float prevHor, prevVert;
+    bool prevStoped;
+    bool startedMove = false;
+    public Vector2 maxBoost;
+    Vector2 curBoost = Vector2.zero;
+    public float boostDuration = 2f;
     // 
     private Vector3 charDefaultRelPos, baseDefPos;
 
@@ -73,6 +80,20 @@ public class CharacterMovement : MonoBehaviour
         Move();
     }
     
+
+    IEnumerator speedBoost()
+    {
+        float maxTime = boostDuration;
+        float curTime = 0f;
+        while (curTime< maxTime)
+        {
+            curBoost = Vector3.Lerp(curBoost, Vector2.zero, (curTime / maxTime));
+            curTime += Time.deltaTime;
+            yield return null;
+        }
+        curBoost = Vector2.zero;
+        yield return null;
+    }
     private void Move()
     {
         if (!onBase && doesCharacterJump && charRB.velocity.y <= 4) //pay attention to the float used to determine when to check for base
@@ -83,11 +104,66 @@ public class CharacterMovement : MonoBehaviour
         
         if (canMove)
         {
+
+            // rotate if we're facing the wrong way
+            if (onBase)
+            {
+                if (controls.HorizontalMove > 0 && !facingRight)
+                {
+
+                    flip();
+                    runParticlesR.Play();
+                }
+                else if (controls.HorizontalMove < 0 && facingRight)
+                {
+
+                    flip();
+                    runParticlesL.Play();
+                }
+            }
+            if (prevStoped)
+            {
+                if (controls.HorizontalMove != 0 || controls.VerticalMove != 0)
+                {
+                    startedMove = true;
+                }
+                else
+                {
+                    startedMove = false;
+                }
+            }
+            else
+            {
+                startedMove = false;
+            }
+
+            if (runBoost)
+            {
+                if (prevFacingRight != facingRight || startedMove)
+                {
+                    StopAllCoroutines();
+                    Debug.Log("boost");
+                    curBoost = maxBoost;
+                    StartCoroutine(speedBoost());
+
+                }
+
+
+            }
+            else
+            {
+                curBoost = Vector2.zero;
+            }
+            
+            
             Vector2 piss = new Vector2(controls.HorizontalMove, controls.VerticalMove).normalized;
-            Vector3 targetVelocity = new Vector2(piss.x * hSpeed, piss.y * vSpeed);
+            Vector3 targetVelocity = new Vector2(piss.x * (hSpeed+Mathf.Abs(curBoost.x)), piss.y * (vSpeed+ Mathf.Abs(curBoost.y)));
 
             Vector2 _velocity = Vector3.SmoothDamp(baseRB.velocity, targetVelocity, ref velocity, movementSmooth);
             baseRB.velocity = _velocity;
+            
+            
+            
  
             //----- 
             if (doesCharacterJump)
@@ -164,28 +240,25 @@ public class CharacterMovement : MonoBehaviour
             }
             // --- 
 
-            // rotate if we're facing the wrong way
-            if (onBase)
-            {
-                if (controls.HorizontalMove > 0 && !facingRight)
-                {
-                    
-                    flip();
-                    runParticlesR.Play();
-                }
-                else if (controls.HorizontalMove < 0 && facingRight)
-                {
-                    
-                    flip();
-                    runParticlesL.Play();
-                }
-            }
             
+           
         }
         else
         {
             baseRB.velocity = Vector3.SmoothDamp(baseRB.velocity, Vector3.zero, ref velocity, .1f);
+            
         }
+        prevVert = controls.VerticalMove;
+        prevHor = controls.HorizontalMove;
+        if (prevHor == 0 && prevVert == 0)
+        {
+            prevStoped = true;
+        }
+        else
+        {
+            prevStoped = false;
+        }
+        prevFacingRight = facingRight;
     }
 
     public void flip()

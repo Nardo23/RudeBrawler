@@ -6164,8 +6164,8 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 1.3
-      minScalar: 1
+      scalar: 1.12
+      minScalar: 0.9
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -10959,7 +10959,7 @@ Transform:
   m_GameObject: {fileID: 422985836}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.29, y: 0.1099999, z: -0.31}
+  m_LocalPosition: {x: -0.6699998, y: 0.1099999, z: -0.31}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11550,8 +11550,8 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 1.3
-      minScalar: 1
+      scalar: 1.12
+      minScalar: 0.9
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -16345,7 +16345,7 @@ Transform:
   m_GameObject: {fileID: 606303019}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.2900002, y: 0.11, z: -0.31}
+  m_LocalPosition: {x: -0.67, y: 0.11, z: -0.31}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16488,6 +16488,7 @@ MonoBehaviour:
   input: {fileID: 1730887787}
   maxTimeTillIdle: 1
   attackCountMax: 3
+  resetRunOnTurn: 1
 --- !u!95 &631943763
 Animator:
   serializedVersion: 5
@@ -16915,6 +16916,9 @@ MonoBehaviour:
   jumpParticleL: {fileID: 1713054235}
   jumpParticleR: {fileID: 2026283028}
   facingRight: 1
+  runBoost: 0
+  maxBoost: {x: 0, y: 0}
+  boostDuration: 2
 --- !u!114 &956262713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28093,6 +28097,7 @@ MonoBehaviour:
   input: {fileID: 956262713}
   maxTimeTillIdle: 1
   attackCountMax: 2
+  resetRunOnTurn: 0
 --- !u!1001 &1538636558
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33154,7 +33159,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1730887786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33170,8 +33175,8 @@ MonoBehaviour:
   canMove: 1
   doesCharacterJump: 1
   baseRB: {fileID: 1730887788}
-  hSpeed: 15
-  vSpeed: 9
+  hSpeed: 14
+  vSpeed: 8
   movementSmooth: 0.01
   charRB: {fileID: 447690728}
   jumpVal: 26
@@ -33190,6 +33195,9 @@ MonoBehaviour:
   jumpParticleL: {fileID: 1766666191}
   jumpParticleR: {fileID: 1511920135}
   facingRight: 1
+  runBoost: 1
+  maxBoost: {x: 10, y: 6}
+  boostDuration: 3
 --- !u!114 &1730887787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44107,6 +44115,7 @@ SceneRoots:
   - {fileID: 1327225914}
   - {fileID: 1215110851}
   - {fileID: 956262715}
+  - {fileID: 1730887789}
   - {fileID: 1237760865}
   - {fileID: 2232550715485279170}
   - {fileID: 197383105}
@@ -44146,4 +44155,3 @@ SceneRoots:
   - {fileID: 727423486}
   - {fileID: 374167455}
   - {fileID: 1642332751}
-  - {fileID: 1730887789}

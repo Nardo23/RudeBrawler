@@ -18,10 +18,14 @@ public class AnimtorController : MonoBehaviour
     public float maxTimeTillIdle = 3f;
     int attackCount = 0;
     public int attackCountMax;
+    int prevAttackCount;
     bool prevGrounded;
     bool alive = true;
     Controls controls = new Controls();
     float enemyXposFromHit;
+    public bool resetRunOnTurn = false;
+    float prevRotation; // for determing when the sprite turns
+
     // Start is called before the first frame update
     void Start()
     {
@@ -77,11 +81,20 @@ public class AnimtorController : MonoBehaviour
                 moving = false;
             }
         }
-        
-        if(moving && !attacking)
+
+        if (resetRunOnTurn)
         {
-            attackCount = 0;
+            if (prevRotation != CharRb.transform.rotation.y)
+            {
+                if(moveScript.onBase && moving && !attacking)
+                {
+                    anim.SetTrigger("turn");
+                    Debug.Log("turn");
+                }
+            }
         }
+
+        
 
         idleTimer();
 
@@ -97,7 +110,8 @@ public class AnimtorController : MonoBehaviour
             //CharRb.velocity = Vector3.zero;
             moveScript.canMove = false;
         }
-        
+
+        prevRotation = CharRb.transform.rotation.y;
     }
     
     void landedCheck()
@@ -145,8 +159,15 @@ public class AnimtorController : MonoBehaviour
         moveScript.canMove = true;
         attacking = false;
     }
+    private void ResetAttackCount()
+    {
+        attackCount = 0;
+    }
     void startAttack()
     {
+        anim.SetTrigger("attack");
+        
+        prevAttackCount = attackCount;
         if (attackCount > attackCountMax)
             attackCount = 1;
         attackCount++;
@@ -221,7 +242,7 @@ public class AnimtorController : MonoBehaviour
         if (CharRb.gameObject.transform.rotation.y < 0)
             i = -1;
         //CharRb.velocity = Vector3.zero;
-        CharRb.velocity = new Vector3(i * distance, 0, 0);
+        CharRb.velocity = new Vector3(i * distance+ 0,0, 0);
         //Debug.Log("distance: " + distance);
     }
 

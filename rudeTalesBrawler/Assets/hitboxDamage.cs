@@ -7,7 +7,7 @@ public class hitboxDamage : MonoBehaviour
     public bool isPlayer;
 
     public int damage; // value changed by different attack animations
-
+    public float yRange; // also changed by attack anims
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (isPlayer)
@@ -16,18 +16,25 @@ public class hitboxDamage : MonoBehaviour
             {
                 
                 enemyAnimator u = collision.gameObject.GetComponentInParent<enemyAnimator>();
-                if (u != null)
+                if(u != null)
                 {
-                    //Debug.Log("ggg");                  
-                    u.hurt(transform.position.x);
-                }
-                enemyHealth h = collision.gameObject.GetComponentInParent<enemyHealth>();
-                if(h != null)
-                {
-                    
-                    h.changeHealth(-damage);
-                }
+                    if(Mathf.Abs(u.transform.root.transform.position.y- transform.root.transform.position.y) <= yRange)// check if bases are within a certain y range
+                    {
+                        if (u != null)
+                        {
+                            //Debug.Log("ggg");                  
+                            u.hurt(transform.position.x);
+                        }
+                        enemyHealth h = collision.gameObject.GetComponentInParent<enemyHealth>();
+                        if (h != null)
+                        {
 
+                            h.changeHealth(-damage);
+                        }
+
+                    }
+                }
+                
 
             }
         }
@@ -36,16 +43,24 @@ public class hitboxDamage : MonoBehaviour
             if (collision.tag == "PlayerHurt")
             {
                 AnimtorController c = collision.gameObject.GetComponentInParent<AnimtorController>();
-                if (c != null)
+                if(c != null)
                 {
-                    c.hurt(transform.position.x);
-                }
-                PlayerHealth p = collision.gameObject.GetComponentInParent<PlayerHealth>();
-                if (p != null)
-                {
-                    p.changeHealth(-damage);
+                    if (Mathf.Abs(c.transform.root.transform.position.y - transform.root.transform.position.y) <= yRange)// check if bases are within a certain y range
+                    {
+                        if (c != null)
+                        {
+                            c.hurt(transform.position.x);
+                        }
+                        PlayerHealth p = collision.gameObject.GetComponentInParent<PlayerHealth>();
+                        if (p != null)
+                        {
+                            p.changeHealth(-damage);
+                        }
+
+                    }
                 }
 
+                
             }
         }
         

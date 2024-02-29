@@ -63,6 +63,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   inRange: 0
+  facingRight: 0
 --- !u!195 &7403413832914012637
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -171,6 +172,7 @@ GameObject:
   m_Component:
   - component: {fileID: 503832940661470573}
   - component: {fileID: 6498778220702312865}
+  - component: {fileID: 1604452667319481080}
   m_Layer: 0
   m_Name: Hurt Box (1)
   m_TagString: EnemyHurt
@@ -187,8 +189,8 @@ Transform:
   m_GameObject: {fileID: 3180960443571751609}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.0696712, y: 0.91968215, z: 1.298381}
+  m_LocalPosition: {x: 0.05, y: 1.59, z: 0}
+  m_LocalScale: {x: 1.345293, y: 3.709116, z: 1.298381}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7153947415550979317}
@@ -238,6 +240,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1604452667319481080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3180960443571751609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05483e29a0c42ad4a82a3ac07f177b9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 3748645269743872650}
+  yOffset: 1.29
 --- !u!1 &4481456679402104432
 GameObject:
   m_ObjectHideFlags: 0
@@ -530,7 +546,7 @@ Transform:
   m_GameObject: {fileID: 7482577959944673738}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 18.96, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -627,6 +643,7 @@ GameObject:
   - component: {fileID: 6613096116098468249}
   - component: {fileID: 5523063562379280929}
   - component: {fileID: 8358822548623778514}
+  - component: {fileID: 3039389433121913155}
   m_Layer: 0
   m_Name: Hit Box (1)
   m_TagString: Untagged
@@ -708,3 +725,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayer: 0
   damage: 0
+  yRange: 0
+--- !u!114 &3039389433121913155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9141881470632890728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05483e29a0c42ad4a82a3ac07f177b9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 3748645269743872650}
+  yOffset: 0

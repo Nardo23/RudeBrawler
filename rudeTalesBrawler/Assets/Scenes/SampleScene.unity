@@ -5160,7 +5160,7 @@ MonoBehaviour:
   rends:
   - {fileID: 32345568}
   - {fileID: 447690727}
-  offset: 0
+  offset: -0.21
 --- !u!70 &32345567
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -5258,6 +5258,7 @@ GameObject:
   m_Component:
   - component: {fileID: 91763022}
   - component: {fileID: 91763023}
+  - component: {fileID: 91763024}
   m_Layer: 0
   m_Name: Hurt Box
   m_TagString: PlayerHurt
@@ -5274,7 +5275,7 @@ Transform:
   m_GameObject: {fileID: 91763021}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.18000619, y: -0.06545699, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.608519, y: 1.1591254, z: 1.6364201}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5312,7 +5313,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.04, y: 2.52}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -5323,8 +5324,22 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.83, y: 4.97}
   m_EdgeRadius: 0
+--- !u!114 &91763024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91763021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05483e29a0c42ad4a82a3ac07f177b9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 964150017}
+  yOffset: 0
 --- !u!1001 &197383105
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5351,12 +5366,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2476716743249219990, guid: 764ab0113f85ef04795bc753c352e73e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3111897459039070162, guid: 764ab0113f85ef04795bc753c352e73e, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 956262715}
+    - target: {fileID: 3748645269743872650, guid: 764ab0113f85ef04795bc753c352e73e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 29.91
+      objectReference: {fileID: 0}
     - target: {fileID: 4102832258043109804, guid: 764ab0113f85ef04795bc753c352e73e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.43
@@ -5619,6 +5638,7 @@ GameObject:
   - component: {fileID: 243780492}
   - component: {fileID: 243780494}
   - component: {fileID: 243780493}
+  - component: {fileID: 243780495}
   m_Layer: 0
   m_Name: Hit Box (1)
   m_TagString: Untagged
@@ -5655,6 +5675,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayer: 1
   damage: 0
+  yRange: 0
 --- !u!61 &243780494
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5700,6 +5721,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.59}
   m_EdgeRadius: 0
+--- !u!114 &243780495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243780491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05483e29a0c42ad4a82a3ac07f177b9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 447690726}
+  yOffset: 0
 --- !u!1 &246724298
 GameObject:
   m_ObjectHideFlags: 0
@@ -5710,6 +5745,7 @@ GameObject:
   m_Component:
   - component: {fileID: 246724299}
   - component: {fileID: 246724300}
+  - component: {fileID: 246724301}
   m_Layer: 0
   m_Name: Hurt Box (1)
   m_TagString: PlayerHurt
@@ -5764,7 +5800,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.12, y: 0.17}
+  m_Offset: {x: 0.09, y: 1.38}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -5775,8 +5811,22 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.48, y: 0.65}
+  m_Size: {x: 1.88, y: 3.39}
   m_EdgeRadius: 0
+--- !u!114 &246724301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246724298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05483e29a0c42ad4a82a3ac07f177b9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 447690726}
+  yOffset: 0
 --- !u!1001 &277500470
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5803,12 +5853,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2476716743249219990, guid: 764ab0113f85ef04795bc753c352e73e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3111897459039070162, guid: 764ab0113f85ef04795bc753c352e73e, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 956262715}
+    - target: {fileID: 3748645269743872650, guid: 764ab0113f85ef04795bc753c352e73e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 13.06
+      objectReference: {fileID: 0}
     - target: {fileID: 4102832258043109804, guid: 764ab0113f85ef04795bc753c352e73e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.23
@@ -11173,6 +11227,7 @@ GameObject:
   - component: {fileID: 480493733}
   - component: {fileID: 480493732}
   - component: {fileID: 480493734}
+  - component: {fileID: 480493735}
   m_Layer: 0
   m_Name: Hit Box
   m_TagString: Untagged
@@ -11223,7 +11278,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.41}
+  m_Size: {x: 0.84, y: 4.54}
   m_EdgeRadius: 0
 --- !u!4 &480493733
 Transform:
@@ -11234,7 +11289,7 @@ Transform:
   m_GameObject: {fileID: 480493731}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.18000619, y: -0.06545699, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2.608519, y: 1.1591254, z: 1.6364201}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11254,6 +11309,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayer: 1
   damage: 0
+  yRange: 0
+--- !u!114 &480493735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 480493731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05483e29a0c42ad4a82a3ac07f177b9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 964150017}
+  yOffset: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -16880,7 +16950,7 @@ GameObject:
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &956262712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33197,7 +33267,7 @@ MonoBehaviour:
   facingRight: 1
   runBoost: 1
   maxBoost: {x: 10, y: 6}
-  boostDuration: 3
+  boostDuration: 0.7
 --- !u!114 &1730887787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43800,17 +43870,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoblinHolder
       objectReference: {fileID: 0}
-    - target: {fileID: 2476716743249219990, guid: 764ab0113f85ef04795bc753c352e73e, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3111897459039070162, guid: 764ab0113f85ef04795bc753c352e73e, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 956262715}
+    - target: {fileID: 3748645269743872650, guid: 764ab0113f85ef04795bc753c352e73e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 18.45
+      objectReference: {fileID: 0}
     - target: {fileID: 4102832258043109804, guid: 764ab0113f85ef04795bc753c352e73e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.43
+      value: 11.87
       objectReference: {fileID: 0}
     - target: {fileID: 4102832258043109804, guid: 764ab0113f85ef04795bc753c352e73e, type: 3}
       propertyPath: m_LocalPosition.y

@@ -5,6 +5,7 @@ using UnityEngine;
 public class attackData : StateMachineBehaviour
 {
     public int damage;
+    public float yRange= .5f;
     protected hitboxDamage dmgScript;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
@@ -14,7 +15,7 @@ public class attackData : StateMachineBehaviour
         if(dmgScript != null)
         {
             dmgScript.damage = damage;
-           
+            dmgScript.yRange = yRange;
         }
         
         

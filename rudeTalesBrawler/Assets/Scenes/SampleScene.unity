@@ -5371,7 +5371,7 @@ PrefabInstance:
     - target: {fileID: 3111897459039070162, guid: 764ab0113f85ef04795bc753c352e73e, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 956262715}
+      objectReference: {fileID: 1730887789}
     - target: {fileID: 3748645269743872650, guid: 764ab0113f85ef04795bc753c352e73e, type: 3}
       propertyPath: m_LocalPosition.y
       value: 29.91
@@ -5858,7 +5858,7 @@ PrefabInstance:
     - target: {fileID: 3111897459039070162, guid: 764ab0113f85ef04795bc753c352e73e, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 956262715}
+      objectReference: {fileID: 1730887789}
     - target: {fileID: 3748645269743872650, guid: 764ab0113f85ef04795bc753c352e73e, type: 3}
       propertyPath: m_LocalPosition.y
       value: 13.06
@@ -16559,6 +16559,7 @@ MonoBehaviour:
   maxTimeTillIdle: 1
   attackCountMax: 3
   resetRunOnTurn: 1
+  canDoublejump: 1
 --- !u!95 &631943763
 Animator:
   serializedVersion: 5
@@ -28168,6 +28169,7 @@ MonoBehaviour:
   maxTimeTillIdle: 1
   attackCountMax: 2
   resetRunOnTurn: 0
+  canDoublejump: 0
 --- !u!1001 &1538636558
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33249,7 +33251,7 @@ MonoBehaviour:
   vSpeed: 8
   movementSmooth: 0.01
   charRB: {fileID: 447690728}
-  jumpVal: 26
+  jumpVal: 24
   possibleJumps: 2
   currentJumps: 0
   onBase: 0
@@ -33259,7 +33261,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   jumpingGravityScale: 6.5
-  fallingGravityScale: 8
+  fallingGravityScale: 11
   runParticlesR: {fileID: 606303020}
   runParticlesL: {fileID: 422985837}
   jumpParticleL: {fileID: 1766666191}
@@ -33282,8 +33284,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HorizontalControls: Horizontal
   VerticalControls: Vertical
-  JumpButton: 32
-  AttackButton: 104
+  JumpButton: 331
+  AttackButton: 332
 --- !u!50 &1730887788
 Rigidbody2D:
   serializedVersion: 4
@@ -43873,7 +43875,7 @@ PrefabInstance:
     - target: {fileID: 3111897459039070162, guid: 764ab0113f85ef04795bc753c352e73e, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 956262715}
+      objectReference: {fileID: 1730887789}
     - target: {fileID: 3748645269743872650, guid: 764ab0113f85ef04795bc753c352e73e, type: 3}
       propertyPath: m_LocalPosition.y
       value: 18.45

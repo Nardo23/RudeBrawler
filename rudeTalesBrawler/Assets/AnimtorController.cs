@@ -25,13 +25,20 @@ public class AnimtorController : MonoBehaviour
     float enemyXposFromHit;
     public bool resetRunOnTurn = false;
     float prevRotation; // for determing when the sprite turns
+    
 
+    public bool canDoublejump;
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
         prevGrounded = moveScript.onBase;
         
+    }
+
+    void startAirJump()
+    {
+        moveScript.startjump();
     }
 
     // Update is called once per frame
@@ -55,9 +62,11 @@ public class AnimtorController : MonoBehaviour
             startAttack();
         }
 
+        
+
 
         //check if moving
-        if (moving)
+        if (1==1)
         {
             if (Mathf.Abs(CharRb.velocity.x) > 1f || Mathf.Abs(CharRb.velocity.y) > 1f)
             {
@@ -98,18 +107,48 @@ public class AnimtorController : MonoBehaviour
 
         idleTimer();
 
+        if (canDoublejump)
+        {
+            anim.SetInteger("jumpCount", moveScript.currentJumps);
+        }
+
         anim.SetBool("attacking", attacking);
         anim.SetBool("moving", moving);
         anim.SetInteger("attackCount", attackCount);
         anim.SetBool("grounded", moveScript.onBase);
         anim.SetFloat("jumpVel", jumpRb.velocity.y);
 
+        if (!moveScript.onBase && canDoublejump)
+        {
+            if (controls.JumpState && moveScript.currentJumps > 0)
+            {
+                Debug.Log("airrrr");
+                anim.SetTrigger("airJump");
+            }
+        }
+        if (canDoublejump)
+        {
+            if (!moveScript.onBase)
+            {
+                if (controls.JumpState)
+                {
+                    anim.SetBool("canGroundJump", false);
+                }
+
+            }
+            else {
+                anim.SetBool("canGroundJump", true); ;
+            }
+        }
+        
         landedCheck();// has to be before this if but after everything else
         if(moveScript.onBase && attacking)
         {
             //CharRb.velocity = Vector3.zero;
             moveScript.canMove = false;
         }
+
+
 
         prevRotation = CharRb.transform.rotation.y;
     }

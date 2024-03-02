@@ -20,7 +20,7 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private Rigidbody2D charRB;
     [SerializeField] private float jumpVal = 10f;
     [SerializeField] private int possibleJumps = 1;
-    [SerializeField] private int currentJumps = 0;
+    public int currentJumps = 0;
     [SerializeField] public bool onBase = false;
     [SerializeField] private Transform jumpDetector;
     [SerializeField] private float detectionDistance;
@@ -68,13 +68,21 @@ public class CharacterMovement : MonoBehaviour
     private void Update()
     {
         controls = input.GetInput();
-        if (controls.JumpState && currentJumps < possibleJumps)
+        if (controls.JumpState && currentJumps == 0)
         {
             jump = true;
         }
+
         //Debug.Log("jump " + jump);
     }
 
+    public void startjump()
+    {
+        if (currentJumps < possibleJumps)
+        {
+            jump = true;
+        }
+    }
     private void FixedUpdate()
     {
         Move();

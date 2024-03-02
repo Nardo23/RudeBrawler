@@ -157,7 +157,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.16992188}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -178,7 +178,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -199,7 +199,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -220,7 +220,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -241,7 +241,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -262,7 +262,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -283,7 +283,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -304,7 +304,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -325,7 +325,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -346,7 +346,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -367,7 +367,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -388,7 +388,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -409,7 +409,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -430,7 +430,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -451,7 +451,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -472,7 +472,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -493,7 +493,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -514,7 +514,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -535,7 +535,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -556,7 +556,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -577,7 +577,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -598,7 +598,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -619,7 +619,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -640,7 +640,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -661,7 +661,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -682,7 +682,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -703,7 +703,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -724,7 +724,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -745,7 +745,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -766,7 +766,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -787,7 +787,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -808,7 +808,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -829,7 +829,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -850,7 +850,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -871,7 +871,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -892,7 +892,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -913,7 +913,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -934,7 +934,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -955,7 +955,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -976,7 +976,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -997,7 +997,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1018,7 +1018,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1039,7 +1039,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1060,7 +1060,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1081,7 +1081,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1102,7 +1102,7 @@ TextureImporter:
         width: 1024
         height: 1024
       alignment: 9
-      pivot: {x: 0.5, y: 0.1347656}
+      pivot: {x: 0.5, y: 0.1699219}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1110,6 +1110,678 @@ TextureImporter:
       bones: []
       spriteID: 3007652251c87c14a984018f3885daa4
       internalID: -1335137325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stirfrySheet_46
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 5120
+        width: 1024
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1699219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e6f9123918f41e42b488af513daeff3
+      internalID: -16204396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stirfrySheet_47
+      rect:
+        serializedVersion: 2
+        x: 7168
+        y: 5120
+        width: 1024
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1699219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36c7d7c03f890524ebbbd593ba0804e4
+      internalID: -197700039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stirfrySheet_48
+      rect:
+        serializedVersion: 2
+        x: 8192
+        y: 5120
+        width: 1024
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1699219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eca929f5a0d7074a9b6d149ec3c25fb
+      internalID: -1571137384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stirfrySheet_49
+      rect:
+        serializedVersion: 2
+        x: 9216
+        y: 5120
+        width: 1024
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1699219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb79526b082ca3048a36a96c7c56fd89
+      internalID: 876600419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stirfrySheet_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4096
+        width: 1024
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1699219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fba2c2a75e73ea49a6fb9c9c62e0121
+      internalID: 349599979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stirfrySheet_51
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 4096
+        width: 1024
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1699219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7839f79563c42d448c6afb45f877fed
+      internalID: 207219926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stirfrySheet_52
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 4096
+        width: 1024
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1699219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 769da9e6868c2684dac2e0f1a6b98a0d
+      internalID: 1704954552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stirfrySheet_53
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 4096
+        width: 1024
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1699219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62233d53fba8609418470af64c5ea270
+      internalID: -1702304856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stirfrySheet_54
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 4096
+        width: 1024
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1699219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27bf564cd4344584cb5d5ca9714d2b22
+      internalID: 1022036524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stirfrySheet_55
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 4096
+        width: 1024
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1699219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78ba557a12642e24d807331a0b0e36e1
+      internalID: 1932150659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stirfrySheet_56
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 4096
+        width: 1024
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1699219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af860577b569154a96baf2865a5e43f
+      internalID: 1893672261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stirfrySheet_57
+      rect:
+        serializedVersion: 2
+        x: 7168
+        y: 4096
+        width: 1024
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1699219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a160d222efe1d6f46ad218ac4cae0582
+      internalID: 89780630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stirfrySheet_58
+      rect:
+        serializedVersion: 2
+        x: 8192
+        y: 4096
+        width: 1024
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1699219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9b8e7f3843ba22458103f4bfac6bc58
+      internalID: 510760189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stirfrySheet_59
+      rect:
+        serializedVersion: 2
+        x: 9216
+        y: 4096
+        width: 1024
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1699219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d863d2853bcdc8b4fb680f99188b9448
+      internalID: -315721464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stirfrySheet_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3072
+        width: 1024
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1699219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89b0a90a7f9400f458960fec6ff76eaf
+      internalID: 715480760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stirfrySheet_61
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 3072
+        width: 1024
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1699219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8851d1b916442084094d46935689dd6c
+      internalID: 2106808900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stirfrySheet_62
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 3072
+        width: 1024
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1699219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 263a6c7671a05dc4f8c69460c36a6abb
+      internalID: 931101298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stirfrySheet_63
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 3072
+        width: 1024
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1699219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88565b5bc2aee2c4fbe1ef6507f12206
+      internalID: 473352511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stirfrySheet_64
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 3072
+        width: 1024
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1699219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92de849aad2cdf54a88a28ca89262e01
+      internalID: -1690619027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stirfrySheet_65
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 3072
+        width: 1024
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1699219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c15c8d0db31a7d441909c2ba271fa494
+      internalID: 51020096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stirfrySheet_66
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 3072
+        width: 1024
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1699219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63230b094c4ce3f4e8a251dfa52f5715
+      internalID: 517036502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stirfrySheet_67
+      rect:
+        serializedVersion: 2
+        x: 7168
+        y: 3072
+        width: 1024
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1699219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 673bfc42848206f4c938732955d52835
+      internalID: 1061850735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stirfrySheet_68
+      rect:
+        serializedVersion: 2
+        x: 8192
+        y: 3072
+        width: 1024
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1699219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a0afed4480c9234f967e73e01ea0149
+      internalID: 890691948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stirfrySheet_69
+      rect:
+        serializedVersion: 2
+        x: 9216
+        y: 3072
+        width: 1024
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1699219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cbf1f3add653614eaa370385533e17c
+      internalID: -1805375216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stirfrySheet_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2048
+        width: 1024
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1699219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b084ccd716b3d3043b94d9f37366f9ef
+      internalID: 83493974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stirfrySheet_71
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2048
+        width: 1024
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1699219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a2c9d0959da6644891ecdc8869538d1
+      internalID: -1233597865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stirfrySheet_72
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 2048
+        width: 1024
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1699219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f80868bf9f432e444942ba5057eee8c2
+      internalID: -606089637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stirfrySheet_73
+      rect:
+        serializedVersion: 2
+        x: 3072
+        y: 2048
+        width: 1024
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1699219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c33eb60740e344b9635996a1fd9f29
+      internalID: 1474284129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stirfrySheet_74
+      rect:
+        serializedVersion: 2
+        x: 4096
+        y: 2048
+        width: 1024
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1699219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8710338a88f3dbf48a8ef69241d2cb00
+      internalID: -1675444596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stirfrySheet_75
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 2048
+        width: 1024
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1699219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9333e51f9ca3ad47aa851ec06ccadfa
+      internalID: -622885413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stirfrySheet_76
+      rect:
+        serializedVersion: 2
+        x: 6144
+        y: 2048
+        width: 1024
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1699219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 854705b12bf56604a88fa5ad2b6feb60
+      internalID: 1160464538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stirfrySheet_77
+      rect:
+        serializedVersion: 2
+        x: 7168
+        y: 2048
+        width: 1024
+        height: 1024
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1699219}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 696eb7a902868434399001c4ef62883f
+      internalID: -700762673
       vertices: []
       indices: 
       edges: []
@@ -1166,9 +1838,41 @@ TextureImporter:
       stirfrySheet_43: -1308057127
       stirfrySheet_44: -1724068939
       stirfrySheet_45: -1335137325
+      stirfrySheet_46: -16204396
+      stirfrySheet_47: -197700039
+      stirfrySheet_48: -1571137384
+      stirfrySheet_49: 876600419
       stirfrySheet_5: 686281120
+      stirfrySheet_50: 349599979
+      stirfrySheet_51: 207219926
+      stirfrySheet_52: 1704954552
+      stirfrySheet_53: -1702304856
+      stirfrySheet_54: 1022036524
+      stirfrySheet_55: 1932150659
+      stirfrySheet_56: 1893672261
+      stirfrySheet_57: 89780630
+      stirfrySheet_58: 510760189
+      stirfrySheet_59: -315721464
       stirfrySheet_6: 1349969440
+      stirfrySheet_60: 715480760
+      stirfrySheet_61: 2106808900
+      stirfrySheet_62: 931101298
+      stirfrySheet_63: 473352511
+      stirfrySheet_64: -1690619027
+      stirfrySheet_65: 51020096
+      stirfrySheet_66: 517036502
+      stirfrySheet_67: 1061850735
+      stirfrySheet_68: 890691948
+      stirfrySheet_69: -1805375216
       stirfrySheet_7: -1185643991
+      stirfrySheet_70: 83493974
+      stirfrySheet_71: -1233597865
+      stirfrySheet_72: -606089637
+      stirfrySheet_73: 1474284129
+      stirfrySheet_74: -1675444596
+      stirfrySheet_75: -622885413
+      stirfrySheet_76: 1160464538
+      stirfrySheet_77: -700762673
       stirfrySheet_8: 1912218397
       stirfrySheet_9: -1845361974
   mipmapLimitGroupName: 

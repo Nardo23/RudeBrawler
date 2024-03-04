@@ -66,7 +66,7 @@ public class AnimtorController : MonoBehaviour
 
 
         //check if moving
-        if (1==1)
+        if (false)
         {
             if (Mathf.Abs(CharRb.velocity.x) > 1f || Mathf.Abs(CharRb.velocity.y) > 1f)
             {

@@ -16947,11 +16947,11 @@ GameObject:
   - component: {fileID: 956262718}
   m_Layer: 0
   m_Name: AlbeeHolder
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &956262712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33225,9 +33225,10 @@ GameObject:
   - component: {fileID: 1730887787}
   - component: {fileID: 1730887786}
   - component: {fileID: 1730887790}
+  - component: {fileID: 1730887791}
   m_Layer: 0
   m_Name: StirfryHolder
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33369,6 +33370,20 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.21
+--- !u!114 &1730887791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730887785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20fcab82e485d3343b002a62f3e96e3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 75
+  playerAnimScript: {fileID: 631943762}
 --- !u!1 &1738489687
 GameObject:
   m_ObjectHideFlags: 0

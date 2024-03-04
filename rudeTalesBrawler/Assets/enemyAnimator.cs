@@ -99,6 +99,7 @@ public class enemyAnimator : MonoBehaviour
         {
             enemyScript.faceRight();
         }
+        enemyScript.closestTarget();
         //anim.Play("hit");
         anim.SetTrigger("Hit");
         Debug.Log("hit");

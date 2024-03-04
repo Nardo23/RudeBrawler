@@ -170,9 +170,8 @@ public class CharacterMovement : MonoBehaviour
             Vector2 _velocity = Vector3.SmoothDamp(baseRB.velocity, targetVelocity, ref velocity, movementSmooth);
             baseRB.velocity = _velocity;
             
+           
             
-            
- 
             //----- 
             if (doesCharacterJump)
             {

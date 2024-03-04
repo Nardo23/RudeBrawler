@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] Transform target;
+    Transform target;
     NavMeshAgent agent;
     Rigidbody2D rb;
     float AgentSpeed;
@@ -21,8 +21,11 @@ public class Enemy : MonoBehaviour
     [SerializeField] private LayerMask detectLayer;
     public bool inRange = false;
     [HideInInspector]public bool facingRight = false;
+    [SerializeField] GameObject[] players;
     private void Start()
     {
+        players = GameObject.FindGameObjectsWithTag("Player");
+        randomTarget();
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
@@ -31,6 +34,22 @@ public class Enemy : MonoBehaviour
         
     }
 
+    void randomTarget()
+    {
+        target = players[Random.Range(0, players.Length)].transform;
+    }
+    public void closestTarget() // called when hit by attack
+    {
+        float dist = Vector2.Distance(transform.position, target.position);
+        foreach (GameObject p in players)
+        {
+            if( Vector2.Distance(p.transform.position, transform.position) < dist)
+            {
+                dist = Vector2.Distance(p.transform.position, transform.position);
+                target = p.transform;
+            }
+        }
+    }
     private void Update()
     {
         if (!onBase && charRB.velocity.y <= 4) //pay attention to the float used to determine when to check for base

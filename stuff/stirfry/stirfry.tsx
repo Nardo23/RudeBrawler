@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.10" tiledversion="1.10.1" name="stirfry" tilewidth="1024" tileheight="1024" tilecount="47" columns="0">
+<tileset version="1.10" tiledversion="1.10.1" name="stirfry" tilewidth="1024" tileheight="1024" tilecount="79" columns="0">
  <grid orientation="orthogonal" width="1" height="1"/>
  <tile id="0">
   <image width="1024" height="1024" source="run+attack/stirfry0000.png"/>
@@ -141,5 +141,101 @@
  </tile>
  <tile id="46">
   <image width="1024" height="1024" source="run+attack/stirfry0046.png"/>
+ </tile>
+ <tile id="47">
+  <image width="1024" height="1024" source="jump/stirfry jump0000.png"/>
+ </tile>
+ <tile id="48">
+  <image width="1024" height="1024" source="jump/stirfry jump0001.png"/>
+ </tile>
+ <tile id="49">
+  <image width="1024" height="1024" source="jump/stirfry jump0002.png"/>
+ </tile>
+ <tile id="50">
+  <image width="1024" height="1024" source="jump/stirfry jump0003.png"/>
+ </tile>
+ <tile id="51">
+  <image width="1024" height="1024" source="jump/stirfry jump0004.png"/>
+ </tile>
+ <tile id="52">
+  <image width="1024" height="1024" source="jump/stirfry jump0005.png"/>
+ </tile>
+ <tile id="53">
+  <image width="1024" height="1024" source="jump/stirfry jump0006.png"/>
+ </tile>
+ <tile id="54">
+  <image width="1024" height="1024" source="jump/stirfry jump0007.png"/>
+ </tile>
+ <tile id="55">
+  <image width="1024" height="1024" source="jump/stirfry jump0008.png"/>
+ </tile>
+ <tile id="56">
+  <image width="1024" height="1024" source="jump/stirfry jump0009.png"/>
+ </tile>
+ <tile id="57">
+  <image width="1024" height="1024" source="jump/stirfry jump0010.png"/>
+ </tile>
+ <tile id="58">
+  <image width="1024" height="1024" source="jump/stirfry jump0011.png"/>
+ </tile>
+ <tile id="59">
+  <image width="1024" height="1024" source="jump/stirfry jump0012.png"/>
+ </tile>
+ <tile id="60">
+  <image width="1024" height="1024" source="jump/stirfry jump0013.png"/>
+ </tile>
+ <tile id="61">
+  <image width="1024" height="1024" source="jump/stirfry jump0014.png"/>
+ </tile>
+ <tile id="62">
+  <image width="1024" height="1024" source="jump/stirfry jump0015.png"/>
+ </tile>
+ <tile id="63">
+  <image width="1024" height="1024" source="jump/stirfry jump0016.png"/>
+ </tile>
+ <tile id="64">
+  <image width="1024" height="1024" source="jump/stirfry jump0017.png"/>
+ </tile>
+ <tile id="65">
+  <image width="1024" height="1024" source="jump/stirfry jump0018.png"/>
+ </tile>
+ <tile id="66">
+  <image width="1024" height="1024" source="jump/stirfry jump0019.png"/>
+ </tile>
+ <tile id="67">
+  <image width="1024" height="1024" source="jump/stirfry jump0020.png"/>
+ </tile>
+ <tile id="68">
+  <image width="1024" height="1024" source="jump/stirfry jump0021.png"/>
+ </tile>
+ <tile id="69">
+  <image width="1024" height="1024" source="jump/stirfry jump0022.png"/>
+ </tile>
+ <tile id="70">
+  <image width="1024" height="1024" source="jump/stirfry jump0023.png"/>
+ </tile>
+ <tile id="71">
+  <image width="1024" height="1024" source="jump/stirfry jump0024.png"/>
+ </tile>
+ <tile id="72">
+  <image width="1024" height="1024" source="jump/stirfry jump0025.png"/>
+ </tile>
+ <tile id="73">
+  <image width="1024" height="1024" source="jump/stirfry jump0026.png"/>
+ </tile>
+ <tile id="74">
+  <image width="1024" height="1024" source="jump/stirfry jump0027.png"/>
+ </tile>
+ <tile id="75">
+  <image width="1024" height="1024" source="jump/stirfry jump0028.png"/>
+ </tile>
+ <tile id="76">
+  <image width="1024" height="1024" source="jump/stirfry jump0029.png"/>
+ </tile>
+ <tile id="77">
+  <image width="1024" height="1024" source="jump/stirfry jump0030.png"/>
+ </tile>
+ <tile id="78">
+  <image width="1024" height="1024" source="jump/stirfry jump0031.png"/>
  </tile>
 </tileset>

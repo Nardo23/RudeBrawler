@@ -422,7 +422,7 @@ MonoBehaviour:
   rends:
   - {fileID: 183110136423416738}
   - {fileID: 2317998575735166890}
-  offset: 0
+  offset: -0.1
 --- !u!95 &1582508422834288009
 Animator:
   serializedVersion: 5

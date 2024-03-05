@@ -27,7 +27,7 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private LayerMask detectLayer;
     [SerializeField] private float jumpingGravityScale;
     [SerializeField] private float fallingGravityScale;
-    
+    public GameObject shadow;
     private bool jump;
 
     public ParticleSystem runParticlesR;
@@ -279,7 +279,7 @@ public class CharacterMovement : MonoBehaviour
     private void detectBase()
     {
         RaycastHit2D hit = Physics2D.Raycast(jumpDetector.position, -Vector2.up, detectionDistance, detectLayer);
-        if(hit.collider != null)
+        if (hit.collider != null && hit.collider.gameObject == shadow) 
         {
             onBase = true;
             charRB.isKinematic = true;

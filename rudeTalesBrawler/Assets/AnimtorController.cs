@@ -219,6 +219,11 @@ public class AnimtorController : MonoBehaviour
         //Debug.Log("attackCount: " + attackCount);
     }
 
+    public void endHit()
+    {
+        anim.SetBool("hit", false);
+        moveScript.canMove = true;
+    }
     public void hurt(float xPos)
     {
         if (xPos < transform.position.x)
@@ -243,7 +248,7 @@ public class AnimtorController : MonoBehaviour
                 anim.SetTrigger("HitB");
             }
         }
-        moveScript.canMove = false;  // add endattack function to ends of hit animation to allow character to move again
+        moveScript.canMove = false;  // add endhit function to ends of hit animation to allow character to move again
         enemyXposFromHit = xPos;
     }
     public void die()

@@ -48,7 +48,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if(currentHealth > 0)
         {
-            healthbar.rectTransform.sizeDelta = Vector2.Lerp(healthbar.rectTransform.sizeDelta, new Vector2(((float)currentHealth / (float)maxHealth) * BarMaxWidth, healthbar.rectTransform.rect.height), Time.deltaTime*(barSpeed+(float)curDamage/(float)maxHealth)*3);
+            healthbar.rectTransform.sizeDelta = Vector2.Lerp(healthbar.rectTransform.sizeDelta, new Vector2(((float)currentHealth / (float)maxHealth) * BarMaxWidth, healthbar.rectTransform.rect.height), Time.deltaTime*(barSpeed+(float)curDamage/(float)maxHealth)*4);
 
             //healthbar.rectTransform.sizeDelta = new Vector2(((float)currentHealth / (float)maxHealth) * BarMaxWidth, healthbar.rectTransform.rect.height);
         }

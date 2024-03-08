@@ -22,7 +22,7 @@ public class Enemy : MonoBehaviour
     public bool inRange = false;
     [HideInInspector]public bool facingRight = false;
     [SerializeField] GameObject[] players;
-    private void Start()
+    private void Awake()
     {
         players = GameObject.FindGameObjectsWithTag("Player");
         randomTarget();
@@ -31,7 +31,7 @@ public class Enemy : MonoBehaviour
         agent.updateUpAxis = false;
         AgentSpeed = agent.speed;
         rb = GetComponent<Rigidbody2D>();
-        
+        charRB.gravityScale = gravityScale;
     }
 
     void randomTarget()

@@ -16,7 +16,7 @@ public class enemyAnimator : MonoBehaviour
     float timer = 0;
     public Vector3 deltaPosition;
     bool alive = true;
-    void Start()
+    void Awake()
     {
         anim = GetComponent<Animator>();
         timer = Random.Range(0, attackFrequency);

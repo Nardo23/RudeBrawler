@@ -18,7 +18,7 @@ public class hitboxDamage : MonoBehaviour
                 enemyAnimator u = collision.gameObject.GetComponentInParent<enemyAnimator>();
                 if(u != null)
                 {
-                    if(Mathf.Abs(u.transform.root.transform.position.y- transform.root.transform.position.y) <= yRange)// check if bases are within a certain y range
+                    if(Mathf.Abs(u.transform.parent.transform.position.y- transform.parent.transform.position.y) <= yRange)// check if bases are within a certain y range
                     {
                         if (u != null)
                         {
@@ -45,7 +45,7 @@ public class hitboxDamage : MonoBehaviour
                 AnimtorController c = collision.gameObject.GetComponentInParent<AnimtorController>();
                 if(c != null)
                 {
-                    if (Mathf.Abs(c.transform.root.transform.position.y - transform.root.transform.position.y) <= yRange)// check if bases are within a certain y range
+                    if (Mathf.Abs(c.transform.parent.transform.position.y - transform.parent.transform.position.y) <= yRange)// check if bases are within a certain y range
                     {
                         if (c != null)
                         {

@@ -16,6 +16,7 @@ public class enemyAnimator : MonoBehaviour
     float timer = 0;
     public Vector3 deltaPosition;
     bool alive = true;
+    public GameObject Dropable;
     void Awake()
     {
         anim = GetComponent<Animator>();
@@ -87,7 +88,13 @@ public class enemyAnimator : MonoBehaviour
         }
 
     }
-
+    void dropItem()
+    {
+        if (Dropable != null)
+        {
+            Instantiate(Dropable, transform.position, Quaternion.identity);
+        }
+    }
     public void hurt(float xPos)
     {
         

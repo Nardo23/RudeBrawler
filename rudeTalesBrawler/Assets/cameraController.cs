@@ -22,7 +22,7 @@ public class cameraController : MonoBehaviour
 
     public void LockedCamera(GameObject target, bool enableYfollow)
     {
-        followMode = false;
+        //followMode = false;
         followY = enableYfollow;
         currentTarget = target;
     } 
@@ -60,10 +60,10 @@ public class cameraController : MonoBehaviour
         }
         else
         {
-            position.x = Mathf.Lerp(this.transform.position.x, currentTarget.transform.position.x, (speed * .7f) * Time.deltaTime);
+            position.x = Mathf.Lerp(this.transform.position.x, currentTarget.transform.position.x, (speed*.25f ) * Time.deltaTime);
             if (followY)
             {
-                position.y = Mathf.Lerp(this.transform.position.y, currentTarget.transform.position.y, (speed * .7f) * Time.deltaTime);
+                position.y = Mathf.Lerp(this.transform.position.y, currentTarget.transform.position.y, (speed*.25f) * Time.deltaTime);
             }
 
             prevPos = transform.position;

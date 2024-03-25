@@ -50,7 +50,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b63b8e9db74d8944c9cf7ff3c167adf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   attackDistance: 2.8
   isInteracting: 0
   charRB: {fileID: 8825220686304269003}
@@ -64,6 +63,7 @@ MonoBehaviour:
     m_Bits: 64
   inRange: 0
   facingRight: 0
+  players: []
 --- !u!195 &7403413832914012637
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -516,9 +516,10 @@ MonoBehaviour:
   enemyScript: {fileID: 3111897459039070162}
   charRb: {fileID: 6747052677940212129}
   agent: {fileID: 7403413832914012637}
-  attackFrequency: 1.5
+  attackFrequency: 0.8
   numberOfAttackAnims: 2
   deltaPosition: {x: 0, y: 0, z: 0}
+  Dropable: {fileID: 0}
 --- !u!1 &7482577959944673738
 GameObject:
   m_ObjectHideFlags: 0

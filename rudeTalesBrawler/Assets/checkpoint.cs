@@ -28,7 +28,7 @@ public class checkpoint : MonoBehaviour
 
         if(canStart && !ended)
         {
-            camScript.LockedCamera(this.gameObject, false);
+            
             if (enemyWaves[currentWave].activeSelf == false)
             {
                 enemyWaves[currentWave].SetActive(true);
@@ -82,6 +82,7 @@ public class checkpoint : MonoBehaviour
             {
                 canStart = true;
                 entranceWall.SetActive(true);
+                camScript.LockedCamera(this.gameObject, false);
                 Debug.Log("all in");
             }
 

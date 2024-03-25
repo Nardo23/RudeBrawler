@@ -22,18 +22,18 @@ AnimationClip:
     curve:
     - time: 0
       value: {fileID: -383750453, guid: f64a911fe19525a4da17232dfb28249e, type: 3}
-    - time: 0.125
+    - time: 0.09375
       value: {fileID: 1716104919, guid: f64a911fe19525a4da17232dfb28249e, type: 3}
-    - time: 0.20833333
+    - time: 0.15625
       value: {fileID: -1791214826, guid: f64a911fe19525a4da17232dfb28249e, type: 3}
-    - time: 0.29166666
+    - time: 0.21875
       value: {fileID: -1582383190, guid: f64a911fe19525a4da17232dfb28249e, type: 3}
     attribute: m_Sprite
     path: albeeSprite
     classID: 212
     script: {fileID: 0}
     flags: 2
-  m_SampleRate: 24
+  m_SampleRate: 32
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -59,7 +59,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.3333333
+    m_StopTime: 0.25
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

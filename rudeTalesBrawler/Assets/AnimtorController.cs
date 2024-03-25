@@ -11,7 +11,7 @@ public class AnimtorController : MonoBehaviour
     public Vector3 deltaPosition;
 
     bool moving;
-    bool attacking;
+    public bool attacking;
     bool attackbuffered = false;
     public PlayerInput input;
     float idleTime =0f;
@@ -25,7 +25,7 @@ public class AnimtorController : MonoBehaviour
     float enemyXposFromHit;
     public bool resetRunOnTurn = false;
     float prevRotation; // for determing when the sprite turns
-    
+  
 
     public bool canDoublejump;
     // Start is called before the first frame update
@@ -224,6 +224,7 @@ public class AnimtorController : MonoBehaviour
         anim.SetBool("hit", false);
         moveScript.canMove = true;
     }
+   
     public void hurt(float xPos)
     {
         if (xPos < transform.position.x)

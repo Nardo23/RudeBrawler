@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.10" tiledversion="1.10.1" name="stirfry" tilewidth="1024" tileheight="1024" tilecount="79" columns="0">
+<tileset version="1.10" tiledversion="1.10.1" name="stirfry" tilewidth="1024" tileheight="1024" tilecount="106" columns="0">
  <grid orientation="orthogonal" width="1" height="1"/>
  <tile id="0">
   <image width="1024" height="1024" source="run+attack/stirfry0000.png"/>
@@ -237,5 +237,86 @@
  </tile>
  <tile id="78">
   <image width="1024" height="1024" source="jump/stirfry jump0031.png"/>
+ </tile>
+ <tile id="79">
+  <image width="1024" height="1024" source="hurt/stirfryhurt0000.png"/>
+ </tile>
+ <tile id="80">
+  <image width="1024" height="1024" source="hurt/stirfryhurt0001.png"/>
+ </tile>
+ <tile id="81">
+  <image width="1024" height="1024" source="hurt/stirfryhurt0002.png"/>
+ </tile>
+ <tile id="82">
+  <image width="1024" height="1024" source="hurt/stirfryhurt0003.png"/>
+ </tile>
+ <tile id="83">
+  <image width="1024" height="1024" source="hurt/stirfryhurt0004.png"/>
+ </tile>
+ <tile id="84">
+  <image width="1024" height="1024" source="hurt/stirfryhurt0005.png"/>
+ </tile>
+ <tile id="85">
+  <image width="1024" height="1024" source="hurt/stirfryhurt0006.png"/>
+ </tile>
+ <tile id="86">
+  <image width="1024" height="1024" source="hurt/stirfryhurt0007.png"/>
+ </tile>
+ <tile id="87">
+  <image width="1024" height="1024" source="hurt/stirfryhurt0008.png"/>
+ </tile>
+ <tile id="88">
+  <image width="1024" height="1024" source="hurt/stirfryhurt0009.png"/>
+ </tile>
+ <tile id="89">
+  <image width="1024" height="1024" source="hurt/stirfryhurt0010.png"/>
+ </tile>
+ <tile id="90">
+  <image width="1024" height="1024" source="hurt/stirfryhurt0011.png"/>
+ </tile>
+ <tile id="91">
+  <image width="1024" height="1024" source="hurt/stirfryhurt0012.png"/>
+ </tile>
+ <tile id="92">
+  <image width="1024" height="1024" source="hurt/stirfryhurt0013.png"/>
+ </tile>
+ <tile id="93">
+  <image width="1024" height="1024" source="hurt/stirfryhurt0014.png"/>
+ </tile>
+ <tile id="94">
+  <image width="1024" height="1024" source="hurt/stirfryhurt0015.png"/>
+ </tile>
+ <tile id="95">
+  <image width="1024" height="1024" source="hurt/stirfryhurt0016.png"/>
+ </tile>
+ <tile id="96">
+  <image width="1024" height="1024" source="hurt/stirfryhurt0017.png"/>
+ </tile>
+ <tile id="97">
+  <image width="1024" height="1024" source="hurt/stirfryhurt0018.png"/>
+ </tile>
+ <tile id="98">
+  <image width="1024" height="1024" source="hurt/stirfryhurt0019.png"/>
+ </tile>
+ <tile id="99">
+  <image width="1024" height="1024" source="hurt/stirfryhurt0020.png"/>
+ </tile>
+ <tile id="100">
+  <image width="1024" height="1024" source="hurt/stirfryhurt0021.png"/>
+ </tile>
+ <tile id="101">
+  <image width="1024" height="1024" source="hurt/stirfryhurt0022.png"/>
+ </tile>
+ <tile id="102">
+  <image width="1024" height="1024" source="hurt/stirfryhurt0023.png"/>
+ </tile>
+ <tile id="103">
+  <image width="1024" height="1024" source="hurt/stirfryhurt0024.png"/>
+ </tile>
+ <tile id="104">
+  <image width="1024" height="1024" source="hurt/stirfryhurt0025.png"/>
+ </tile>
+ <tile id="105">
+  <image width="1024" height="1024" source="hurt/stirfryhurt0026.png"/>
  </tile>
 </tileset>

@@ -98,18 +98,18 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 0.041666668
+    functionName: animMove
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: -20
+    intParameter: 0
+    messageOptions: 0
   - time: 0.083333336
     functionName: endReturn
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.125
-    functionName: animMove
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: -20
     intParameter: 0
     messageOptions: 0
   - time: 0.16666667

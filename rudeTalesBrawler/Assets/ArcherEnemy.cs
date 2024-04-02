@@ -17,14 +17,38 @@ public class ArcherEnemy : MonoBehaviour
     public Vector3 projectileSize;
     public GameObject rootObject;
     float initialxScale;
+    public float TargetRange;
+    bool idle =false;
+    float xOffset, yOffset;
+    public float maxOffset;
+
+    Vector3 throwingSpriteStartPos;
+    Animator anim;
     void Start()
     {
         players = GameObject.FindGameObjectsWithTag("Player");
         initialxScale = rootObject.transform.localScale.x;
+        anim = GetComponent<Animator>();
+        throwingSpriteStartPos = ThrowingSprite.transform.localPosition;
     }
     void randomTarget()
     {
         target = players[Random.Range(0, players.Length)].transform;
+        if(!idle && Vector2.Distance(transform.position, target.transform.position) > TargetRange)
+        {
+            foreach (GameObject obj in players)
+            {
+                if(Vector2.Distance(transform.position, obj.transform.position) <= TargetRange)
+                {
+                    target = obj.transform;
+                    break;
+                }
+            }
+        }
+        xOffset = ((target.transform.position.x - transform.position.x) / TargetRange)*maxOffset;
+        yOffset = ((target.transform.position.y - transform.position.y) / (TargetRange*.6f ))*maxOffset * .4f;
+        Debug.Log("arrowOffsets: " + xOffset + ", " + yOffset);
+         //(target.transform.position.x + xOffset, target.transform.position.y+yOffset, target.transform.position.z);
         if(target.position.x > transform.position.x)
         {
             rootObject.transform.localScale = new Vector3 (initialxScale * -1, rootObject.transform.localScale.y, rootObject.transform.localScale.z);
@@ -40,12 +64,14 @@ public class ArcherEnemy : MonoBehaviour
     void shoot()
     {
         GameObject go =Instantiate(projectile, SpawnPoint.transform.position, Quaternion.identity );
-        go.GetComponent<projectile>().fire(target, ThrowingSprite.transform,shadow.transform);
+        go.GetComponent<projectile>().fire(target, ThrowingSprite.transform,shadow.transform, xOffset,yOffset);
         
         go.transform.localScale = projectileSize;
+        go.GetComponent<projectile>().shadow.transform.localScale = projectileSize;
         if(rootObject.transform.localScale.x < 0)
         {
             go.transform.localScale = new Vector3(projectileSize.x * -1, projectileSize.z*-1, projectileSize.z);
+            go.GetComponent<projectile>().shadow.transform.localScale = new Vector3(projectileSize.x * -1, projectileSize.z * -1, projectileSize.z);
         }
     }
 
@@ -75,13 +101,36 @@ public class ArcherEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (rotating)
+        int inRangeCount = 0;
+        foreach (GameObject obj in players)
         {
-            rotateToTarget();
+            if(Vector2.Distance(transform.position, obj.transform.position)<= TargetRange)
+            {
+                inRangeCount++;
+            }
+        }
+        if (inRangeCount > 0)
+        {
+            idle = false;
         }
         else
         {
-            ThrowingSprite.transform.rotation = Quaternion.RotateTowards(ThrowingSprite.transform.rotation, Quaternion.identity, rotationSpeed *1.5f* Time.deltaTime);
+            idle = true;
         }
+        anim.SetBool("idle", idle);
+        
+        if (!idle)
+        {
+            if (rotating)
+            {
+                rotateToTarget();
+            }
+            else
+            {
+                ThrowingSprite.transform.rotation = Quaternion.RotateTowards(ThrowingSprite.transform.rotation, Quaternion.identity, rotationSpeed * 1.5f * Time.deltaTime);
+            }
+        }
+
+        ThrowingSprite.transform.localPosition = throwingSpriteStartPos;
     }
 }

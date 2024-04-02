@@ -36,7 +36,6 @@ public class enemyAnimator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if (alive)
             tick();
     }
@@ -114,7 +113,7 @@ public class enemyAnimator : MonoBehaviour
 
     public void die()
     {
-        Debug.Log("die");
+        //Debug.Log("die");
         anim.SetTrigger("Die");
         anim.SetBool("Moving", false);
         alive = false;

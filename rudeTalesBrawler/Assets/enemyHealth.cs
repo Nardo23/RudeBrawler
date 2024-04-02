@@ -6,6 +6,8 @@ public class enemyHealth : MonoBehaviour
 {
     public int maxHealth;
     int currentHealth;
+    public bool simpleEnemy = false;
+    public simpleEnemyAnimator simpleEnemyAnimScript;
     public enemyAnimator enemyAnimScript;
 
     private void Start()
@@ -22,7 +24,16 @@ public class enemyHealth : MonoBehaviour
         }
         if(currentHealth <= 0)
         {
-            enemyAnimScript.die();
+            if (simpleEnemy)
+            {
+                Debug.Log("simpDeath");
+                simpleEnemyAnimScript.die();
+            }
+            else
+            {
+                enemyAnimScript.die();
+            }
+            
         }
         Debug.Log("health: " + currentHealth);
     }

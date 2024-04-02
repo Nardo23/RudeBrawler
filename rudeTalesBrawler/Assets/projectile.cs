@@ -14,16 +14,17 @@ public class projectile : MonoBehaviour
     float shadowSpeed;
 
     bool fired = false;
-
-    public void fire( Transform targ, Transform ProjectileRotation, Transform shadowLocation)
+    
+    public void fire(Transform targ, Transform ProjectileRotation, Transform shadowLocation, float TargetxOffset, float TargetyOffset)
     {
         projectileObj.transform.rotation = ProjectileRotation.transform.rotation;
-        shadow.transform.position = shadowLocation.position;
+        shadow.transform.parent = null;
+        shadow.transform.position = new Vector3 (shadow.transform.position.x,shadowLocation.position.y, shadow.transform.position.z);
         target = targ;
         fired = true;
         if (target != null)
         {
-            targetPos = new Vector3(target.transform.position.x + xOffset, target.transform.position.y, target.transform.position.z);
+            targetPos = new Vector3(target.transform.position.x + xOffset+TargetxOffset, target.transform.position.y+TargetyOffset, target.transform.position.z);
             projectileTime = Vector3.Distance(projectileObj.transform.position, targetPos) / speed;
             shadowSpeed = Vector3.Distance(shadow.transform.position, targetPos) / (projectileTime);
         }
@@ -41,6 +42,13 @@ public class projectile : MonoBehaviour
 
            
             shadow.transform.position = Vector3.MoveTowards(shadow.transform.position, targetPos, shadowSpeed * Time.deltaTime);
+
+            if (Vector2.Distance(projectileObj.transform.position, targetPos) < .01)
+            {
+                projectileObj.GetComponent<Collider2D>().enabled = false;
+            }
         }
+        
+        
     }
 }

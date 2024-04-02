@@ -25,7 +25,7 @@ public class AnimtorController : MonoBehaviour
     float enemyXposFromHit;
     public bool resetRunOnTurn = false;
     float prevRotation; // for determing when the sprite turns
-  
+    levelManager levelManagerScript;
 
     public bool canDoublejump;
     // Start is called before the first frame update
@@ -33,7 +33,9 @@ public class AnimtorController : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         prevGrounded = moveScript.onBase;
-        
+        levelManagerScript = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<levelManager>();
+
+
     }
 
     void startAirJump()
@@ -268,13 +270,19 @@ public class AnimtorController : MonoBehaviour
 
         }
 
-        Debug.Log("die");
+      
         anim.SetTrigger("Die");
         anim.SetBool("moving", false);
         alive = false;
         moveScript.canMove = false; // will have to reEnable on respawn
-        
+        levelManagerScript.updateLivingCount(-1); // subtracts one from living player count
     }
+    public void Respawn() // incomplete; isnt called by anything yet
+    {
+        moveScript.canMove = true;
+        levelManagerScript.updateLivingCount(1);
+    }
+
     private void OnAnimatorMove()
     {
         //deltaPosition = anim.deltaPosition/ Time.deltaTime*10;

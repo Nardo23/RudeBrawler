@@ -1024,7 +1024,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 12
-  yRange: 0.65
+  yRange: 0.7
 --- !u!1101 &3752155522010728598
 AnimatorStateTransition:
   m_ObjectHideFlags: 1

@@ -17,7 +17,14 @@ public class checkpoint : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerStore = new GameObject[playerCount];
+        
+    }
+
+    public void setPlayerCount(int count)
+    {
+        playerStore = new GameObject[count];
+        playerCount = count;
+        Debug.Log("checkpointCountUpdate "+playerStore.Length);
     }
 
     // Update is called once per frame
@@ -78,7 +85,7 @@ public class checkpoint : MonoBehaviour
                 currentPlayersIn++;
             }
 
-            if(currentPlayersIn == playerCount)
+            if(currentPlayersIn == playerCount && !ended)
             {
                 canStart = true;
                 entranceWall.SetActive(true);

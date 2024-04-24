@@ -5,29 +5,49 @@ using UnityEngine;
 public class levelManager : MonoBehaviour
 {
     public int totalPlayers;
-    public int livingPlayers;
+    public int livingPlayersCount;
     [SerializeField]
     public checkpoint[] checkpoints;
+    GameObject[] allPlayers;
+    public GameObject[] livingPlayers;
 
     // Start is called before the first frame update
     void Start()
     {
 
-        livingPlayers = totalPlayers;
+        livingPlayersCount = totalPlayers;
         setCheckpointCounts();
+        allPlayers = GameObject.FindGameObjectsWithTag("Player");
+        updateLivingPlayers();
     }
 
     public void updateLivingCount(int change) //call this from player animator when player dies or respawns
     {
-        livingPlayers += change;
+        livingPlayersCount += change;
         setCheckpointCounts();
+        updateLivingPlayers();
+    }
+
+    void updateLivingPlayers()
+    {
+        livingPlayers = new GameObject[livingPlayersCount];
+        int i = 0;
+        foreach (GameObject obj in allPlayers)
+        {
+            if (obj.GetComponentInChildren<AnimtorController>().alive && i < livingPlayersCount)
+            {
+                livingPlayers[i] = obj;
+                i++;
+            }
+        }
+        
     }
 
     void setCheckpointCounts()
     {
         foreach(checkpoint check in checkpoints)
         {
-            check.setPlayerCount(livingPlayers);
+            check.setPlayerCount(livingPlayersCount);
         }
     }
 

@@ -20,7 +20,7 @@ public class AnimtorController : MonoBehaviour
     public int attackCountMax;
     int prevAttackCount;
     bool prevGrounded;
-    bool alive = true;
+    public bool alive = true;
     Controls controls = new Controls();
     float enemyXposFromHit;
     public bool resetRunOnTurn = false;

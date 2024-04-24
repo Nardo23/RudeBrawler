@@ -6,7 +6,7 @@ public class ArcherEnemy : MonoBehaviour
 {
     Transform target;
     
-    [SerializeField] GameObject[] players;
+    GameObject[] players;
     public GameObject ThrowingSprite, SpawnPoint;
     public GameObject shadow;
     // Start is called before the first frame update
@@ -24,15 +24,20 @@ public class ArcherEnemy : MonoBehaviour
 
     Vector3 throwingSpriteStartPos;
     Animator anim;
+    levelManager levelManagerScript;
+    bool started = false;
     void Start()
     {
         players = GameObject.FindGameObjectsWithTag("Player");
+        levelManagerScript = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<levelManager>();
         initialxScale = rootObject.transform.localScale.x;
         anim = GetComponent<Animator>();
         throwingSpriteStartPos = ThrowingSprite.transform.localPosition;
     }
     void randomTarget()
     {
+        players = levelManagerScript.livingPlayers;
+
         target = players[Random.Range(0, players.Length)].transform;
         if(!idle && Vector2.Distance(transform.position, target.transform.position) > TargetRange)
         {

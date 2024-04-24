@@ -22,6 +22,8 @@ public class Enemy : MonoBehaviour
     public bool inRange = false;
     [HideInInspector]public bool facingRight = false;
     [SerializeField] GameObject[] players;
+    bool started = false;
+    levelManager levelManagerScript;
     private void Awake()
     {
         players = GameObject.FindGameObjectsWithTag("Player");
@@ -32,11 +34,19 @@ public class Enemy : MonoBehaviour
         AgentSpeed = agent.speed;
         rb = GetComponent<Rigidbody2D>();
         charRB.gravityScale = gravityScale;
+        levelManagerScript = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<levelManager>();
     }
 
     void randomTarget()
-    {
-        target = players[Random.Range(0, players.Length)].transform;
+    {     
+        if (started)
+        {
+            target = levelManagerScript.livingPlayers[Random.Range(0, levelManagerScript.livingPlayers.Length)].transform;
+        }
+        else
+        {
+            target = players[Random.Range(0, players.Length)].transform;
+        }
     }
     public void closestTarget() // called when hit by attack
     {
@@ -52,6 +62,13 @@ public class Enemy : MonoBehaviour
     }
     private void Update()
     {
+        started = true;
+
+        if(target.GetComponentInChildren<AnimtorController>().alive == false)
+        {
+            randomTarget();
+        }
+
         if (!onBase && charRB.velocity.y <= 4) //pay attention to the float used to determine when to check for base
         {
             detectBase();

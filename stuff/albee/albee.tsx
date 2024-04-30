@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.10" tiledversion="1.10.1" name="albee" tilewidth="1200" tileheight="1200" tilecount="69" columns="0">
+<tileset version="1.10" tiledversion="1.10.1" name="albee" tilewidth="1200" tileheight="1200" tilecount="82" columns="0">
  <grid orientation="orthogonal" width="1" height="1"/>
  <tile id="0">
   <image width="1200" height="1200" source="run/albee run0000.png"/>
@@ -207,5 +207,44 @@
  </tile>
  <tile id="68">
   <image width="1200" height="1200" source="hurt/albee hurt0024.png"/>
+ </tile>
+ <tile id="69">
+  <image width="1200" height="1200" source="attack1b/albee attack1b0000.png"/>
+ </tile>
+ <tile id="70">
+  <image width="1200" height="1200" source="attack1b/albee attack1b0001.png"/>
+ </tile>
+ <tile id="71">
+  <image width="1200" height="1200" source="attack1b/albee attack1b0002.png"/>
+ </tile>
+ <tile id="72">
+  <image width="1200" height="1200" source="attack1b/albee attack1b0003.png"/>
+ </tile>
+ <tile id="73">
+  <image width="1200" height="1200" source="attack1b/albee attack1b0004.png"/>
+ </tile>
+ <tile id="74">
+  <image width="1200" height="1200" source="attack1b/albee attack1b0005.png"/>
+ </tile>
+ <tile id="75">
+  <image width="1200" height="1200" source="attack1b/albee attack20006.png"/>
+ </tile>
+ <tile id="76">
+  <image width="1200" height="1200" source="attack1b/albee attack20007.png"/>
+ </tile>
+ <tile id="77">
+  <image width="1200" height="1200" source="attack1b/albee attack20008.png"/>
+ </tile>
+ <tile id="78">
+  <image width="1200" height="1200" source="attack1b/albee attack20009.png"/>
+ </tile>
+ <tile id="79">
+  <image width="1200" height="1200" source="attack1b/albee attack20010.png"/>
+ </tile>
+ <tile id="80">
+  <image width="1200" height="1200" source="attack1b/albee attack20011.png"/>
+ </tile>
+ <tile id="81">
+  <image width="1200" height="1200" source="attack1b/albee attack1b0003.png"/>
  </tile>
 </tileset>

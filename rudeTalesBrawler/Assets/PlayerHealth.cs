@@ -14,7 +14,8 @@ public class PlayerHealth : MonoBehaviour
     float barSpeed = 1;
     float curDamage;
     public Color highHealth, mediumHealth, lowHealth;
-
+    public Sprite healthySpr, medSpr, lowSpr, deadSpr;
+    public Image icon;
     // Start is called before the first frame update
     void Start()
     {
@@ -54,19 +55,27 @@ public class PlayerHealth : MonoBehaviour
         }
         else
         {
+            icon.sprite = deadSpr;
             healthbar.rectTransform.sizeDelta = new Vector2(0, healthbar.rectTransform.rect.height);
         }
 
         if ((float)currentHealth / (float)maxHealth >= .75f)
         {
+            icon.sprite = healthySpr;
             healthbar.color = Color.Lerp(healthbar.color, highHealth, Time.deltaTime);
         }
         else if((float)currentHealth / (float)maxHealth >= .35f)
         {
+            icon.sprite = medSpr;
             healthbar.color = Color.Lerp(healthbar.color, mediumHealth, Time.deltaTime);
+        }
+        else if (currentHealth <=0)
+        {
+            icon.sprite = deadSpr;
         }
         else
         {
+            icon.sprite = lowSpr;
             healthbar.color = Color.Lerp(healthbar.color, lowHealth, Time.deltaTime);
         }
 

@@ -12,7 +12,7 @@ public class hitboxDamage : MonoBehaviour
     public GameObject checkObject; // used if checkFromParen = false
     Transform yCheckTransform;
     public bool hitOnce = false; // if true can only hurt one target
-    
+    public GameObject hitParticles;
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -37,7 +37,11 @@ public class hitboxDamage : MonoBehaviour
                         
                         //Debug.Log("ggg");                  
                         u.hurt(transform.position.x);
-                        
+                        GameObject particles = Instantiate(hitParticles, new Vector2(collision.transform.position.x, collision.transform.position.y + 1f), Quaternion.identity);
+                        particles.transform.parent = collision.transform.parent;
+
+
+
                         enemyHealth h = collision.gameObject.GetComponentInParent<enemyHealth>();
                         if (h != null)
                         {

@@ -440,7 +440,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 16
-  yRange: 0.4
+  yRange: 0.5
 --- !u!1102 &-1848644902206855849
 AnimatorState:
   serializedVersion: 6
@@ -1211,7 +1211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 15
-  yRange: 0.5
+  yRange: 0.45
 --- !u!1102 &6580387741457516565
 AnimatorState:
   serializedVersion: 6

@@ -14,6 +14,7 @@ public class resetOnEnter : StateMachineBehaviour
         {
             animScript = animator.transform.GetComponent<AnimtorController>();
             animScript.attacking = false;
+            
         }
     }
 

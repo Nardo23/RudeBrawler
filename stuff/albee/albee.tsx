@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.10" tiledversion="1.10.1" name="albee" tilewidth="1200" tileheight="1200" tilecount="82" columns="0">
+<tileset version="1.10" tiledversion="1.10.1" name="albee" tilewidth="1200" tileheight="1200" tilecount="89" columns="0">
  <grid orientation="orthogonal" width="1" height="1"/>
  <tile id="0">
   <image width="1200" height="1200" source="run/albee run0000.png"/>
@@ -246,5 +246,26 @@
  </tile>
  <tile id="81">
   <image width="1200" height="1200" source="attack1b/albee attack1b0003.png"/>
+ </tile>
+ <tile id="82">
+  <image width="1200" height="1200" source="attack1b/albee attack1b0005b.png"/>
+ </tile>
+ <tile id="83">
+  <image width="1200" height="1200" source="attack1b/albee attack20012.png"/>
+ </tile>
+ <tile id="84">
+  <image width="1200" height="1200" source="attack1b/albee attack20013.png"/>
+ </tile>
+ <tile id="85">
+  <image width="1200" height="1200" source="attack1b/albee attack20014.png"/>
+ </tile>
+ <tile id="86">
+  <image width="1200" height="1200" source="jump/albee jump0014.png"/>
+ </tile>
+ <tile id="87">
+  <image width="1200" height="1200" source="jump/albee jump0015.png"/>
+ </tile>
+ <tile id="88">
+  <image width="1200" height="1200" source="jump/albee jump0016.png"/>
  </tile>
 </tileset>

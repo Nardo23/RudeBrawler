@@ -150,9 +150,13 @@ public class AnimtorController : MonoBehaviour
             moveScript.canMove = false;
         }
 
-
+        if(attacking == false && anim.GetBool("hit") ==false && alive)
+        {
+            moveScript.canMove = true;
+        }
 
         prevRotation = CharRb.transform.rotation.y;
+        
     }
     
     void landedCheck()

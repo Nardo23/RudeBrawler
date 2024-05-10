@@ -157,7 +157,7 @@ TextureImporter:
         width: 410
         height: 137
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -165,6 +165,27 @@ TextureImporter:
       bones: []
       spriteID: 3e26e1ccd04f8c6439dfe98d9f111663
       internalID: 833766308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shadow_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 338
+        width: 434
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4785f1214ce5884f963e3634acabc91
+      internalID: -1371848708
       vertices: []
       indices: 
       edges: []
@@ -181,6 +202,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       shadow_0: 833766308
+      shadow_1: -1371848708
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

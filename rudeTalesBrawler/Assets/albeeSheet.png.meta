@@ -1606,7 +1606,7 @@ TextureImporter:
         width: 1200
         height: 1200
       alignment: 9
-      pivot: {x: 0.39166668, y: 0.19}
+      pivot: {x: 0.40333334, y: 0.175}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1849,6 +1849,153 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: albeeSheet_81
+      rect:
+        serializedVersion: 2
+        x: 10800
+        y: 3600
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.41916665, y: 0.19}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f279ea2423ef6c42b2842ad27b5f8d2
+      internalID: 687274040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_82
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1200
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.51666665, y: 0.19}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 349379dc696d9ec48a6fc53d7dd60b9f
+      internalID: 458923974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_83
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1200
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.51666665, y: 0.19}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9c66e819bcf2734489cd97bf90899df
+      internalID: 160897102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_84
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 1200
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.51666665, y: 0.19}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53c643dec17224d4badd9dff30968fca
+      internalID: -30286855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_85
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 1200
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.41916665, y: 0.20666666}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74ce5192a10fcbc40a89733abe725059
+      internalID: -689196254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_86
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 1200
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.41916665, y: 0.20666666}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecab05a7252a3044ab305e427a70ac52
+      internalID: 984413233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeeSheet_87
+      rect:
+        serializedVersion: 2
+        x: 8400
+        y: 1200
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.41916665, y: 0.20666666}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c5780d93fc1b334d91e22855d25d6c4
+      internalID: -615059935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -1940,6 +2087,13 @@ TextureImporter:
       albeeSheet_79: -887977147
       albeeSheet_8: -933192062
       albeeSheet_80: -1537783842
+      albeeSheet_81: 687274040
+      albeeSheet_82: 458923974
+      albeeSheet_83: 160897102
+      albeeSheet_84: -30286855
+      albeeSheet_85: -689196254
+      albeeSheet_86: 984413233
+      albeeSheet_87: -615059935
       albeeSheet_9: -186731104
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0

@@ -24,6 +24,9 @@ public class Enemy : MonoBehaviour
     [SerializeField] GameObject[] players;
     bool started = false;
     levelManager levelManagerScript;
+    public float knockbackMultiplyer =1;
+
+
     private void Awake()
     {
         players = GameObject.FindGameObjectsWithTag("Player");
@@ -60,6 +63,20 @@ public class Enemy : MonoBehaviour
             }
         }
     }
+
+    public void knockback(float force)
+    {
+        if (facingRight)
+        {
+            rb.AddForce((Vector2.left * force*knockbackMultiplyer), ForceMode2D.Impulse);
+        }
+        else
+        {
+            rb.AddForce((Vector2.right * force*knockbackMultiplyer), ForceMode2D.Impulse);
+        }
+        
+        //Debug.Log("KNOCKED "+ force * 1 * knockbackMultiplyer);
+    }
     private void Update()
     {
         started = true;
@@ -76,7 +93,7 @@ public class Enemy : MonoBehaviour
         if (isInteracting)
         {
             gameObject.GetComponent<NavMeshAgent>().isStopped = true;
-            //charRB.velocity = Vector2.zero;
+            charRB.velocity = Vector2.zero;
         }
         else
         {

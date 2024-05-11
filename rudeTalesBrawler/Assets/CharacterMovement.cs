@@ -48,6 +48,8 @@ public class CharacterMovement : MonoBehaviour
     public Vector2 maxBoost;
     Vector2 curBoost = Vector2.zero;
     public float boostDuration = 2f;
+    bool canCycleBoost = true;
+
     // 
     private Vector3 charDefaultRelPos, baseDefPos;
 
@@ -91,6 +93,7 @@ public class CharacterMovement : MonoBehaviour
 
     IEnumerator speedBoost()
     {
+        canCycleBoost = false;
         float maxTime = boostDuration;
         float curTime = 0f;
         while (curTime< maxTime)
@@ -99,8 +102,20 @@ public class CharacterMovement : MonoBehaviour
             curTime += Time.deltaTime;
             yield return null;
         }
+        canCycleBoost = true;
         curBoost = Vector2.zero;
         yield return null;
+    }
+    public void boost()
+    {
+        if (canCycleBoost)
+        {
+            StopAllCoroutines();
+            //Debug.Log("boost");
+            curBoost = maxBoost;
+            StartCoroutine(speedBoost());
+        }
+        
     }
     private void Move()
     {
@@ -150,7 +165,7 @@ public class CharacterMovement : MonoBehaviour
                 if (prevFacingRight != facingRight || startedMove)
                 {
                     StopAllCoroutines();
-                    Debug.Log("boost");
+                    //Debug.Log("boost");
                     curBoost = maxBoost;
                     StartCoroutine(speedBoost());
 

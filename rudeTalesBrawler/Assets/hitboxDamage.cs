@@ -8,6 +8,7 @@ public class hitboxDamage : MonoBehaviour
 
     public int damage; // value changed by different attack animations
     public float yRange; // also changed by attack anims
+    public float knockbackForce; // ditto
     public bool checkFromParent = true; //yrange check should occur from parent object ie the shadow position. only disable for projectiles
     public GameObject checkObject; // used if checkFromParen = false
     Transform yCheckTransform;
@@ -36,7 +37,7 @@ public class hitboxDamage : MonoBehaviour
                     {
                         
                         //Debug.Log("ggg");                  
-                        u.hurt(transform.position.x);
+                        u.hurt(transform.position.x, knockbackForce);
                         GameObject particles = Instantiate(hitParticles, new Vector2(collision.transform.position.x, collision.transform.position.y + 1f), Quaternion.identity);
                         particles.transform.parent = collision.transform.parent;
 

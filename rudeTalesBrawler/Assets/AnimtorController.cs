@@ -26,7 +26,7 @@ public class AnimtorController : MonoBehaviour
     public bool resetRunOnTurn = false;
     float prevRotation; // for determing when the sprite turns
     levelManager levelManagerScript;
-
+    
     public bool canDoublejump;
     // Start is called before the first frame update
     void Start()
@@ -41,6 +41,10 @@ public class AnimtorController : MonoBehaviour
     void startAirJump()
     {
         moveScript.startjump();
+    }
+    void boost()
+    {
+        moveScript.boost();
     }
 
     // Update is called once per frame

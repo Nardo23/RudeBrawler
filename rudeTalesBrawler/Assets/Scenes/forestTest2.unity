@@ -5578,18 +5578,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoblinHolder (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 2476716743249219990, guid: 764ab0113f85ef04795bc753c352e73e, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3111897459039070162, guid: 764ab0113f85ef04795bc753c352e73e, type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 1730887789}
-    - target: {fileID: 3748645269743872650, guid: 764ab0113f85ef04795bc753c352e73e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 18.45
-      objectReference: {fileID: 0}
     - target: {fileID: 4102832258043109804, guid: 764ab0113f85ef04795bc753c352e73e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.52
@@ -7125,6 +7113,7 @@ MonoBehaviour:
   isPlayer: 1
   damage: 0
   yRange: 0
+  knockbackForce: 0
   checkFromParent: 1
   checkObject: {fileID: 0}
   hitOnce: 0
@@ -14080,6 +14069,7 @@ MonoBehaviour:
   isPlayer: 1
   damage: 0
   yRange: 0
+  knockbackForce: 0
   checkFromParent: 1
   checkObject: {fileID: 0}
   hitOnce: 0
@@ -22795,7 +22785,7 @@ GameObject:
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &956262712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43489,7 +43479,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1730887786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43541,10 +43531,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d90e0ca934fad4e42b73cdfd4ff44edc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HorizontalControls: HorizontalP2
-  VerticalControls: VerticalP2
-  JumpButton: JumpP2
-  AttackButton: AttackP2
+  HorizontalControls: Horizontal
+  VerticalControls: Vertical
+  JumpButton: Jump
+  AttackButton: Attack
 --- !u!50 &1730887788
 Rigidbody2D:
   serializedVersion: 4
@@ -49527,18 +49517,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoblinHolder
       objectReference: {fileID: 0}
-    - target: {fileID: 2476716743249219990, guid: 764ab0113f85ef04795bc753c352e73e, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3111897459039070162, guid: 764ab0113f85ef04795bc753c352e73e, type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 1730887789}
-    - target: {fileID: 3748645269743872650, guid: 764ab0113f85ef04795bc753c352e73e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 18.45
-      objectReference: {fileID: 0}
     - target: {fileID: 4102832258043109804, guid: 764ab0113f85ef04795bc753c352e73e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 27.5
@@ -49815,7 +49793,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1840419988
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -57193,6 +57171,22 @@ PrefabInstance:
     - target: {fileID: 689261616854100829, guid: ad6c6782a6ebd9043bc432c114fb70eb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4828847645850906631, guid: ad6c6782a6ebd9043bc432c114fb70eb, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4828847645850906631, guid: ad6c6782a6ebd9043bc432c114fb70eb, type: 3}
+      propertyPath: InitialModule.startSize.minScalar
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4828847645850906631, guid: ad6c6782a6ebd9043bc432c114fb70eb, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4828847645850906631, guid: ad6c6782a6ebd9043bc432c114fb70eb, type: 3}
+      propertyPath: InitialModule.startLifetime.minScalar
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 8663745972045859412, guid: ad6c6782a6ebd9043bc432c114fb70eb, type: 3}
       propertyPath: m_Name

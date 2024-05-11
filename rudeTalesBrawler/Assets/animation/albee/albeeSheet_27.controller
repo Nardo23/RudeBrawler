@@ -98,6 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 15
   yRange: 1.8
+  knockbackForce: 1.7
 --- !u!1101 &-6416093641019562626
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -165,6 +166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 10
   yRange: 0.9
+  knockbackForce: 0.8
 --- !u!1102 &-5139946855337441166
 AnimatorState:
   serializedVersion: 6
@@ -842,6 +844,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 10
   yRange: 0.9
+  knockbackForce: 0.7
 --- !u!1101 &4268027860121185705
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -1179,6 +1182,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 15
   yRange: 0.9
+  knockbackForce: 1
 --- !u!1101 &8817478550822184294
 AnimatorStateTransition:
   m_ObjectHideFlags: 1

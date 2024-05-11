@@ -17,6 +17,7 @@ public class enemyAnimator : MonoBehaviour
     public Vector3 deltaPosition;
     bool alive = true;
     public GameObject Dropable;
+    public bool hit = false;
     void Awake()
     {
         anim = GetComponent<Animator>();
@@ -31,7 +32,10 @@ public class enemyAnimator : MonoBehaviour
     {
         enemyScript.isInteracting = false;
     }
-
+    void stopMovement()
+    {
+        charRb.velocity = Vector2.zero;
+    }
 
     // Update is called once per frame
     void Update()
@@ -39,7 +43,8 @@ public class enemyAnimator : MonoBehaviour
         if (alive)
             tick();
     }
-
+    
+   
     void tick()
     {
         anim.SetBool("Grounded", enemyScript.onBase);
@@ -87,6 +92,11 @@ public class enemyAnimator : MonoBehaviour
         }
 
     }
+
+    void endHit()
+    {
+        hit = false;
+    }
     void dropItem()
     {
         if (Dropable != null)
@@ -94,7 +104,7 @@ public class enemyAnimator : MonoBehaviour
             Instantiate(Dropable, transform.position, Quaternion.identity);
         }
     }
-    public void hurt(float xPos)
+    public void hurt(float xPos, float knock)
     {
         
         if(xPos < transform.position.x)
@@ -105,6 +115,11 @@ public class enemyAnimator : MonoBehaviour
         {
             enemyScript.faceRight();
         }
+        if (!hit)
+        {
+            enemyScript.knockback(knock);
+        }
+        
         enemyScript.closestTarget();
         //anim.Play("hit");
         anim.SetTrigger("Hit");
@@ -127,6 +142,6 @@ public class enemyAnimator : MonoBehaviour
     {
         deltaPosition = anim.deltaPosition/ Time.deltaTime;
         //if(attacking)
-        charRb.velocity = deltaPosition;
+        //charRb.velocity = deltaPosition;
     }
 }

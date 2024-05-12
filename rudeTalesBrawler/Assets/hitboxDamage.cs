@@ -99,7 +99,7 @@ public class hitboxDamage : MonoBehaviour
                     {
                         if (c != null)
                         {
-                            c.hurt(transform.position.x);
+                            c.hurt(transform.position.x, knockbackForce);
                         }
                         PlayerHealth p = collision.gameObject.GetComponentInParent<PlayerHealth>();
                         if (p != null)

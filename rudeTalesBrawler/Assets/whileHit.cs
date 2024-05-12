@@ -5,7 +5,7 @@ using UnityEngine;
 public class whileHit : StateMachineBehaviour
 {
     protected enemyAnimator animScript;
-
+    protected AnimtorController PAnimScript;
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
@@ -16,7 +16,11 @@ public class whileHit : StateMachineBehaviour
             animScript.hit = true;
         }
 
-        
+        PAnimScript = animator.transform.GetComponent<AnimtorController>();
+        if (PAnimScript != null)
+        {
+            PAnimScript.hit = true;
+        }
     }
    
 
@@ -34,6 +38,11 @@ public class whileHit : StateMachineBehaviour
         {
             //Debug.Log("unploop");
             animScript.hit = false;
+        }
+        PAnimScript = animator.transform.GetComponent<AnimtorController>();
+        if (PAnimScript != null)
+        {
+            PAnimScript.hit = false;
         }
     }
 

@@ -28,6 +28,7 @@ public class AnimtorController : MonoBehaviour
     levelManager levelManagerScript;
     
     public bool canDoublejump;
+    public bool hit = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -154,9 +155,9 @@ public class AnimtorController : MonoBehaviour
             moveScript.canMove = false;
         }
 
-        if(attacking == false && anim.GetBool("hit") ==false && alive)
+        if(attacking == false && hit ==false && alive)
         {
-            moveScript.canMove = true;
+            //moveScript.canMove = true;
         }
 
         prevRotation = CharRb.transform.rotation.y;
@@ -233,10 +234,12 @@ public class AnimtorController : MonoBehaviour
     {
         anim.SetBool("hit", false);
         moveScript.canMove = true;
+        hit = false;
     }
    
-    public void hurt(float xPos)
+    public void hurt(float xPos, float knock)
     {
+        moveScript.canMove = false;  // add endhit function to ends of hit animation to allow character to move again
         if (xPos < transform.position.x)
         {
             if (moveScript.facingRight) //hit from behind
@@ -247,6 +250,8 @@ public class AnimtorController : MonoBehaviour
             {
                 anim.SetTrigger("HitF");
             }
+            if (!hit)
+                moveScript.knockback(knock, false);
         }
         else
         {
@@ -258,8 +263,14 @@ public class AnimtorController : MonoBehaviour
             {
                 anim.SetTrigger("HitB");
             }
+            if (!hit)
+            {
+
+            }
+                moveScript.knockback(knock, true);
         }
-        moveScript.canMove = false;  // add endhit function to ends of hit animation to allow character to move again
+        
+        
         enemyXposFromHit = xPos;
     }
     public void die()
@@ -290,6 +301,7 @@ public class AnimtorController : MonoBehaviour
         moveScript.canMove = true;
         levelManagerScript.updateLivingCount(1);
     }
+
 
     private void OnAnimatorMove()
     {

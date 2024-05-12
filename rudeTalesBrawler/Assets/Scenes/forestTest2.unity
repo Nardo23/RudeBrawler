@@ -20292,6 +20292,7 @@ MonoBehaviour:
   alive: 1
   resetRunOnTurn: 1
   canDoublejump: 1
+  hit: 0
 --- !u!95 &631943763
 Animator:
   serializedVersion: 5
@@ -22825,6 +22826,7 @@ MonoBehaviour:
   runBoost: 0
   maxBoost: {x: 0, y: 0}
   boostDuration: 2
+  knockbackMultiplyer: 45
 --- !u!114 &956262713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37251,6 +37253,7 @@ MonoBehaviour:
   alive: 1
   resetRunOnTurn: 0
   canDoublejump: 0
+  hit: 0
 --- !u!1001 &1534890638
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43519,6 +43522,7 @@ MonoBehaviour:
   runBoost: 1
   maxBoost: {x: 10, y: 6}
   boostDuration: 0.7
+  knockbackMultiplyer: 90
 --- !u!114 &1730887787
 MonoBehaviour:
   m_ObjectHideFlags: 0

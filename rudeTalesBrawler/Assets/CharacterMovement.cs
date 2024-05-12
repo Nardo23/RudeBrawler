@@ -49,7 +49,7 @@ public class CharacterMovement : MonoBehaviour
     Vector2 curBoost = Vector2.zero;
     public float boostDuration = 2f;
     bool canCycleBoost = true;
-
+    public float knockbackMultiplyer;
     // 
     private Vector3 charDefaultRelPos, baseDefPos;
 
@@ -89,7 +89,40 @@ public class CharacterMovement : MonoBehaviour
     {
         Move();
     }
-    
+
+    public void knockback(float force, bool hitRight)
+    {
+        baseRB.velocity =Vector2.zero;
+        if (hitRight)
+        {
+            if (facingRight)
+            {
+                baseRB.AddForce((Vector2.left * force * knockbackMultiplyer), ForceMode2D.Impulse);
+                Debug.Log("1");
+            }
+            else
+            {
+                baseRB.AddForce((Vector2.left * force * knockbackMultiplyer), ForceMode2D.Impulse);
+                Debug.Log("2");
+            }
+        }
+        else
+        {
+            if (facingRight)
+            {
+                baseRB.AddForce((Vector2.right * force * knockbackMultiplyer), ForceMode2D.Impulse);
+                Debug.Log("3");
+            }
+            else
+            {
+                baseRB.AddForce((Vector2.right * force * knockbackMultiplyer), ForceMode2D.Impulse);
+                Debug.Log("4");
+            }
+            
+        }
+
+        //Debug.Log("KNOCKED "+ force * 1 * knockbackMultiplyer);
+    }
 
     IEnumerator speedBoost()
     {

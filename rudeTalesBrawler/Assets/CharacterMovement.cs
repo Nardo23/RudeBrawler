@@ -29,6 +29,7 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private float fallingGravityScale;
     public GameObject shadow;
     private bool jump;
+    Vector2 _velocity;
 
     public ParticleSystem runParticlesR;
     public ParticleSystem runParticlesL;
@@ -215,85 +216,12 @@ public class CharacterMovement : MonoBehaviour
             Vector2 piss = new Vector2(controls.HorizontalMove, controls.VerticalMove).normalized;
             Vector3 targetVelocity = new Vector2(piss.x * (hSpeed+Mathf.Abs(curBoost.x)), piss.y * (vSpeed+ Mathf.Abs(curBoost.y)));
 
-            Vector2 _velocity = Vector3.SmoothDamp(baseRB.velocity, targetVelocity, ref velocity, movementSmooth);
+            _velocity = Vector3.SmoothDamp(baseRB.velocity, targetVelocity, ref velocity, movementSmooth);
             baseRB.velocity = _velocity;
             
            
             
-            //----- 
-            if (doesCharacterJump)
-            {
-                if (onBase)
-                {
-                    //baseCol.isTrigger = false;
-                    // charRB.velocity = baseRB.velocity;
-                    //charRB.velocity = Vector2.zero;
-
-                    // vertical check
-                    if (charRB.transform.localPosition != charDefaultRelPos)
-                    {
-                        var charTransform = charRB.transform;
-                        charTransform.localPosition = new Vector2(charTransform.localPosition.x,
-                            charDefaultRelPos.y);
-                    }
-
-                    this.gameObject.layer = 0; // set the layer back to default when grounded
-                    charRB.drag = 3;
-                    charRB.velocity = Vector2.zero;
-                }
-                else
-                {
-                    // falling
-                    // if (charRB.velocity.y < 0)
-                    // {
-                    //     // charRB.gravityScale = fallingGravityScale;
-                    // }
-                    // else
-                    // { // moving upward from jump
-                    //     // charRB.gravityScale = jumpingGravityScale;
-                    // }
-
-                    
-                        
-                    
-                    if(charRB.velocity.y < 0)
-                    {
-                        charRB.drag = 1 + baseRB.velocity.y / vSpeed*3;
-                    }
-                    else
-                        charRB.drag = 1 - baseRB.velocity.y / vSpeed*3;
-
-                    charRB.velocity = new Vector2(_velocity.x, charRB.velocity.y);
-                    
-                    //baseCol.isTrigger=true;
-                    this.gameObject.layer = 9; // layer nine is the jumping layer. this layer wont collide with jumpable layer
-                                   
-                    
-                    
-                }
-
-                if (jump)
-                {
-                    charRB.isKinematic = false;
-                    charRB.velocity = Vector2.zero;
-                    charRB.AddForce(Vector2.up * jumpVal, ForceMode2D.Impulse);
-                    charRB.gravityScale = jumpingGravityScale;
-                    charRB.drag = 1 - baseRB.velocity.y / vSpeed;
-                    jump = false;
-                    currentJumps++;
-                    onBase = false;
-                }
-                
-                // --- horizontal position check
-                if (charRB.transform.localPosition != charDefaultRelPos)
-                {
-                    //print("pos diff- local: " + charRB.transform.localPosition + "  --default: " + charDefaultRelPos );
-                    var charTransform = charRB.transform;
-                    charTransform.localPosition = new Vector2(charDefaultRelPos.x,
-                        charTransform.localPosition.y);
-                }
-            }
-            // --- 
+            
 
             
            
@@ -303,6 +231,82 @@ public class CharacterMovement : MonoBehaviour
             baseRB.velocity = Vector3.SmoothDamp(baseRB.velocity, Vector3.zero, ref velocity, .1f);
             
         }
+
+        //----- 
+        if (doesCharacterJump)
+        {
+            if (onBase)
+            {
+                //baseCol.isTrigger = false;
+                // charRB.velocity = baseRB.velocity;
+                //charRB.velocity = Vector2.zero;
+
+                // vertical check
+                if (charRB.transform.localPosition != charDefaultRelPos)
+                {
+                    var charTransform = charRB.transform;
+                    charTransform.localPosition = new Vector2(charTransform.localPosition.x,
+                        charDefaultRelPos.y);
+                }
+
+                this.gameObject.layer = 0; // set the layer back to default when grounded
+                charRB.drag = 3;
+                charRB.velocity = Vector2.zero;
+            }
+            else
+            {
+                // falling
+                // if (charRB.velocity.y < 0)
+                // {
+                //     // charRB.gravityScale = fallingGravityScale;
+                // }
+                // else
+                // { // moving upward from jump
+                //     // charRB.gravityScale = jumpingGravityScale;
+                // }
+
+
+
+
+                if (charRB.velocity.y < 0)
+                {
+                    charRB.drag = 1 + baseRB.velocity.y / vSpeed * 3;
+                }
+                else
+                    charRB.drag = 1 - baseRB.velocity.y / vSpeed * 3;
+
+                charRB.velocity = new Vector2(_velocity.x, charRB.velocity.y);
+
+                //baseCol.isTrigger=true;
+                this.gameObject.layer = 9; // layer nine is the jumping layer. this layer wont collide with jumpable layer
+
+
+
+            }
+
+            if (jump && canMove)
+            {
+                charRB.isKinematic = false;
+                charRB.velocity = Vector2.zero;
+                charRB.AddForce(Vector2.up * jumpVal, ForceMode2D.Impulse);
+                charRB.gravityScale = jumpingGravityScale;
+                charRB.drag = 1 - baseRB.velocity.y / vSpeed;
+                jump = false;
+                currentJumps++;
+                onBase = false;
+            }
+
+            // --- horizontal position check
+            if (charRB.transform.localPosition != charDefaultRelPos)
+            {
+                //print("pos diff- local: " + charRB.transform.localPosition + "  --default: " + charDefaultRelPos );
+                var charTransform = charRB.transform;
+                charTransform.localPosition = new Vector2(charDefaultRelPos.x,
+                    charTransform.localPosition.y);
+            }
+        }
+        // --- 
+
         prevVert = controls.VerticalMove;
         prevHor = controls.HorizontalMove;
         if (prevHor == 0 && prevVert == 0)

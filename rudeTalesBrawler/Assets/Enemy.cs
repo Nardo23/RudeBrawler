@@ -48,7 +48,8 @@ public class Enemy : MonoBehaviour
         }
         else
         {
-            target = players[Random.Range(0, players.Length)].transform;
+            if(players[0]!=null)
+                target = players[Random.Range(0, players.Length)].transform;
         }
     }
     public void closestTarget() // called when hit by attack

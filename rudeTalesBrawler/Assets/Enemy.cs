@@ -25,7 +25,7 @@ public class Enemy : MonoBehaviour
     bool started = false;
     levelManager levelManagerScript;
     public float knockbackMultiplyer =1;
-
+    bool Stoped = false;
 
     private void Awake()
     {
@@ -65,6 +65,32 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    public void enableHitStop(float duration, Animator anim, float knock)
+    {
+        StartCoroutine(hitStop(duration, anim, knock));
+    }
+    IEnumerator hitStop(float duration, Animator anim, float knock)
+    {
+        float curTime = 0f;
+        Stoped = true;
+        rb.isKinematic = true;
+        charRB.isKinematic = true;
+        anim.enabled = false;
+        gameObject.GetComponent<NavMeshAgent>().isStopped = true;
+        while (curTime < duration)
+        {
+            curTime += Time.deltaTime;
+            yield return null;
+        }
+        
+        gameObject.GetComponent<NavMeshAgent>().isStopped = false;
+        anim.enabled = true;
+        rb.isKinematic = false;
+        Stoped = false;
+        knockback(knock);
+        yield return null;
+    }
+
     public void knockback(float force)
     {
         if (facingRight)
@@ -80,44 +106,49 @@ public class Enemy : MonoBehaviour
     }
     private void Update()
     {
-        started = true;
+        if (!Stoped)
+        {
+            started = true;
 
-        if(target.GetComponentInChildren<AnimtorController>().alive == false)
-        {
-            randomTarget();
-        }
-
-        if (!onBase && charRB.velocity.y <= 4) //pay attention to the float used to determine when to check for base
-        {
-            detectBase();
-        }
-        if (isInteracting)
-        {
-            gameObject.GetComponent<NavMeshAgent>().isStopped = true;
-            charRB.velocity = Vector2.zero;
-        }
-        else
-        {
-            gameObject.GetComponent<NavMeshAgent>().isStopped = false;
-            movement();
-        }
-
-
-        if (onBase)
-        {
-            if (agent.velocity.x<0 )
+            if (target.GetComponentInChildren<AnimtorController>().alive == false)
             {
-
-                faceLeft();
-                
+                randomTarget();
             }
-            else if (agent.velocity.x >0)
+
+            if (!onBase && charRB.velocity.y <= 4) //pay attention to the float used to determine when to check for base
             {
+                detectBase();
+            }
+            if (isInteracting)
+            {
+                gameObject.GetComponent<NavMeshAgent>().isStopped = true;
+                charRB.velocity = Vector2.zero;
+            }
+            else
+            {
+                gameObject.GetComponent<NavMeshAgent>().isStopped = false;
+                movement();
+            }
 
-                faceRight();
 
+            if (onBase)
+            {
+                if (agent.velocity.x < 0)
+                {
+
+                    faceLeft();
+
+                }
+                else if (agent.velocity.x > 0)
+                {
+
+                    faceRight();
+
+                }
             }
         }
+        
+        
 
     }
 

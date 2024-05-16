@@ -7,6 +7,7 @@ public class attackData : StateMachineBehaviour
     public int damage;
     public float yRange= .5f;
     public float knockbackForce = 1;
+    public float hitStopDuration;
     protected hitboxDamage dmgScript;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
@@ -18,6 +19,7 @@ public class attackData : StateMachineBehaviour
             dmgScript.damage = damage;
             dmgScript.yRange = yRange;
             dmgScript.knockbackForce = knockbackForce;
+            dmgScript.hitStopDuration = hitStopDuration;
         }
         
         

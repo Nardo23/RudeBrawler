@@ -157,7 +157,7 @@ public class AnimtorController : MonoBehaviour
 
         if(attacking == false && hit ==false && alive)
         {
-            //moveScript.canMove = true;
+            moveScript.canMove = true;
         }
 
         prevRotation = CharRb.transform.rotation.y;

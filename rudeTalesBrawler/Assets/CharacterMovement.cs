@@ -249,7 +249,7 @@ public class CharacterMovement : MonoBehaviour
                         charDefaultRelPos.y);
                 }
 
-                this.gameObject.layer = 0; // set the layer back to default when grounded
+                this.gameObject.layer = 8; // set the layer back to jumpable when grounded
                 charRB.drag = 3;
                 charRB.velocity = Vector2.zero;
             }

@@ -57,7 +57,7 @@ public class checkpoint : MonoBehaviour
         }
         if (ended)
         {
-            Debug.Log("ended");
+            //Debug.Log("ended");
         }
 
 

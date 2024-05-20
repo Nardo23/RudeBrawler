@@ -39,6 +39,14 @@ public class AnimtorController : MonoBehaviour
 
     }
 
+    void HitStopOn()
+    {
+        moveScript.canStop = true;
+    }
+    void HitStopOff()
+    {
+        moveScript.canStop = false;
+    }
     void startAirJump()
     {
         moveScript.startjump();

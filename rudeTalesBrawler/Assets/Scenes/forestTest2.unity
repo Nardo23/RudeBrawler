@@ -7114,6 +7114,7 @@ MonoBehaviour:
   damage: 0
   yRange: 0
   knockbackForce: 0
+  hitStopDuration: 0
   checkFromParent: 1
   checkObject: {fileID: 0}
   hitOnce: 0
@@ -14070,6 +14071,7 @@ MonoBehaviour:
   damage: 0
   yRange: 0
   knockbackForce: 0
+  hitStopDuration: 0
   checkFromParent: 1
   checkObject: {fileID: 0}
   hitOnce: 0
@@ -22816,7 +22818,7 @@ MonoBehaviour:
   baseRB: {fileID: 956262714}
   hSpeed: 12
   vSpeed: 7.5
-  movementSmooth: 0.07
+  movementSmooth: 0.05
   charRB: {fileID: 964150018}
   jumpVal: 26
   possibleJumps: 1
@@ -22839,6 +22841,7 @@ MonoBehaviour:
   maxBoost: {x: 0, y: 0}
   boostDuration: 2
   knockbackMultiplyer: 25
+  canStop: 0
 --- !u!114 &956262713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24610,7 +24613,7 @@ Transform:
   m_GameObject: {fileID: 1215110848}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.4309, y: -11.07, z: 0}
+  m_LocalPosition: {x: -1.4309, y: -11.79, z: 0}
   m_LocalScale: {x: 8529.533, y: 452.67526, z: 670.63}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26064,7 +26067,7 @@ Transform:
   m_GameObject: {fileID: 1327225912}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.4309, y: 6.34, z: 0}
+  m_LocalPosition: {x: -1.4309, y: 6.25, z: 0}
   m_LocalScale: {x: 8529.533, y: 452.67526, z: 670.63}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -43718,6 +43721,7 @@ MonoBehaviour:
   maxBoost: {x: 10, y: 6}
   boostDuration: 0.7
   knockbackMultiplyer: 37
+  canStop: 0
 --- !u!114 &1730887787
 MonoBehaviour:
   m_ObjectHideFlags: 0

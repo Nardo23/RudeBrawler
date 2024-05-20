@@ -99,7 +99,7 @@ MonoBehaviour:
   damage: 15
   yRange: 1.8
   knockbackForce: 1.7
-  hitStopDuration: 0
+  hitStopDuration: 0.15
 --- !u!1101 &-6416093641019562626
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -320,7 +320,7 @@ AnimatorStateMachine:
     m_Position: {x: -190, y: 180, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2253220198103785246}
-    m_Position: {x: 10, y: 160, z: 0}
+    m_Position: {x: 20, y: 160, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7809619742549741782}
     m_Position: {x: -920, y: 250, z: 0}
@@ -872,7 +872,7 @@ MonoBehaviour:
   damage: 10
   yRange: 0.9
   knockbackForce: 0.7
-  hitStopDuration: 0.2
+  hitStopDuration: 0.12
 --- !u!1101 &4268027860121185705
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -1212,7 +1212,7 @@ MonoBehaviour:
   damage: 15
   yRange: 0.9
   knockbackForce: 1
-  hitStopDuration: 0.2
+  hitStopDuration: 0
 --- !u!1101 &8817478550822184294
 AnimatorStateTransition:
   m_ObjectHideFlags: 1

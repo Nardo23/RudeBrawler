@@ -51,9 +51,11 @@ public class CharacterMovement : MonoBehaviour
     public float boostDuration = 2f;
     bool canCycleBoost = true;
     public float knockbackMultiplyer;
+    public bool canStop = false;
     // 
     private Vector3 charDefaultRelPos, baseDefPos;
 
+    bool stoped = false;
 
     // Start is called before the first frame update
     private void Awake()
@@ -88,8 +90,44 @@ public class CharacterMovement : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        Move();
+        if (!stoped)
+        {
+            Move();
+        }
+        
     }
+
+    public void enableHitStop(float duration)
+    {
+        if(!stoped )
+            StartCoroutine(hitStop(duration));
+    }
+    IEnumerator hitStop(float duration)
+    {
+        Animator anim = GetComponentInChildren<Animator>();
+        anim.speed = .5f;
+        float curTime = 0;
+        stoped = true;
+        bool wasKin = charRB.isKinematic;
+        baseRB.isKinematic = true;
+        charRB.isKinematic = true;
+        Vector3 velStore = baseRB.velocity;
+        baseRB.velocity = Vector3.zero;
+        while (curTime < duration)
+        {
+            curTime += Time.deltaTime;
+            yield return null;
+
+        }
+        baseRB.velocity = velStore;
+        Debug.Log("endHitStop");
+        anim.speed = 1;
+        baseRB.isKinematic = false;
+        charRB.isKinematic = wasKin;
+        stoped = false;
+        yield return null;
+    }
+
 
     public void knockback(float force, bool hitRight)
     {
@@ -219,11 +257,7 @@ public class CharacterMovement : MonoBehaviour
             _velocity = Vector3.SmoothDamp(baseRB.velocity, targetVelocity, ref velocity, movementSmooth);
             baseRB.velocity = _velocity;
             
-           
-            
-            
-
-            
+                
            
         }
         else
@@ -330,37 +364,42 @@ public class CharacterMovement : MonoBehaviour
 
     private void detectBase()
     {
-        RaycastHit2D hit = Physics2D.Raycast(jumpDetector.position, -Vector2.up, detectionDistance, detectLayer);
-        if (hit.collider != null && hit.collider.gameObject == shadow) 
+        RaycastHit2D[] hits = Physics2D.RaycastAll(jumpDetector.position, -Vector2.up, detectionDistance, detectLayer);
+
+        foreach(RaycastHit2D hit in hits)
         {
-            onBase = true;
-            charRB.isKinematic = true;
-            currentJumps = 0;
-            charRB.transform.localPosition = new Vector3(charRB.transform.localPosition.x, charDefaultRelPos.y, charRB.transform.localPosition.z);
-            charRB.velocity = Vector2.zero;
-            baseRB.velocity = Vector2.zero;
-            if (facingRight)
+            if (hit.collider != null && hit.collider.gameObject == shadow)
             {
-                Debug.Log("runR, jumpL");
-                runParticlesR.Play();
-                jumpParticleL.Play();
+                onBase = true;
+                charRB.isKinematic = true;
+                currentJumps = 0;
+                charRB.transform.localPosition = new Vector3(charRB.transform.localPosition.x, charDefaultRelPos.y, charRB.transform.localPosition.z);
+                charRB.velocity = Vector2.zero;
+                baseRB.velocity = Vector2.zero;
+                if (facingRight)
+                {
+                    Debug.Log("runR, jumpL");
+                    runParticlesR.Play();
+                    jumpParticleL.Play();
+                }
+                else
+                {
+                    Debug.Log("runL, jumpR");
+                    runParticlesL.Play();
+                    jumpParticleR.Play();
+                }
+
+                Debug.Log("setting velocity to zero");
             }
-            else
-            {
-                Debug.Log("runL, jumpR");
-                runParticlesL.Play();
-                jumpParticleR.Play();
-            }
-            
-            Debug.Log("setting velocity to zero");
         }
+       
         if(charRB.transform.localPosition.y+charDefaultRelPos.y < baseRB.transform.localPosition.y)
         {
             charRB.transform.localPosition = new Vector3 (charRB.transform.localPosition.x, charDefaultRelPos.y, charRB.transform.localPosition.z);
             onBase = true;
             charRB.isKinematic = true;
             currentJumps = 0;
-            //Debug.Log("AAARGGGRHRHRHR");
+            Debug.Log("AAARGGGRHRHRHR");
         }
     }
 

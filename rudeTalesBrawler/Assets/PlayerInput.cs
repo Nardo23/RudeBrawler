@@ -9,6 +9,7 @@ public class PlayerInput : MonoBehaviour
 
     [SerializeField] private string JumpButton;
     [SerializeField] private string AttackButton;
+    [SerializeField] private string SpecialButton;
     //[SerializeField] private KeyCode test;
     Controls controls = new Controls();
 
@@ -18,7 +19,7 @@ public class PlayerInput : MonoBehaviour
         controls.VerticalMove = Input.GetAxis(VerticalControls);
         controls.JumpState = Input.GetButtonDown(JumpButton);
         controls.AttackState = Input.GetButtonDown(AttackButton);
-
+        controls.SpecialAttackState = Input.GetButton(SpecialButton);
         return controls;
     } 
 }

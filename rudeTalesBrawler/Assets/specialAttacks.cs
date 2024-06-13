@@ -7,17 +7,47 @@ public class specialAttacks : MonoBehaviour
     public PlayerInput input;
     Controls controls = new Controls();
     public CharacterMovement moveScript;
+    AnimtorController animScript;
+    Animator anim;
+    float cooldown = .26f;
+    bool onCooldown = false;
+    float coolTimer;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+        anim = GetComponent<Animator>();
+        animScript = GetComponent<AnimtorController>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        /*
+           controls = input.GetInput();
+
+           if (!onCooldown)
+           {
+               Fireball();
+               if(controls.AttackState)
+                   StartCoroutine(punch());
+           }
+           else
+           {
+               if (coolTimer < cooldown)           
+                   coolTimer += Time.deltaTime;
+
+               else
+                   onCooldown = false;
+           }
+        */
         controls = input.GetInput();
-        Fireball();
+        if (animScript.CharacterID == "D")
+        {
+            
+            Fireball();
+        }
+
     }
 
 
@@ -32,12 +62,14 @@ public class specialAttacks : MonoBehaviour
     bool wasCharging = false;
     public GameObject projectile;
     public GameObject chargeSprite;
-    void Fireball()
+    public void Fireball()
     {
         if (controls.SpecialAttackState)
         {
+            
             chargeSprite.SetActive(true);
             wasCharging = true;
+            moveScript.canMove = false;
             if(chargeTime< MaxChargeTime)
             {
                 chargeTime += Time.deltaTime;
@@ -56,13 +88,14 @@ public class specialAttacks : MonoBehaviour
             }
             
         }
-        else
+        else if(!controls.SpecialAttackState)
         {
-            
+            Debug.Log("Deb");
             if (wasCharging)
             {
                 wasCharging = false;
                 //fire;
+                anim.SetTrigger("special");
                 GameObject ball = Instantiate(projectile, transform.position, Quaternion.identity);
                 ball.transform.localScale = ball.transform.localScale*size;
                 if (!moveScript.facingRight)
@@ -83,11 +116,30 @@ public class specialAttacks : MonoBehaviour
                 damage = MinFireballDamage;
                 size = minBallSize;
                 chargeTime = 0;
-
+                coolTimer = 0;
+                //onCooldown = true;
+                moveScript.canMove = true;
             }
         }
         
     }
-
+    public GameObject punchSquare;
+    IEnumerator punch()
+    {
+        moveScript.canMove = false;
+        
+        coolTimer = 0;
+        float t = 0;
+        while (t < .25f)
+        {
+            t += Time.deltaTime;
+            punchSquare.SetActive(true);
+            yield return null;
+        }
+        punchSquare.SetActive(false);
+        moveScript.canMove = true;
+        onCooldown = true;
+        yield return null;
+    }
 
 }

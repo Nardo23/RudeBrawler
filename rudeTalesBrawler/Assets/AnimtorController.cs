@@ -29,6 +29,8 @@ public class AnimtorController : MonoBehaviour
     
     public bool canDoublejump;
     public bool hit = false;
+    public string CharacterID; // A =albee, B = bellow, C =cordelia, D= deBonesby, S= stirfry
+    public specialAttacks specialScript;
     // Start is called before the first frame update
     void Start()
     {
@@ -76,7 +78,19 @@ public class AnimtorController : MonoBehaviour
             attackbuffered = false;
             startAttack();
         }
-
+        if(controls.SpecialAttackStartState && !attacking)
+        {
+            
+            if(specialScript!= null)
+            {
+                attacking = true;
+                anim.SetTrigger("special");
+                if(CharacterID == "D")
+                {
+                    //specialScript.Fireball();
+                }
+            }
+        }
         
 
 

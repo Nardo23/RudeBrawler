@@ -10,7 +10,7 @@ public class levelManager : MonoBehaviour
     public checkpoint[] checkpoints;
     GameObject[] allPlayers;
     public GameObject[] livingPlayers;
-
+    public bool testMode;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +34,15 @@ public class levelManager : MonoBehaviour
         int i = 0;
         foreach (GameObject obj in allPlayers)
         {
-            if (obj.GetComponentInChildren<AnimtorController>().alive && i < livingPlayersCount)
+            if (!testMode)
+            {
+                if (obj.GetComponentInChildren<AnimtorController>().alive && i < livingPlayersCount)
+                {
+                    livingPlayers[i] = obj;
+                    i++;
+                }
+            }          
+            else if (testMode)
             {
                 livingPlayers[i] = obj;
                 i++;

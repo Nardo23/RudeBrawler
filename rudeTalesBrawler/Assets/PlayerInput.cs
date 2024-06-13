@@ -20,6 +20,7 @@ public class PlayerInput : MonoBehaviour
         controls.JumpState = Input.GetButtonDown(JumpButton);
         controls.AttackState = Input.GetButtonDown(AttackButton);
         controls.SpecialAttackState = Input.GetButton(SpecialButton);
+        controls.SpecialAttackStartState = Input.GetButtonDown(SpecialButton);
         return controls;
     } 
 }

@@ -110,10 +110,14 @@ public class Enemy : MonoBehaviour
         {
             started = true;
 
-            if (target.GetComponentInChildren<AnimtorController>().alive == false)
+            if(target.GetComponentInChildren<AnimtorController>() != null)
             {
-                randomTarget();
+                if (target.GetComponentInChildren<AnimtorController>().alive == false)
+                {
+                    randomTarget();
+                }
             }
+            
 
             if (!onBase && charRB.velocity.y <= 4) //pay attention to the float used to determine when to check for base
             {
@@ -146,6 +150,21 @@ public class Enemy : MonoBehaviour
 
                 }
             }
+           else
+            {
+                charRB.isKinematic = false;
+                charRB.gravityScale = gravityScale;
+
+            }
+
+            if (charRB.transform.localPosition != charDefaultRelPos)
+            {
+                //print("pos diff- local: " + charRB.transform.localPosition + "  --default: " + charDefaultRelPos );
+                var charTransform = charRB.transform;
+                charTransform.localPosition = new Vector2(charDefaultRelPos.x,
+                    charTransform.localPosition.y);
+            }
+
         }
         
         
@@ -190,12 +209,7 @@ public class Enemy : MonoBehaviour
             agent.speed = 0;
             inRange = true;
         }
-        if (!onBase)
-        {
-            charRB.isKinematic = false;
-            charRB.gravityScale = gravityScale;
-
-        }
+        
         
     }
 
@@ -212,7 +226,7 @@ public class Enemy : MonoBehaviour
             rb.velocity = Vector2.zero;
 
             charRB.gravityScale = 0;
-            Debug.Log("setting velocity to zero");
+            //Debug.Log("setting velocity to zero");
         }
         if (charRB.transform.localPosition.y + charDefaultRelPos.y < rb.transform.localPosition.y)
         {

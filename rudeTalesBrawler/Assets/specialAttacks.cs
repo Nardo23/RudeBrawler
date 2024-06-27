@@ -12,7 +12,7 @@ public class specialAttacks : MonoBehaviour
     float cooldown = .26f;
     bool onCooldown = false;
     float coolTimer;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -44,16 +44,18 @@ public class specialAttacks : MonoBehaviour
         controls = input.GetInput();
         if (animScript.CharacterID == "D")
         {
-            
+
             Fireball();
+            if(animScript.attacking ==false)
+                lightning();
         }
 
     }
 
 
-    public float  minSpeed,maxSpeed, minLifeTime, maxLifetime;
+    public float minSpeed, maxSpeed, minLifeTime, maxLifetime;
     public int MinFireballDamage, MaxFireballDamage;
-    float  speed, lifetime;
+    float speed, lifetime;
     int damage;
     Vector2 size;
     public float MaxChargeTime;
@@ -62,22 +64,28 @@ public class specialAttacks : MonoBehaviour
     bool wasCharging = false;
     public GameObject projectile;
     public GameObject chargeSprite;
+    public float sideThreshold = .1f;
     public void Fireball()
     {
-        if (controls.SpecialAttackState)
+        if(controls.SpecialAttackStartState && Mathf.Abs(controls.HorizontalMove) <= sideThreshold)
         {
-            
+            Debug.Log("fireball A");
             chargeSprite.SetActive(true);
             wasCharging = true;
             moveScript.canMove = false;
-            if(chargeTime< MaxChargeTime)
+            anim.SetTrigger("special");
+        }
+        if (controls.SpecialAttackState && Mathf.Abs(controls.HorizontalMove) <= sideThreshold)
+        {
+            
+            if (chargeTime < MaxChargeTime)
             {
                 chargeTime += Time.deltaTime;
-                damage = (int) Mathf.Lerp(MinFireballDamage, MaxFireballDamage, chargeTime / MaxChargeTime);
+                damage = (int)Mathf.Lerp(MinFireballDamage, MaxFireballDamage, chargeTime / MaxChargeTime);
                 speed = Mathf.Lerp(minSpeed, maxSpeed, chargeTime / MaxChargeTime);
                 lifetime = Mathf.Lerp(minLifeTime, maxLifetime, chargeTime / MaxChargeTime);
                 size = Vector2.Lerp(minBallSize, maxBallSize, chargeTime / MaxChargeTime);
-                chargeSprite.transform.localScale =  size*.5f;
+                chargeSprite.transform.localScale = size * .5f;
             }
             else
             {
@@ -86,18 +94,19 @@ public class specialAttacks : MonoBehaviour
                 lifetime = maxLifetime;
                 size = maxBallSize;
             }
-            
+
         }
-        else if(!controls.SpecialAttackState)
+        else if (!controls.SpecialAttackState)
         {
-            Debug.Log("Deb");
+            
             if (wasCharging)
             {
+                Debug.Log("fireball B");
                 wasCharging = false;
                 //fire;
                 anim.SetTrigger("special");
                 GameObject ball = Instantiate(projectile, transform.position, Quaternion.identity);
-                ball.transform.localScale = ball.transform.localScale*size;
+                ball.transform.localScale = ball.transform.localScale * size;
                 if (!moveScript.facingRight)
                 {
                     ball.transform.Rotate(0, 180, 0);
@@ -121,13 +130,13 @@ public class specialAttacks : MonoBehaviour
                 moveScript.canMove = true;
             }
         }
-        
+
     }
     public GameObject punchSquare;
     IEnumerator punch()
     {
         moveScript.canMove = false;
-        
+
         coolTimer = 0;
         float t = 0;
         while (t < .25f)
@@ -140,6 +149,27 @@ public class specialAttacks : MonoBehaviour
         moveScript.canMove = true;
         onCooldown = true;
         yield return null;
+    }
+
+    public GameObject lightningBolt;
+    public float lightningXPos;
+    public void lightning()
+    {
+        if (controls.SpecialAttackStartState && Mathf.Abs(controls.HorizontalMove) > sideThreshold)
+        {
+            Debug.Log("lightning");
+
+            moveScript.canMove = false;
+            anim.SetTrigger("sideSpecial");
+            if (controls.HorizontalMove > 0)
+            {
+                Instantiate(lightningBolt, new Vector3(transform.position.x + lightningXPos,transform.position.y,0),Quaternion.identity); // lightning bolt to the right
+            }
+            else
+            {
+                Instantiate(lightningBolt, new Vector3(transform.position.x - lightningXPos, transform.position.y, 0), Quaternion.identity); // lightning bolt to the left
+            }
+        }
     }
 
 }

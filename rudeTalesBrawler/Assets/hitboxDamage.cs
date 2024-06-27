@@ -40,7 +40,7 @@ public class hitboxDamage : MonoBehaviour
                         
                         //Debug.Log("ggg");                  
                         u.hurt(transform.position.x, knockbackForce, hitStopDuration);
-                        if (hitStopDuration > 0)
+                        if (hitStopDuration > 0 && GetComponentInParent<CharacterMovement>()!=null)
                         {
                             GetComponentInParent<CharacterMovement>().enableHitStop(hitStopDuration);
                         }

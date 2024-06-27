@@ -84,7 +84,7 @@ public class AnimtorController : MonoBehaviour
             if(specialScript!= null)
             {
                 attacking = true;
-                anim.SetTrigger("special");
+                Debug.Log("attacking = true");
                 if(CharacterID == "D")
                 {
                     //specialScript.Fireball();

@@ -6,6 +6,7 @@ public class Controls
 {
     float horizontalMove;
     float verticalMove;
+
     bool jumpState;
     bool attackState;
     bool specialAttackState;

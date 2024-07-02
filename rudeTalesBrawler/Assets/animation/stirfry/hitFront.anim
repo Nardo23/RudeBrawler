@@ -26,11 +26,11 @@ AnimationClip:
       value: {fileID: -604301185, guid: dc2aab6ca813acf40b8597720b631b82, type: 3}
     - time: 0.125
       value: {fileID: 1830426359, guid: dc2aab6ca813acf40b8597720b631b82, type: 3}
-    - time: 0.21875
+    - time: 0.1875
       value: {fileID: -1728958765, guid: dc2aab6ca813acf40b8597720b631b82, type: 3}
-    - time: 0.28125
+    - time: 0.25
       value: {fileID: 346123818, guid: dc2aab6ca813acf40b8597720b631b82, type: 3}
-    - time: 0.34375
+    - time: 0.3125
       value: {fileID: -1108153721, guid: dc2aab6ca813acf40b8597720b631b82, type: 3}
     attribute: m_Sprite
     path: stirfrySprite
@@ -65,7 +65,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.375
+    m_StopTime: 0.34375
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -85,14 +85,14 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.34375
+  - time: 0.3125
     functionName: endHit
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.34375
+  - time: 0.3125
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}

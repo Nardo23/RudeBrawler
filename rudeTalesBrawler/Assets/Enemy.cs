@@ -198,7 +198,7 @@ public class Enemy : MonoBehaviour
         float distance = Vector3.Distance(transform.position, target.position);
         float distancex = Mathf.Abs(transform.position.x - target.position.x);
         float distancey = Mathf.Abs(transform.position.y - target.position.y);
-        if (distancex > attackDistance || distancey > attackDistance*.6f)
+        if (distancex > attackDistance || distancey > attackDistance*.3f)
         {
             agent.SetDestination(target.position);
             agent.speed = AgentSpeed;

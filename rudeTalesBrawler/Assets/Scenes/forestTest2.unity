@@ -37058,7 +37058,7 @@ MonoBehaviour:
   deltaPosition: {x: 0, y: 0, z: 0}
   attacking: 0
   input: {fileID: 1190787590}
-  maxTimeTillIdle: 2
+  maxTimeTillIdle: 1.5
   attackCountMax: 3
   alive: 1
   resetRunOnTurn: 0
@@ -78506,10 +78506,6 @@ PrefabInstance:
     - target: {fileID: 2999781024353400669, guid: 3d7b76f7971fc8b4a8b6faade65b147d, type: 3}
       propertyPath: m_Name
       value: TempLightningbolt
-      objectReference: {fileID: 0}
-    - target: {fileID: 7346018917809960791, guid: 3d7b76f7971fc8b4a8b6faade65b147d, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

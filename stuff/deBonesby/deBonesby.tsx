@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.10" tiledversion="1.10.1" name="deBonesby" tilewidth="1024" tileheight="1024" tilecount="37" columns="0">
+<tileset version="1.10" tiledversion="1.10.1" name="deBonesby" tilewidth="1024" tileheight="1024" tilecount="60" columns="0">
  <grid orientation="orthogonal" width="1" height="1"/>
  <tile id="0">
   <image width="1024" height="1024" source="walk/debonesby walk0000.png"/>
@@ -111,5 +111,74 @@
  </tile>
  <tile id="36">
   <image width="1024" height="1024" source="attacks/debonesby attacks0030.png"/>
+ </tile>
+ <tile id="37">
+  <image width="1024" height="1024" source="attacks/debonesby attacks0031.png"/>
+ </tile>
+ <tile id="38">
+  <image width="1024" height="1024" source="attacks/debonesby attacks0032.png"/>
+ </tile>
+ <tile id="39">
+  <image width="1024" height="1024" source="attacks/debonesby attacks0033.png"/>
+ </tile>
+ <tile id="40">
+  <image width="1024" height="1024" source="attacks/debonesby attacks0034.png"/>
+ </tile>
+ <tile id="41">
+  <image width="1024" height="1024" source="attacks/debonesby attacks0035.png"/>
+ </tile>
+ <tile id="42">
+  <image width="1024" height="1024" source="attacks/debonesby attacks0036.png"/>
+ </tile>
+ <tile id="43">
+  <image width="1024" height="1024" source="attacks/debonesby attacks0037.png"/>
+ </tile>
+ <tile id="44">
+  <image width="1024" height="1024" source="attacks/debonesby attacks0038.png"/>
+ </tile>
+ <tile id="45">
+  <image width="1024" height="1024" source="attacks/debonesby attacks0039.png"/>
+ </tile>
+ <tile id="46">
+  <image width="1024" height="1024" source="attacks/debonesby attacks0040.png"/>
+ </tile>
+ <tile id="47">
+  <image width="1024" height="1024" source="attacks/debonesby attacks0041.png"/>
+ </tile>
+ <tile id="48">
+  <image width="1024" height="1024" source="attacks/debonesby attacks0042.png"/>
+ </tile>
+ <tile id="49">
+  <image width="1024" height="1024" source="attacks/debonesby attacks0043.png"/>
+ </tile>
+ <tile id="50">
+  <image width="1024" height="1024" source="attacks/debonesby attacks0044.png"/>
+ </tile>
+ <tile id="51">
+  <image width="1024" height="1024" source="attacks/debonesby attacks0045.png"/>
+ </tile>
+ <tile id="52">
+  <image width="1024" height="1024" source="attacks/debonesby attacks0046.png"/>
+ </tile>
+ <tile id="53">
+  <image width="1024" height="1024" source="attacks/debonesby attacks0047.png"/>
+ </tile>
+ <tile id="54">
+  <image width="1024" height="1024" source="attacks/debonesby attacks0048.png"/>
+ </tile>
+ <tile id="55">
+  <image width="1024" height="1024" source="attacks/debonesby attacks0049.png"/>
+ </tile>
+ <tile id="56">
+  <image width="1024" height="1024" source="attacks/debonesby attacks0050.png"/>
+ </tile>
+ <tile id="57">
+  <image width="1024" height="1024" source="attacks/debonesby attacks0051.png"/>
+ </tile>
+ <tile id="58">
+  <image width="1024" height="1024" source="attacks/debonesby attacks0052.png"/>
+ </tile>
+ <tile id="59">
+  <image width="1024" height="1024" source="attacks/debonesby attacks0053.png"/>
  </tile>
 </tileset>

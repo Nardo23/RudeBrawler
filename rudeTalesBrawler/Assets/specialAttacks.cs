@@ -161,13 +161,15 @@ public class specialAttacks : MonoBehaviour
 
             moveScript.canMove = false;
             anim.SetTrigger("sideSpecial");
+            GameObject lightn = null;
             if (controls.HorizontalMove > 0)
             {
-                Instantiate(lightningBolt, new Vector3(transform.position.x + lightningXPos,transform.position.y,0),Quaternion.identity); // lightning bolt to the right
+                lightn = Instantiate(lightningBolt, new Vector3(transform.position.x + lightningXPos,transform.position.y,0),Quaternion.identity); // lightning bolt to the right
             }
             else
             {
-                Instantiate(lightningBolt, new Vector3(transform.position.x - lightningXPos, transform.position.y, 0), Quaternion.identity); // lightning bolt to the left
+                lightn = Instantiate(lightningBolt, new Vector3(transform.position.x - lightningXPos, transform.position.y, 0), Quaternion.identity); // lightning bolt to the left
+                lightn.transform.Rotate(0, 180, 0);
             }
         }
     }

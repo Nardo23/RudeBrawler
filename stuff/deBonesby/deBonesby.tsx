@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.10" tiledversion="1.10.1" name="deBonesby" tilewidth="1024" tileheight="1024" tilecount="60" columns="0">
+<tileset version="1.10" tiledversion="1.10.1" name="deBonesby" tilewidth="1024" tileheight="1024" tilecount="101" columns="0">
  <grid orientation="orthogonal" width="1" height="1"/>
  <tile id="0">
   <image width="1024" height="1024" source="walk/debonesby walk0000.png"/>
@@ -180,5 +180,128 @@
  </tile>
  <tile id="59">
   <image width="1024" height="1024" source="attacks/debonesby attacks0053.png"/>
+ </tile>
+ <tile id="60">
+  <image width="1024" height="1024" source="hit/debonesby hit0000.png"/>
+ </tile>
+ <tile id="61">
+  <image width="1024" height="1024" source="hit/debonesby hit0001.png"/>
+ </tile>
+ <tile id="62">
+  <image width="1024" height="1024" source="hit/debonesby hit0002.png"/>
+ </tile>
+ <tile id="63">
+  <image width="1024" height="1024" source="hit/debonesby hit0003.png"/>
+ </tile>
+ <tile id="64">
+  <image width="1024" height="1024" source="hit/debonesby hit0004.png"/>
+ </tile>
+ <tile id="65">
+  <image width="1024" height="1024" source="hit/debonesby hit0005.png"/>
+ </tile>
+ <tile id="66">
+  <image width="1024" height="1024" source="hit/debonesby hit0006.png"/>
+ </tile>
+ <tile id="67">
+  <image width="1024" height="1024" source="hit/debonesby hit0007.png"/>
+ </tile>
+ <tile id="68">
+  <image width="1024" height="1024" source="hit/debonesby death0001.png"/>
+ </tile>
+ <tile id="69">
+  <image width="1024" height="1024" source="hit/debonesby death0002.png"/>
+ </tile>
+ <tile id="70">
+  <image width="1024" height="1024" source="hit/debonesby death0003.png"/>
+ </tile>
+ <tile id="71">
+  <image width="1024" height="1024" source="hit/debonesby death0004.png"/>
+ </tile>
+ <tile id="72">
+  <image width="1024" height="1024" source="hit/debonesby death0005.png"/>
+ </tile>
+ <tile id="73">
+  <image width="1024" height="1024" source="hit/debonesby death0006.png"/>
+ </tile>
+ <tile id="74">
+  <image width="1024" height="1024" source="hit/debonesby death0007.png"/>
+ </tile>
+ <tile id="75">
+  <image width="1024" height="1024" source="hit/debonesby death0008.png"/>
+ </tile>
+ <tile id="76">
+  <image width="1024" height="1024" source="hit/debonesby death0009.png"/>
+ </tile>
+ <tile id="77">
+  <image width="1024" height="1024" source="hit/debonesby death0010.png"/>
+ </tile>
+ <tile id="78">
+  <image width="1024" height="1024" source="hit/debonesby death0011.png"/>
+ </tile>
+ <tile id="79">
+  <image width="1024" height="1024" source="hit/debonesby death0012.png"/>
+ </tile>
+ <tile id="80">
+  <image width="1024" height="1024" source="hit/debonesby death0013.png"/>
+ </tile>
+ <tile id="81">
+  <image width="1024" height="1024" source="hit/debonesby death0014.png"/>
+ </tile>
+ <tile id="82">
+  <image width="1024" height="1024" source="hit/debonesby death0015.png"/>
+ </tile>
+ <tile id="83">
+  <image width="1024" height="1024" source="hit/debonesby death0016.png"/>
+ </tile>
+ <tile id="84">
+  <image width="1024" height="1024" source="hit/debonesby death0017.png"/>
+ </tile>
+ <tile id="85">
+  <image width="1024" height="1024" source="hit/debonesby death0018.png"/>
+ </tile>
+ <tile id="86">
+  <image width="1024" height="1024" source="hit/debonesby death0019.png"/>
+ </tile>
+ <tile id="87">
+  <image width="1024" height="1024" source="hit/debonesby death0020.png"/>
+ </tile>
+ <tile id="88">
+  <image width="1024" height="1024" source="hit/debonesby death0021.png"/>
+ </tile>
+ <tile id="89">
+  <image width="1024" height="1024" source="hit/debonesby death0022.png"/>
+ </tile>
+ <tile id="90">
+  <image width="1024" height="1024" source="jump/debonesby jump0000.png"/>
+ </tile>
+ <tile id="91">
+  <image width="1024" height="1024" source="jump/debonesby jump0001.png"/>
+ </tile>
+ <tile id="92">
+  <image width="1024" height="1024" source="jump/debonesby jump0002.png"/>
+ </tile>
+ <tile id="93">
+  <image width="1024" height="1024" source="jump/debonesby jump0003.png"/>
+ </tile>
+ <tile id="94">
+  <image width="1024" height="1024" source="jump/debonesby jump0004.png"/>
+ </tile>
+ <tile id="95">
+  <image width="1024" height="1024" source="jump/debonesby jump0005.png"/>
+ </tile>
+ <tile id="96">
+  <image width="1024" height="1024" source="jump/debonesby jump0006.png"/>
+ </tile>
+ <tile id="97">
+  <image width="1024" height="1024" source="jump/debonesby jump0007.png"/>
+ </tile>
+ <tile id="98">
+  <image width="1024" height="1024" source="jump/debonesby jump0008.png"/>
+ </tile>
+ <tile id="99">
+  <image width="1024" height="1024" source="jump/debonesby jump0009.png"/>
+ </tile>
+ <tile id="100">
+  <image width="1024" height="1024" source="jump/debonesby jump0010.png"/>
  </tile>
 </tileset>

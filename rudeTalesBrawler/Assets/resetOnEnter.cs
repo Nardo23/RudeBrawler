@@ -9,12 +9,17 @@ public class resetOnEnter : StateMachineBehaviour
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        animator.SetBool(Boolparam, false);
+        
         if(Boolparam == "attacking")
         {
+            animator.SetBool(Boolparam, false);
             animScript = animator.transform.GetComponent<AnimtorController>();
             animScript.attacking = false;
             
+        }
+        if(Boolparam == ("special"))
+        {
+            animator.ResetTrigger("special");
         }
     }
 

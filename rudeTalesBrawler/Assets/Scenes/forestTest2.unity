@@ -37025,13 +37025,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   input: {fileID: 1190787590}
   moveScript: {fileID: 1190787589}
-  minSpeed: 11
-  maxSpeed: 35
+  minSpeed: 16
+  maxSpeed: 47
   minLifeTime: 0.5
   maxLifetime: 2
   MinFireballDamage: 8
   MaxFireballDamage: 40
-  MaxChargeTime: 2.6
+  MaxChargeTime: 2
   minBallSize: {x: 1, y: 0.5}
   maxBallSize: {x: 1.6, y: 1.6}
   projectile: {fileID: 5041672566110495393, guid: ce21559e394134047bf9f19b6fd7c262, type: 3}

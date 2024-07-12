@@ -430,7 +430,7 @@ MonoBehaviour:
   checkFromParent: 1
   checkObject: {fileID: 0}
   hitOnce: 0
-  hitParticles: {fileID: 8663745972045859412, guid: ad6c6782a6ebd9043bc432c114fb70eb, type: 3}
+  hitParticles: {fileID: 6539284756768627142, guid: d3f98676eb13ad341a224f7e5eb149dc, type: 3}
 --- !u!61 &1819785726872349775
 BoxCollider2D:
   m_ObjectHideFlags: 0

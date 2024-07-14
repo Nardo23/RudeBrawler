@@ -7257,6 +7257,7 @@ MonoBehaviour:
   hitStopDuration: 0
   checkFromParent: 1
   checkObject: {fileID: 0}
+  damageType: 0
   hitOnce: 0
   hitParticles: {fileID: 8663745972045859412, guid: ad6c6782a6ebd9043bc432c114fb70eb, type: 3}
 --- !u!61 &243780494
@@ -14365,6 +14366,7 @@ MonoBehaviour:
   hitStopDuration: 0
   checkFromParent: 1
   checkObject: {fileID: 0}
+  damageType: 0
   hitOnce: 0
   hitParticles: {fileID: 8663745972045859412, guid: ad6c6782a6ebd9043bc432c114fb70eb, type: 3}
 --- !u!114 &480493735
@@ -15089,7 +15091,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 939688657359522456, guid: 77b2146471bf72044817e9c0531ba2cd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -41.29
+      value: -41.74
       objectReference: {fileID: 0}
     - target: {fileID: 939688657359522456, guid: 77b2146471bf72044817e9c0531ba2cd, type: 3}
       propertyPath: m_LocalPosition.y
@@ -21177,6 +21179,7 @@ MonoBehaviour:
   hitStopDuration: 0
   checkFromParent: 1
   checkObject: {fileID: 0}
+  damageType: 0
   hitOnce: 0
   hitParticles: {fileID: 8663745972045859412, guid: ad6c6782a6ebd9043bc432c114fb70eb, type: 3}
 --- !u!61 &689357888
@@ -49493,7 +49496,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -632248620, guid: 4649f00966054ac4183dea830dc56680, type: 3}
+  m_Sprite: {fileID: 1950804453, guid: 4649f00966054ac4183dea830dc56680, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

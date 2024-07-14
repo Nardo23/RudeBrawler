@@ -12,6 +12,7 @@ public class hitboxDamage : MonoBehaviour
     public float hitStopDuration; // ditto
     public bool checkFromParent = true; //yrange check should occur from parent object ie the shadow position. only disable for projectiles
     public GameObject checkObject; // used if checkFromParen = false
+    public int damageType; // 0 = phsical, 1 = electric determens what hurt animation to play
     Transform yCheckTransform;
     
     public bool hitOnce = false; // if true can only hurt one target
@@ -38,8 +39,8 @@ public class hitboxDamage : MonoBehaviour
                     if (Mathf.Abs(u.transform.parent.transform.position.y- yCheckTransform.position.y) <= yRange)// check if bases are within a certain y range
                     {
                         
-                        //Debug.Log("ggg");                  
-                        u.hurt(transform.position.x, knockbackForce, hitStopDuration);
+                                         
+                        u.hurt(transform.position.x, knockbackForce, hitStopDuration, damageType);
                         if (hitStopDuration > 0 && GetComponentInParent<CharacterMovement>()!=null)
                         {
                             GetComponentInParent<CharacterMovement>().enableHitStop(hitStopDuration);

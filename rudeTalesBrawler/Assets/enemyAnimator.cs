@@ -104,7 +104,7 @@ public class enemyAnimator : MonoBehaviour
             Instantiate(Dropable, transform.position, Quaternion.identity);
         }
     }
-    public void hurt(float xPos, float knock, float stopDuration)
+    public void hurt(float xPos, float knock, float stopDuration, float damageType)
     {
         
         if(xPos < transform.position.x)
@@ -128,6 +128,7 @@ public class enemyAnimator : MonoBehaviour
         enemyScript.closestTarget();
         //anim.Play("hit");
         anim.SetTrigger("Hit");
+        anim.SetFloat("hitType", damageType);
         Debug.Log("hit");
     }
 

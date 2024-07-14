@@ -8,6 +8,8 @@ public class attackData : StateMachineBehaviour
     public float yRange= .5f;
     public float knockbackForce = 1;
     public float hitStopDuration;
+    [Tooltip("0 = physical, 1 = electric")]
+    public int damageType; 
     protected hitboxDamage dmgScript;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state

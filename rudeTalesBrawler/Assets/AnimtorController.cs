@@ -31,6 +31,7 @@ public class AnimtorController : MonoBehaviour
     public bool hit = false;
     public string CharacterID; // A =albee, B = bellow, C =cordelia, D= deBonesby, S= stirfry
     public specialAttacks specialScript;
+    public bool specialing = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -78,12 +79,17 @@ public class AnimtorController : MonoBehaviour
             attackbuffered = false;
             startAttack();
         }
+        if (specialing)
+        {
+            attackbuffered = false;
+        }
         if(controls.SpecialAttackStartState && !attacking)
         {
             
             if(specialScript!= null)
             {
                 attacking = true;
+                specialing = true;
                 Debug.Log("attacking = true");
                 if(CharacterID == "D")
                 {
@@ -142,6 +148,7 @@ public class AnimtorController : MonoBehaviour
         }
 
         anim.SetBool("attacking", attacking);
+        anim.SetBool("specialing", specialing);
         anim.SetBool("moving", moving);
         anim.SetInteger("attackCount", attackCount);
         anim.SetBool("grounded", moveScript.onBase);
@@ -230,6 +237,10 @@ public class AnimtorController : MonoBehaviour
         //Debug.Log("piss");
         moveScript.canMove = true;
         attacking = false;
+    }
+    void endSpecial()
+    {
+        specialing = false;
     }
     private void ResetAttackCount()
     {

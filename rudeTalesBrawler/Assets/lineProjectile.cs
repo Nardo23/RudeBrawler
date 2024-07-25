@@ -50,6 +50,7 @@ public class lineProjectile : MonoBehaviour
             {
                 if (collision.tag == "EnemyHurt")
                 {
+                    Debug.Log("fireball hit");
                     hit();
                 }
             }

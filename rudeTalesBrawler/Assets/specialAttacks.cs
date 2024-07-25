@@ -7,6 +7,7 @@ public class specialAttacks : MonoBehaviour
     public PlayerInput input;
     Controls controls = new Controls();
     public CharacterMovement moveScript;
+    public GameObject characterSprite;
     AnimtorController animScript;
     Animator anim;
     float cooldown = .26f;
@@ -46,8 +47,12 @@ public class specialAttacks : MonoBehaviour
         {
 
             Fireball();
-            if(animScript.attacking ==false)
+            if(animScript.attacking == false)
+            {
+                Fireball();
                 lightning();
+            }
+                
         }
 
     }
@@ -67,13 +72,14 @@ public class specialAttacks : MonoBehaviour
     public float sideThreshold = .1f;
     public void Fireball()
     {
-        if(controls.SpecialAttackStartState && Mathf.Abs(controls.HorizontalMove) <= sideThreshold)
+        if(controls.SpecialAttackStartState && Mathf.Abs(controls.HorizontalMove) <= sideThreshold && !animScript.specialing)
         {
             Debug.Log("fireball A");
             chargeSprite.SetActive(true);
             wasCharging = true;
             moveScript.canMove = false;
             anim.SetTrigger("special");
+            anim.SetFloat("specialNum", 0);
         }
         if (controls.SpecialAttackState && Mathf.Abs(controls.HorizontalMove) <= sideThreshold)
         {
@@ -96,7 +102,7 @@ public class specialAttacks : MonoBehaviour
             }
 
         }
-        else if (!controls.SpecialAttackState)
+        else if (!controls.SpecialAttackState && animScript.specialing)
         {
             
             if (wasCharging)
@@ -106,14 +112,18 @@ public class specialAttacks : MonoBehaviour
                 //fire;
                 anim.SetTrigger("special");
                 GameObject ball = Instantiate(projectile, transform.position, Quaternion.identity);
-                ball.transform.localScale = ball.transform.localScale * size;
+                ball.transform.GetChild(0).transform.localScale = ball.transform.localScale * size;
+                ball.transform.GetChild(1).transform.localScale = ball.transform.localScale * size;
+                //ball.transform.localScale = ball.transform.localScale * size;
+                ball.transform.GetChild(0).transform.position = new Vector3(transform.position.x+1f, characterSprite.transform.position.y + 2f, 0);
+                ball.transform.GetChild(1).transform.position = new Vector3(transform.position.x + 1f, ball.transform.position.y, 0);
                 if (!moveScript.facingRight)
                 {
                     ball.transform.Rotate(0, 180, 0);
                     speed = -speed;
                 }
                 lineProjectile linePro = ball.GetComponent<lineProjectile>();
-                hitboxDamage DamageScript = ball.GetComponent<hitboxDamage>();
+                hitboxDamage DamageScript = ball.GetComponentInChildren<hitboxDamage>();
                 DamageScript.damage = damage;
                 linePro.speed = speed;
                 linePro.lifeTime = lifetime;
@@ -160,7 +170,8 @@ public class specialAttacks : MonoBehaviour
             Debug.Log("lightning");
 
             moveScript.canMove = false;
-            anim.SetTrigger("sideSpecial");
+            anim.SetTrigger("special");
+            anim.SetFloat("specialNum", 1);
             GameObject lightn = null;
             if (controls.HorizontalMove > 0)
             {

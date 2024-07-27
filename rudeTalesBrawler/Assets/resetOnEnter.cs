@@ -21,6 +21,12 @@ public class resetOnEnter : StateMachineBehaviour
         {
             animator.ResetTrigger("special");
         }
+        if(Boolparam == "specialing")
+        {
+            animator.SetBool(Boolparam, false);
+            animScript = animator.transform.GetComponent<AnimtorController>();
+            animScript.specialing = false;
+        }
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

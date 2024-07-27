@@ -49,7 +49,7 @@ public class specialAttacks : MonoBehaviour
             Fireball();
             if(animScript.attacking == false)
             {
-                Fireball();
+                //Fireball();
                 lightning();
             }
                 
@@ -67,15 +67,16 @@ public class specialAttacks : MonoBehaviour
     float chargeTime;
     public Vector2 minBallSize, maxBallSize;
     bool wasCharging = false;
-    public GameObject projectile;
-    public GameObject chargeSprite;
+    public GameObject fireball1, fireball2;
+    GameObject spawnedFireball;
+    
     public float sideThreshold = .1f;
     public void Fireball()
     {
         if(controls.SpecialAttackStartState && Mathf.Abs(controls.HorizontalMove) <= sideThreshold && !animScript.specialing)
         {
             Debug.Log("fireball A");
-            chargeSprite.SetActive(true);
+            
             wasCharging = true;
             moveScript.canMove = false;
             anim.SetTrigger("special");
@@ -91,7 +92,10 @@ public class specialAttacks : MonoBehaviour
                 speed = Mathf.Lerp(minSpeed, maxSpeed, chargeTime / MaxChargeTime);
                 lifetime = Mathf.Lerp(minLifeTime, maxLifetime, chargeTime / MaxChargeTime);
                 size = Vector2.Lerp(minBallSize, maxBallSize, chargeTime / MaxChargeTime);
-                chargeSprite.transform.localScale = size * .5f;
+                if (chargeTime / MaxChargeTime >= .44f) //11/25 comes from the 11th frame of the 25 frame charge animation
+                {
+                    size = Vector2.Lerp(minBallSize, maxBallSize, (chargeTime-0.44f) / MaxChargeTime);
+                }
             }
             else
             {
@@ -111,7 +115,15 @@ public class specialAttacks : MonoBehaviour
                 wasCharging = false;
                 //fire;
                 anim.SetTrigger("special");
-                GameObject ball = Instantiate(projectile, transform.position, Quaternion.identity);
+                if (chargeTime/MaxChargeTime < 0.44f) //.44 =11/25 comes from the 11th frame of the 25 frame charge animation
+                {
+                    spawnedFireball = fireball1;
+                }
+                else
+                {
+                    spawnedFireball = fireball2;
+                }
+                GameObject ball = Instantiate(spawnedFireball, transform.position, Quaternion.identity);
                 ball.transform.GetChild(0).transform.localScale = ball.transform.localScale * size;
                 ball.transform.GetChild(1).transform.localScale = ball.transform.localScale * size;
                 //ball.transform.localScale = ball.transform.localScale * size;
@@ -129,7 +141,7 @@ public class specialAttacks : MonoBehaviour
                 linePro.lifeTime = lifetime;
 
                 //reset values to minimum
-                chargeSprite.SetActive(false);
+                
                 speed = minSpeed;
                 lifetime = minLifeTime;
                 damage = MinFireballDamage;

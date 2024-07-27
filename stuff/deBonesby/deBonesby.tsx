@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.10" tiledversion="1.10.1" name="deBonesby" tilewidth="1024" tileheight="1024" tilecount="101" columns="0">
+<tileset version="1.10" tiledversion="1.10.1" name="deBonesby" tilewidth="1024" tileheight="1024" tilecount="124" columns="0">
  <grid orientation="orthogonal" width="1" height="1"/>
  <tile id="0">
   <image width="1024" height="1024" source="walk/debonesby walk0000.png"/>
@@ -303,5 +303,74 @@
  </tile>
  <tile id="100">
   <image width="1024" height="1024" source="jump/debonesby jump0010.png"/>
+ </tile>
+ <tile id="101">
+  <image width="1024" height="1024" source="specials/fireballspecial0000.png"/>
+ </tile>
+ <tile id="102">
+  <image width="1024" height="1024" source="specials/fireballspecial0001.png"/>
+ </tile>
+ <tile id="103">
+  <image width="1024" height="1024" source="specials/fireballspecial0002.png"/>
+ </tile>
+ <tile id="104">
+  <image width="1024" height="1024" source="specials/fireballspecial0003.png"/>
+ </tile>
+ <tile id="105">
+  <image width="1024" height="1024" source="specials/fireballspecial0004.png"/>
+ </tile>
+ <tile id="106">
+  <image width="1024" height="1024" source="specials/fireballspecial0005.png"/>
+ </tile>
+ <tile id="107">
+  <image width="1024" height="1024" source="specials/fireballspecial0006.png"/>
+ </tile>
+ <tile id="108">
+  <image width="1024" height="1024" source="specials/fireballspecial0007.png"/>
+ </tile>
+ <tile id="109">
+  <image width="1024" height="1024" source="specials/fireballspecial0008.png"/>
+ </tile>
+ <tile id="110">
+  <image width="1024" height="1024" source="specials/fireballspecial0009.png"/>
+ </tile>
+ <tile id="111">
+  <image width="1024" height="1024" source="specials/fireballspecial0010.png"/>
+ </tile>
+ <tile id="112">
+  <image width="1024" height="1024" source="specials/fireballspecial0011.png"/>
+ </tile>
+ <tile id="113">
+  <image width="1024" height="1024" source="specials/fireballspecial0012.png"/>
+ </tile>
+ <tile id="114">
+  <image width="1024" height="1024" source="specials/fireballspecial0013.png"/>
+ </tile>
+ <tile id="115">
+  <image width="1024" height="1024" source="specials/fireballspecial0014.png"/>
+ </tile>
+ <tile id="116">
+  <image width="1024" height="1024" source="specials/fireballspecial0015.png"/>
+ </tile>
+ <tile id="117">
+  <image width="1024" height="1024" source="specials/fireballspecial0016.png"/>
+ </tile>
+ <tile id="118">
+  <image width="1024" height="1024" source="specials/fireballspecial0017.png"/>
+ </tile>
+ <tile id="119">
+  <image width="1024" height="1024" source="specials/fireballspecial0018.png"/>
+ </tile>
+ <tile id="120">
+  <image width="1024" height="1024" source="specials/fireballspecial0019.png"/>
+ </tile>
+ <tile id="121">
+  <image width="1024" height="1024" source="specials/fireballspecial0020.png"/>
+ </tile>
+ <tile id="122">
+  <image width="1024" height="1024" source="specials/fireballspecial0021.png"/>
+ </tile>
+ <tile id="123">
+  <image width="1024" height="1024" source="specials/fireballspecial0022.png"/>
  </tile>
 </tileset>

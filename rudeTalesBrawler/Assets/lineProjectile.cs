@@ -9,7 +9,7 @@ public class lineProjectile : MonoBehaviour
     public bool hitOnce;
     public bool isPlayer;
     float timer = 0;
-
+    public GameObject spawnOnHit;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +34,10 @@ public class lineProjectile : MonoBehaviour
 
     void hit() // projectile hits a target and dosnt keep going
     {
+        if(spawnOnHit!= null)
+        {
+            Instantiate(spawnOnHit, transform.position, Quaternion.identity);
+        }
         Destroy(this.gameObject);
     }
     void fizzle() //  projectile expires without hitting anything

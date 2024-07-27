@@ -54,7 +54,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 32a14d021bfb093458ba7bc40c0e7858, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 6
   m_Sprite: {fileID: -280042448, guid: 2709de7ca41238148aa7da520c323ff2, type: 3}
-  m_Color: {r: 1, g: 0.9039554, b: 0.6509804, a: 0.7647059}
+  m_Color: {r: 1, g: 0.9411765, b: 0.4862745, a: 0.38039216}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -340,7 +340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayer: 1
   damage: 10
-  yRange: 2
+  yRange: 1.2
   knockbackForce: 0.2
   hitStopDuration: 0
   checkFromParent: 0

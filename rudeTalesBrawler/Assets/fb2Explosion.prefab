@@ -135,7 +135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayer: 1
   damage: 25
-  yRange: 4
+  yRange: 2
   knockbackForce: 0.8
   hitStopDuration: 0
   checkFromParent: 1

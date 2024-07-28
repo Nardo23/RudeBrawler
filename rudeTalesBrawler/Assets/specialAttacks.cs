@@ -92,9 +92,11 @@ public class specialAttacks : MonoBehaviour
                 speed = Mathf.Lerp(minSpeed, maxSpeed, chargeTime / MaxChargeTime);
                 lifetime = Mathf.Lerp(minLifeTime, maxLifetime, chargeTime / MaxChargeTime);
                 size = Vector2.Lerp(minBallSize, maxBallSize, chargeTime / MaxChargeTime);
-                if (chargeTime / MaxChargeTime >= .44f) //11/25 comes from the 11th frame of the 25 frame charge animation
+                if (chargeTime / MaxChargeTime >= .48f) //11/25 comes from the 11th frame of the 25 frame charge animation
                 {
-                    size = Vector2.Lerp(minBallSize, maxBallSize, (chargeTime-0.44f) / MaxChargeTime);
+                    size = Vector2.Lerp(minBallSize, maxBallSize, (chargeTime-0.48f) / MaxChargeTime);
+                    size = new Vector3(size.y, size.y, 0);
+                    damage = damage / 2;
                 }
             }
             else
@@ -115,7 +117,7 @@ public class specialAttacks : MonoBehaviour
                 wasCharging = false;
                 //fire;
                 anim.SetTrigger("special");
-                if (chargeTime/MaxChargeTime < 0.44f) //.44 =11/25 comes from the 11th frame of the 25 frame charge animation
+                if (chargeTime/MaxChargeTime < 0.48f) //.44 =11/25 comes from the 11th frame of the 25 frame charge animation
                 {
                     spawnedFireball = fireball1;
                 }

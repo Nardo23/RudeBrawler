@@ -56,6 +56,10 @@ public class hitboxDamage : MonoBehaviour
                         {
                             h.changeHealth(-damage);
                         }
+                        if (hitOnce)
+                        {
+                            GetComponent<Collider2D>().enabled = false;
+                        }
                     }
                 }              
 

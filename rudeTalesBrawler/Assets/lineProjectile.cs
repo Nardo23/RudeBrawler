@@ -36,7 +36,11 @@ public class lineProjectile : MonoBehaviour
     {
         if(spawnOnHit!= null)
         {
-            Instantiate(spawnOnHit, transform.position, Quaternion.identity);
+            GameObject splode = Instantiate(spawnOnHit, transform.position, Quaternion.identity);
+            if(transform.rotation !=Quaternion.identity)
+            {
+                splode.transform.Rotate(0, 180, 0);
+            }
         }
         Destroy(this.gameObject);
     }

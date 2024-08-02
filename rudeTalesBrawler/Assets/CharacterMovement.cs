@@ -52,6 +52,7 @@ public class CharacterMovement : MonoBehaviour
     bool canCycleBoost = true;
     public float knockbackMultiplyer;
     public bool canStop = false;
+    public bool dragChangeEnabled = true;
     // 
     private Vector3 charDefaultRelPos, baseDefPos;
 
@@ -300,14 +301,18 @@ public class CharacterMovement : MonoBehaviour
                 // }
 
 
-
-
-                if (charRB.velocity.y < 0)
+                if (dragChangeEnabled)//controlled by animation functions on animtorController Script
                 {
-                    charRB.drag = 1 + baseRB.velocity.y / vSpeed * 3;
+                    if (charRB.velocity.y < 0)
+                    {
+                        charRB.drag = 1 + baseRB.velocity.y / vSpeed * 3;
+                    }
+                    else
+                        charRB.drag = 1 - baseRB.velocity.y / vSpeed * 3;
                 }
                 else
-                    charRB.drag = 1 - baseRB.velocity.y / vSpeed * 3;
+                    charRB.drag = 3;
+
 
                 charRB.velocity = new Vector2(_velocity.x, charRB.velocity.y);
 
@@ -324,12 +329,20 @@ public class CharacterMovement : MonoBehaviour
                 charRB.velocity = Vector2.zero;
                 charRB.AddForce(Vector2.up * jumpVal, ForceMode2D.Impulse);
                 charRB.gravityScale = jumpingGravityScale;
+                
                 charRB.drag = 1 - baseRB.velocity.y / vSpeed;
                 jump = false;
                 currentJumps++;
                 onBase = false;
             }
+            if(!onBase ) // for debonesby teleport
+            {
+                if (!dragChangeEnabled)                
+                    charRB.gravityScale = 0;
+                else
+                    charRB.gravityScale = jumpingGravityScale;
 
+            }
             // --- horizontal position check
             if (charRB.transform.localPosition != charDefaultRelPos)
             {
@@ -338,6 +351,7 @@ public class CharacterMovement : MonoBehaviour
                 charTransform.localPosition = new Vector2(charDefaultRelPos.x,
                     charTransform.localPosition.y);
             }
+            
         }
         // --- 
 

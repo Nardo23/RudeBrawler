@@ -7,6 +7,8 @@ public class specialAttacks : MonoBehaviour
     public PlayerInput input;
     Controls controls = new Controls();
     public CharacterMovement moveScript;
+    public Rigidbody2D charRb;
+    Rigidbody2D jumpingRB;
     public GameObject characterSprite;
     AnimtorController animScript;
     Animator anim;
@@ -17,6 +19,7 @@ public class specialAttacks : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        jumpingRB = characterSprite.GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         animScript = GetComponent<AnimtorController>();
     }
@@ -24,40 +27,28 @@ public class specialAttacks : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*
-           controls = input.GetInput();
-
-           if (!onCooldown)
-           {
-               Fireball();
-               if(controls.AttackState)
-                   StartCoroutine(punch());
-           }
-           else
-           {
-               if (coolTimer < cooldown)           
-                   coolTimer += Time.deltaTime;
-
-               else
-                   onCooldown = false;
-           }
-        */
+        
         controls = input.GetInput();
         if (animScript.CharacterID == "D")
         {
-
-            Fireball();
-            if(animScript.attacking == false)
+            if (moveScript.onBase)
             {
-                //Fireball();
-                lightning();
+                Fireball();
+                if (animScript.attacking == false)
+                {
+                    //Fireball();
+                    lightning();
+                }
+                canMisty = true;
             }
-                
+            else
+            {
+                MistyStep();
+            }
         }
-
     }
 
-
+    [Header("Fireball")]
     public float minSpeed, maxSpeed, minLifeTime, maxLifetime;
     public int MinFireballDamage, MaxFireballDamage;
     float speed, lifetime;
@@ -67,7 +58,7 @@ public class specialAttacks : MonoBehaviour
     float chargeTime;
     public Vector2 minBallSize, maxBallSize;
     bool wasCharging = false;
-    public GameObject fireball1, fireball2;
+    public GameObject fireball1, fireball2, fireball3;
     GameObject spawnedFireball;
     
     public float sideThreshold = .1f;
@@ -121,9 +112,13 @@ public class specialAttacks : MonoBehaviour
                 {
                     spawnedFireball = fireball1;
                 }
-                else
+                else if(chargeTime / MaxChargeTime < 0.88f)
                 {
                     spawnedFireball = fireball2;
+                }
+                else
+                {
+                    spawnedFireball = fireball3;
                 }
                 GameObject ball = Instantiate(spawnedFireball, transform.position, Quaternion.identity);
                 ball.transform.GetChild(0).transform.localScale = ball.transform.localScale * size;
@@ -174,7 +169,7 @@ public class specialAttacks : MonoBehaviour
         onCooldown = true;
         yield return null;
     }
-
+    [Header("lightning")]
     public GameObject lightningBolt;
     public float lightningXPos;
     public void lightning()
@@ -197,6 +192,65 @@ public class specialAttacks : MonoBehaviour
                 lightn.transform.Rotate(0, 180, 0);
             }
         }
+    }
+    [Header("MistyStep")]
+    public float TPforce;
+    public float TPtime;
+    public bool canMisty = true;
+    Vector2 TPdirection = Vector2.zero;
+    
+    float xmove = 0;
+    float ymove = 0;
+    public void MistyStep()
+    {
+        if (controls.SpecialAttackStartState && canMisty)// reset when character is grounded
+        {
+
+
+
+            if (controls.HorizontalMove > 0)
+                xmove = 1;
+            else if (controls.HorizontalMove < 0)
+                xmove = -1;
+            else
+                xmove = 0;
+            if (controls.VerticalMove > 0)
+                ymove = 1;
+            else if (controls.VerticalMove < 0)
+                ymove = -1;
+            else
+                ymove = 0;
+            canMisty = false;
+            Debug.Log("xmove; "+ xmove+ " ymove: "+ ymove+ " HORI: "+controls.HorizontalMove+ " VERT: "+controls.VerticalMove);
+            
+            moveScript.canMove = false;
+            animScript.disableAirDrag();
+            anim.SetTrigger("special");
+            anim.SetFloat("specialNum", 2);
+
+            TPdirection = new Vector2(xmove,ymove);
+            if (TPdirection == Vector2.zero)
+                TPdirection = new Vector2(0, 1);
+            TPdirection = TPdirection.normalized * TPforce;
+            jumpingRB.drag = 3;
+            charRb.velocity = Vector2.zero;
+            jumpingRB.velocity = Vector2.zero;
+            charRb.AddForce(new Vector2(TPdirection.x*1.2f, 0), ForceMode2D.Impulse);
+            
+            jumpingRB.AddForce(new Vector2(0, TPdirection.y*.5f ), ForceMode2D.Impulse);
+                
+            
+
+
+        }
+         
+    }
+
+    public void endMistyStep()
+    {
+        moveScript.canMove = true;
+        charRb.velocity = new Vector2(xmove*2f, controls.VerticalMove);
+        jumpingRB.velocity = new Vector2(0,ymove*4);
     }
 
 }

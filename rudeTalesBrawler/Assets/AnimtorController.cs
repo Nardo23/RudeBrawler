@@ -335,13 +335,15 @@ public class AnimtorController : MonoBehaviour
         levelManagerScript.updateLivingCount(1);
     }
 
-
-    private void OnAnimatorMove()
+    public void disableAirDrag()
     {
-        //deltaPosition = anim.deltaPosition/ Time.deltaTime*10;
-        //if(attacking)
-           // CharRb.velocity = deltaPosition;
+        moveScript.dragChangeEnabled = false;
     }
+    void enableAirDrag()
+    {
+        moveScript.dragChangeEnabled = true;
+    }
+    
     void animMove(float distance)
     {
         float i = 1;

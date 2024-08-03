@@ -153,6 +153,13 @@ public class AnimtorController : MonoBehaviour
         anim.SetInteger("attackCount", attackCount);
         anim.SetBool("grounded", moveScript.onBase);
         anim.SetFloat("jumpVel", jumpRb.velocity.y);
+        if (moveScript.landLag > 0)
+        {
+            anim.SetBool("landLag", true);
+        }
+        else
+            anim.SetBool("landLag", false);
+
 
         if (!moveScript.onBase && canDoublejump)
         {
@@ -339,7 +346,7 @@ public class AnimtorController : MonoBehaviour
     {
         moveScript.dragChangeEnabled = false;
     }
-    void enableAirDrag()
+    public void enableAirDrag()
     {
         moveScript.dragChangeEnabled = true;
     }

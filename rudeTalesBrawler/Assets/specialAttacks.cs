@@ -31,10 +31,10 @@ public class specialAttacks : MonoBehaviour
         controls = input.GetInput();
         if (animScript.CharacterID == "D")
         {
-            if (moveScript.onBase)
+            if (moveScript.onBase && moveScript.landLag <= 0)
             {
                 Fireball();
-                if (animScript.attacking == false)
+                if (animScript.attacking == false )
                 {
                     //Fireball();
                     lightning();
@@ -45,6 +45,8 @@ public class specialAttacks : MonoBehaviour
             {
                 MistyStep();
             }
+            if (animScript.hit)
+                animScript.enableAirDrag();
         }
     }
 
@@ -64,7 +66,7 @@ public class specialAttacks : MonoBehaviour
     public float sideThreshold = .1f;
     public void Fireball()
     {
-        if(controls.SpecialAttackStartState && Mathf.Abs(controls.HorizontalMove) <= sideThreshold && !animScript.specialing)
+        if(controls.SpecialAttackStartState && Mathf.Abs(controls.HorizontalMove) <= sideThreshold && !animScript.specialing )
         {
             Debug.Log("fireball A");
             
@@ -198,14 +200,16 @@ public class specialAttacks : MonoBehaviour
     public float TPtime;
     public bool canMisty = true;
     Vector2 TPdirection = Vector2.zero;
-    
+    public ParticleSystem mistyParticles;
+    public GameObject mistyCloud;
+    public float mistyLandLag;
     float xmove = 0;
     float ymove = 0;
     public void MistyStep()
     {
         if (controls.SpecialAttackStartState && canMisty)// reset when character is grounded
         {
-
+            animScript.specialing = true;
 
 
             if (controls.HorizontalMove > 0)
@@ -235,11 +239,11 @@ public class specialAttacks : MonoBehaviour
             jumpingRB.drag = 3;
             charRb.velocity = Vector2.zero;
             jumpingRB.velocity = Vector2.zero;
-            charRb.AddForce(new Vector2(TPdirection.x*1.2f, 0), ForceMode2D.Impulse);
+            charRb.AddForce(new Vector2(TPdirection.x*1.4f, 0), ForceMode2D.Impulse);
             
-            jumpingRB.AddForce(new Vector2(0, TPdirection.y*.5f ), ForceMode2D.Impulse);
-                
-            
+            jumpingRB.AddForce(new Vector2(0, TPdirection.y*.45f ), ForceMode2D.Impulse);
+
+            moveScript.landLag = mistyLandLag;
 
 
         }
@@ -251,6 +255,14 @@ public class specialAttacks : MonoBehaviour
         moveScript.canMove = true;
         charRb.velocity = new Vector2(xmove*2f, controls.VerticalMove);
         jumpingRB.velocity = new Vector2(0,ymove*4);
+        
+    }
+    void PLayMistyParticles()
+    {
+        GameObject cloud = null;
+        cloud = Instantiate(mistyCloud, transform.position, Quaternion.identity);
+        cloud.transform.GetChild(0).transform.position = new Vector3(characterSprite.transform.position.x+.5f, characterSprite.transform.position.y+1.5f, 0);
+        mistyParticles.Play();
     }
 
 }

@@ -53,11 +53,13 @@ public class CharacterMovement : MonoBehaviour
     public float knockbackMultiplyer;
     public bool canStop = false;
     public bool dragChangeEnabled = true;
+    bool lagRoutineRunning = false;
     // 
     private Vector3 charDefaultRelPos, baseDefPos;
 
     bool stoped = false;
-
+    public float landLag =0;
+    bool landing = false;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -179,6 +181,22 @@ public class CharacterMovement : MonoBehaviour
         curBoost = Vector2.zero;
         yield return null;
     }
+
+    IEnumerator landingLag()
+    {
+        float curTime = 0f;
+        lagRoutineRunning = true;
+        while (curTime < landLag)
+        {
+            landing = true;
+            curTime += Time.deltaTime;
+            yield return null;
+        }
+        landLag = 0;
+        landing = false;
+        lagRoutineRunning = false;
+        yield return null;
+    }
     public void boost()
     {
         if (canCycleBoost)
@@ -197,8 +215,8 @@ public class CharacterMovement : MonoBehaviour
             detectBase();
         }
 
-        
-        if (canMove)
+
+        if (canMove && !landing)
         {
 
             // rotate if we're facing the wrong way
@@ -243,8 +261,6 @@ public class CharacterMovement : MonoBehaviour
                     StartCoroutine(speedBoost());
 
                 }
-
-
             }
             else
             {
@@ -257,9 +273,7 @@ public class CharacterMovement : MonoBehaviour
 
             _velocity = Vector3.SmoothDamp(baseRB.velocity, targetVelocity, ref velocity, movementSmooth);
             baseRB.velocity = _velocity;
-            
-                
-           
+                                     
         }
         else
         {
@@ -319,11 +333,9 @@ public class CharacterMovement : MonoBehaviour
                 //baseCol.isTrigger=true;
                 this.gameObject.layer = 9; // layer nine is the jumping layer. this layer wont collide with jumpable layer
 
-
-
             }
 
-            if (jump && canMove)
+            if (jump && canMove &&!landing)
             {
                 charRB.isKinematic = false;
                 charRB.velocity = Vector2.zero;
@@ -402,7 +414,10 @@ public class CharacterMovement : MonoBehaviour
                     runParticlesL.Play();
                     jumpParticleR.Play();
                 }
-
+                if(landLag > 0 && !lagRoutineRunning)
+                {
+                    StartCoroutine(landingLag());
+                }
                 Debug.Log("setting velocity to zero");
             }
         }
@@ -414,6 +429,10 @@ public class CharacterMovement : MonoBehaviour
             charRB.isKinematic = true;
             currentJumps = 0;
             Debug.Log("AAARGGGRHRHRHR");
+            if (landLag > 0 && !lagRoutineRunning)
+            {
+                StartCoroutine(landingLag());
+            }
         }
     }
 

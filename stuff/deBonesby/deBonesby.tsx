@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.10" tiledversion="1.10.1" name="deBonesby" tilewidth="1024" tileheight="1024" tilecount="124" columns="0">
+<tileset version="1.10" tiledversion="1.10.1" name="deBonesby" tilewidth="1024" tileheight="1024" tilecount="143" columns="0">
  <grid orientation="orthogonal" width="1" height="1"/>
  <tile id="0">
   <image width="1024" height="1024" source="walk/debonesby walk0000.png"/>
@@ -372,5 +372,62 @@
  </tile>
  <tile id="123">
   <image width="1024" height="1024" source="specials/fireballspecial0022.png"/>
+ </tile>
+ <tile id="124">
+  <image width="1024" height="1024" source="jump/debonesby jump0011.png"/>
+ </tile>
+ <tile id="125">
+  <image width="1024" height="1024" source="jump/debonesby jump0012.png"/>
+ </tile>
+ <tile id="126">
+  <image width="1024" height="1024" source="jump/debonesby jump0013.png"/>
+ </tile>
+ <tile id="127">
+  <image width="1024" height="1024" source="jump/debonesby jump0014.png"/>
+ </tile>
+ <tile id="128">
+  <image width="1024" height="1024" source="specials/specialmoves0000.png"/>
+ </tile>
+ <tile id="129">
+  <image width="1024" height="1024" source="specials/specialmoves0001.png"/>
+ </tile>
+ <tile id="130">
+  <image width="1024" height="1024" source="specials/specialmoves0002.png"/>
+ </tile>
+ <tile id="131">
+  <image width="1024" height="1024" source="specials/specialmoves0003.png"/>
+ </tile>
+ <tile id="132">
+  <image width="1024" height="1024" source="specials/specialmoves0004.png"/>
+ </tile>
+ <tile id="133">
+  <image width="1024" height="1024" source="specials/specialmoves0005.png"/>
+ </tile>
+ <tile id="134">
+  <image width="1024" height="1024" source="specials/specialmoves0006.png"/>
+ </tile>
+ <tile id="135">
+  <image width="1024" height="1024" source="specials/specialmoves0007.png"/>
+ </tile>
+ <tile id="136">
+  <image width="1024" height="1024" source="specials/specialmoves0008.png"/>
+ </tile>
+ <tile id="137">
+  <image width="1024" height="1024" source="jump/debonesby jump0015.png"/>
+ </tile>
+ <tile id="138">
+  <image width="1024" height="1024" source="jump/debonesby jump0016.png"/>
+ </tile>
+ <tile id="139">
+  <image width="1024" height="1024" source="jump/debonesby jump0017.png"/>
+ </tile>
+ <tile id="140">
+  <image width="1024" height="1024" source="jump/debonesby jump0018.png"/>
+ </tile>
+ <tile id="141">
+  <image width="1024" height="1024" source="jump/debonesby jump0019.png"/>
+ </tile>
+ <tile id="142">
+  <image width="1024" height="1024" source="jump/debonesby jump0020.png"/>
  </tile>
 </tileset>

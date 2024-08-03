@@ -39,6 +39,7 @@ public class levelManager : MonoBehaviour
                 if (obj.GetComponentInChildren<AnimtorController>().alive && i < livingPlayersCount)
                 {
                     livingPlayers[i] = obj;
+                    Debug.Log("character: "+obj);
                     i++;
                 }
             }          

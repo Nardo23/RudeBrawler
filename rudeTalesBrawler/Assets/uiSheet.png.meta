@@ -45,7 +45,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -157,7 +157,7 @@ TextureImporter:
         width: 384
         height: 377
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -178,7 +178,7 @@ TextureImporter:
         width: 880
         height: 160
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 67, y: 49, z: 60, w: 45}
       outline: []
       physicsShape: []
@@ -199,7 +199,7 @@ TextureImporter:
         width: 940
         height: 188
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 68, y: 49, z: 71, w: 49}
       outline: []
       physicsShape: []
@@ -220,7 +220,7 @@ TextureImporter:
         width: 880
         height: 160
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 54, y: 25, z: 53, w: 31}
       outline: []
       physicsShape: []
@@ -228,6 +228,69 @@ TextureImporter:
       bones: []
       spriteID: 4574a59ab711a4e45a97bf591b506891
       internalID: -1570745425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uiSheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 674
+        width: 176
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c736d8bb481d33542b8423410dedbc3f
+      internalID: 686425090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uiSheet_7
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 673
+        width: 174
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d325413cc4bbaa438ac2d3a158aca3a
+      internalID: 1445175684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uiSheet_8
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 559
+        width: 124
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8af2354fb33acae419351cc4dffad75d
+      internalID: -1326402381
       vertices: []
       indices: 
       edges: []
@@ -247,6 +310,11 @@ TextureImporter:
       uiSheet_1: -2094921945
       uiSheet_2: 42842039
       uiSheet_3: -1570745425
+      uiSheet_4: 686425090
+      uiSheet_5: -1472617846
+      uiSheet_6: -1780260152
+      uiSheet_7: 1445175684
+      uiSheet_8: -1326402381
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

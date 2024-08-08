@@ -31,6 +31,10 @@ public class enemyAnimator : MonoBehaviour
     void InteractingEnd()
     {
         enemyScript.isInteracting = false;
+       if(!enemyScript.inRange)
+        {
+            anim.SetBool("Moving", true);
+        }
     }
     void stopMovement()
     {
@@ -78,6 +82,7 @@ public class enemyAnimator : MonoBehaviour
 
     void attack()
     {
+        
         timer += Time.deltaTime;
 
         if(timer> attackFrequency)
@@ -86,8 +91,12 @@ public class enemyAnimator : MonoBehaviour
             int attackNum = Random.Range(1, numberOfAttackAnims+1);
             //Debug.Log(attackNum);
             enemyScript.faceTarget();
-            anim.SetInteger("AttackCount", attackNum);
-            anim.SetTrigger("Attack");
+            if (!enemyScript.isInteracting)
+            {
+                anim.SetInteger("AttackCount", attackNum);
+                anim.SetTrigger("Attack");
+            }
+            
 
         }
 

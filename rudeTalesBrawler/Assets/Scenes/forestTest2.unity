@@ -5578,6 +5578,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GoblinHolder (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2476716743249219990, guid: 764ab0113f85ef04795bc753c352e73e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4102832258043109804, guid: 764ab0113f85ef04795bc753c352e73e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.52
@@ -15164,14 +15168,14 @@ RectTransform:
   m_GameObject: {fileID: 555082585}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.4416344, y: 2.4416342, z: 2.4416342}
+  m_LocalScale: {x: 3.79, y: 3.79, z: 3.79}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1162614319}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -67, y: 103}
+  m_AnchoredPosition: {x: -67, y: 146.6}
   m_SizeDelta: {x: 660.96, y: 109.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &555082587
@@ -15194,7 +15198,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1880100561, guid: 2ce6f6e39a113734da84c221e31e0aa1, type: 3}
+  m_Sprite: {fileID: -783624002, guid: 63d0f085f1cec0246bed956f6eeffe7b, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -40027,10 +40031,10 @@ MonoBehaviour:
   highHealth: {r: 0.53333336, g: 1, b: 0.5921569, a: 1}
   mediumHealth: {r: 1, g: 0.9498279, b: 0.49371064, a: 1}
   lowHealth: {r: 0.93710685, g: 0.37413412, b: 0.35657197, a: 1}
-  healthySpr: {fileID: 1880100561, guid: 2ce6f6e39a113734da84c221e31e0aa1, type: 3}
-  medSpr: {fileID: 1880100561, guid: 2ce6f6e39a113734da84c221e31e0aa1, type: 3}
-  lowSpr: {fileID: 1880100561, guid: 2ce6f6e39a113734da84c221e31e0aa1, type: 3}
-  deadSpr: {fileID: 1880100561, guid: 2ce6f6e39a113734da84c221e31e0aa1, type: 3}
+  healthySpr: {fileID: -783624002, guid: 63d0f085f1cec0246bed956f6eeffe7b, type: 3}
+  medSpr: {fileID: -415748034, guid: 63d0f085f1cec0246bed956f6eeffe7b, type: 3}
+  lowSpr: {fileID: -839501923, guid: 63d0f085f1cec0246bed956f6eeffe7b, type: 3}
+  deadSpr: {fileID: 618782085, guid: 63d0f085f1cec0246bed956f6eeffe7b, type: 3}
   icon: {fileID: 555082587}
 --- !u!1001 &1196273939
 PrefabInstance:

@@ -316,6 +316,90 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: player icons_9
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 859
+        width: 250
+        height: 471
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca7d9947bf7343147a5679238575016a
+      internalID: -783624002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player icons_11
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 856
+        width: 270
+        height: 475
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e2731406130277488b7c8f94dd8c15b
+      internalID: -415748034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player icons_12
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 835
+        width: 270
+        height: 488
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 572c23391449cd744b6ba51e965f8285
+      internalID: -839501923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: player icons_14
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 837
+        width: 358
+        height: 485
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce47b78730ffc3a4e90eb6acc01a418b
+      internalID: 618782085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -330,6 +414,10 @@ TextureImporter:
       player icons_0: -873431533
       player icons_1: 1937456086
       player icons_10: -258093788
+      player icons_11: -415748034
+      player icons_12: -839501923
+      player icons_13: -1021866960
+      player icons_14: 618782085
       player icons_2: 1392515247
       player icons_3: 1372074298
       player icons_4: 787372504

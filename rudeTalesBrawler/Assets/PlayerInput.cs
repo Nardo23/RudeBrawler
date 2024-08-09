@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
-    [SerializeField] private string HorizontalControls;
-    [SerializeField] private string VerticalControls;
+    [SerializeField] public string HorizontalControls;
+    [SerializeField] public string VerticalControls;
 
-    [SerializeField] private string JumpButton;
-    [SerializeField] private string AttackButton;
-    [SerializeField] private string SpecialButton;
+    [SerializeField] public string JumpButton;
+    [SerializeField] public string AttackButton;
+    [SerializeField] public string SpecialButton;
     //[SerializeField] private KeyCode test;
     Controls controls = new Controls();
 

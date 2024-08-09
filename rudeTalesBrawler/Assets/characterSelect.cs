@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class characterSelect : MonoBehaviour
 {
@@ -99,6 +100,7 @@ public class characterSelect : MonoBehaviour
             P1Icons[P1count].SetActive(true);
             P1Check.SetActive(true);
             anim1.SetBool("Selected", true);
+            
         }
         if (Input.GetButtonDown("Back"))
         {
@@ -106,6 +108,7 @@ public class characterSelect : MonoBehaviour
             P1Icons[P1count].SetActive(false);
             P1Check.SetActive(false);
             anim1.SetBool("Selected", false);
+            
         }
 
         if (Input.GetButtonDown("JumpP2"))
@@ -114,6 +117,7 @@ public class characterSelect : MonoBehaviour
             P2Icons[P2count].SetActive(true);
             P2Check.SetActive(true);
             anim2.SetBool("Selected", true);
+            
         }
         if (Input.GetButtonDown("AttackP2"))
         {
@@ -121,6 +125,7 @@ public class characterSelect : MonoBehaviour
             P2Icons[P2count].SetActive(false);
             P2Check.SetActive(false);
             anim2.SetBool("Selected", false);
+           
         }
 
         if (p1Selected || p2Selected)
@@ -130,6 +135,44 @@ public class characterSelect : MonoBehaviour
         else
             startButton.SetActive(false);
 
+        if (p1Selected)
+        {
+            if (Input.GetButtonDown("Start"))
+                StartGame();
+        }
+        if (p2Selected)
+        {
+            if (Input.GetButtonDown("StartP2"))
+                StartGame();
+        }
 
     }
+    public string setCharacter(int IconIndex)
+    {
+        if (IconIndex == 1)//Albee
+            return "A";
+        else if (IconIndex == 2)//Stirfry
+            return "S";
+        else if (IconIndex == 3)//Debonesby
+            return "D";
+        else
+        {
+            
+            return "";
+        }
+            
+    }
+    public void StartGame()
+    {
+        if (p1Selected)
+            MainManager.Instance.P1Char = setCharacter(P1count + 1);
+        else
+            MainManager.Instance.P1Char = setCharacter(99);
+        if(p2Selected)
+            MainManager.Instance.P2Char = setCharacter(P2count + 1);
+        else
+            MainManager.Instance.P2Char = setCharacter(99);
+        SceneManager.LoadScene("forestTest2");       
+    }
+
 }

@@ -10,18 +10,39 @@ public class PlayerHealth : MonoBehaviour
     public AnimtorController playerAnimScript;
 
     public Image healthbar;
+    public Image healthBarSmall, healthBarMed;
+    public string CharacterId;
     float BarMaxWidth;
     float barSpeed = 1;
     float curDamage;
     public Color highHealth, mediumHealth, lowHealth;
     public Sprite healthySpr, medSpr, lowSpr, deadSpr;
     public Image icon;
+    float barPixelsPerUnit = 1f;
+    public Vector3 pos, scale;
+    public float width, height;
     // Start is called before the first frame update
     void Start()
     {
+        
+        if (CharacterId == "A")
+        {
+            healthbar = healthBarMed;
+            healthBarSmall.gameObject.SetActive(false);
+            healthbar.gameObject.SetActive(true);
+        }
+        else if(CharacterId == "S"|| CharacterId == "D")
+        {
+            healthbar = healthBarSmall;
+            healthbar.gameObject.SetActive(true);
+            healthBarMed.gameObject.SetActive(false);
+        }
+        icon.rectTransform.anchoredPosition = pos;
+        icon.rectTransform.localScale = scale;
+        icon.rectTransform.sizeDelta = new Vector2(width, height);
         BarMaxWidth = healthbar.rectTransform.rect.width;
         currentHealth = maxHealth;
-        Debug.Log("barMAx"+BarMaxWidth);
+        Debug.Log("barMAx" + BarMaxWidth);
     }
 
    // (current/maxHealth)*maxWidth = x

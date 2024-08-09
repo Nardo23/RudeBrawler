@@ -18,7 +18,10 @@ public class Demo : MonoBehaviour
             
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
-
+        if (Input.GetKeyDown("="))
+        {
+            SceneManager.LoadScene("characterSelectTest");
+        }
        
     }
     

@@ -263,7 +263,7 @@ public class AnimtorController : MonoBehaviour
         attackCount++;
         
         anim.SetInteger("attackCount", attackCount);
-        
+        anim.ResetTrigger("special");
         attacking = true;
         if (attackCount > attackCountMax)
             attackCount = 1;

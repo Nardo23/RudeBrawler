@@ -169,6 +169,111 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: projectiles_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 905
+        width: 321
+        height: 51
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 325fc5b4d11d2be4db92a66aa41c110f
+      internalID: -1187894871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectiles_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 827
+        width: 243
+        height: 78
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c6f6ed6a83c73499bc300060622a5b
+      internalID: -1208248939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectiles_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 761
+        width: 270
+        height: 58
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e8900691d6a59e48b1fcdcb9f8f5ed7
+      internalID: -82072878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectiles_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 674
+        width: 222
+        height: 79
+      alignment: 9
+      pivot: {x: 0.9960788, y: 0.09449401}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d14f167c283c2948807a05f902a95c5
+      internalID: 878304135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: projectiles_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 634
+        width: 241
+        height: 41
+      alignment: 5
+      pivot: {x: 1, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 798029c6dfd2c0841a4ff65e3dbf2cf9
+      internalID: -606143200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -181,6 +286,11 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       projectiles_0: -2128046348
+      projectiles_1: -1187894871
+      projectiles_2: -1208248939
+      projectiles_3: -82072878
+      projectiles_4: 878304135
+      projectiles_5: -606143200
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -48,6 +48,20 @@ public class specialAttacks : MonoBehaviour
             if (animScript.hit)
                 animScript.enableAirDrag();
         }
+        if(animScript.CharacterID == "S")
+        {
+            if (moveScript.onBase && moveScript.landLag <= 0)
+            {
+                groundDagger();
+            }
+            else
+            {
+                
+                airDaggers();
+            }
+        }
+
+
     }
 
     [Header("Fireball")]
@@ -264,5 +278,48 @@ public class specialAttacks : MonoBehaviour
         cloud.transform.GetChild(0).transform.position = new Vector3(characterSprite.transform.position.x+.5f, characterSprite.transform.position.y+1.5f, 0);
         mistyParticles.Play();
     }
+    [Header("AirDaggers")]
+    public GameObject airDagger;
+    public Transform daggerSpawn;
+    void airDaggers()
+    {
+        if (controls.SpecialAttackStartState)
+        {
+            
+            GameObject dagger = Instantiate(airDagger, transform.position, Quaternion.identity);           
+            if (!moveScript.facingRight)         
+                dagger.transform.Rotate(0, 180, 0);
+            dagger.GetComponent<angleProjectile>().SetProjectile(daggerSpawn, charRb.transform, -30);
+            
+            dagger = Instantiate(airDagger, transform.position,Quaternion.identity);           
+            if (!moveScript.facingRight)
+                dagger.transform.Rotate(0, 180, 0);
+            dagger.GetComponent<angleProjectile>().SetProjectile(daggerSpawn, charRb.transform, -45);
+            
+            dagger = Instantiate(airDagger, transform.position, Quaternion.identity);            
+            if (!moveScript.facingRight)
+                dagger.transform.Rotate(0, 180, 0);
+            dagger.GetComponent<angleProjectile>().SetProjectile(daggerSpawn, charRb.transform, -70);
 
+            anim.SetTrigger("special");
+            anim.SetFloat("specialNum", 1);
+        }
+    }
+    [Header("GroundDaggers")]
+    public GameObject groundDag;
+    void groundDagger()
+    {
+        if (controls.SpecialAttackStartState && Mathf.Abs(controls.HorizontalMove) <= sideThreshold)
+        {
+            anim.SetTrigger("special");
+            anim.SetFloat("specialNum", 0);
+            GameObject dagger = Instantiate(groundDag, transform.position, Quaternion.identity);
+            if (!moveScript.facingRight)
+            {
+                dagger.transform.Rotate(0, 180, 0);
+                dagger.GetComponent<lineProjectile>().speed *= -1;
+            }
+                
+        }            
+    }
 }

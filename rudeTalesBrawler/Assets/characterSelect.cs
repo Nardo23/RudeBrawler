@@ -15,6 +15,7 @@ public class characterSelect : MonoBehaviour
     public GameObject startButton;
     [SerializeField] GameObject[] P1Icons, P2Icons;
     Animator anim1, anim2;
+   public bool hovering = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -102,6 +103,13 @@ public class characterSelect : MonoBehaviour
             anim1.SetBool("Selected", true);
             
         }
+        if (Input.GetButtonDown("Attack") && !hovering)
+        {
+            p1Selected = true;
+            P1Icons[P1count].SetActive(true);
+            P1Check.SetActive(true);
+            anim1.SetBool("Selected", true);
+        }
         if (Input.GetButtonDown("Back"))
         {
             p1Selected = false;
@@ -146,6 +154,14 @@ public class characterSelect : MonoBehaviour
                 StartGame();
         }
 
+    }
+    public  void hoveringOn()
+    {
+        hovering = true;
+    }
+    public void hoveringOff()
+    {
+        hovering = false;
     }
     public string setCharacter(int IconIndex)
     {

@@ -121,11 +121,11 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.0625
-    functionName: animMove
+  - time: 0.046875
+    functionName: animJumpingOn
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -60
+    floatParameter: 0
     intParameter: 0
     messageOptions: 0
   - time: 0.0625
@@ -135,137 +135,144 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 0.0625
+    functionName: animMove
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: -15
+    intParameter: 0
+    messageOptions: 0
   - time: 0.078125
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -60
+    floatParameter: -15
     intParameter: 0
     messageOptions: 0
   - time: 0.09375
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -60
+    floatParameter: -15
     intParameter: 0
     messageOptions: 0
   - time: 0.109375
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -60
+    floatParameter: -15
     intParameter: 0
     messageOptions: 0
   - time: 0.125
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -60
+    floatParameter: -15
     intParameter: 0
     messageOptions: 0
   - time: 0.140625
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -60
+    floatParameter: -15
     intParameter: 0
     messageOptions: 0
   - time: 0.15625
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -60
+    floatParameter: -15
     intParameter: 0
     messageOptions: 0
   - time: 0.171875
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -60
+    floatParameter: -15
     intParameter: 0
     messageOptions: 0
   - time: 0.1875
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -60
+    floatParameter: -15
     intParameter: 0
     messageOptions: 0
   - time: 0.203125
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -60
+    floatParameter: -15
     intParameter: 0
     messageOptions: 0
   - time: 0.21875
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -60
+    floatParameter: -15
     intParameter: 0
     messageOptions: 0
   - time: 0.234375
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -60
+    floatParameter: -15
     intParameter: 0
     messageOptions: 0
   - time: 0.25
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -60
+    floatParameter: -15
     intParameter: 0
     messageOptions: 0
   - time: 0.265625
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -60
+    floatParameter: -15
     intParameter: 0
     messageOptions: 0
   - time: 0.28125
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -60
+    floatParameter: -15
     intParameter: 0
     messageOptions: 0
   - time: 0.296875
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -60
+    floatParameter: -15
     intParameter: 0
     messageOptions: 0
   - time: 0.3125
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -60
+    floatParameter: -15
     intParameter: 0
     messageOptions: 0
   - time: 0.328125
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -60
+    floatParameter: -15
     intParameter: 0
     messageOptions: 0
   - time: 0.34375
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -60
+    floatParameter: -15
     intParameter: 0
     messageOptions: 0
   - time: 0.359375
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -60
+    floatParameter: -15
     intParameter: 0
     messageOptions: 0
   - time: 0.375
@@ -279,144 +286,151 @@ AnimationClip:
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -45
+    floatParameter: -11
     intParameter: 0
     messageOptions: 0
   - time: 0.453125
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -45
+    floatParameter: -11
     intParameter: 0
     messageOptions: 0
   - time: 0.46875
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -45
+    floatParameter: -11
     intParameter: 0
     messageOptions: 0
   - time: 0.484375
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -45
+    floatParameter: -11
     intParameter: 0
     messageOptions: 0
   - time: 0.5
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -45
+    floatParameter: -11
     intParameter: 0
     messageOptions: 0
   - time: 0.515625
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -45
+    floatParameter: -11
     intParameter: 0
     messageOptions: 0
   - time: 0.53125
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -45
+    floatParameter: -11
     intParameter: 0
     messageOptions: 0
   - time: 0.546875
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -45
+    floatParameter: -11
     intParameter: 0
     messageOptions: 0
   - time: 0.5625
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -45
+    floatParameter: -11
     intParameter: 0
     messageOptions: 0
   - time: 0.578125
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -45
+    floatParameter: -11
     intParameter: 0
     messageOptions: 0
   - time: 0.59375
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -45
+    floatParameter: -11
     intParameter: 0
     messageOptions: 0
   - time: 0.609375
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -45
+    floatParameter: -11
     intParameter: 0
     messageOptions: 0
   - time: 0.625
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -45
+    floatParameter: -11
     intParameter: 0
     messageOptions: 0
   - time: 0.640625
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -45
+    floatParameter: -11
     intParameter: 0
     messageOptions: 0
   - time: 0.65625
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -45
+    floatParameter: -11
     intParameter: 0
     messageOptions: 0
   - time: 0.671875
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -45
+    floatParameter: -11
     intParameter: 0
     messageOptions: 0
   - time: 0.6875
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -45
+    floatParameter: -11
     intParameter: 0
     messageOptions: 0
   - time: 0.703125
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -45
+    floatParameter: -11
     intParameter: 0
     messageOptions: 0
   - time: 0.71875
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -45
+    floatParameter: -11
     intParameter: 0
     messageOptions: 0
   - time: 0.734375
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -45
+    floatParameter: -11
     intParameter: 0
     messageOptions: 0
   - time: 0.75
-    functionName: animMove
+    functionName: animJumpingOff
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.796875
+    functionName: animJumpingOn
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
@@ -426,83 +440,90 @@ AnimationClip:
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -20
+    floatParameter: -5
     intParameter: 0
     messageOptions: 0
   - time: 0.828125
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -20
+    floatParameter: -5
     intParameter: 0
     messageOptions: 0
   - time: 0.84375
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -20
+    floatParameter: -5
     intParameter: 0
     messageOptions: 0
   - time: 0.859375
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -20
+    floatParameter: -5
     intParameter: 0
     messageOptions: 0
   - time: 0.875
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -20
+    floatParameter: -5
     intParameter: 0
     messageOptions: 0
   - time: 0.890625
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -20
+    floatParameter: -5
     intParameter: 0
     messageOptions: 0
   - time: 0.90625
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -20
+    floatParameter: -5
     intParameter: 0
     messageOptions: 0
   - time: 0.921875
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -20
+    floatParameter: -5
     intParameter: 0
     messageOptions: 0
   - time: 0.9375
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -20
+    floatParameter: -5
     intParameter: 0
     messageOptions: 0
   - time: 0.953125
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -20
+    floatParameter: -5
     intParameter: 0
     messageOptions: 0
   - time: 0.96875
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -20
+    floatParameter: -5
     intParameter: 0
     messageOptions: 0
   - time: 0.984375
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -20
+    floatParameter: -5
+    intParameter: 0
+    messageOptions: 0
+  - time: 1
+    functionName: animJumpingOff
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
     intParameter: 0
     messageOptions: 0

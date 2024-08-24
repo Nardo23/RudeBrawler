@@ -15,6 +15,7 @@ public class specialAttacks : MonoBehaviour
     float cooldown = .26f;
     bool onCooldown = false;
     float coolTimer;
+    public float sideThreshold = .1f;
 
     // Start is called before the first frame update
     void Start()
@@ -52,7 +53,10 @@ public class specialAttacks : MonoBehaviour
         {
             if (moveScript.onBase && moveScript.landLag <= 0)
             {
+                
                 groundDagger();
+                daffy();
+                    
             }
             else
             {
@@ -77,7 +81,7 @@ public class specialAttacks : MonoBehaviour
     public GameObject fireball1, fireball2, fireball3;
     GameObject spawnedFireball;
     
-    public float sideThreshold = .1f;
+   
     public void Fireball()
     {
         if(controls.SpecialAttackStartState && Mathf.Abs(controls.HorizontalMove) <= sideThreshold && !animScript.specialing )
@@ -302,7 +306,7 @@ public class specialAttacks : MonoBehaviour
             dagger.GetComponent<angleProjectile>().SetProjectile(daggerSpawn, charRb.transform, -70);
 
             anim.SetTrigger("special");
-            anim.SetFloat("specialNum", 1);
+            anim.SetFloat("specialNum", 2);
         }
     }
     [Header("GroundDaggers")]
@@ -313,13 +317,33 @@ public class specialAttacks : MonoBehaviour
         {
             anim.SetTrigger("special");
             anim.SetFloat("specialNum", 0);
-            GameObject dagger = Instantiate(groundDag, transform.position, Quaternion.identity);
-            if (!moveScript.facingRight)
-            {
-                dagger.transform.Rotate(0, 180, 0);
-                dagger.GetComponent<lineProjectile>().speed *= -1;
-            }
-                
+                            
         }            
+    }
+
+    void fireDagger()//called from the throw animation
+    {
+        GameObject dagger = Instantiate(groundDag, transform.position, Quaternion.identity);
+        if (!moveScript.facingRight)
+        {
+            dagger.transform.Rotate(0, 180, 0);
+            dagger.GetComponent<lineProjectile>().speed *= -1;
+        }
+    }
+    void animJumpingOn()
+    {
+        moveScript.jumpableAnim = true;
+    }
+    void animJumpingOff()
+    {
+        moveScript.jumpableAnim = false;
+    }
+    void daffy()
+    {
+        if (controls.SpecialAttackStartState && Mathf.Abs(controls.HorizontalMove) > sideThreshold)
+        {
+            anim.SetTrigger("special");
+            anim.SetFloat("specialNum", 1);
+        }
     }
 }

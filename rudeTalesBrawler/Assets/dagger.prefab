@@ -97,6 +97,7 @@ GameObject:
   - component: {fileID: 6892183347090119608}
   - component: {fileID: 4611077570738090829}
   - component: {fileID: 560122248066707411}
+  - component: {fileID: 5020750018511290088}
   m_Layer: 0
   m_Name: dagger
   m_TagString: Untagged
@@ -165,6 +166,9 @@ MonoBehaviour:
   hitOnce: 1
   isPlayer: 1
   spawnOnHit: {fileID: 0}
+  yRange: 0.7
+  checkFromParent: 0
+  checkObject: {fileID: 674570940375910710}
 --- !u!114 &4611077570738090829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,6 +205,27 @@ MonoBehaviour:
   Rends:
   - {fileID: 8841778314582436697}
   - {fileID: 137443160179168736}
+--- !u!95 &5020750018511290088
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674570940375910710}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 795c5db015c61c64c9d101048a95502c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1398616416158184276
 GameObject:
   m_ObjectHideFlags: 0
@@ -345,10 +370,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 1
-  damage: 12
+  damage: 9
   yRange: 0.7
-  knockbackForce: 0.2
-  hitStopDuration: 0.1
+  knockbackForce: 0.1
+  hitStopDuration: 0.25
   checkFromParent: 1
   checkObject: {fileID: 0}
   damageType: 0

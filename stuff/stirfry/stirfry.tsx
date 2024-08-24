@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.10" tiledversion="1.10.1" name="stirfry" tilewidth="1024" tileheight="1024" tilecount="106" columns="0">
+<tileset version="1.10" tiledversion="1.10.1" name="stirfry" tilewidth="1024" tileheight="1024" tilecount="126" columns="0">
  <grid orientation="orthogonal" width="1" height="1"/>
  <tile id="0">
   <image width="1024" height="1024" source="run+attack/stirfry0000.png"/>
@@ -318,5 +318,65 @@
  </tile>
  <tile id="105">
   <image width="1024" height="1024" source="hurt/stirfryhurt0026.png"/>
+ </tile>
+ <tile id="106">
+  <image width="1024" height="1024" source="jump/stirfry jump0032.png"/>
+ </tile>
+ <tile id="107">
+  <image width="1024" height="1024" source="jump/stirfry jump0033.png"/>
+ </tile>
+ <tile id="108">
+  <image width="1024" height="1024" source="jump/stirfry jump0034.png"/>
+ </tile>
+ <tile id="109">
+  <image width="1024" height="1024" source="jump/stirfry jump0035.png"/>
+ </tile>
+ <tile id="110">
+  <image width="1024" height="1024" source="jump/stirfry jump0036.png"/>
+ </tile>
+ <tile id="111">
+  <image width="1024" height="1024" source="run+attack/throw0000.png"/>
+ </tile>
+ <tile id="112">
+  <image width="1024" height="1024" source="run+attack/throw0001.png"/>
+ </tile>
+ <tile id="113">
+  <image width="1024" height="1024" source="run+attack/throw0002.png"/>
+ </tile>
+ <tile id="114">
+  <image width="1024" height="1024" source="run+attack/throw0003.png"/>
+ </tile>
+ <tile id="115">
+  <image width="1024" height="1024" source="sideSpecial/sideSpecial0000.png"/>
+ </tile>
+ <tile id="116">
+  <image width="1024" height="1024" source="sideSpecial/sideSpecial0001.png"/>
+ </tile>
+ <tile id="117">
+  <image width="1024" height="1024" source="sideSpecial/sideSpecial0002.png"/>
+ </tile>
+ <tile id="118">
+  <image width="1024" height="1024" source="sideSpecial/sideSpecial0003.png"/>
+ </tile>
+ <tile id="119">
+  <image width="1024" height="1024" source="sideSpecial/sideSpecial0004.png"/>
+ </tile>
+ <tile id="120">
+  <image width="1024" height="1024" source="sideSpecial/sideSpecial0005.png"/>
+ </tile>
+ <tile id="121">
+  <image width="1024" height="1024" source="sideSpecial/sideSpecial0006.png"/>
+ </tile>
+ <tile id="122">
+  <image width="1024" height="1024" source="sideSpecial/sideSpecial0007.png"/>
+ </tile>
+ <tile id="123">
+  <image width="1024" height="1024" source="sideSpecial/sideSpecial0008.png"/>
+ </tile>
+ <tile id="124">
+  <image width="1024" height="1024" source="sideSpecial/sideSpecial0009.png"/>
+ </tile>
+ <tile id="125">
+  <image width="1024" height="1024" source="sideSpecial/sideSpecial0010.png"/>
  </tile>
 </tileset>

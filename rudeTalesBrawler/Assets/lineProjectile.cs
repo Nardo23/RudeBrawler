@@ -10,6 +10,10 @@ public class lineProjectile : MonoBehaviour
     public bool isPlayer;
     float timer = 0;
     public GameObject spawnOnHit;
+    public float yRange;
+    public bool checkFromParent = true;
+    public GameObject checkObject;
+    Transform yCheckTransform;
     // Start is called before the first frame update
     void Start()
     {
@@ -58,8 +62,19 @@ public class lineProjectile : MonoBehaviour
             {
                 if (collision.tag == "EnemyHurt" )
                 {
-                    Debug.Log("fireball hit");
-                    hit();
+                    if (checkFromParent)
+                    {
+                        yCheckTransform = transform.parent.transform;
+                    }
+                    else
+                    {
+                        yCheckTransform = checkObject.transform;
+                    }
+                    if (Mathf.Abs(collision.transform.parent.transform.position.y - yCheckTransform.position.y) <= yRange)// check if bases are within a certain y range
+                    {
+                        hit();
+                    }
+                        
                 }
             }
             else

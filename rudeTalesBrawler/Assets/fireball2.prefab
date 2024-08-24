@@ -282,6 +282,9 @@ MonoBehaviour:
   hitOnce: 1
   isPlayer: 1
   spawnOnHit: {fileID: 7909259452860153370, guid: 67f8c515f49005c4bb4430b08cea5992, type: 3}
+  yRange: 1.2
+  checkFromParent: 1
+  checkObject: {fileID: 0}
 --- !u!61 &3269664723537427153
 BoxCollider2D:
   m_ObjectHideFlags: 0

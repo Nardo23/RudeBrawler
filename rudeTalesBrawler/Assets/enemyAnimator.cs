@@ -127,11 +127,6 @@ public class enemyAnimator : MonoBehaviour
         if (hit)
             knock = 0;
 
-        if (stopDuration > 0)
-        {
-            enemyScript.enableHitStop(stopDuration, anim, knock);
-        }
-         enemyScript.knockback(knock);
         
         
         enemyScript.closestTarget();
@@ -139,6 +134,12 @@ public class enemyAnimator : MonoBehaviour
         anim.SetTrigger("Hit");
         anim.SetFloat("hitType", damageType);
         Debug.Log("hit");
+        if (stopDuration > 0)
+        {
+            enemyScript.enableHitStop(stopDuration, anim, knock);
+        }
+        enemyScript.knockback(knock);
+
     }
 
     public void die()

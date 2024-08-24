@@ -54,6 +54,7 @@ public class CharacterMovement : MonoBehaviour
     public bool canStop = false;
     public bool dragChangeEnabled = true;
     bool lagRoutineRunning = false;
+    public bool jumpableAnim;
     // 
     private Vector3 charDefaultRelPos, baseDefPos;
 
@@ -163,7 +164,7 @@ public class CharacterMovement : MonoBehaviour
             
         }
 
-        //Debug.Log("KNOCKED "+ force * 1 * knockbackMultiplyer);
+        Debug.Log("KNOCKED "+ force * 1 * knockbackMultiplyer);
     }
 
     IEnumerator speedBoost()
@@ -272,15 +273,16 @@ public class CharacterMovement : MonoBehaviour
             Vector3 targetVelocity = new Vector2(piss.x * (hSpeed+Mathf.Abs(curBoost.x)), piss.y * (vSpeed+ Mathf.Abs(curBoost.y)));
 
             _velocity = Vector3.SmoothDamp(baseRB.velocity, targetVelocity, ref velocity, movementSmooth);
+            Debug.Log("Uhhhh");
             baseRB.velocity = _velocity;
                                      
         }
         else
         {
-            baseRB.velocity = Vector3.SmoothDamp(baseRB.velocity, Vector3.zero, ref velocity, .1f);
-            
+            Debug.Log("UhUhUhUh");
+            baseRB.velocity = Vector3.SmoothDamp(baseRB.velocity, Vector2.zero, ref velocity, .1f);
         }
-
+        
         //----- 
         if (doesCharacterJump)
         {
@@ -297,8 +299,10 @@ public class CharacterMovement : MonoBehaviour
                     charTransform.localPosition = new Vector2(charTransform.localPosition.x,
                         charDefaultRelPos.y);
                 }
-
-                this.gameObject.layer = 8; // set the layer back to jumpable when grounded
+                if(!jumpableAnim)
+                    this.gameObject.layer = 8; // set the layer back to jumpable when grounded
+                else
+                    this.gameObject.layer = 9; // set to jumping layer for stirfry sidespecial attack
                 charRB.drag = 3;
                 charRB.velocity = Vector2.zero;
             }

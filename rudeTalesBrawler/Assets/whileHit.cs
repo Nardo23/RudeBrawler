@@ -42,6 +42,7 @@ public class whileHit : StateMachineBehaviour
         PAnimScript = animator.transform.GetComponent<AnimtorController>();
         if (PAnimScript != null)
         {
+            Debug.Log("ploop");
             PAnimScript.hit = false;
         }
     }

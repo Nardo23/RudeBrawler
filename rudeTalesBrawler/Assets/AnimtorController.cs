@@ -89,12 +89,8 @@ public class AnimtorController : MonoBehaviour
             if(specialScript!= null)
             {
                 attacking = true;
-                specialing = true;
-                Debug.Log("attacking = true");
-                if(CharacterID == "D")
-                {
-                    //specialScript.Fireball();
-                }
+                specialing = true;                
+               
             }
         }
         
@@ -193,6 +189,7 @@ public class AnimtorController : MonoBehaviour
 
         if(attacking == false && hit ==false && alive)
         {
+            Debug.Log("canMove: " + moveScript.canMove);
             moveScript.canMove = true;
         }
 
@@ -279,7 +276,10 @@ public class AnimtorController : MonoBehaviour
    
     public void hurt(float xPos, float knock)
     {
-        moveScript.canMove = false;  // add endhit function to ends of hit animation to allow character to move again
+        
+        moveScript.canMove = false;
+        Debug.Log("canMove: " + moveScript.canMove);// add endhit function to ends of hit animation to allow character to move again
+        anim.SetBool("moving", false);
         if (xPos < transform.position.x)
         {
             if (moveScript.facingRight) //hit from behind
@@ -305,12 +305,12 @@ public class AnimtorController : MonoBehaviour
             }
             if (!hit)
             {
-
-            }
                 moveScript.knockback(knock, true);
+            }
+                
         }
-        
-        
+
+        hit = true;
         enemyXposFromHit = xPos;
     }
     public void die()

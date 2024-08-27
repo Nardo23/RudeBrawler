@@ -15249,10 +15249,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d90e0ca934fad4e42b73cdfd4ff44edc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HorizontalControls: HorizontalP2
-  VerticalControls: VerticalP2
-  JumpButton: JumpP2
-  AttackButton: AttackP2
+  HorizontalControls: Horizontal
+  VerticalControls: Vertical
+  JumpButton: Jump
+  AttackButton: Attack
   SpecialButton: Special
 --- !u!114 &5667455278604703140
 MonoBehaviour:
@@ -15296,6 +15296,7 @@ MonoBehaviour:
   knockbackMultiplyer: 25
   canStop: 0
   dragChangeEnabled: 1
+  jumpableAnim: 0
   landLag: 0
 --- !u!58 &6478806228713599323
 CircleCollider2D:

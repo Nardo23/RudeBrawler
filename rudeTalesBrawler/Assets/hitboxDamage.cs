@@ -39,14 +39,17 @@ public class hitboxDamage : MonoBehaviour
                     if (Mathf.Abs(u.transform.parent.transform.position.y- yCheckTransform.position.y) <= yRange)// check if bases are within a certain y range
                     {
                         
-                                         
-                        u.hurt(transform.position.x, knockbackForce, hitStopDuration, damageType);
+                        if(transform.parent!=null)                 
+                            u.hurt(transform.parent.position.x, knockbackForce, hitStopDuration, damageType);
+                        else
+                            u.hurt(transform.position.x, knockbackForce, hitStopDuration, damageType);
+
                         if (hitStopDuration > 0 && GetComponentInParent<CharacterMovement>()!=null)
                         {
                             GetComponentInParent<CharacterMovement>().enableHitStop(hitStopDuration);
                         }
                             
-                        GameObject particles = Instantiate(hitParticles, new Vector2(collision.transform.position.x, collision.transform.position.y + 1f), Quaternion.identity);
+                        GameObject particles = Instantiate(hitParticles, new Vector2(collision.transform.position.x, collision.transform.position.y + .5f), Quaternion.identity);
                         particles.transform.parent = collision.transform.parent;
 
 
@@ -80,6 +83,9 @@ public class hitboxDamage : MonoBehaviour
                     if (Mathf.Abs(q.transform.parent.transform.position.y - yCheckTransform.position.y) <= yRange)// check if bases are within a certain y range
                     {
                         q.hurt(transform.position.x);
+
+                        GameObject particles = Instantiate(hitParticles, new Vector2(collision.transform.position.x, collision.transform.position.y ), Quaternion.identity);
+                        particles.transform.parent = collision.transform.parent;
 
                         enemyHealth h = collision.gameObject.GetComponentInParent<enemyHealth>();
                         if (h != null)

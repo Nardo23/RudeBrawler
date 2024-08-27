@@ -10,6 +10,7 @@ public class levelManager : MonoBehaviour
     public checkpoint[] checkpoints;
     public GameObject[] allPlayers, deletetestPlayers;
     public GameObject[] livingPlayers;
+    public bool albeeIn, stirfryIn, debonesbyIn;
     public bool testMode;
     public Transform P1Spawn, P2Spawn;
     public GameObject Albee, Stirfry, Debonesby;
@@ -80,14 +81,17 @@ public class levelManager : MonoBehaviour
     {
         if(Id == "A")
         {
+            albeeIn = true;
             return (Instantiate(Albee, Vector3.zero, Quaternion.identity));
         }                
         else if(Id == "S")
         {
+            stirfryIn = true;
             return (Instantiate(Stirfry, Vector3.zero, Quaternion.identity));
         }          
         else if (Id == "D")
         {
+            debonesbyIn = true;
             return (Instantiate(Debonesby, Vector3.zero, Quaternion.identity));
         }          
         else

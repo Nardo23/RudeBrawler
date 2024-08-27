@@ -151,6 +151,37 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &1573948893252506959
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2596378758645900895}
+  m_Layer: 0
+  m_Name: DaggerSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2596378758645900895
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1573948893252506959}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.07, y: 1.11, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1202278126908531024}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3430105453985572924
 GameObject:
   m_ObjectHideFlags: 0
@@ -162,6 +193,7 @@ GameObject:
   - component: {fileID: 6018076549395446238}
   - component: {fileID: 8341732032494255642}
   - component: {fileID: 2821458766894060799}
+  - component: {fileID: 8617345644548700391}
   m_Layer: 0
   m_Name: stirfry
   m_TagString: Untagged
@@ -233,9 +265,50 @@ MonoBehaviour:
   resetRunOnTurn: 1
   canDoublejump: 1
   hit: 0
-  CharacterID: 
-  specialScript: {fileID: 0}
+  CharacterID: S
+  specialScript: {fileID: 8617345644548700391}
   specialing: 0
+--- !u!114 &8617345644548700391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3430105453985572924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95ea0bfa1ab856142b43ea8dd89a174f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  input: {fileID: 1282501217627905646}
+  moveScript: {fileID: 6421417012319765699}
+  charRb: {fileID: 7663414360178274946}
+  characterSprite: {fileID: 5820675142971253976}
+  sideThreshold: 0.1
+  minSpeed: 0
+  maxSpeed: 0
+  minLifeTime: 0
+  maxLifetime: 0
+  MinFireballDamage: 0
+  MaxFireballDamage: 0
+  MaxChargeTime: 0
+  minBallSize: {x: 0, y: 0}
+  maxBallSize: {x: 0, y: 0}
+  fireball1: {fileID: 0}
+  fireball2: {fileID: 0}
+  fireball3: {fileID: 0}
+  punchSquare: {fileID: 0}
+  lightningBolt: {fileID: 0}
+  lightningXPos: 0
+  TPforce: 0
+  TPtime: 0
+  canMisty: 1
+  mistyParticles: {fileID: 0}
+  mistyCloud: {fileID: 0}
+  mistyLandLag: 0
+  airDagger: {fileID: 4082111643207886809, guid: d23bb183d25a0c644b188b1b972ade7b, type: 3}
+  daggerSpawn: {fileID: 2596378758645900895}
+  groundDag: {fileID: 674570940375910710, guid: 5fdfc90a936f4804bb0bb7cd42d683d7, type: 3}
 --- !u!1 &4799305542759412337
 GameObject:
   m_ObjectHideFlags: 0
@@ -317,11 +390,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d90e0ca934fad4e42b73cdfd4ff44edc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HorizontalControls: HorizontalP2
-  VerticalControls: VerticalP2
-  JumpButton: JumpP2
-  AttackButton: AttackP2
-  SpecialButton: SpecialP2
+  HorizontalControls: Horizontal
+  VerticalControls: Vertical
+  JumpButton: Jump
+  AttackButton: Attack
+  SpecialButton: Special
 --- !u!114 &6421417012319765699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -339,7 +412,7 @@ MonoBehaviour:
   baseRB: {fileID: 7663414360178274946}
   hSpeed: 14
   vSpeed: 8
-  movementSmooth: 0.01
+  movementSmooth: 0.05
   charRB: {fileID: 5971654118769129634}
   jumpVal: 24
   possibleJumps: 2
@@ -364,6 +437,7 @@ MonoBehaviour:
   knockbackMultiplyer: 37
   canStop: 0
   dragChangeEnabled: 1
+  jumpableAnim: 0
   landLag: 0
 --- !u!58 &6208010152371812371
 CircleCollider2D:
@@ -5365,6 +5439,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2537014969765350144}
+  - {fileID: 2596378758645900895}
   m_Father: {fileID: 6018076549395446238}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5349496280531214013
@@ -10469,7 +10544,7 @@ Transform:
   m_GameObject: {fileID: 7152676268462269781}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.07, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

@@ -15121,6 +15121,7 @@ MonoBehaviour:
   knockbackMultiplyer: 32
   canStop: 0
   dragChangeEnabled: 1
+  jumpableAnim: 0
   landLag: 0
 --- !u!58 &1515674199449922222
 CircleCollider2D:
@@ -20452,6 +20453,7 @@ MonoBehaviour:
   moveScript: {fileID: 3022980798450986942}
   charRb: {fileID: 3834617183442006045}
   characterSprite: {fileID: 2791810180285206038}
+  sideThreshold: 0.1
   minSpeed: 16
   maxSpeed: 40
   minLifeTime: 0.5
@@ -20464,7 +20466,6 @@ MonoBehaviour:
   fireball1: {fileID: 3880874929693606227, guid: 4ca88c07658124d4aaba75b1110d8c71, type: 3}
   fireball2: {fileID: 6267304275675151210, guid: bbb648b7f7d511a4bb727ac8d0542fe0, type: 3}
   fireball3: {fileID: 8079605107558165698, guid: 6898485aa95ce1047b8c481b3edf4b81, type: 3}
-  sideThreshold: 0.1
   punchSquare: {fileID: 8842729405029327375}
   lightningBolt: {fileID: 5706050430895175988, guid: 1b987b24976a90c4d9f47b50e007afaf, type: 3}
   lightningXPos: 6.8
@@ -20474,6 +20475,9 @@ MonoBehaviour:
   mistyParticles: {fileID: 5846209409339746102}
   mistyCloud: {fileID: 2438723181012732872, guid: 7c32d854b5a5d91499764db7bfe2e6a0, type: 3}
   mistyLandLag: 0.3
+  airDagger: {fileID: 0}
+  daggerSpawn: {fileID: 0}
+  groundDag: {fileID: 0}
 --- !u!95 &6209320036690704086
 Animator:
   serializedVersion: 5

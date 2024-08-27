@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1957038491, guid: 8d7f320eb421fe64893e16d9e8cc45b2, type: 3}
+  m_Sprite: {fileID: -347399253, guid: 47325a7380f7d8043977ad72155b5dc3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -122,8 +122,8 @@ BoxCollider2D:
   m_Offset: {x: 0.008548379, y: 0.8890228}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.4968572, y: 0.034543023}
-    oldSize: {x: 2.72, y: 1.91}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 2.34, y: 2.28}
     newSize: {x: 3.04, y: 1.6}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -157,4 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9db7d5ceb2e1bca46b685f0dafea2ef3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  albeeFood: {fileID: -347399253, guid: 47325a7380f7d8043977ad72155b5dc3, type: 3}
+  stirfryFood: {fileID: -1801035754, guid: 47325a7380f7d8043977ad72155b5dc3, type: 3}
+  bonesbyFood: {fileID: 1627323611, guid: 47325a7380f7d8043977ad72155b5dc3, type: 3}
   health: 40

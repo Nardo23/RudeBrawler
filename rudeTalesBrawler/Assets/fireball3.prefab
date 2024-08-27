@@ -160,8 +160,8 @@ MonoBehaviour:
   isPlayer: 1
   spawnOnHit: {fileID: 5780680735516923874, guid: 61006ef26d1702240bd8b9654060f312, type: 3}
   yRange: 1.4
-  checkFromParent: 1
-  checkObject: {fileID: 0}
+  checkFromParent: 0
+  checkObject: {fileID: 8565880988385703095}
 --- !u!61 &2139667516473708638
 BoxCollider2D:
   m_ObjectHideFlags: 0

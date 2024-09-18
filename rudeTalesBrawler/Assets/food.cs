@@ -7,6 +7,7 @@ public class food : MonoBehaviour
     levelManager levelManagerScript;
     public Sprite albeeFood, stirfryFood, bonesbyFood;
     public Sprite[] foodSprites;
+    public GameObject healParticles;
     private void Start()
     {
        levelManagerScript = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<levelManager>();
@@ -37,7 +38,8 @@ public class food : MonoBehaviour
         int r = Random.Range(0, foodSprites.Length);
         if (foodSprites[r] == null)
             randomFood();
-        GetComponent<SpriteRenderer>().sprite = foodSprites[r];
+        GetComponentInChildren<SpriteRenderer>().sprite = foodSprites[r];
+        
         
     }
 
@@ -50,6 +52,8 @@ public class food : MonoBehaviour
             PlayerHealth p = collision.gameObject.GetComponentInParent<PlayerHealth>();
             if (p != null)
             {
+                GameObject ob = Instantiate(healParticles, collision.transform.position, Quaternion.identity);
+                ob.transform.parent = collision.transform;
                 p.changeHealth(health);
                 Destroy(this.gameObject);
             }

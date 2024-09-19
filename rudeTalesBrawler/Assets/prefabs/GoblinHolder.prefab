@@ -65,6 +65,13 @@ MonoBehaviour:
   facingRight: 0
   players: []
   knockbackMultiplyer: 30
+  isBearOwl: 0
+  SpecialTime: 10
+  doingSpecial: 0
+  StartSpecial: 0
+  SpecialMoving: 0
+  arrived: 0
+  bearFlySpeed: 10
 --- !u!195 &7403413832914012637
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -523,6 +530,7 @@ MonoBehaviour:
   numberOfAttackAnims: 2
   deltaPosition: {x: 0, y: 0, z: 0}
   Dropable: {fileID: 0}
+  hit: 0
 --- !u!1 &7482577959944673738
 GameObject:
   m_ObjectHideFlags: 0
@@ -731,8 +739,10 @@ MonoBehaviour:
   damage: 0
   yRange: 0
   knockbackForce: 0
+  hitStopDuration: 0
   checkFromParent: 1
   checkObject: {fileID: 0}
+  damageType: 0
   hitOnce: 0
   hitParticles: {fileID: 0}
 --- !u!114 &3039389433121913155

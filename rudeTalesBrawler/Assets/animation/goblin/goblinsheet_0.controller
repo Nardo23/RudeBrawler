@@ -327,7 +327,7 @@ AnimatorStateMachine:
     m_Position: {x: 50, y: -400, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -4721269907433135230}
-    m_Position: {x: 590, y: -370, z: 0}
+    m_Position: {x: 680, y: -350, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6282077284537218916}
     m_Position: {x: 70, y: -30, z: 0}
@@ -342,7 +342,7 @@ AnimatorStateMachine:
     m_Position: {x: 390.45557, y: -620.4444, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7444989498402549709}
-    m_Position: {x: 620, y: -450, z: 0}
+    m_Position: {x: 590, y: -480, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: -2484924064198064655}
@@ -426,49 +426,55 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: Grounded
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: AttackCount
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: Hit
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: Knockdown
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: Attack
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: Die
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: hitType
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
+  - m_Name: Specialing
+    m_Type: 9
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer

@@ -73,11 +73,38 @@ public class enemyAnimator : MonoBehaviour
             anim.SetBool("Moving", false);
         }
 
-
-        if (enemyScript.inRange)
+        if (enemyScript.doingSpecial)
+        {
+            anim.SetTrigger("Specialing");
+            Debug.Log("EnemySpecialStart");
+        }
+        if (enemyScript.arrived)
+        {
+            anim.SetTrigger("Specialing");
+            enemyScript.arrived = false;
+        }
+        else if (enemyScript.inRange)
         {
             attack();
         }
+
+
+
+    }
+    void endSpecial()
+    {
+        enemyScript.doingSpecial = false;
+        enemyScript.SpecialMoving = false;
+        enemyScript.forceEnd = false;
+
+    }
+    void forceEndSpecial()
+    {
+        enemyScript.forceEnd = true;
+    }
+    void startSpecialMoving()
+    {
+        enemyScript.SpecialMoving = true;
     }
 
     void attack()

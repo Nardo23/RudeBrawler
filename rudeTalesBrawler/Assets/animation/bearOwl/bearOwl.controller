@@ -61,6 +61,7 @@ AnimatorState:
   - {fileID: -3673657167937606110}
   m_StateMachineBehaviours:
   - {fileID: -784631177631730428}
+  - {fileID: -5362285007773538316}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -89,6 +90,7 @@ AnimatorState:
   - {fileID: -8799115677365512952}
   m_StateMachineBehaviours:
   - {fileID: -5058766592565125095}
+  - {fileID: 4836979272137463682}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -148,6 +150,19 @@ AnimatorStateMachine:
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 1535831294421869892}
+--- !u!114 &-5362285007773538316
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85c8659942f5daa458cf982cf08985e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bonusArmor: 1
 --- !u!114 &-5058766592565125095
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -161,9 +176,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 20
-  yRange: 0.8
+  yRange: 0.82
   knockbackForce: 0.7
   hitStopDuration: 0.2
+  attackStrength: 0
   damageType: 0
 --- !u!1102 &-3895667868571529643
 AnimatorState:
@@ -279,6 +295,7 @@ MonoBehaviour:
   yRange: 2
   knockbackForce: 2
   hitStopDuration: 0.2
+  attackStrength: 0
   damageType: 0
 --- !u!91 &9100000
 AnimatorController:
@@ -462,6 +479,19 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
+--- !u!114 &4836979272137463682
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85c8659942f5daa458cf982cf08985e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bonusArmor: 1
 --- !u!1101 &5696344497687802056
 AnimatorStateTransition:
   m_ObjectHideFlags: 1

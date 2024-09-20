@@ -816,6 +816,7 @@ MonoBehaviour:
   yRange: 0.7
   knockbackForce: 0.4
   hitStopDuration: 0
+  attackStrength: 3
   damageType: 0
 --- !u!1101 &-2213857190444683310
 AnimatorStateTransition:
@@ -891,6 +892,7 @@ MonoBehaviour:
   yRange: 0.7
   knockbackForce: 0.3
   hitStopDuration: 0.1
+  attackStrength: 2
   damageType: 0
 --- !u!1101 &-1360619207854186012
 AnimatorStateTransition:
@@ -999,6 +1001,7 @@ MonoBehaviour:
   yRange: 0.8
   knockbackForce: 1.6
   hitStopDuration: 0.15
+  attackStrength: 4
   damageType: 0
 --- !u!1102 &-584626043671607962
 AnimatorState:
@@ -1417,6 +1420,7 @@ MonoBehaviour:
   yRange: 0.8
   knockbackForce: 1
   hitStopDuration: 0.1
+  attackStrength: 3
   damageType: 0
 --- !u!1102 &2668079798340260020
 AnimatorState:

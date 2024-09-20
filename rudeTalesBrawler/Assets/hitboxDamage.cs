@@ -13,6 +13,7 @@ public class hitboxDamage : MonoBehaviour
     public bool checkFromParent = true; //yrange check should occur from parent object ie the shadow position. only disable for projectiles
     public GameObject checkObject; // used if checkFromParen = false
     public int damageType; // 0 = phsical, 1 = electric determens what hurt animation to play
+    public int attackStrength = 3; // compare this to the the target's armor to determine if the character takes reduced damage or knockback
     Transform yCheckTransform;
     
     public bool hitOnce = false; // if true can only hurt one target
@@ -40,9 +41,9 @@ public class hitboxDamage : MonoBehaviour
                     {
                         
                         if(transform.parent!=null)                 
-                            u.hurt(transform.parent.position.x, knockbackForce, hitStopDuration, damageType);
+                            u.hurt(transform.parent.position.x, knockbackForce, hitStopDuration, damageType, attackStrength);
                         else
-                            u.hurt(transform.position.x, knockbackForce, hitStopDuration, damageType);
+                            u.hurt(transform.position.x, knockbackForce, hitStopDuration, damageType, attackStrength);
 
                         if (hitStopDuration > 0 && GetComponentInParent<CharacterMovement>()!=null)
                         {
@@ -53,7 +54,10 @@ public class hitboxDamage : MonoBehaviour
                         particles.transform.parent = collision.transform.parent;
 
 
-
+                        if(attackStrength - (u.Armor+u.bonusArmor) <= -3)
+                        {
+                            damage = damage /2;
+                        }
                         enemyHealth h = collision.gameObject.GetComponentInParent<enemyHealth>();
                         if (h != null)
                         {

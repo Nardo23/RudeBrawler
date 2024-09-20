@@ -8,6 +8,7 @@ public class attackData : StateMachineBehaviour
     public float yRange= .5f;
     public float knockbackForce = 1;
     public float hitStopDuration;
+    public int attackStrength;
     [Tooltip("0 = physical, 1 = electric")]
     public int damageType; 
     protected hitboxDamage dmgScript;
@@ -22,6 +23,7 @@ public class attackData : StateMachineBehaviour
             dmgScript.yRange = yRange;
             dmgScript.knockbackForce = knockbackForce;
             dmgScript.hitStopDuration = hitStopDuration;
+            dmgScript.attackStrength = attackStrength;
         }
         
         

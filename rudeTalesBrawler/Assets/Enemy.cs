@@ -128,7 +128,7 @@ public class Enemy : MonoBehaviour
             {
                 detectBase();
             }
-            if (isInteracting && agent.enabled && !SpecialMoving)
+            if (isInteracting && agent.enabled && !SpecialMoving && !liningUp)
             {
                 gameObject.GetComponent<NavMeshAgent>().isStopped = true;
                 charRB.velocity = Vector2.zero;
@@ -259,6 +259,7 @@ public class Enemy : MonoBehaviour
     public bool arrived = false;
     public float bearFlySpeed = 10f;
     public bool forceEnd=false;
+    bool liningUp = false;
     void bearOwlSpecial()
     {
         //Debug.Log("specialTimer: " + specialTimer);
@@ -276,32 +277,32 @@ public class Enemy : MonoBehaviour
         }
         if (StartSpecial)
         {
-            float xMod, yMod;
+            float xMod, yMod =0;
             if (BearTargetPos.x > transform.position.x)
                 xMod = +2;
             else
                 xMod = -2;
-            if (BearTargetPos.y > transform.position.y)
-                yMod = +1;
-            else
-                yMod = -1;
+            
             BearTargetPos = new Vector3(BearTargetPos.x + xMod, BearTargetPos.y + yMod, 0);
 
                 specialTimer = 0f;
             isInteracting = true;
             StartSpecial = false;
             BearStartPos = transform.position;
-            
+            liningUp = true;
             doingSpecial = true;  //turned off by animatorScript function when special animation ends
             //Debug.Log("EnemySpecialStart !!!!");
         }
-        if (doingSpecial && SpecialMoving)
+        if (doingSpecial )
         {
             //agent.enabled = false;
+            if (SpecialMoving) 
             {
+                agent.acceleration = 30;
+                liningUp = false;
                 //Vector3.MoveTowards(transform.position, BearTargetPos, (Vector3.Distance(transform.position, BearTargetPos) * .5f) * Time.deltaTime);
                 agent.SetDestination(BearTargetPos);
-                agent.speed = (Vector3.Distance(BearStartPos, BearTargetPos));
+                agent.speed = (Vector3.Distance(BearStartPos, BearTargetPos)+2);
                 if (forceEnd)
                     agent.speed = 0;
                 if (Vector3.Distance(transform.position, BearTargetPos) < 2)
@@ -309,7 +310,13 @@ public class Enemy : MonoBehaviour
                     arrived = true;
                 }
             }
-            agent.acceleration = 30;
+            else
+            {
+                Debug.Log("lining up");
+                agent.SetDestination(new Vector3 (transform.position.x, BearTargetPos.y,0));
+                agent.speed = 4;
+            }
+            
 
         }
         else
@@ -320,7 +327,7 @@ public class Enemy : MonoBehaviour
         
         void bearTargeting()
         {
-            if (Vector3.Distance(transform.position, target.position) > 13)
+            if (Vector3.Distance(transform.position, target.position) > 13 && Mathf.Abs(transform.position.y - target.position.y) <6)
             {
                 BearTargetPos = target.position;
                 StartSpecial = true;
@@ -337,14 +344,14 @@ public class Enemy : MonoBehaviour
                             {
                                 BearTargetPos = new Vector3((p.transform.position.x + p2.transform.position.x) * .5f, (p.transform.position.y + p2.transform.position.y) * .5f, 0);
 
-                                if (Vector3.Distance(transform.position, BearTargetPos) > 13)
+                                if (Vector3.Distance(transform.position, BearTargetPos) > 13 && Mathf.Abs(transform.position.y - BearTargetPos.y) < 6)
                                     StartSpecial = true;
 
                                 foreach (GameObject p3 in levelManagerScript.livingPlayers)
                                 {
                                     if (p3 != p && p3 != p2)
                                     {
-                                        if (Vector3.Distance(p3.transform.position, BearTargetPos) < 5)
+                                        if (Vector3.Distance(p3.transform.position, BearTargetPos) < 5 && Mathf.Abs(transform.position.y - BearTargetPos.y) < 6)
                                         {
                                             BearTargetPos = new Vector3((p.transform.position.x + p2.transform.position.x + p3.transform.position.x) * .3333f, (p.transform.position.y + p2.transform.position.y + p3.transform.position.y) * .3333f, 0);
                                         }

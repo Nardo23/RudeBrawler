@@ -18,10 +18,14 @@ public class enemyAnimator : MonoBehaviour
     bool alive = true;
     public GameObject Dropable;
     public bool hit = false;
+    public int Armor;
+    public int bonusArmor;
+    ColoredFlash flashScript;
     void Awake()
     {
         anim = GetComponent<Animator>();
         timer = Random.Range(0, attackFrequency);
+        flashScript = GetComponent<ColoredFlash>();
     }
 
     void InteractingBegin()
@@ -140,7 +144,7 @@ public class enemyAnimator : MonoBehaviour
             Instantiate(Dropable, transform.position, Quaternion.identity);
         }
     }
-    public void hurt(float xPos, float knock, float stopDuration, float damageType)
+    public void hurt(float xPos, float knock, float stopDuration, float damageType, int strength)
     {
         
         if(xPos < transform.position.x)
@@ -154,12 +158,35 @@ public class enemyAnimator : MonoBehaviour
         if (hit)
             knock = 0;
 
-        
-        
+        if(strength> Armor) // full damage and knockback and hurt animation
+        {
+            anim.SetTrigger("Hit");
+            anim.SetFloat("hitType", damageType);
+        }
+        else// color flash instead of hurt animation
+        {
+            flashScript.Flash();
+        }
+        if (strength == (Armor+bonusArmor))// full damage knockback no animation;
+        {
+            
+        }
+        if (strength - (Armor + bonusArmor) == -1)//full damage half knockback no animation
+        {
+            knock = knock * .5f;
+        }
+        if(strength- (Armor + bonusArmor) == -2)//full damage no knockback no animation
+        {
+            knock = 0;
+        }
+        if(strength- (Armor + bonusArmor) <= -3) //half damage no animation no knockback
+        {
+            knock = 0;
+        }
+
         enemyScript.closestTarget();
         //anim.Play("hit");
-        anim.SetTrigger("Hit");
-        anim.SetFloat("hitType", damageType);
+        
         Debug.Log("hit");
         if (stopDuration > 0)
         {

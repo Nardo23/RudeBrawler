@@ -24,6 +24,7 @@ public class attackData : StateMachineBehaviour
             dmgScript.knockbackForce = knockbackForce;
             dmgScript.hitStopDuration = hitStopDuration;
             dmgScript.attackStrength = attackStrength;
+            dmgScript.damageType = damageType;
         }
         
         

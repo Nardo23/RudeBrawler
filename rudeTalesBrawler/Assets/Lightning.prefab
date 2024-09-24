@@ -430,6 +430,7 @@ MonoBehaviour:
   checkFromParent: 1
   checkObject: {fileID: 0}
   damageType: 1
+  attackStrength: 3
   hitOnce: 0
   hitParticles: {fileID: 6539284756768627142, guid: d3f98676eb13ad341a224f7e5eb149dc, type: 3}
 --- !u!61 &1819785726872349775

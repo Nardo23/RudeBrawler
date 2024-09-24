@@ -1000,7 +1000,7 @@ MonoBehaviour:
   damage: 18
   yRange: 0.8
   knockbackForce: 1.6
-  hitStopDuration: 0.15
+  hitStopDuration: 0.22
   attackStrength: 4
   damageType: 0
 --- !u!1102 &-584626043671607962

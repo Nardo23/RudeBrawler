@@ -50,7 +50,7 @@ public class hitboxDamage : MonoBehaviour
                             GetComponentInParent<CharacterMovement>().enableHitStop(hitStopDuration);
                         }
                             
-                        GameObject particles = Instantiate(hitParticles, new Vector2(collision.transform.position.x, collision.transform.position.y + .5f), Quaternion.identity);
+                        GameObject particles = Instantiate(hitParticles, new Vector2(collision.transform.position.x, collision.transform.position.y + u.hitParticleYPos), Quaternion.identity);
                         particles.transform.parent = collision.transform.parent;
 
 

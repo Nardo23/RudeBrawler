@@ -49,7 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b63b8e9db74d8944c9cf7ff3c167adf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDistance: 4.2
+  attackDistance: 4.5
   isInteracting: 0
   charRB: {fileID: 6125152611331252204}
   gravityScale: 130
@@ -83,7 +83,7 @@ NavMeshAgent:
   m_AgentTypeID: 0
   m_Radius: 0.3
   m_Speed: 5
-  m_Acceleration: 6
+  m_Acceleration: 10
   avoidancePriority: 99
   m_AngularSpeed: 120
   m_StoppingDistance: 0
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a82252e2d7c5a224c86d6fefa0431eb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 150
+  maxHealth: 200
   simpleEnemy: 0
   simpleEnemyAnimScript: {fileID: 0}
   enemyAnimScript: {fileID: 1061610350972648537}
@@ -265,6 +265,7 @@ GameObject:
   - component: {fileID: 599370342502858237}
   - component: {fileID: 1061610350972648537}
   - component: {fileID: 5830211364897270573}
+  - component: {fileID: 602809156425492607}
   m_Layer: 0
   m_Name: bearOwl
   m_TagString: Untagged
@@ -332,6 +333,8 @@ MonoBehaviour:
   Dropable: {fileID: 0}
   hit: 0
   Armor: 3
+  bonusArmor: 0
+  hitParticleYPos: 2
 --- !u!114 &5830211364897270573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -346,8 +349,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flashMaterial: {fileID: 2100000, guid: 32a14d021bfb093458ba7bc40c0e7858, type: 2}
   duration: 0.1
-  color: {r: 1, g: 0.5691823, b: 0.5691823, a: 1}
+  color: {r: 0.8867924, g: 0.3736938, b: 0.2760768, a: 1}
   spriteRenderer: {fileID: 5818849709553923146}
+--- !u!114 &602809156425492607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029897582341192040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0415d052227263645ac311bf4d88117e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dmgScript: {fileID: 6342833316908824384}
 --- !u!1 &3190390584741888115
 GameObject:
   m_ObjectHideFlags: 0

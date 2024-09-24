@@ -291,9 +291,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfd194c5ef691cb4e8e992f4619b7a18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
-  yRange: 2
-  knockbackForce: 2
+  damage: 15
+  yRange: 0.8
+  knockbackForce: 1
   hitStopDuration: 0.2
   attackStrength: 0
   damageType: 0

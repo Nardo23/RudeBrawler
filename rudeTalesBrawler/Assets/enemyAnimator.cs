@@ -20,6 +20,7 @@ public class enemyAnimator : MonoBehaviour
     public bool hit = false;
     public int Armor;
     public int bonusArmor;
+    public float hitParticleYPos=.5f;
     ColoredFlash flashScript;
     void Awake()
     {

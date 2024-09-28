@@ -287,7 +287,7 @@ public class specialAttacks : MonoBehaviour
     public Transform daggerSpawn;
     void airDaggers()
     {
-        if (controls.SpecialAttackStartState)
+        if (controls.SpecialAttackStartState && !animScript.specialing)
         {
             
             GameObject dagger = Instantiate(airDagger, transform.position, Quaternion.identity);           

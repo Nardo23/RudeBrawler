@@ -21,11 +21,17 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -975529178, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+      value: {fileID: 1189526360, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
     - time: 0.083333336
-      value: {fileID: 1712318207, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+      value: {fileID: -409264379, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
     - time: 0.16666667
-      value: {fileID: -1390286580, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+      value: {fileID: -57464954, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+    - time: 0.25
+      value: {fileID: -1346193314, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+    - time: 0.33333334
+      value: {fileID: -1535773533, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+    - time: 0.41666666
+      value: {fileID: 130640464, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
     attribute: m_Sprite
     path: BearOwl Sprite
     classID: 212
@@ -48,15 +54,18 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -975529178, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
-    - {fileID: 1712318207, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
-    - {fileID: -1390286580, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+    - {fileID: 1189526360, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+    - {fileID: -409264379, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+    - {fileID: -57464954, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+    - {fileID: -1346193314, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+    - {fileID: -1535773533, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+    - {fileID: 130640464, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.25
+    m_StopTime: 0.5
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -83,21 +92,21 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.25
+  - time: 0.33333334
     functionName: InteractingEnd
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.25
+  - time: 0.33333334
     functionName: endHit
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.25
+  - time: 0.33333334
     functionName: stopMovement
     data: 
     objectReferenceParameter: {fileID: 0}

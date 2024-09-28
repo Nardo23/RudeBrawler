@@ -27,7 +27,7 @@ public class Enemy : MonoBehaviour
     public float knockbackMultiplyer = 1;
     bool Stoped = false;
     public bool isBearOwl = false;
-    float specialTimer;
+    float specialTimer =5f;
     public float SpecialTime =10;
     public bool doingSpecial;
     float acceleration;
@@ -331,7 +331,7 @@ public class Enemy : MonoBehaviour
         
         void bearTargeting()
         {
-            if (Vector3.Distance(transform.position, target.position) > 13 && Mathf.Abs(transform.position.y - target.position.y) <5)
+            if (Vector3.Distance(transform.position, target.position) > 9 && Mathf.Abs(transform.position.y - target.position.y) <5)
             {
                 BearTargetPos = target.position;
                 StartSpecial = true;
@@ -344,7 +344,7 @@ public class Enemy : MonoBehaviour
                     {
                         if (p2 != p)
                         {
-                            if (Vector3.Distance(p.transform.position, p2.transform.position) < 8)
+                            if (Vector3.Distance(p.transform.position, p2.transform.position) < 7.5f)
                             {
                                 BearTargetPos = new Vector3((p.transform.position.x + p2.transform.position.x) * .5f, (p.transform.position.y + p2.transform.position.y) * .5f, 0);
 
@@ -370,7 +370,7 @@ public class Enemy : MonoBehaviour
                 {
                     foreach (GameObject p in levelManagerScript.livingPlayers)
                     {
-                        if (Vector3.Distance(transform.position, p.transform.position) > 15)
+                        if (Vector3.Distance(transform.position, p.transform.position) > 9)
                         {
                             BearTargetPos = p.transform.position;
                             StartSpecial = true;

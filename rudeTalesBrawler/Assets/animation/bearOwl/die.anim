@@ -13,42 +13,101 @@ AnimationClip:
   m_UseHighQualityCurve: 1
   m_RotationCurves: []
   m_CompressedRotationCurves: []
-  m_EulerCurves:
-  - curve:
+  m_EulerCurves: []
+  m_PositionCurves: []
+  m_ScaleCurves: []
+  m_FloatCurves:
+  - serializedVersion: 2
+    curve:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: {x: 0, y: 0, z: 0}
-        inSlope: {x: 0, y: 0, z: 91.15292}
-        outSlope: {x: 0, y: 0, z: 91.15292}
-        tangentMode: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
         weightedMode: 0
-        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
-        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.07244095}
+        inWeight: 0.33333334
+        outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.41666666
-        value: {x: 0, y: 0, z: -101.475}
-        inSlope: {x: 0, y: 0, z: -875.20264}
-        outSlope: {x: 0, y: 0, z: -875.20264}
-        tangentMode: 0
+        time: 1.8333334
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
         weightedMode: 0
-        inWeight: {x: 0.33333334, y: 0.33333334, z: 0.048818782}
-        outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 2.5833333
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: 
-  m_PositionCurves: []
-  m_ScaleCurves: []
-  m_FloatCurves: []
+    attribute: m_Color.a
+    path: BearOwl Sprite
+    classID: 212
+    script: {fileID: 0}
+    flags: 0
+  - serializedVersion: 2
+    curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_IsActive
+    path: Hurt Box (2)
+    classID: 1
+    script: {fileID: 0}
+    flags: 0
   m_PPtrCurves:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -1813031948, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+      value: {fileID: -194435434, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+    - time: 0.083333336
+      value: {fileID: 2138877466, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+    - time: 0.16666667
+      value: {fileID: -849954390, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+    - time: 0.25
+      value: {fileID: 2053490246, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+    - time: 0.33333334
+      value: {fileID: 123761228, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
     - time: 0.41666666
-      value: {fileID: -1813031948, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+      value: {fileID: 1522498519, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+    - time: 0.5
+      value: {fileID: 432489044, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+    - time: 0.5833333
+      value: {fileID: -1903753992, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+    - time: 0.6666667
+      value: {fileID: 204443171, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+    - time: 0.75
+      value: {fileID: -811384098, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+    - time: 0.8333333
+      value: {fileID: 869532918, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+    - time: 0.9166667
+      value: {fileID: -2086952353, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+    - time: 1
+      value: {fileID: -72470955, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+    - time: 1.0833334
+      value: {fileID: -1527561302, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
     attribute: m_Sprite
     path: BearOwl Sprite
     classID: 212
@@ -62,11 +121,20 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 0
-      attribute: 4
+      path: 1206959569
+      attribute: 304273561
       script: {fileID: 0}
-      typeID: 4
-      customType: 4
+      typeID: 212
+      customType: 0
+      isPPtrCurve: 0
+      isIntCurve: 0
+      isSerializeReferenceCurve: 0
+    - serializedVersion: 2
+      path: 3195034192
+      attribute: 2086281974
+      script: {fileID: 0}
+      typeID: 1
+      customType: 0
       isPPtrCurve: 0
       isIntCurve: 0
       isSerializeReferenceCurve: 0
@@ -80,14 +148,26 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -1813031948, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
-    - {fileID: -1813031948, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+    - {fileID: -194435434, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+    - {fileID: 2138877466, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+    - {fileID: -849954390, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+    - {fileID: 2053490246, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+    - {fileID: 123761228, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+    - {fileID: 1522498519, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+    - {fileID: 432489044, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+    - {fileID: -1903753992, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+    - {fileID: 204443171, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+    - {fileID: -811384098, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+    - {fileID: 869532918, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+    - {fileID: -2086952353, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+    - {fileID: -72470955, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
+    - {fileID: -1527561302, guid: 8739ed54bc5e0f44ebcb44073233ce3d, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.8333334
+    m_StopTime: 2.5833333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -109,7 +189,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -117,7 +197,16 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.41666666
+        time: 1.8333334
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 136
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 2.5833333
         value: 0
         inSlope: 0
         outSlope: 0
@@ -128,11 +217,11 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: localEulerAnglesRaw.x
-    path: 
-    classID: 4
+    attribute: m_Color.a
+    path: BearOwl Sprite
+    classID: 212
     script: {fileID: 0}
-    flags: 16
+    flags: 0
   - serializedVersion: 2
     curve:
       serializedVersion: 2
@@ -140,97 +229,22 @@ AnimationClip:
       - serializedVersion: 3
         time: 0
         value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
         weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
-      - serializedVersion: 3
-        time: 0.41666666
-        value: 0
-        inSlope: 0
-        outSlope: 0
-        tangentMode: 136
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.33333334
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: localEulerAnglesRaw.y
-    path: 
-    classID: 4
-    script: {fileID: 0}
-    flags: 16
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 0
-        inSlope: 91.15292
-        outSlope: 91.15292
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.33333334
-        outWeight: 0.07244095
-      - serializedVersion: 3
-        time: 0.41666666
-        value: -101.475
-        inSlope: -875.20264
-        outSlope: -875.20264
-        tangentMode: 0
-        weightedMode: 0
-        inWeight: 0.048818782
-        outWeight: 0.33333334
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: localEulerAnglesRaw.z
-    path: 
-    classID: 4
-    script: {fileID: 0}
-    flags: 16
-  m_EulerEditorCurves:
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: 
-    classID: 4
+    attribute: m_IsActive
+    path: Hurt Box (2)
+    classID: 1
     script: {fileID: 0}
     flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: 
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  - serializedVersion: 2
-    curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: 
-    classID: 4
-    script: {fileID: 0}
-    flags: 0
-  m_HasGenericRootTransform: 1
+  m_EulerEditorCurves: []
+  m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0
@@ -247,14 +261,14 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 1.3333334
+  - time: 1.8333334
     functionName: dropItem
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 1.8333334
+  - time: 2.5833333
     functionName: deleteEnemy
     data: 
     objectReferenceParameter: {fileID: 0}

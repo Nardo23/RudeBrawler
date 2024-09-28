@@ -21,6 +21,7 @@ public class hitState : StateMachineBehaviour
     {
         animator.SetBool("attacking", false);
         animator.SetBool("specialing", false);
+        animator.ResetTrigger("special");
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()

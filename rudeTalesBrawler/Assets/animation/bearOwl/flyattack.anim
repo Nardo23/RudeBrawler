@@ -146,7 +146,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 2.1666667
+        time: 2.25
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -753,7 +753,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 2.1666667
+        time: 2.25
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -992,7 +992,7 @@ AnimationClip:
     functionName: setYRange
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: 2
+    floatParameter: 2.3
     intParameter: 0
     messageOptions: 0
   - time: 1.9166666
@@ -1002,7 +1002,7 @@ AnimationClip:
     floatParameter: 2
     intParameter: 0
     messageOptions: 0
-  - time: 2
+  - time: 2.0833333
     functionName: forceEndSpecial
     data: 
     objectReferenceParameter: {fileID: 0}

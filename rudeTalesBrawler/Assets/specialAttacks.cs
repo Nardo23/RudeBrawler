@@ -81,9 +81,9 @@ public class specialAttacks : MonoBehaviour
     public GameObject fireball1, fireball2, fireball3;
     GameObject spawnedFireball;
     
-   
     public void Fireball()
     {
+        
         if(controls.SpecialAttackStartState && Mathf.Abs(controls.HorizontalMove) <= sideThreshold && !animScript.specialing )
         {
             Debug.Log("fireball A");
@@ -92,8 +92,9 @@ public class specialAttacks : MonoBehaviour
             moveScript.canMove = false;
             anim.SetTrigger("special");
             anim.SetFloat("specialNum", 0);
+            
         }
-        if (controls.SpecialAttackState && Mathf.Abs(controls.HorizontalMove) <= sideThreshold)
+        if (controls.SpecialAttackState && Mathf.Abs(controls.HorizontalMove) <= sideThreshold && anim.GetFloat("specialNum")==0 )
         {
             
             if (chargeTime < MaxChargeTime)
@@ -117,13 +118,14 @@ public class specialAttacks : MonoBehaviour
                 lifetime = maxLifetime;
                 size = maxBallSize;
             }
-
+            
         }
         else if (!controls.SpecialAttackState && animScript.specialing)
         {
             
             if (wasCharging)
             {
+                
                 Debug.Log("fireball B");
                 wasCharging = false;
                 //fire;
@@ -166,10 +168,9 @@ public class specialAttacks : MonoBehaviour
                 chargeTime = 0;
                 coolTimer = 0;
                 //onCooldown = true;
-                moveScript.canMove = true;
+                moveScript.canMove = true;                
             }
-        }
-
+        }       
     }
     public GameObject punchSquare;
     IEnumerator punch()

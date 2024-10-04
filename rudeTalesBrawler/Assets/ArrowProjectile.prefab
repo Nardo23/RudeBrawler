@@ -195,7 +195,7 @@ GameObject:
   - component: {fileID: 1761729418610764834}
   m_Layer: 0
   m_Name: arrow
-  m_TagString: Untagged
+  m_TagString: EnemyProjectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -332,5 +332,6 @@ MonoBehaviour:
   checkFromParent: 0
   checkObject: {fileID: 3083137803680588902}
   damageType: 0
+  attackStrength: 3
   hitOnce: 1
   hitParticles: {fileID: 0}

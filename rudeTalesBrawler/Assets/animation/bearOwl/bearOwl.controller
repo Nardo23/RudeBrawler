@@ -88,7 +88,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85c8659942f5daa458cf982cf08985e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bonusArmor: 1
+  bonusArmor: 2
 --- !u!1102 &-6952648513143385933
 AnimatorState:
   serializedVersion: 6

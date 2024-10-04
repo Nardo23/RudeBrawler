@@ -14,6 +14,7 @@ public class lineProjectile : MonoBehaviour
     public bool checkFromParent = true;
     public GameObject checkObject;
     Transform yCheckTransform;
+    public GameObject flyingObj;
     // Start is called before the first frame update
     void Start()
     {

@@ -64,7 +64,16 @@ public class specialAttacks : MonoBehaviour
                 airDaggers();
             }
         }
+        if (animScript.CharacterID == "A")
+        {
+            if(moveScript.onBase && moveScript.landLag <= 0)
+            {
 
+                groundDagger(); //Albee can use groundDagger function to player her neutral special animation
+                
+
+            }
+        }
 
     }
 
@@ -347,4 +356,8 @@ public class specialAttacks : MonoBehaviour
             anim.SetFloat("specialNum", 1);
         }
     }
+
+
+
+
 }

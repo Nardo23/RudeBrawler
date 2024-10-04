@@ -8,6 +8,7 @@ TagManager:
   - PlayerHurt
   - SimpleEnemyHurt
   - LevelManager
+  - EnemyProjectile
   layers:
   - Default
   - TransparentFX

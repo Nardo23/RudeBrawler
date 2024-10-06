@@ -126,6 +126,7 @@ public class enemyAnimator : MonoBehaviour
             if (!enemyScript.isInteracting)
             {
                 anim.SetInteger("AttackCount", attackNum);
+                anim.SetFloat("AttackCountF", attackNum);
                 anim.SetTrigger("Attack");
             }
             
@@ -207,6 +208,16 @@ public class enemyAnimator : MonoBehaviour
     void deleteEnemy()
     {
         Destroy(charRb.gameObject);
+    }
+
+    void animMove(float distance)
+    {
+        float i = 1;
+        if (charRb.gameObject.transform.rotation.y == 0)
+            i = -1;
+        //CharRb.velocity = Vector3.zero;
+        charRb.velocity = new Vector3(i * distance + 0, 0, 0);
+        //Debug.Log("distance: " + distance);
     }
 
     private void OnAnimatorMove()

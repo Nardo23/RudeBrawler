@@ -69,6 +69,7 @@ MonoBehaviour:
   yRange: 0.7
   knockbackForce: 1
   hitStopDuration: 0
+  attackStrength: 0
   damageType: 0
 --- !u!1102 &-6282077284537218916
 AnimatorState:
@@ -504,6 +505,7 @@ MonoBehaviour:
   yRange: 0.7
   knockbackForce: 1
   hitStopDuration: 0
+  attackStrength: 0
   damageType: 0
 --- !u!1101 &119904558232994251
 AnimatorStateTransition:

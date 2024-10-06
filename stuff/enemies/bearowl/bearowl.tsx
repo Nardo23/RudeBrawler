@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.10" tiledversion="1.10.1" name="bearowl" tilewidth="1024" tileheight="1024" tilecount="71" columns="0">
+<tileset version="1.10" tiledversion="1.10.1" name="bearowl" tilewidth="1024" tileheight="1024" tilecount="83" columns="0">
  <grid orientation="orthogonal" width="1" height="1"/>
  <tile id="0">
   <image width="1024" height="1024" source="walk/bearowl walk0000.png"/>
@@ -213,5 +213,41 @@
  </tile>
  <tile id="70">
   <image width="1024" height="1024" source="walk/bearowl death0014.png"/>
+ </tile>
+ <tile id="71">
+  <image width="1024" height="1024" source="attacks/bearowl attack0042.png"/>
+ </tile>
+ <tile id="72">
+  <image width="1024" height="1024" source="attacks/bearowl attack0043.png"/>
+ </tile>
+ <tile id="73">
+  <image width="1024" height="1024" source="attacks/bearowl attack0044.png"/>
+ </tile>
+ <tile id="74">
+  <image width="1024" height="1024" source="attacks/bearowl attack0045.png"/>
+ </tile>
+ <tile id="75">
+  <image width="1024" height="1024" source="attacks/bearowl attack0046.png"/>
+ </tile>
+ <tile id="76">
+  <image width="1024" height="1024" source="attacks/bearowl attack0047.png"/>
+ </tile>
+ <tile id="77">
+  <image width="1024" height="1024" source="attacks/bearowl attack0048.png"/>
+ </tile>
+ <tile id="78">
+  <image width="1024" height="1024" source="attacks/bearowl attack0049.png"/>
+ </tile>
+ <tile id="79">
+  <image width="1024" height="1024" source="attacks/bearowl attack0050.png"/>
+ </tile>
+ <tile id="80">
+  <image width="1024" height="1024" source="attacks/bearowl attack0051.png"/>
+ </tile>
+ <tile id="81">
+  <image width="1024" height="1024" source="attacks/bearowl attack0052.png"/>
+ </tile>
+ <tile id="82">
+  <image width="1024" height="1024" source="attacks/bearowl attack0053.png"/>
  </tile>
 </tileset>

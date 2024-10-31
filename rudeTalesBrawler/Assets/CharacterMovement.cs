@@ -81,10 +81,31 @@ public class CharacterMovement : MonoBehaviour
         {
             jump = true;
         }
-
+        jumpBufferTimer();
         //Debug.Log("jump " + jump);
     }
-
+    float jumpbTime = 0;
+    public float maxJumpBufferTime =.5f;
+    void jumpBufferTimer()
+    {
+        if(jump&& onBase)
+        {
+            
+            if(jumpbTime< maxJumpBufferTime)
+            {
+                jumpbTime += Time.deltaTime;
+            }
+            else
+            {
+                jump = false;
+                jumpbTime = 0f;
+            }
+        }
+        if (!onBase)
+        {
+            jumpbTime = 0;
+        }
+    }
     public void startjump()
     {
         if (currentJumps < possibleJumps)

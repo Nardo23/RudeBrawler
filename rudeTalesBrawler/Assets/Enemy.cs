@@ -283,9 +283,9 @@ public class Enemy : MonoBehaviour
         {
             float xMod, yMod =0;
             if (BearTargetPos.x > transform.position.x)
-                xMod = +3;
+                xMod = +5;
             else
-                xMod = -3;
+                xMod = -5;
             
             BearTargetPos = new Vector3(BearTargetPos.x + xMod, BearTargetPos.y + yMod, 0);
 

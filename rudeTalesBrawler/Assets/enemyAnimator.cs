@@ -72,6 +72,7 @@ public class enemyAnimator : MonoBehaviour
             {
                 anim.SetBool("Moving", false);
             }
+            
         }
         else
         {
@@ -91,6 +92,10 @@ public class enemyAnimator : MonoBehaviour
         else if (enemyScript.inRange)
         {
             attack();
+        }
+        else
+        {
+            timer = 99;
         }
 
 
@@ -126,7 +131,7 @@ public class enemyAnimator : MonoBehaviour
             if (!enemyScript.isInteracting)
             {
                 anim.SetInteger("AttackCount", attackNum);
-                anim.SetFloat("AttackCountF", attackNum);
+                
                 anim.SetTrigger("Attack");
             }
             

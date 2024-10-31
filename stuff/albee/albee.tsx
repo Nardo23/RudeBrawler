@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.10" tiledversion="1.10.1" name="albee" tilewidth="1200" tileheight="1200" tilecount="89" columns="0">
+<tileset version="1.10" tiledversion="1.10.1" name="albee" tilewidth="1200" tileheight="1200" tilecount="126" columns="0">
  <grid orientation="orthogonal" width="1" height="1"/>
  <tile id="0">
   <image width="1200" height="1200" source="run/albee run0000.png"/>
@@ -267,5 +267,116 @@
  </tile>
  <tile id="88">
   <image width="1200" height="1200" source="jump/albee jump0016.png"/>
+ </tile>
+ <tile id="89">
+  <image width="1200" height="1200" source="specials/specialwind0000.png"/>
+ </tile>
+ <tile id="90">
+  <image width="1200" height="1200" source="specials/specialwind0001.png"/>
+ </tile>
+ <tile id="91">
+  <image width="1200" height="1200" source="specials/specialwind0002.png"/>
+ </tile>
+ <tile id="92">
+  <image width="1200" height="1200" source="specials/specialwind0003.png"/>
+ </tile>
+ <tile id="93">
+  <image width="1200" height="1200" source="specials/specialwind0004.png"/>
+ </tile>
+ <tile id="94">
+  <image width="1200" height="1200" source="specials/specialwind0005.png"/>
+ </tile>
+ <tile id="95">
+  <image width="1200" height="1200" source="specials/specialwind0006.png"/>
+ </tile>
+ <tile id="96">
+  <image width="1200" height="1200" source="specials/specialwind0007.png"/>
+ </tile>
+ <tile id="97">
+  <image width="1200" height="1200" source="specials/specialwind0008.png"/>
+ </tile>
+ <tile id="98">
+  <image width="1200" height="1200" source="specials/specialwind0009.png"/>
+ </tile>
+ <tile id="99">
+  <image width="1200" height="1200" source="specials/specialwind0010.png"/>
+ </tile>
+ <tile id="100">
+  <image width="1200" height="1200" source="specials/specialwind0011.png"/>
+ </tile>
+ <tile id="101">
+  <image width="1200" height="1200" source="specials/specialwind0012.png"/>
+ </tile>
+ <tile id="102">
+  <image width="1200" height="1200" source="specials/specialwind0013.png"/>
+ </tile>
+ <tile id="103">
+  <image width="1200" height="1200" source="specials/specialwind0014.png"/>
+ </tile>
+ <tile id="104">
+  <image width="1200" height="1200" source="specials/specialwind0015.png"/>
+ </tile>
+ <tile id="105">
+  <image width="1200" height="1200" source="specials/specialwind0016.png"/>
+ </tile>
+ <tile id="106">
+  <image width="1200" height="1200" source="specials/specialwind0017.png"/>
+ </tile>
+ <tile id="107">
+  <image width="1200" height="1200" source="specials/albee earth0000.png"/>
+ </tile>
+ <tile id="108">
+  <image width="1200" height="1200" source="specials/albee earth0001.png"/>
+ </tile>
+ <tile id="109">
+  <image width="1200" height="1200" source="specials/albee earth0002.png"/>
+ </tile>
+ <tile id="110">
+  <image width="1200" height="1200" source="specials/albee earth0003.png"/>
+ </tile>
+ <tile id="111">
+  <image width="1200" height="1200" source="specials/albee earth0004.png"/>
+ </tile>
+ <tile id="112">
+  <image width="1200" height="1200" source="specials/albee earth0005.png"/>
+ </tile>
+ <tile id="113">
+  <image width="1200" height="1200" source="specials/albee earth0006.png"/>
+ </tile>
+ <tile id="114">
+  <image width="1200" height="1200" source="specials/albee earth0007.png"/>
+ </tile>
+ <tile id="115">
+  <image width="1200" height="1200" source="specials/albee earth0008.png"/>
+ </tile>
+ <tile id="116">
+  <image width="1200" height="1200" source="specials/albee earth0009.png"/>
+ </tile>
+ <tile id="117">
+  <image width="1200" height="1200" source="specials/albee earth0010.png"/>
+ </tile>
+ <tile id="118">
+  <image width="1200" height="1200" source="specials/albee earth0011.png"/>
+ </tile>
+ <tile id="119">
+  <image width="1200" height="1200" source="specials/albee earth0012.png"/>
+ </tile>
+ <tile id="120">
+  <image width="1200" height="1200" source="specials/albee earth0013.png"/>
+ </tile>
+ <tile id="121">
+  <image width="1200" height="1200" source="specials/albee earth0014.png"/>
+ </tile>
+ <tile id="122">
+  <image width="1200" height="1200" source="specials/albee earth0015.png"/>
+ </tile>
+ <tile id="123">
+  <image width="1200" height="1200" source="specials/albee earth0016.png"/>
+ </tile>
+ <tile id="124">
+  <image width="1200" height="1200" source="specials/albee earth0017.png"/>
+ </tile>
+ <tile id="125">
+  <image width="1200" height="1200" source="specials/albee earth0018.png"/>
  </tile>
 </tileset>

@@ -69,8 +69,8 @@ public class specialAttacks : MonoBehaviour
             if(moveScript.onBase && moveScript.landLag <= 0)
             {
 
-                groundDagger(); //Albee can use groundDagger function to player her neutral special animation
-                
+                daffy(); ; //Albee can use daffy function to player her neutral special animation
+                erupt();
 
             }
         }
@@ -357,7 +357,80 @@ public class specialAttacks : MonoBehaviour
         }
     }
 
+    [Header("Erupt")]
+    public GameObject smallErupt;
+    public GameObject bigErupt;
+    GameObject currentErupt;
+    float scale = 1;
+    public Vector2 rockOffset;
+    public Animator crackedGroundAnim;
 
+    void erupt()
+    {
+        if (controls.SpecialAttackStartState && Mathf.Abs(controls.HorizontalMove) <= sideThreshold && !anim.GetBool("attacking"))
+        {
+            anim.SetTrigger("special");
+            anim.SetFloat("specialNum", 0);
+            wasCharging = true;
+            crackedGroundAnim.speed = 1;
+        }
+        else if (!controls.SpecialAttackState && animScript.specialing)
+        {
+            if (wasCharging)
+            {
+                wasCharging = false;
+                
+                anim.SetTrigger("special");
+                
+            }
+        }
+        if (anim.GetBool("Hit")) 
+        {
+            animScript.specialing = false;
+            wasCharging = false;
+        }
+
+        
+    }
+    private void setErupt(int level)
+    {
+        if(level == 0)
+        {
+            currentErupt = smallErupt;
+            scale = .85f;
+        }
+        else if(level == 1)
+        {
+            currentErupt = smallErupt;
+            scale = 1;
+        }
+        else if (level == 2)
+        {
+            currentErupt = bigErupt;
+            scale = .85f;
+        }
+        else if (level == 3)
+        {
+            currentErupt = bigErupt;
+            scale = 1.1f;
+        }
+    }
+    void pauseCracked()
+    {
+        crackedGroundAnim.speed = 0;
+    }
+    void spawnRock()
+    {
+        
+        Vector3 rockPos;
+        if (moveScript.facingRight)
+            rockPos = new Vector3(transform.position.x+rockOffset.x, transform.position.y+rockOffset.y, 0);
+        else
+            rockPos = new Vector3(transform.position.x - rockOffset.x, transform.position.y + rockOffset.y, 0);
+
+        GameObject rock = Instantiate(currentErupt, rockPos, Quaternion.identity);
+        rock.transform.localScale = new Vector3 (scale,scale,scale);
+    }
 
 
 }

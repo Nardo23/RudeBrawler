@@ -49,6 +49,8 @@ public class simpleEnemyAnimator : MonoBehaviour
         alive = false;
         anim.SetBool("alive", alive);
         anim.SetTrigger("Die");
+        if(rootObject.transform.localScale.x<0)
+            rootObject.transform.localScale = new Vector3(rootObject.transform.localScale.x*-1, rootObject.transform.localScale.y, rootObject.transform.localScale.z);
         
         
     }

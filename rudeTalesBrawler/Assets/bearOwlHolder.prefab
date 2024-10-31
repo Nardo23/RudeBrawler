@@ -328,7 +328,7 @@ MonoBehaviour:
   charRb: {fileID: 9074381384217284115}
   agent: {fileID: 8195084632832734643}
   attackFrequency: 0.8
-  numberOfAttackAnims: 1
+  numberOfAttackAnims: 5
   deltaPosition: {x: 0, y: 0, z: 0}
   Dropable: {fileID: 0}
   hit: 0

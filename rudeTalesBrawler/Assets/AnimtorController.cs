@@ -83,6 +83,7 @@ public class AnimtorController : MonoBehaviour
         {
             attackbuffered = false;
         }
+        /*
         if(controls.SpecialAttackStartState && !attacking)
         {
             
@@ -94,7 +95,7 @@ public class AnimtorController : MonoBehaviour
             }
         }
         
-
+        */
 
         //check if moving
         if (false)
@@ -196,7 +197,19 @@ public class AnimtorController : MonoBehaviour
         prevRotation = CharRb.transform.rotation.y;
         
     }
-    
+    private void LateUpdate()
+    {
+        if (controls.SpecialAttackStartState && !attacking)
+        {
+
+            if (specialScript != null)
+            {
+                attacking = true;
+                specialing = true;
+
+            }
+        }
+    }
     void landedCheck()
     {
         if (!moveScript.onBase)

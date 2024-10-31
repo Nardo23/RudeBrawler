@@ -13,12 +13,12 @@ public class Demo : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown("backspace"))
+        if (Input.GetKeyDown("backspace")||Input.GetButtonDown("Start")|| Input.GetButtonDown("StartP2"))
         {
             
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
-        if (Input.GetKeyDown("="))
+        if (Input.GetKeyDown("=")||Input.GetButtonDown("Select")|| Input.GetButtonDown("SelectP2"))
         {
             SceneManager.LoadScene("characterSelectTest");
         }

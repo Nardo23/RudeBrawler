@@ -58,6 +58,29 @@ public class AnimtorController : MonoBehaviour
     {
         moveScript.boost();
     }
+    float attackBTimer = 0;
+    public float maxAttackBTime = .5f;
+    void attackBufferTime()
+    {
+        if (attacking&& attackbuffered)
+        {
+            if (attackBTimer < maxAttackBTime)
+            {
+                attackBTimer += Time.deltaTime;
+            }
+            else
+            {
+                attackBTimer = 0;
+                attackbuffered = false;
+            }
+        }
+        else
+        {
+            attackbuffered = false;
+        }
+
+    }
+
 
     // Update is called once per frame
     void Update()
@@ -69,15 +92,18 @@ public class AnimtorController : MonoBehaviour
         {
             //attackbuffered = false;
             startAttack();
+            attackBTimer = 0;
         }
         else if(controls.AttackState && attacking)
         {
             attackbuffered = true;
+            attackBTimer = 0;
         }
         if(attackbuffered && !attacking)
         {
             attackbuffered = false;
             startAttack();
+            attackBTimer = 0;
         }
         if (specialing)
         {

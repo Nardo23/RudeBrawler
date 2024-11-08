@@ -904,6 +904,132 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: albeespecialsheet_36
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1200
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.2066667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96e2db17fdc10ce4a8d5e60a43a5763f
+      internalID: 1984669788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeespecialsheet_37
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1200
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.2066667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87e56e093179e1e4eaaa140d5cf862d6
+      internalID: 1770887272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeespecialsheet_38
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 1200
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.2066667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 638e10107a670e146af1645785dbcd57
+      internalID: 1330361567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeespecialsheet_39
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 1200
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.2066667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f6092a37e6524479787818937e82d9
+      internalID: -268039001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeespecialsheet_40
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 1200
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.2066667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c977022dd5301d43bf91af634ddb5ef
+      internalID: 1226574721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: albeespecialsheet_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1200
+        height: 1200
+      alignment: 9
+      pivot: {x: 0.4191667, y: 0.2066667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d870774d18c594ab69d96b11090fd0
+      internalID: 1559869179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -945,7 +1071,13 @@ TextureImporter:
       albeespecialsheet_33: -1854770786
       albeespecialsheet_34: 1465365280
       albeespecialsheet_35: -778918345
+      albeespecialsheet_36: 1984669788
+      albeespecialsheet_37: 1770887272
+      albeespecialsheet_38: 1330361567
+      albeespecialsheet_39: -268039001
       albeespecialsheet_4: 297500992
+      albeespecialsheet_40: 1226574721
+      albeespecialsheet_41: 1559869179
       albeespecialsheet_5: -1043483835
       albeespecialsheet_6: -505103164
       albeespecialsheet_7: 922382608

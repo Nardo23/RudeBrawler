@@ -35,6 +35,7 @@ public class specialAttacks : MonoBehaviour
             if (moveScript.onBase && moveScript.landLag <= 0)
             {
                 Fireball();
+                
                 if (animScript.attacking == false )
                 {
                     //Fireball();
@@ -71,8 +72,14 @@ public class specialAttacks : MonoBehaviour
 
                 daffy(); ; //Albee can use daffy function to player her neutral special animation
                 erupt();
-
+                canMisty = true;
             }
+            else
+            {
+                flipKick();
+            }
+            if (animScript.hit)
+                animScript.enableAirDrag();
         }
 
     }
@@ -93,7 +100,7 @@ public class specialAttacks : MonoBehaviour
     public void Fireball()
     {
         
-        if(controls.SpecialAttackStartState && Mathf.Abs(controls.HorizontalMove) <= sideThreshold && !animScript.specialing )
+        if (controls.SpecialAttackStartState && Mathf.Abs(controls.HorizontalMove) <= sideThreshold && !animScript.specialing &&!anim.GetBool("attacking"))
         {
             Debug.Log("fireball A");
             
@@ -103,9 +110,26 @@ public class specialAttacks : MonoBehaviour
             anim.SetFloat("specialNum", 0);
             
         }
-        if (controls.SpecialAttackState && Mathf.Abs(controls.HorizontalMove) <= sideThreshold && anim.GetFloat("specialNum")==0 )
+        if (anim.GetBool("hit") == true)
         {
             
+            animScript.specialing = false;
+            wasCharging = false;
+            chargeTime = 0;
+            speed = minSpeed;
+            lifetime = minLifeTime;
+            damage = MinFireballDamage;
+            size = minBallSize;
+            chargeTime = 0;
+            coolTimer = 0;
+            //onCooldown = true;
+            moveScript.canMove = true;
+        }
+        if (controls.SpecialAttackState && Mathf.Abs(controls.HorizontalMove) <= sideThreshold && anim.GetFloat("specialNum")==0 && !anim.GetBool("Hit"))
+        {
+            //wasCharging = true;
+            //moveScript.canMove = false;
+
             if (chargeTime < MaxChargeTime)
             {
                 chargeTime += Time.deltaTime;
@@ -129,7 +153,7 @@ public class specialAttacks : MonoBehaviour
             }
             
         }
-        else if (!controls.SpecialAttackState && animScript.specialing)
+        else if (!controls.SpecialAttackState && animScript.specialing && !anim.GetBool("Hit"))
         {
             
             if (wasCharging)
@@ -179,7 +203,8 @@ public class specialAttacks : MonoBehaviour
                 //onCooldown = true;
                 moveScript.canMove = true;                
             }
-        }       
+        }
+        
     }
     public GameObject punchSquare;
     IEnumerator punch()
@@ -264,7 +289,7 @@ public class specialAttacks : MonoBehaviour
             if (TPdirection == Vector2.zero)
                 TPdirection = new Vector2(0, 1);
             TPdirection = TPdirection.normalized * TPforce;
-            jumpingRB.drag = 3;
+            jumpingRB.drag = 2;
             charRb.velocity = Vector2.zero;
             jumpingRB.velocity = Vector2.zero;
             charRb.AddForce(new Vector2(TPdirection.x*1.4f, 0), ForceMode2D.Impulse);
@@ -276,6 +301,48 @@ public class specialAttacks : MonoBehaviour
 
         }
          
+    }
+    public void flipKick()
+    {
+        if (controls.SpecialAttackStartState && canMisty)// reset when character is grounded{
+        {
+            if (moveScript.facingRight)
+            {
+                if (controls.HorizontalMove < 0)
+                {
+                    xmove = -1;
+                    moveScript.flip();
+                }                    
+                else
+                    xmove = 1;
+            }
+            else
+            {
+                if (controls.HorizontalMove > 0)
+                {
+                    xmove = 1;
+                    moveScript.flip();
+                }
+                else
+                    xmove = -1;               
+            }
+      
+            canMisty = false;
+
+            moveScript.canMove = false;
+            animScript.disableAirDrag();
+            anim.SetTrigger("special");
+            anim.SetFloat("specialNum", 2);
+            TPdirection = new Vector2(xmove, 0) * TPforce;
+            jumpingRB.drag = 3;
+            charRb.velocity = Vector2.zero;
+            jumpingRB.velocity = Vector2.zero;
+            charRb.AddForce(new Vector2(TPdirection.x * 1.4f, 0), ForceMode2D.Impulse);
+
+            jumpingRB.AddForce(new Vector2(0, TPdirection.y * .45f), ForceMode2D.Impulse);
+
+            moveScript.landLag = mistyLandLag;
+        }
     }
 
     public void endMistyStep()
@@ -384,8 +451,9 @@ public class specialAttacks : MonoBehaviour
                 
             }
         }
-        if (anim.GetBool("Hit")) 
+        if (anim.GetBool("hit")) 
         {
+            
             animScript.specialing = false;
             wasCharging = false;
         }

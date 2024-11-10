@@ -809,7 +809,7 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0
-    functionName: 
+    functionName: endAttack
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
@@ -823,14 +823,7 @@ AnimationClip:
     intParameter: 0
     messageOptions: 0
   - time: 0.33333334
-    functionName: endMistyStep
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.45833334
-    functionName: endAttack
+    functionName: endFlipKick
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

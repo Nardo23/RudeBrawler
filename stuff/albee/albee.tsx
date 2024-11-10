@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.10" tiledversion="1.10.1" name="albee" tilewidth="1200" tileheight="1200" tilecount="126" columns="0">
+<tileset version="1.10" tiledversion="1.10.1" name="albee" tilewidth="1200" tileheight="1200" tilecount="132" columns="0">
  <grid orientation="orthogonal" width="1" height="1"/>
  <tile id="0">
   <image width="1200" height="1200" source="run/albee run0000.png"/>
@@ -378,5 +378,23 @@
  </tile>
  <tile id="125">
   <image width="1200" height="1200" source="specials/albee earth0018.png"/>
+ </tile>
+ <tile id="126">
+  <image width="1200" height="1200" source="specials/albee airSpecial0001.png"/>
+ </tile>
+ <tile id="127">
+  <image width="1200" height="1200" source="specials/albee airSpecial0002.png"/>
+ </tile>
+ <tile id="128">
+  <image width="1200" height="1200" source="specials/albee airSpecial0003.png"/>
+ </tile>
+ <tile id="129">
+  <image width="1200" height="1200" source="specials/albee airSpecial0004.png"/>
+ </tile>
+ <tile id="130">
+  <image width="1200" height="1200" source="specials/albee airSpecial0005.png"/>
+ </tile>
+ <tile id="131">
+  <image width="1200" height="1200" source="specials/albee airSpecial0006.png"/>
  </tile>
 </tileset>

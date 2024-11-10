@@ -156,7 +156,7 @@ public class AnimtorController : MonoBehaviour
                 if(moveScript.onBase && moving && !attacking)
                 {
                     anim.SetTrigger("turn");
-                    Debug.Log("turn");
+                    //Debug.Log("turn");
                 }
             }
         }
@@ -188,7 +188,7 @@ public class AnimtorController : MonoBehaviour
         {
             if (controls.JumpState && moveScript.currentJumps > 0)
             {
-                Debug.Log("airrrr");
+                //Debug.Log("airrrr");
                 anim.SetTrigger("airJump");
             }
         }
@@ -216,7 +216,7 @@ public class AnimtorController : MonoBehaviour
 
         if(attacking == false && hit ==false && alive)
         {
-            Debug.Log("canMove: " + moveScript.canMove);
+            //Debug.Log("canMove: " + moveScript.canMove);
             moveScript.canMove = true;
         }
 

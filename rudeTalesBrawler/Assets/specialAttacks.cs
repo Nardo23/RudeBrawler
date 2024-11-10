@@ -304,8 +304,10 @@ public class specialAttacks : MonoBehaviour
     }
     public void flipKick()
     {
+        
         if (controls.SpecialAttackStartState && canMisty)// reset when character is grounded{
         {
+            Debug.Log("flipKick");
             if (moveScript.facingRight)
             {
                 if (controls.HorizontalMove < 0)
@@ -339,12 +341,15 @@ public class specialAttacks : MonoBehaviour
             jumpingRB.velocity = Vector2.zero;
             charRb.AddForce(new Vector2(TPdirection.x * 1.4f, 0), ForceMode2D.Impulse);
 
-            jumpingRB.AddForce(new Vector2(0, TPdirection.y * .45f), ForceMode2D.Impulse);
+            //jumpingRB.AddForce(new Vector2(0, TPdirection.y * .45f), ForceMode2D.Impulse);
 
             moveScript.landLag = mistyLandLag;
         }
     }
-
+    void endFlipKick()
+    {
+        moveScript.canMove = true;
+    }
     public void endMistyStep()
     {
         moveScript.canMove = true;

@@ -1,0 +1,1288 @@
+fileFormatVersion: 2
+guid: 63fc480d89bfa9a42b5b180d0734ff69
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: titleScreenGoblin_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 14643
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e29e97cff135a6d499387bcd6be70f25
+      internalID: 1762290442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_1
+      rect:
+        serializedVersion: 2
+        x: 2215
+        y: 14643
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a55e7dc67a2cda45b1d430cb61a3bb1
+      internalID: 824174812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_2
+      rect:
+        serializedVersion: 2
+        x: 4430
+        y: 14643
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16fb5e28b6f0cd34199273cbf990cc6f
+      internalID: 1031042636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_3
+      rect:
+        serializedVersion: 2
+        x: 6645
+        y: 14643
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c27d58f86b626fe41b234961fbd5a85b
+      internalID: 1508632360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_4
+      rect:
+        serializedVersion: 2
+        x: 8860
+        y: 14643
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 655db8da9b593104cbde5d36ebaeca88
+      internalID: -839771163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_5
+      rect:
+        serializedVersion: 2
+        x: 11075
+        y: 14643
+        width: 2215
+        height: 1729
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be1bc52e47f938145840c8c317b750dd
+      internalID: 45918691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_6
+      rect:
+        serializedVersion: 2
+        x: 13290
+        y: 14643
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 442d9b605e0c8e748970e83504b37c61
+      internalID: 1216413761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 12904
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57ec4ae8ec57cf34b945831324aea260
+      internalID: 867278026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_8
+      rect:
+        serializedVersion: 2
+        x: 2215
+        y: 12904
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be8cdd87526cbe645b2c7be0ea7b2ac9
+      internalID: 2051393829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_9
+      rect:
+        serializedVersion: 2
+        x: 4430
+        y: 12904
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 136cc8ff8f256d84b805d76f78a6cb8d
+      internalID: 1671457349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_10
+      rect:
+        serializedVersion: 2
+        x: 6645
+        y: 12904
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a782903c5094a2c45b1d3167f454110b
+      internalID: 1035201705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_11
+      rect:
+        serializedVersion: 2
+        x: 8860
+        y: 12904
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 214be9db1c0c2a147a7c396c89cad518
+      internalID: 1243904752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_12
+      rect:
+        serializedVersion: 2
+        x: 11075
+        y: 12904
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f72ef2116110c40931a96d475b0fb1
+      internalID: 834151838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_13
+      rect:
+        serializedVersion: 2
+        x: 13290
+        y: 12904
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f6bceec5e45d554eb3421118d213da6
+      internalID: -824316573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11165
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0abd46656f74ab4b8a74d127e903909
+      internalID: 596905323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_15
+      rect:
+        serializedVersion: 2
+        x: 2215
+        y: 11165
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c3531d767628f7469fab0109b2e5bfa
+      internalID: -29722620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_16
+      rect:
+        serializedVersion: 2
+        x: 4430
+        y: 11165
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b9b3a921ebe27418f321a87059f2ac
+      internalID: -559462800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_17
+      rect:
+        serializedVersion: 2
+        x: 6645
+        y: 11165
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74c551510c8423d45b3809bd4d02b7fd
+      internalID: 373753846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_18
+      rect:
+        serializedVersion: 2
+        x: 8860
+        y: 11165
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fc6c3eaf590b994fa61f15853790319
+      internalID: 1894105875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_19
+      rect:
+        serializedVersion: 2
+        x: 11075
+        y: 11165
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2093f2c329d3c343a61e07bafc089d3
+      internalID: -406063747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_20
+      rect:
+        serializedVersion: 2
+        x: 13290
+        y: 11165
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29241784b81ec6c42a9fec2d34e991c8
+      internalID: -495064896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9426
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b58d8df7896055542a4ad7ceb18b9595
+      internalID: 1575065150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_22
+      rect:
+        serializedVersion: 2
+        x: 2215
+        y: 9426
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ce8729efd85e2419caec1fbd9c7bec
+      internalID: -1659966738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_23
+      rect:
+        serializedVersion: 2
+        x: 4430
+        y: 9426
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ea6d7c4cfd03434b9eecae23d46375b
+      internalID: -1048114972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_24
+      rect:
+        serializedVersion: 2
+        x: 6645
+        y: 9426
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54989c97d15a78947aff732202dc0aa8
+      internalID: -238633745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_25
+      rect:
+        serializedVersion: 2
+        x: 8860
+        y: 9426
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3737845c565730e48bb7afd66bbb63f2
+      internalID: 1678670908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_26
+      rect:
+        serializedVersion: 2
+        x: 11075
+        y: 9426
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae2109771b9f20a438fb501eddc25572
+      internalID: -628333959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_27
+      rect:
+        serializedVersion: 2
+        x: 13290
+        y: 9426
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e0364e873efe848b212d494d545163
+      internalID: -1317490427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7687
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 724d626bf526b7744b537cb0878bfab0
+      internalID: 1110601880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_29
+      rect:
+        serializedVersion: 2
+        x: 2215
+        y: 7687
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd0426ce8edd7234099b641bdb9edb8c
+      internalID: -88773484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_30
+      rect:
+        serializedVersion: 2
+        x: 4430
+        y: 7687
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5b083b730f6b724cb3613d95bdeee89
+      internalID: 1017230601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_31
+      rect:
+        serializedVersion: 2
+        x: 6645
+        y: 7687
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4012438064db634429e32f4e6703bdc5
+      internalID: 420851726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_32
+      rect:
+        serializedVersion: 2
+        x: 8860
+        y: 7687
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c76abf0638cfed4d8b75572770b6bd4
+      internalID: 186929052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_33
+      rect:
+        serializedVersion: 2
+        x: 11075
+        y: 7687
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45ae8bc7a146b8e4dab017c2c9bbeb2a
+      internalID: -691352461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_34
+      rect:
+        serializedVersion: 2
+        x: 13290
+        y: 5948
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e606ba7cb9b0d641a5a8384bd514731
+      internalID: -1032654889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_35
+      rect:
+        serializedVersion: 2
+        x: 13290
+        y: 7687
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 197d04ea6a3db2340b9d22978d8549f8
+      internalID: 270934683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5948
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e57243e8ff47e0748af6b2a4bec75e99
+      internalID: 550120450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_38
+      rect:
+        serializedVersion: 2
+        x: 2215
+        y: 5948
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3577e7677aff1124599108cc0012ae56
+      internalID: 1432825089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_39
+      rect:
+        serializedVersion: 2
+        x: 4430
+        y: 5948
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6808b5b579725944385b772fcaf1412e
+      internalID: 611816802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_40
+      rect:
+        serializedVersion: 2
+        x: 6645
+        y: 5948
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90dac2b10cfb154438a52168072f57ac
+      internalID: 1591779194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_41
+      rect:
+        serializedVersion: 2
+        x: 8860
+        y: 5948
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9cd355c5b57bc34ba6c2cbe7e4cda17
+      internalID: 379540178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_43
+      rect:
+        serializedVersion: 2
+        x: 11075
+        y: 5948
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad0a700a1133b57489485d204ec98abd
+      internalID: 879144535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4209
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efb42a443fc87784b8f61983e650cb96
+      internalID: -549703108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_45
+      rect:
+        serializedVersion: 2
+        x: 2215
+        y: 4209
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a83a1801975179b479faf8c510bcf17d
+      internalID: -546637815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_46
+      rect:
+        serializedVersion: 2
+        x: 4430
+        y: 4209
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 326985b7ee6d1054a8ccb8bd917c04bb
+      internalID: 576730506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_47
+      rect:
+        serializedVersion: 2
+        x: 6645
+        y: 4209
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f395d804404d044986d855b21c995e
+      internalID: 2037465493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_48
+      rect:
+        serializedVersion: 2
+        x: 8860
+        y: 4209
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d1ac09e3053694f82b75db50d25658
+      internalID: 1734772679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_49
+      rect:
+        serializedVersion: 2
+        x: 11075
+        y: 4209
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2895987d11b1b244b7d187df1f8d471
+      internalID: -1498434726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_36
+      rect:
+        serializedVersion: 2
+        x: 3482
+        y: 3758
+        width: 2023
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a99f49ca1c7e4e4ba751760f0298b9a
+      internalID: 634574223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3758
+        width: 3412
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d4b0ef886cfc364a96d3be4f50535d1
+      internalID: -1996977663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: titleScreenGoblin_50
+      rect:
+        serializedVersion: 2
+        x: 13290
+        y: 4209
+        width: 2215
+        height: 1739
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee1b4deb4baac6540b9ceba21cd343c7
+      internalID: 408517059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      titleScreenGoblin_0: 1762290442
+      titleScreenGoblin_1: 824174812
+      titleScreenGoblin_10: 1035201705
+      titleScreenGoblin_11: 1243904752
+      titleScreenGoblin_12: 834151838
+      titleScreenGoblin_13: -824316573
+      titleScreenGoblin_14: 596905323
+      titleScreenGoblin_15: -29722620
+      titleScreenGoblin_16: -559462800
+      titleScreenGoblin_17: 373753846
+      titleScreenGoblin_18: 1894105875
+      titleScreenGoblin_19: -406063747
+      titleScreenGoblin_2: 1031042636
+      titleScreenGoblin_20: -495064896
+      titleScreenGoblin_21: 1575065150
+      titleScreenGoblin_22: -1659966738
+      titleScreenGoblin_23: -1048114972
+      titleScreenGoblin_24: -238633745
+      titleScreenGoblin_25: 1678670908
+      titleScreenGoblin_26: -628333959
+      titleScreenGoblin_27: -1317490427
+      titleScreenGoblin_28: 1110601880
+      titleScreenGoblin_29: -88773484
+      titleScreenGoblin_3: 1508632360
+      titleScreenGoblin_30: 1017230601
+      titleScreenGoblin_31: 420851726
+      titleScreenGoblin_32: 186929052
+      titleScreenGoblin_33: -691352461
+      titleScreenGoblin_34: -1032654889
+      titleScreenGoblin_35: 270934683
+      titleScreenGoblin_36: 634574223
+      titleScreenGoblin_37: 550120450
+      titleScreenGoblin_38: 1432825089
+      titleScreenGoblin_39: 611816802
+      titleScreenGoblin_4: -839771163
+      titleScreenGoblin_40: 1591779194
+      titleScreenGoblin_41: 379540178
+      titleScreenGoblin_42: -1996977663
+      titleScreenGoblin_43: 879144535
+      titleScreenGoblin_44: -549703108
+      titleScreenGoblin_45: -546637815
+      titleScreenGoblin_46: 576730506
+      titleScreenGoblin_47: 2037465493
+      titleScreenGoblin_48: 1734772679
+      titleScreenGoblin_49: -1498434726
+      titleScreenGoblin_5: 45918691
+      titleScreenGoblin_50: 408517059
+      titleScreenGoblin_6: 1216413761
+      titleScreenGoblin_7: 867278026
+      titleScreenGoblin_8: 2051393829
+      titleScreenGoblin_9: 1671457349
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

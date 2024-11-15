@@ -9,6 +9,7 @@ TagManager:
   - SimpleEnemyHurt
   - LevelManager
   - EnemyProjectile
+  - MainTheme
   layers:
   - Default
   - TransparentFX

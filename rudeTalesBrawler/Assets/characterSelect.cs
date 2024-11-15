@@ -94,7 +94,16 @@ public class characterSelect : MonoBehaviour
 
         P1Cursor.transform.position = new Vector3(iconPositions[P1count].position.x - .65f, iconPositions[P1count].position.y, 0);
         P2Cursor.transform.position = new Vector3(iconPositions[P2count].position.x + .65f, iconPositions[P2count].position.y, 0);
-
+        if (p1Selected)
+        {
+            if (Input.GetButtonDown("Enter"))
+                StartGame();
+        }
+        if (p2Selected)
+        {
+            if (Input.GetKeyDown("]"))
+                StartGame();
+        }
         if (Input.GetButtonDown("Enter"))
         {
             p1Selected = true;
@@ -188,6 +197,7 @@ public class characterSelect : MonoBehaviour
             MainManager.Instance.P2Char = setCharacter(P2count + 1);
         else
             MainManager.Instance.P2Char = setCharacter(99);
+        Destroy(GameObject.FindGameObjectWithTag("MainTheme"));
         SceneManager.LoadScene("forestTest2");       
     }
 

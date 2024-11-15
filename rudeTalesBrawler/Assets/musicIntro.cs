@@ -17,8 +17,8 @@ public class musicIntro : MonoBehaviour
         sor.PlayOneShot(intro);
         sor.clip = mainLoop;
         sor.loop = true;
-        sor.PlayDelayed(intro.length-.24f);
-        
+        //sor.PlayDelayed(intro.length-.25f);
+        sor.PlayDelayed(intro.length);
     }
 
   

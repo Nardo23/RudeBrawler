@@ -165,10 +165,18 @@ public class enemyAnimator : MonoBehaviour
         if (hit)
             knock = 0;
 
-        if(strength> Armor) // full damage and knockback and hurt animation
+        if(strength> Armor+bonusArmor) // full damage and knockback and hurt animation
         {
             anim.SetTrigger("Hit");
             anim.SetFloat("hitType", damageType);
+            if (xPos < transform.position.x)
+            {
+                enemyScript.faceLeft();
+            }
+            else
+            {
+                enemyScript.faceRight();
+            }
         }
         else// color flash instead of hurt animation
         {

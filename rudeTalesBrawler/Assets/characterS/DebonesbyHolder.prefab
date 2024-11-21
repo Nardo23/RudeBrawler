@@ -15123,6 +15123,7 @@ MonoBehaviour:
   dragChangeEnabled: 1
   jumpableAnim: 0
   landLag: 0
+  maxJumpBufferTime: 0.4
 --- !u!58 &1515674199449922222
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -20384,6 +20385,7 @@ MonoBehaviour:
   checkFromParent: 1
   checkObject: {fileID: 0}
   damageType: 0
+  attackStrength: 3
   hitOnce: 0
   hitParticles: {fileID: 8663745972045859412, guid: ad6c6782a6ebd9043bc432c114fb70eb, type: 3}
 --- !u!114 &3114427430742947648
@@ -20478,6 +20480,10 @@ MonoBehaviour:
   airDagger: {fileID: 0}
   daggerSpawn: {fileID: 0}
   groundDag: {fileID: 0}
+  smallErupt: {fileID: 0}
+  bigErupt: {fileID: 0}
+  rockOffset: {x: 0, y: 0}
+  crackedGroundAnim: {fileID: 0}
 --- !u!95 &6209320036690704086
 Animator:
   serializedVersion: 5
@@ -20526,6 +20532,7 @@ MonoBehaviour:
   CharacterID: D
   specialScript: {fileID: 5611197376936401092}
   specialing: 0
+  maxAttackBTime: 0.5
 --- !u!1 &9067306831423846855
 GameObject:
   m_ObjectHideFlags: 0

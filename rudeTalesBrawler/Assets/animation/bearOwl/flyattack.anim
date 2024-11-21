@@ -1022,7 +1022,7 @@ AnimationClip:
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
-    intParameter: 20
+    intParameter: 17
     messageOptions: 0
   - time: 1.9166666
     functionName: setYRange

@@ -5,7 +5,7 @@ using UnityEngine;
 public class checkpoint : MonoBehaviour
 {
     [SerializeField] GameObject[] enemyWaves;
-    public GameObject entranceWall, exitWall;
+    public GameObject entranceWall, exitWall, extraEnable;
     public int playerCount;
     GameObject[] playerStore;
     int currentPlayersIn = 0;
@@ -47,11 +47,15 @@ public class checkpoint : MonoBehaviour
                 {
                     currentWave++;
                 }
-                else
+                else                 //All enemies defeated
                 {
                     ended = true;
                     camScript.CamFollowCharacter(false);
                     exitWall.SetActive(false);
+                    if (extraEnable != null)
+                    {
+                        extraEnable.SetActive(true);
+                    }
                 }
             }
         }

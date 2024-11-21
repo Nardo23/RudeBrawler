@@ -16,6 +16,8 @@ public class levelManager : MonoBehaviour
     public GameObject Albee, Stirfry, Debonesby;
     public Image heathBarMed, healthBarMedP2, healthBarMedP3, healthBarSmallP1, healthBarSmallP2, healthBarSmallP3;
     public Image IconP1, IconP2, IconP3;
+    public bool gameoverMessage;
+    public GameObject gameoverText;
 
     // Start is called before the first frame update
     void Awake()
@@ -126,6 +128,10 @@ public class levelManager : MonoBehaviour
         livingPlayersCount += change;
         setCheckpointCounts();
         updateLivingPlayers();
+        if(gameoverMessage && livingPlayersCount == 0)
+        {
+            gameoverText.SetActive(true);
+        }
     }
 
     void updateLivingPlayers()

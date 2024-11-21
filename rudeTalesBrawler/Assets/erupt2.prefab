@@ -555,7 +555,7 @@ MonoBehaviour:
   isPlayer: 1
   damage: 16
   yRange: 3
-  knockbackForce: 2
+  knockbackForce: 1.8
   hitStopDuration: 0
   checkFromParent: 0
   checkObject: {fileID: 6096349188548898007}

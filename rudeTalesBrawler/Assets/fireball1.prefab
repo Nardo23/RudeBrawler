@@ -83,7 +83,7 @@ SpriteRenderer:
   m_Size: {x: 4.1, y: 1.37}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &9109542398078680850
@@ -197,12 +197,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -280042448, guid: 2709de7ca41238148aa7da520c323ff2, type: 3}
+  m_Sprite: {fileID: 2058317653, guid: ff4d101b615762a45ab6216586c92ac9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4.1, y: 1.37}
+  m_Size: {x: 10.24, y: 1.28}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -285,6 +285,7 @@ MonoBehaviour:
   yRange: 1
   checkFromParent: 0
   checkObject: {fileID: 1346426722564544031}
+  flyingObj: {fileID: 0}
 --- !u!61 &439543348677723776
 BoxCollider2D:
   m_ObjectHideFlags: 0

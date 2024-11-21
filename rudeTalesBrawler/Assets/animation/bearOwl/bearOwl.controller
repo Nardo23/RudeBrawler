@@ -200,6 +200,19 @@ AnimatorStateTransition:
   m_InterruptionSource: 4
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 0
+--- !u!114 &-5426447046465494973
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85c8659942f5daa458cf982cf08985e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bonusArmor: -1
 --- !u!114 &-5362285007773538316
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -302,7 +315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfd194c5ef691cb4e8e992f4619b7a18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 16
+  damage: 14
   yRange: 0.6
   knockbackForce: 0.6
   hitStopDuration: 0.1
@@ -348,7 +361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfd194c5ef691cb4e8e992f4619b7a18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
+  damage: 16
   yRange: 0.6
   knockbackForce: 1
   hitStopDuration: 0.2
@@ -438,7 +451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfd194c5ef691cb4e8e992f4619b7a18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 15
+  damage: 12
   yRange: 0.8
   knockbackForce: 1
   hitStopDuration: 0.2
@@ -744,7 +757,8 @@ AnimatorState:
   - {fileID: 5696344497687802056}
   - {fileID: 7718119100740068599}
   - {fileID: 4647988928850554229}
-  m_StateMachineBehaviours: []
+  m_StateMachineBehaviours:
+  - {fileID: -5426447046465494973}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1

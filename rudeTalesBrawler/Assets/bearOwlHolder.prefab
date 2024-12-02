@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7019020111041070974
 Transform:
   m_ObjectHideFlags: 0
@@ -335,6 +335,7 @@ MonoBehaviour:
   Armor: 3
   bonusArmor: 0
   hitParticleYPos: 2
+  bonusYSize: 0.2
 --- !u!114 &5830211364897270573
 MonoBehaviour:
   m_ObjectHideFlags: 0

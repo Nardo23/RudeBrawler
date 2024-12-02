@@ -22,6 +22,7 @@ public class enemyAnimator : MonoBehaviour
     public int bonusArmor;
     public float hitParticleYPos=.5f;
     ColoredFlash flashScript;
+    public float bonusYSize = 0;
     void Awake()
     {
         anim = GetComponent<Animator>();

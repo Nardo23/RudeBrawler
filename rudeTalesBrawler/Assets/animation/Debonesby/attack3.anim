@@ -594,6 +594,13 @@ AnimationClip:
     floatParameter: 15
     intParameter: 0
     messageOptions: 0
+  - time: 0.41666666
+    functionName: Step
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 0.5
     functionName: animMove
     data: 
@@ -622,8 +629,22 @@ AnimationClip:
     floatParameter: 3
     intParameter: 0
     messageOptions: 0
+  - time: 0.8333333
+    functionName: Step
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 0.9166667
     functionName: endAttack
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1
+    functionName: 
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

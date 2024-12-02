@@ -37,7 +37,7 @@ public class hitboxDamage : MonoBehaviour
                     {
                         yCheckTransform = checkObject.transform;
                     }
-                    if (Mathf.Abs(u.transform.parent.transform.position.y- yCheckTransform.position.y) <= yRange)// check if bases are within a certain y range
+                    if (Mathf.Abs(u.transform.parent.transform.position.y- yCheckTransform.position.y) <= yRange+u.bonusYSize)// check if bases are within a certain y range
                     {
                         
                         if(transform.parent!=null)                 
@@ -84,7 +84,7 @@ public class hitboxDamage : MonoBehaviour
                     {
                         yCheckTransform = checkObject.transform;
                     }
-                    if (Mathf.Abs(q.transform.parent.transform.position.y - yCheckTransform.position.y) <= yRange)// check if bases are within a certain y range
+                    if (Mathf.Abs(q.transform.parent.transform.position.y - yCheckTransform.position.y) <= yRange+q.bonusYSize)// check if bases are within a certain y range
                     {
                         q.hurt(transform.position.x);
 

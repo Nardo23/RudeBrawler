@@ -8,6 +8,7 @@ public class simpleEnemyAnimator : MonoBehaviour
     bool alive = true;
     public GameObject rootObject; //the parent of enemy, so we know what to delete when this enemy dies
     public Rigidbody2D charRb;
+    public float bonusYSize = 0;
 
     // Start is called before the first frame update
     void Start()

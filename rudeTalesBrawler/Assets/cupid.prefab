@@ -609,7 +609,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09374eeb84454eb41860c150d3a58e7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  players: []
   ThrowingSprite: {fileID: 6991102234193910708}
   SpawnPoint: {fileID: 458585158907246919}
   shadow: {fileID: 3447949061600725860}
@@ -635,6 +634,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rootObject: {fileID: 3447949061600725860}
   charRb: {fileID: 4304521468697189637}
+  bonusYSize: 0.2
 --- !u!1 &6991102234193910708
 GameObject:
   m_ObjectHideFlags: 0

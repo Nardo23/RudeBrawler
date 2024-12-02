@@ -698,6 +698,13 @@ AnimationClip:
     floatParameter: 9
     intParameter: 0
     messageOptions: 0
+  - time: 0.25
+    functionName: Step
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 0.5833333
     functionName: endAttack
     data: 

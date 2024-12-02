@@ -12,12 +12,16 @@ public class checkpoint : MonoBehaviour
     bool canStart = false;
     bool ended = false;
     public int currentWave = 0;
-    
+
+    public bool freeCam;
+    public bool autoStart;
     public cameraController camScript;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (autoStart)
+            canStart = true;
     }
 
     public void setPlayerCount(int count)
@@ -49,13 +53,21 @@ public class checkpoint : MonoBehaviour
                 }
                 else                 //All enemies defeated
                 {
+                    Debug.Log("checkpoint cleared!");
                     ended = true;
-                    camScript.CamFollowCharacter(false);
-                    exitWall.SetActive(false);
+                    if(!freeCam)
+                        camScript.CamFollowCharacter(false);
+                    if(exitWall!=null)
+                        exitWall.SetActive(false);
                     if (extraEnable != null)
                     {
                         extraEnable.SetActive(true);
                     }
+
+                    GameObject managerObj = GameObject.FindGameObjectWithTag("LevelManager");
+                    managerObj.GetComponent<levelManager>().respawnDeadPlayers();
+
+
                 }
             }
         }
@@ -66,7 +78,7 @@ public class checkpoint : MonoBehaviour
 
 
     }
-
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == "Player")
@@ -92,7 +104,8 @@ public class checkpoint : MonoBehaviour
             if(currentPlayersIn == playerCount && !ended)
             {
                 canStart = true;
-                entranceWall.SetActive(true);
+                if (entranceWall!=null)
+                    entranceWall.SetActive(true);
                 camScript.LockedCamera(this.gameObject, false);
                 Debug.Log("all in");
             }

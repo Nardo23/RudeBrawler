@@ -219,7 +219,10 @@ public class AnimtorController : MonoBehaviour
             //Debug.Log("canMove: " + moveScript.canMove);
             moveScript.canMove = true;
         }
-
+        if (!alive)
+        {
+            moveScript.canMove = false;
+        }
         prevRotation = CharRb.transform.rotation.y;
         
     }
@@ -375,10 +378,23 @@ public class AnimtorController : MonoBehaviour
         moveScript.canMove = false; // will have to reEnable on respawn
         levelManagerScript.updateLivingCount(-1); // subtracts one from living player count
     }
-    public void Respawn() // incomplete; isnt called by anything yet
+    public void Respawn() // call this when acheckpoint is finished;
     {
-        moveScript.canMove = true;
-        levelManagerScript.updateLivingCount(1);
+        if (!alive)
+        {
+            moveScript.canMove = true;
+            alive = true;
+            anim.Play("idle");
+            anim.SetBool("hit", false);
+            anim.SetBool("attacking", false);
+            anim.SetBool("specialing", false);
+            anim.Play("respawnFlash");
+            PlayerHealth healthScrpt = CharRb.GetComponent<PlayerHealth>();
+            healthScrpt.changeHealth(healthScrpt.maxHealth / 5 * 3); // respawn with %60 health
+
+            levelManagerScript.updateLivingCount(1);
+        }
+        
     }
 
     public void disableAirDrag()

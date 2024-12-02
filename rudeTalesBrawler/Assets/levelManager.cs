@@ -104,6 +104,14 @@ public class levelManager : MonoBehaviour
           
     }
 
+    public void respawnDeadPlayers()
+    {
+        foreach (GameObject p in allPlayers)
+        {
+            p.GetComponentInChildren<AnimtorController>().Respawn();
+        }
+    }
+
 
     void setInput(PlayerInput inputScript, int playerNumber)
     {

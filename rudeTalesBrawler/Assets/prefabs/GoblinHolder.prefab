@@ -311,7 +311,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 4529886628499598370, guid: 9fd0c552f699ac3448c9ef650db7c32e, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.4
+  m_Volume: 0.46
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -402,7 +402,7 @@ AudioHighPassFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3969993292527713310}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CutoffFrequency: 160
   m_HighpassResonanceQ: 1
 --- !u!1 &4481456679402104432

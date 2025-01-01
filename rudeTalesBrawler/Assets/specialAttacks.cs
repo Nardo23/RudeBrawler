@@ -470,22 +470,22 @@ public class specialAttacks : MonoBehaviour
         if(level == 0)
         {
             currentErupt = smallErupt;
-            scale = .85f;
+            scale = .9f;
         }
         else if(level == 1)
         {
             currentErupt = smallErupt;
-            scale = 1;
+            scale = 1.1f;
         }
         else if (level == 2)
         {
             currentErupt = bigErupt;
-            scale = .85f;
+            scale = 1.05f;
         }
         else if (level == 3)
         {
             currentErupt = bigErupt;
-            scale = 1.1f;
+            scale = 1.3f;
         }
     }
     void pauseCracked()
@@ -502,7 +502,12 @@ public class specialAttacks : MonoBehaviour
             rockPos = new Vector3(transform.position.x - rockOffset.x, transform.position.y + rockOffset.y, 0);
 
         GameObject rock = Instantiate(currentErupt, rockPos, Quaternion.identity);
-        rock.transform.localScale = new Vector3 (scale,scale,scale);
+        if(moveScript.facingRight)
+            rock.transform.localScale = new Vector3 (scale,scale,scale);
+        else
+        {
+            rock.transform.localScale = new Vector3(scale*-1, scale, scale);
+        }
     }
 
 

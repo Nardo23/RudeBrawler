@@ -19353,7 +19353,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 385312163425834684, guid: 8a3894a2f4b536e4991f592d227f8134, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.82
+      value: -3.74
       objectReference: {fileID: 0}
     - target: {fileID: 385312163425834684, guid: 8a3894a2f4b536e4991f592d227f8134, type: 3}
       propertyPath: m_LocalPosition.z
@@ -20092,10 +20092,6 @@ PrefabInstance:
     - target: {fileID: 4982747261810672072, guid: 5e494321c9e96be458619c32feb41c64, type: 3}
       propertyPath: m_Name
       value: AlbeeHolder
-      objectReference: {fileID: 0}
-    - target: {fileID: 4982747261810672072, guid: 5e494321c9e96be458619c32feb41c64, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7430993358823328447, guid: 5e494321c9e96be458619c32feb41c64, type: 3}
       propertyPath: m_LocalPosition.x

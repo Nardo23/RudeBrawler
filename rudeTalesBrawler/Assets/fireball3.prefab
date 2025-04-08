@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8665253868359000219}
   - component: {fileID: 8150473259060481706}
   - component: {fileID: 899929996784489084}
+  - component: {fileID: 2716098739562830080}
   m_Layer: 0
   m_Name: ball
   m_TagString: Untagged
@@ -106,6 +107,129 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!82 &2716098739562830080
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4164145420221491765}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 3849618088675703816, guid: 9fd0c552f699ac3448c9ef650db7c32e, type: 2}
+  m_audioClip: {fileID: 8300000, guid: ddf8e623aef654244a4973d675201724, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 0.5
+  MinDistance: 1.06
+  MaxDistance: 40
+  Pan2D: 0
+  rolloffMode: 2
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1.0183907
+      inSlope: -14.156582
+      outSlope: -14.156582
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.097616896
+      value: 0.41723633
+      inSlope: -3.5391455
+      outSlope: -3.5391455
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.25144717
+      value: 0.16723633
+      inSlope: -0.88478637
+      outSlope: -0.88478637
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.554408
+      value: 0.023864746
+      inSlope: -0.22119659
+      outSlope: -0.22119659
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -0.07069502
+      outSlope: -0.07069502
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &8079605107558165698
 GameObject:
   m_ObjectHideFlags: 0
@@ -162,6 +286,7 @@ MonoBehaviour:
   yRange: 1.4
   checkFromParent: 0
   checkObject: {fileID: 8565880988385703095}
+  flyingObj: {fileID: 0}
 --- !u!61 &2139667516473708638
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -227,8 +352,15 @@ MonoBehaviour:
   checkFromParent: 0
   checkObject: {fileID: 8079605107558165698}
   damageType: 0
+  attackStrength: 3
+  hitSounds:
+  - {fileID: 8300000, guid: f3bdff981a4e79b4d9eb4a0bf26e1ed1, type: 3}
+  - {fileID: 8300000, guid: e00972a7054577347a0eaf393b23ebc7, type: 3}
+  - {fileID: 8300000, guid: 9fefdf52e3cd96a48ac0148ba391fbd7, type: 3}
+  - {fileID: 8300000, guid: 1cdac4bbdc4632c4ab2750c0106be523, type: 3}
   hitOnce: 1
   hitParticles: {fileID: 8663745972045859412, guid: ad6c6782a6ebd9043bc432c114fb70eb, type: 3}
+  specificHurtPitchRange: {x: 0.9, y: 1.1}
 --- !u!1 &8565880988385703095
 GameObject:
   m_ObjectHideFlags: 0

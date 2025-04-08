@@ -371,6 +371,7 @@ public class specialAttacks : MonoBehaviour
     {
         if (controls.SpecialAttackStartState && !animScript.specialing)
         {
+            anim.SetBool("attacking", false);
             
             GameObject dagger = Instantiate(airDagger, transform.position, Quaternion.identity);           
             if (!moveScript.facingRight)         

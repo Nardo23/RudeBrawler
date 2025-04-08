@@ -36,34 +36,38 @@ public class ArcherEnemy : MonoBehaviour
     }
     void randomTarget()
     {
-        players = levelManagerScript.livingPlayers;
-
-        target = players[Random.Range(0, players.Length)].transform;
-        if(!idle && Vector2.Distance(transform.position, target.transform.position) > TargetRange)
+        if (!levelManagerScript.gameover)
         {
-            foreach (GameObject obj in players)
+            players = levelManagerScript.livingPlayers;
+
+            target = players[Random.Range(0, players.Length)].transform;
+            if (!idle && Vector2.Distance(transform.position, target.transform.position) > TargetRange)
             {
-                if(Vector2.Distance(transform.position, obj.transform.position) <= TargetRange)
+                foreach (GameObject obj in players)
                 {
-                    target = obj.transform;
-                    break;
+                    if (Vector2.Distance(transform.position, obj.transform.position) <= TargetRange)
+                    {
+                        target = obj.transform;
+                        break;
+                    }
                 }
             }
+            xOffset = ((target.transform.position.x - transform.position.x) / TargetRange) * maxOffset;
+            yOffset = ((target.transform.position.y - transform.position.y) / (TargetRange * .6f)) * maxOffset * .4f;
+            Debug.Log("arrowOffsets: " + xOffset + ", " + yOffset);
+            //(target.transform.position.x + xOffset, target.transform.position.y+yOffset, target.transform.position.z);
+            if (target.position.x > transform.position.x)
+            {
+                rootObject.transform.localScale = new Vector3(initialxScale * -1, rootObject.transform.localScale.y, rootObject.transform.localScale.z);
+                //ThrowingSprite.transform.localRotation = Quaternion.Euler(0, 180, 0);
+            }
+            else
+            {
+                rootObject.transform.localScale = new Vector3(initialxScale, rootObject.transform.localScale.y, rootObject.transform.localScale.z);
+                //ThrowingSprite.transform.localRotation = Quaternion.Euler(0, 0, 0);
+            }
         }
-        xOffset = ((target.transform.position.x - transform.position.x) / TargetRange)*maxOffset;
-        yOffset = ((target.transform.position.y - transform.position.y) / (TargetRange*.6f ))*maxOffset * .4f;
-        Debug.Log("arrowOffsets: " + xOffset + ", " + yOffset);
-         //(target.transform.position.x + xOffset, target.transform.position.y+yOffset, target.transform.position.z);
-        if(target.position.x > transform.position.x)
-        {
-            rootObject.transform.localScale = new Vector3 (initialxScale * -1, rootObject.transform.localScale.y, rootObject.transform.localScale.z);
-            //ThrowingSprite.transform.localRotation = Quaternion.Euler(0, 180, 0);
-        }
-        else
-        {
-            rootObject.transform.localScale = new Vector3(initialxScale, rootObject.transform.localScale.y, rootObject.transform.localScale.z);
-            //ThrowingSprite.transform.localRotation = Quaternion.Euler(0, 0, 0);
-        }
+        
     }
 
     void shoot()
@@ -106,36 +110,40 @@ public class ArcherEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        int inRangeCount = 0;
-        foreach (GameObject obj in players)
+        if (!levelManagerScript.gameover)
         {
-            if(Vector2.Distance(transform.position, obj.transform.position)<= TargetRange)
+            int inRangeCount = 0;
+            foreach (GameObject obj in players)
             {
-                inRangeCount++;
+                if (Vector2.Distance(transform.position, obj.transform.position) <= TargetRange)
+                {
+                    inRangeCount++;
+                }
             }
-        }
-        if (inRangeCount > 0)
-        {
-            idle = false;
-        }
-        else
-        {
-            idle = true;
-        }
-        anim.SetBool("idle", idle);
-        
-        if (!idle)
-        {
-            if (rotating)
+            if (inRangeCount > 0)
             {
-                rotateToTarget();
+                idle = false;
             }
             else
             {
-                ThrowingSprite.transform.rotation = Quaternion.RotateTowards(ThrowingSprite.transform.rotation, Quaternion.identity, rotationSpeed * 1.5f * Time.deltaTime);
+                idle = true;
             }
-        }
+            anim.SetBool("idle", idle);
 
-        ThrowingSprite.transform.localPosition = throwingSpriteStartPos;
+            if (!idle)
+            {
+                if (rotating)
+                {
+                    rotateToTarget();
+                }
+                else
+                {
+                    ThrowingSprite.transform.rotation = Quaternion.RotateTowards(ThrowingSprite.transform.rotation, Quaternion.identity, rotationSpeed * 1.5f * Time.deltaTime);
+                }
+            }
+
+            ThrowingSprite.transform.localPosition = throwingSpriteStartPos;
+        }
+        
     }
 }

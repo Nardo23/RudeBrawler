@@ -49,7 +49,8 @@ public class Enemy : MonoBehaviour
     {
         if (started)
         {
-            target = levelManagerScript.livingPlayers[Random.Range(0, levelManagerScript.livingPlayers.Length)].transform;
+            
+                target = levelManagerScript.livingPlayers[Random.Range(0, levelManagerScript.livingPlayers.Length)].transform;
         }
         else
         {
@@ -114,7 +115,7 @@ public class Enemy : MonoBehaviour
     }
     private void Update()
     {
-        if (!Stoped)
+        if (!Stoped && !levelManagerScript.gameover)
         {
             started = true;
 

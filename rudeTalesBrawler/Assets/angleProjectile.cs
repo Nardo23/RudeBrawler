@@ -10,6 +10,10 @@ public class angleProjectile : MonoBehaviour
     public bool isPlayer = true;
     public bool hitOnce = true;
     Vector3 direction;
+    public AudioSource Sor;
+    [SerializeField]
+    AudioClip[] impactSound;
+    public Vector2 pitchRange = new Vector2(.9f,1.1f);
     // Start is called before the first frame update
     void Start()
     {
@@ -41,6 +45,15 @@ public class angleProjectile : MonoBehaviour
         if(projectile.transform.position.y <= shadow.transform.position.y)
         {
             projectile.transform.position = new Vector3 (projectile.transform.position.x,shadow.transform.position.y,0);
+            if (!landed)
+            {
+                if (Sor != null)
+                {
+                    Sor.pitch= Random.Range(pitchRange.x, pitchRange.y);
+                    Sor.PlayOneShot(impactSound[Random.Range(0, impactSound.Length)]);
+
+                }
+            }
             landed = true;
             GetComponentInChildren<BoxCollider2D>().enabled = false;
         }

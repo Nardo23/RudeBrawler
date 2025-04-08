@@ -10,6 +10,8 @@ public class cameraController : MonoBehaviour
     public float deadZoneX, deadZoneY = 3;
     public bool followMode = true;
     public bool followY = false;
+    public bool constrainX = false, constrainY=false;
+    public Vector2 xConstraints, yConstraints;
     float distanceX, distanceY;
     Vector3 prevPos;
     
@@ -37,12 +39,18 @@ public class cameraController : MonoBehaviour
         currentTarget = characterTarget;
         followY = enableYfollow;
     }
-
     void Update()
+    {
+        if (!levelManagerScript.gameover)
+        {
+            tick();
+        }
+    }
+    void tick()
     {
         if (averageFollow)
         {
-            if(timer< checkTime)
+            if (timer < checkTime)
             {
                 timer += Time.deltaTime;
             }
@@ -61,9 +69,25 @@ public class cameraController : MonoBehaviour
             }
             xAvg = xAvg / livingCharacters.Length;
             yAvg = yAvg / livingCharacters.Length;
+            if (constrainX)
+            {
+                if (xAvg < xConstraints.x)
+                    xAvg = xConstraints.x;
+                if (xAvg > xConstraints.y)
+                    xAvg = xConstraints.y;
+
+            }
+            if (constrainY)
+            {
+                if (yAvg < yConstraints.x)
+                    yAvg = yConstraints.x;
+                if (yAvg > yConstraints.y)
+                    yAvg = yConstraints.y;
+
+            }
             characterTarget.transform.position = new Vector2(xAvg, yAvg);
         }
-        
+
 
 
         Vector3 position = this.transform.position;
@@ -76,28 +100,31 @@ public class cameraController : MonoBehaviour
             {
                 Debug.Log("lerping");
                 position.x = Mathf.Lerp(this.transform.position.x, currentTarget.transform.position.x, (speed + distanceX * .7f) * Time.deltaTime);
+               
             }
 
             if (followY)
             {
                 if (distanceY > deadZoneY || prevPos != transform.position)
                 {
-                    position.y = Mathf.Lerp(this.transform.position.y, currentTarget.transform.position.y, (speed + distanceY * .7f) * Time.deltaTime);
+                    position.y = Mathf.Lerp(this.transform.position.y, currentTarget.transform.position.y+3.82f, (speed + distanceY * .7f) * Time.deltaTime);
                 }
 
+                
             }
             this.transform.position = position;
 
         }
         else
         {
-            position.x = Mathf.Lerp(this.transform.position.x, currentTarget.transform.position.x, (speed*.05f ) * Time.deltaTime);
+            position.x = Mathf.Lerp(this.transform.position.x, currentTarget.transform.position.x, (speed * .05f) * Time.deltaTime);
             if (followY)
             {
-                position.y = Mathf.Lerp(this.transform.position.y, currentTarget.transform.position.y, (speed*.05f) * Time.deltaTime);
+                position.y = Mathf.Lerp(this.transform.position.y, currentTarget.transform.position.y, (speed * .05f) * Time.deltaTime);
             }
 
             prevPos = transform.position;
         };
     }
+    
 }

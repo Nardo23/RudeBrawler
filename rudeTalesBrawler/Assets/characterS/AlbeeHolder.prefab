@@ -15154,8 +15154,17 @@ MonoBehaviour:
   checkObject: {fileID: 0}
   damageType: 0
   attackStrength: 3
+  hitSounds:
+  - {fileID: 8300000, guid: f86a8694351485d4d8533e58feba464d, type: 3}
+  - {fileID: 8300000, guid: 81458d29f9cd0de4f9c6b9ef1e7488fb, type: 3}
+  - {fileID: 8300000, guid: 52707fa092968db4ea924a71e2e04322, type: 3}
+  - {fileID: 8300000, guid: 3900649f71265d346af41de8ee34ec09, type: 3}
+  - {fileID: 8300000, guid: 8125006dd6128db40bc6733e51f8bcef, type: 3}
+  - {fileID: 8300000, guid: 3d0f7f5d2883b6b45991d4f1a6f121d8, type: 3}
+  - {fileID: 8300000, guid: 9cddc35e103d4114f8e3f8d79d017c63, type: 3}
   hitOnce: 0
   hitParticles: {fileID: 8663745972045859412, guid: ad6c6782a6ebd9043bc432c114fb70eb, type: 3}
+  specificHurtPitchRange: {x: 0.9, y: 1.1}
 --- !u!114 &7692258382550524328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15259,7 +15268,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.756
+      value: 0.4
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -15482,7 +15491,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.756
+      value: 0.4
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -21172,6 +21181,8 @@ MonoBehaviour:
   materialSor: {fileID: 8669000338582373226}
   stepSor: {fileID: 4350784531366336731}
   attackSor: {fileID: 1954113409148607925}
+  sweetenerSor: {fileID: 0}
+  specificHurtSor: {fileID: 0}
   footstepsMaterial:
   - {fileID: 8300000, guid: 3fe7c8c3f4f28fc478ebd7c0176e5756, type: 3}
   - {fileID: 8300000, guid: 92640e00c209e664db85a4fb360bcf46, type: 3}
@@ -21195,11 +21206,19 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 1ee8d8d94f99a7e4885331011b20b621, type: 3}
   - {fileID: 8300000, guid: e53eb3bfa12ad6b4c8464c40a1cf714e, type: 3}
   hurt: []
+  sweetener: []
+  misc:
+  - {fileID: 8300000, guid: 21504e56ba52d7147a11dea0a3053574, type: 3}
+  specificHit: []
   materialPitchRange: {x: 0.9, y: 1.1}
   stepPitchRange: {x: 0.9, y: 1.1}
   attackPitchRange: {x: 1, y: 1.2}
   hurtPitchRange: {x: 0.9, y: 1.1}
+  sweetPitchRange: {x: 0.9, y: 1.1}
+  miscPitchRange: {x: 1, y: 1.15}
+  specificHurtPitchRange: {x: 0.9, y: 1.1}
   stepDelay: 0.02
+  recievedHit: 0
 --- !u!1 &8650246164238088500
 GameObject:
   m_ObjectHideFlags: 0
@@ -21291,7 +21310,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.756
+      value: 0.4
       inSlope: 0
       outSlope: 0
       tangentMode: 0

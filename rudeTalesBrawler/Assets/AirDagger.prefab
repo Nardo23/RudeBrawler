@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4238979995229260367}
   - component: {fileID: 3796856329060683697}
   - component: {fileID: 5846778233569998666}
+  - component: {fileID: 6116751804558180946}
   m_Layer: 0
   m_Name: Dagger
   m_TagString: Untagged
@@ -152,8 +153,111 @@ MonoBehaviour:
   checkObject: {fileID: 0}
   damageType: 0
   attackStrength: 1
+  hitSounds:
+  - {fileID: 8300000, guid: d9e5f8ac1223c6c4b8d0f3e2a77d660d, type: 3}
+  - {fileID: 8300000, guid: ba6927327c1c2b840847fb96efd1873c, type: 3}
+  - {fileID: 8300000, guid: e061e5434fed9b944be23142907033d8, type: 3}
+  - {fileID: 8300000, guid: 6ecd2be400467264ebc2dab0c556a16c, type: 3}
+  - {fileID: 8300000, guid: c5f7f588816c1c9469b6e8bebb326f9e, type: 3}
+  - {fileID: 8300000, guid: 6e703ae830f58cc46beb0e8c1eb302d5, type: 3}
   hitOnce: 1
   hitParticles: {fileID: 8663745972045859412, guid: ad6c6782a6ebd9043bc432c114fb70eb, type: 3}
+--- !u!82 &6116751804558180946
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3728705796953212097}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 3849618088675703816, guid: 9fd0c552f699ac3448c9ef650db7c32e, type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.104
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 0.44
+  MinDistance: 2
+  MaxDistance: 60
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.756
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.737
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &4082111643207886809
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,11 +308,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be601c8be0d4c8a4b81a6a9ca4522b82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 23
+  speed: 25
   projectile: {fileID: 3728705796953212097}
   shadow: {fileID: 5892391551040999915}
   isPlayer: 1
   hitOnce: 0
+  Sor: {fileID: 6116751804558180946}
+  impactSound:
+  - {fileID: 8300000, guid: ee2e50af2c0559748aa45e31b7baa8c7, type: 3}
+  - {fileID: 8300000, guid: 2db1ea1df24dbdf4594efb6f9c444835, type: 3}
+  - {fileID: 8300000, guid: 536c3e31cea35854b82613d53e73910d, type: 3}
+  - {fileID: 8300000, guid: a6ed162352caa9948b1fa8ec0adc6641, type: 3}
+  pitchRange: {x: 1.5, y: 1.3}
 --- !u!50 &5826029905385768478
 Rigidbody2D:
   serializedVersion: 4

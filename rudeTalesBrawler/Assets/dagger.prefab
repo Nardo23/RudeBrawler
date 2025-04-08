@@ -169,6 +169,7 @@ MonoBehaviour:
   yRange: 0.7
   checkFromParent: 0
   checkObject: {fileID: 674570940375910710}
+  flyingObj: {fileID: 0}
 --- !u!114 &4611077570738090829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -378,5 +379,12 @@ MonoBehaviour:
   checkObject: {fileID: 0}
   damageType: 0
   attackStrength: 1
+  hitSounds:
+  - {fileID: 8300000, guid: d9e5f8ac1223c6c4b8d0f3e2a77d660d, type: 3}
+  - {fileID: 8300000, guid: ba6927327c1c2b840847fb96efd1873c, type: 3}
+  - {fileID: 8300000, guid: e061e5434fed9b944be23142907033d8, type: 3}
+  - {fileID: 8300000, guid: 6ecd2be400467264ebc2dab0c556a16c, type: 3}
+  - {fileID: 8300000, guid: c5f7f588816c1c9469b6e8bebb326f9e, type: 3}
+  - {fileID: 8300000, guid: 6e703ae830f58cc46beb0e8c1eb302d5, type: 3}
   hitOnce: 0
   hitParticles: {fileID: 8663745972045859412, guid: ad6c6782a6ebd9043bc432c114fb70eb, type: 3}

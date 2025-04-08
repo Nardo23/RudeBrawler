@@ -18,6 +18,7 @@ public class levelManager : MonoBehaviour
     public Image IconP1, IconP2, IconP3;
     public bool gameoverMessage;
     public GameObject gameoverText;
+    public bool gameover = false;
 
     // Start is called before the first frame update
     void Awake()
@@ -139,6 +140,7 @@ public class levelManager : MonoBehaviour
         if(gameoverMessage && livingPlayersCount == 0)
         {
             gameoverText.SetActive(true);
+            gameover = true;
         }
     }
 

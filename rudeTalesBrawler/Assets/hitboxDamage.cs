@@ -15,10 +15,11 @@ public class hitboxDamage : MonoBehaviour
     public int damageType; // 0 = phsical, 1 = electric determens what hurt animation to play
     public int attackStrength = 3; // compare this to the the target's armor to determine if the character takes reduced damage or knockback
     Transform yCheckTransform;
-    
+    [SerializeField]
+    public AudioClip[] hitSounds;
     public bool hitOnce = false; // if true can only hurt one target
     public GameObject hitParticles;
-    
+    public Vector2 specificHurtPitchRange = new Vector2(.9f, 1.1f);
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (isPlayer)
@@ -67,6 +68,16 @@ public class hitboxDamage : MonoBehaviour
                         {
                             GetComponent<Collider2D>().enabled = false;
                         }
+
+                        soundEffects s = collision.gameObject.GetComponentInParent<soundEffects>();
+                        if(s != null && hitSounds !=null)
+                        {
+                            s.recievedHit = true;
+                            s.specificHit = hitSounds;
+                            s.specificHurtPitchRange = specificHurtPitchRange;
+                            s.Hurt();
+                        }
+
                     }
                 }              
 
@@ -96,6 +107,16 @@ public class hitboxDamage : MonoBehaviour
                         {
                             h.changeHealth(-damage);
                         }
+
+                        soundEffects s = collision.gameObject.GetComponentInParent<soundEffects>();
+                        if (s != null && hitSounds != null)
+                        {
+                            s.recievedHit = true;
+                            s.specificHit = hitSounds;
+                            s.specificHurtPitchRange = specificHurtPitchRange;
+                            s.Hurt();
+                        }
+
                     }
                     
                 }

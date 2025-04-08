@@ -1067,6 +1067,13 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
+  - time: 0
+    functionName: PlayMiscRange
+    data: 3,4
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 0.035714287
     functionName: animMove
     data: 
@@ -1076,6 +1083,13 @@ AnimationClip:
     messageOptions: 0
   - time: 0.035714287
     functionName: animJumpingOn
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.035714287
+    functionName: Attack
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
@@ -1158,11 +1172,25 @@ AnimationClip:
     floatParameter: 15
     intParameter: 0
     messageOptions: 0
+  - time: 0.4642857
+    functionName: PlayMiscRange
+    data: 1,2
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
   - time: 0.5
     functionName: animMove
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 50
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.5
+    functionName: Attack
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
     intParameter: 0
     messageOptions: 0
   - time: 0.53571427

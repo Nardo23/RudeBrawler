@@ -166,8 +166,14 @@ MonoBehaviour:
   checkObject: {fileID: 5780680735516923874}
   damageType: 0
   attackStrength: 4
+  hitSounds:
+  - {fileID: 8300000, guid: f3bdff981a4e79b4d9eb4a0bf26e1ed1, type: 3}
+  - {fileID: 8300000, guid: e00972a7054577347a0eaf393b23ebc7, type: 3}
+  - {fileID: 8300000, guid: 9fefdf52e3cd96a48ac0148ba391fbd7, type: 3}
+  - {fileID: 8300000, guid: 1cdac4bbdc4632c4ab2750c0106be523, type: 3}
   hitOnce: 0
   hitParticles: {fileID: 8663745972045859412, guid: ad6c6782a6ebd9043bc432c114fb70eb, type: 3}
+  specificHurtPitchRange: {x: 0.9, y: 1.1}
 --- !u!114 &6346049758628395116
 MonoBehaviour:
   m_ObjectHideFlags: 0

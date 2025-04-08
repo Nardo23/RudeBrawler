@@ -537,9 +537,9 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 6.0053835, y: 5.0500035}
-  m_Direction: 1
+  m_Offset: {x: -0.036776543, y: 0.7641058}
+  m_Size: {x: 6.406679, y: 6.5783005}
+  m_Direction: 0
 --- !u!114 &8997613079843292615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -561,5 +561,13 @@ MonoBehaviour:
   checkObject: {fileID: 6096349188548898007}
   damageType: 0
   attackStrength: 3
+  hitSounds:
+  - {fileID: 8300000, guid: f86a8694351485d4d8533e58feba464d, type: 3}
+  - {fileID: 8300000, guid: 81458d29f9cd0de4f9c6b9ef1e7488fb, type: 3}
+  - {fileID: 8300000, guid: 52707fa092968db4ea924a71e2e04322, type: 3}
+  - {fileID: 8300000, guid: 3900649f71265d346af41de8ee34ec09, type: 3}
+  - {fileID: 8300000, guid: 8125006dd6128db40bc6733e51f8bcef, type: 3}
+  - {fileID: 8300000, guid: 3d0f7f5d2883b6b45991d4f1a6f121d8, type: 3}
+  - {fileID: 8300000, guid: 9cddc35e103d4114f8e3f8d79d017c63, type: 3}
   hitOnce: 0
   hitParticles: {fileID: 8663745972045859412, guid: ad6c6782a6ebd9043bc432c114fb70eb, type: 3}

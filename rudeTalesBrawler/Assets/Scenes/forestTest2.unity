@@ -540,6 +540,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 0.4
   MainCamera: {fileID: 519420031}
+  ParalaxY: 0
+  offset: {x: 0, y: 0, z: 0}
 --- !u!4 &88243917
 Transform:
   m_ObjectHideFlags: 0
@@ -582,6 +584,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: -0.05
   MainCamera: {fileID: 519420031}
+  ParalaxY: 0
+  offset: {x: 0, y: 0, z: 0}
 --- !u!1001 &108666429
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1414,6 +1418,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: -0.07
   MainCamera: {fileID: 519420031}
+  ParalaxY: 0
+  offset: {x: 0, y: 0, z: 0}
 --- !u!1001 &197383105
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4097,6 +4103,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: -0.05
   MainCamera: {fileID: 519420031}
+  ParalaxY: 0
+  offset: {x: 0, y: 0, z: 0}
 --- !u!1 &467818823
 GameObject:
   m_ObjectHideFlags: 0
@@ -4853,6 +4861,10 @@ MonoBehaviour:
   deadZoneY: 2
   followMode: 1
   followY: 0
+  constrainX: 0
+  constrainY: 0
+  xConstraints: {x: 0, y: 0}
+  yConstraints: {x: 0, y: 0}
   averageFollow: 1
   checkTime: 2
   levelManagerScript: {fileID: 326447955}
@@ -5983,6 +5995,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 0.5
   MainCamera: {fileID: 519420031}
+  ParalaxY: 0
+  offset: {x: 0, y: 0, z: 0}
 --- !u!4 &673739603
 Transform:
   m_ObjectHideFlags: 0
@@ -6556,6 +6570,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 0.3
   MainCamera: {fileID: 519420031}
+  ParalaxY: 0
+  offset: {x: 0, y: 0, z: 0}
 --- !u!4 &724657849
 Transform:
   m_ObjectHideFlags: 0
@@ -7302,6 +7318,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 0.1
   MainCamera: {fileID: 519420031}
+  ParalaxY: 0
+  offset: {x: 0, y: 0, z: 0}
 --- !u!1 &817854416
 GameObject:
   m_ObjectHideFlags: 0
@@ -10321,6 +10339,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: -0.1
   MainCamera: {fileID: 519420031}
+  ParalaxY: 0
+  offset: {x: 0, y: 0, z: 0}
 --- !u!1 &1237457080
 GameObject:
   m_ObjectHideFlags: 0
@@ -15117,6 +15137,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: 0.2
   MainCamera: {fileID: 519420031}
+  ParalaxY: 0
+  offset: {x: 0, y: 0, z: 0}
 --- !u!4 &1724217945
 Transform:
   m_ObjectHideFlags: 0
@@ -15710,6 +15732,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AmountOfParallax: -0.1
   MainCamera: {fileID: 519420031}
+  ParalaxY: 0
+  offset: {x: 0, y: 0, z: 0}
 --- !u!1 &1802133258
 GameObject:
   m_ObjectHideFlags: 0

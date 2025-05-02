@@ -15,13 +15,13 @@ using UnityEngine;
         [Tooltip("Duration of the flash.")]
         [SerializeField] private float duration;
         public Color color;
-
+        public bool useRenderArray = false;
         #endregion
         #region Private Fields
 
         // The SpriteRenderer that should flash.
         public SpriteRenderer spriteRenderer;
-
+        public SpriteRenderer[] spriteRendereArray;
         // The material that was in use, when the script started.
         private Material originalMaterial;
 
@@ -71,6 +71,27 @@ using UnityEngine;
 
         private IEnumerator FlashRoutine(Color color)
         {
+            if (useRenderArray)
+            {
+                foreach (SpriteRenderer rend in spriteRendereArray)
+                {
+                    rend.material = flashMaterial;
+                    flashMaterial.color = color;
+                
+                }
+            
+                yield return new WaitForSeconds(duration);
+                
+                foreach (SpriteRenderer rend in spriteRendereArray)
+                {
+                    rend.material = originalMaterial;
+                    flashMaterial.color = color;
+                    flashRoutine = null;
+                }
+
+            }
+            else
+            {
             // Swap to the flashMaterial.
             spriteRenderer.material = flashMaterial;
 
@@ -85,6 +106,8 @@ using UnityEngine;
 
             // Set the flashRoutine to null, signaling that it's finished.
             flashRoutine = null;
+            }
+            
         }
 
         #endregion

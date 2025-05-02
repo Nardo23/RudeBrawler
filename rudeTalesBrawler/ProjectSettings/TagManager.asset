@@ -10,6 +10,9 @@ TagManager:
   - LevelManager
   - EnemyProjectile
   - MainTheme
+  - BossHurt
+  - BasicHurt
+  - Chicken
   layers:
   - Default
   - TransparentFX
@@ -22,8 +25,8 @@ TagManager:
   - Jumpable
   - jumping
   - walls
-  - 
-  - 
+  - airOnly
+  - charAirOnly
   - 
   - 
   - 
@@ -49,6 +52,9 @@ TagManager:
     locked: 0
   - name: ground
     uniqueID: 2580795185
+    locked: 0
+  - name: frontBackground
+    uniqueID: 2221729073
     locked: 0
   - name: Default
     uniqueID: 0

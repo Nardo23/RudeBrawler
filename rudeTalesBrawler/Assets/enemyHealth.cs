@@ -35,7 +35,7 @@ public class enemyHealth : MonoBehaviour
             }
             
         }
-        Debug.Log("health: " + currentHealth);
+        //Debug.Log("health: " + currentHealth);
     }
 
 }

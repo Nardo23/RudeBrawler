@@ -31,6 +31,9 @@ public class CharacterMovement : MonoBehaviour
     private bool jump;
     Vector2 _velocity;
 
+    public GameObject airCollider;
+    public float aircollisionHeight;
+
     public ParticleSystem runParticlesR;
     public ParticleSystem runParticlesL;
     public ParticleSystem jumpParticleL;
@@ -378,6 +381,12 @@ public class CharacterMovement : MonoBehaviour
                     charRB.gravityScale = 0;
                 else
                     charRB.gravityScale = jumpingGravityScale;
+
+                if (charRB.transform.position.y - shadow.transform.position.y > aircollisionHeight)
+                    airCollider.SetActive(true);               
+                else
+                    airCollider.SetActive(false);
+
 
             }
             // --- horizontal position check

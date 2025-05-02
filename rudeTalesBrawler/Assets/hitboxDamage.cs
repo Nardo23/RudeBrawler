@@ -121,6 +121,28 @@ public class hitboxDamage : MonoBehaviour
                     
                 }
             }
+            if(collision.tag == "BossHurt")
+            {
+                if (checkFromParent)
+                {
+                    yCheckTransform = transform.parent.transform;
+                }
+                else
+                {
+                    yCheckTransform = checkObject.transform;
+                }
+                boss bossScript = collision.GetComponentInParent<boss>();
+                if (bossScript != null)
+                {
+                    if (Mathf.Abs(bossScript.transform.position.y - yCheckTransform.position.y) <= yRange + bossScript.bonusSize)// check if bases are within a certain y range
+                    {
+                        GameObject particles = Instantiate(hitParticles, new Vector2(collision.transform.position.x, collision.transform.position.y), Quaternion.identity);
+                        particles.transform.parent = collision.transform.parent;
+                        bossScript.changeHealth(-damage);
+                    }
+                }
+            }
+            
         }
         else
         {
@@ -160,6 +182,28 @@ public class hitboxDamage : MonoBehaviour
                 
             }
         }
-        
+        if (collision.tag == "BasicHurt")
+        {
+            if (checkFromParent)
+            {
+                yCheckTransform = transform.parent.transform;
+            }
+            else
+            {
+                yCheckTransform = checkObject.transform;
+            }
+            basicEnemyHealth basicScript = collision.GetComponentInParent<basicEnemyHealth>();
+            if (basicScript != null)
+            {
+                if (Mathf.Abs(basicScript.transform.position.y - yCheckTransform.position.y) <= yRange)
+                {
+                    GameObject particles = Instantiate(hitParticles, new Vector2(collision.transform.position.x, collision.transform.position.y), Quaternion.identity);
+                    particles.transform.parent = collision.transform.parent;
+                    basicScript.changeHealth(-damage);
+                    basicScript.knockback(knockbackForce, transform.position.x);
+                }
+            }
+
+        }
     }
 }

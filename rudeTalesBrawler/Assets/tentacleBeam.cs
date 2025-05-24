@@ -11,6 +11,7 @@ public class tentacleBeam : MonoBehaviour
     public float leftX, rightX;
     public Camera cam;
     Transform target;
+    public float bonusCooldown;
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +29,7 @@ public class tentacleBeam : MonoBehaviour
         {
             transform.Rotate(0, 180, 0);
         }
-        if(target.transform.position.x < cam.transform.position.x)
+        if(transform.position.x < cam.transform.position.x)
         {
             transform.position = new Vector3(leftX, target.transform.position.y, transform.position.z);
             transform.Rotate(0, 180, 0);
@@ -46,6 +47,7 @@ public class tentacleBeam : MonoBehaviour
     {
         //tell boss script the attack is done
         motherScript.attackOver();
+        motherScript.SetBonusCooldown(bonusCooldown);
     }
 
     void endBeam()

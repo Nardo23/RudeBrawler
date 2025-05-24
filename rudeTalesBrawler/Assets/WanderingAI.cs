@@ -9,7 +9,7 @@ public class WanderingAI : MonoBehaviour
     float actualWanderTimer;
     private Transform target;
     private NavMeshAgent agent;
-    private float timer;
+    public float timer;
     public Animator anim;
     bool moving = true;
     float speed;

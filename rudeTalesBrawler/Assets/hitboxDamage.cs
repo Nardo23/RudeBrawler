@@ -20,6 +20,7 @@ public class hitboxDamage : MonoBehaviour
     public bool hitOnce = false; // if true can only hurt one target
     public GameObject hitParticles;
     public Vector2 specificHurtPitchRange = new Vector2(.9f, 1.1f);
+    //public bool isBasic = false;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (isPlayer)

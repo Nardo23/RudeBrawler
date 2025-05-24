@@ -63,11 +63,16 @@ public class Fox : MonoBehaviour
             getTarget();
         }
         if (goLeft)
+        {
             targetX = leftBound;
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
         else
+        {
             targetX = rightBound;
-
-        
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+                 
         if (!noTargets && currentTarget == null)
             getTarget();
         if (!noTargets)

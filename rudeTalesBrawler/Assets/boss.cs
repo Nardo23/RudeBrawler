@@ -14,6 +14,7 @@ public class boss : MonoBehaviour
     public bool attackReady = true;
     bool attackFinished = true;
     public float cooldown =1;
+    public float bonusCooldown = 0;
     float timer;
     int vulnerableDamage;
     public int maxVulnerableDamage;
@@ -50,12 +51,13 @@ public class boss : MonoBehaviour
     {
         if (attackFinished)
         {
-            if (timer < cooldown)
+            if (timer < cooldown+bonusCooldown)
             {
                 timer += Time.deltaTime;
             }
             else
             {
+                bonusCooldown = 0;
                 attackReady = true;
                 Debug.Log("bossAttackReady");
                 attackFinished = false;

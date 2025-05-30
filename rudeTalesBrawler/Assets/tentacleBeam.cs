@@ -29,7 +29,7 @@ public class tentacleBeam : MonoBehaviour
         {
             transform.Rotate(0, 180, 0);
         }
-        if(transform.position.x < cam.transform.position.x)
+        if(target.transform.position.x > cam.transform.position.x)
         {
             transform.position = new Vector3(leftX, target.transform.position.y, transform.position.z);
             transform.Rotate(0, 180, 0);

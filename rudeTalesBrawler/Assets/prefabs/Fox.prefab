@@ -404,7 +404,6 @@ MonoBehaviour:
   hitOnce: 0
   hitParticles: {fileID: 8663745972045859412, guid: ad6c6782a6ebd9043bc432c114fb70eb, type: 3}
   specificHurtPitchRange: {x: 0.9, y: 1.1}
-  isBasic: 1
 --- !u!1 &3585114107013869924
 GameObject:
   m_ObjectHideFlags: 0
@@ -490,10 +489,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetTag: Chicken
-  leftBound: -72.3
+  leftBound: -73.3
   rightBound: -43.7
   topBound: -1.4
-  bottomBound: -8
+  bottomBound: -8.2
   goLeft: 1
   targetX: 0
   TargetY: 0

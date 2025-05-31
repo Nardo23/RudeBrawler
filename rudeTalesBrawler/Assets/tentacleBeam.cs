@@ -25,10 +25,9 @@ public class tentacleBeam : MonoBehaviour
         anim = GetComponent<Animator>();
         levelManagerScript = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<levelManager>();
         target = levelManagerScript.livingPlayers[Random.Range(0, levelManagerScript.livingPlayers.Length)].transform;
-        if(transform.rotation != Quaternion.identity)
-        {
-            transform.Rotate(0, 180, 0);
-        }
+        
+        transform.rotation = Quaternion.identity;
+        
         if(target.transform.position.x > cam.transform.position.x)
         {
             transform.position = new Vector3(leftX, target.transform.position.y, transform.position.z);

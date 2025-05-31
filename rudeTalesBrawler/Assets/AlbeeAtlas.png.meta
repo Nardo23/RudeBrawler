@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f64a911fe19525a4da17232dfb28249e
+guid: 94b7dc30f5b580e4d8681406f58c0463
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -82,14 +82,14 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
-    maxTextureSize: 4096
+    maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 12
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
-    overridden: 1
+    overridden: 0
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
@@ -153,18 +153,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 10800
-        width: 1200
-        height: 1200
+        y: 3227
+        width: 155
+        height: 237
       alignment: 9
-      pivot: {x: 0.4191667, y: 0.19}
+      pivot: {x: 0.6608979, y: 0.024092823}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 26cc2cefcbde09d4ba321282a794044f
-      internalID: -675471589
+      spriteID: e07c97198cffc8560800000000000000
+      internalID: 7317504731469432590
       vertices: []
       indices: 
       edges: []
@@ -173,19 +173,19 @@ TextureImporter:
       name: albeeSheet_1
       rect:
         serializedVersion: 2
-        x: 1200
-        y: 10800
-        width: 1200
-        height: 1200
+        x: 0
+        y: 3466
+        width: 157
+        height: 227
       alignment: 9
-      pivot: {x: 0.4191667, y: 0.19}
+      pivot: {x: 0.6078929, y: -0.040925115}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 075a4c70ddaf70a4aa37a27d8cba8283
-      internalID: -534820593
+      spriteID: 24cb50a0d04b59d70800000000000000
+      internalID: 9049336994366602306
       vertices: []
       indices: 
       edges: []
@@ -194,19 +194,19 @@ TextureImporter:
       name: albeeSheet_2
       rect:
         serializedVersion: 2
-        x: 2400
-        y: 10800
-        width: 1200
-        height: 1200
+        x: 0
+        y: 2737
+        width: 167
+        height: 226
       alignment: 9
-      pivot: {x: 0.4191667, y: 0.19}
+      pivot: {x: 0.62538433, y: -0.010132748}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e5fd4cc6316fdf04995c2e852ea99179
-      internalID: 275900874
+      spriteID: b7c0459720cceddb0800000000000000
+      internalID: -4765147044713853829
       vertices: []
       indices: 
       edges: []
@@ -215,19 +215,19 @@ TextureImporter:
       name: albeeSheet_3
       rect:
         serializedVersion: 2
-        x: 3600
-        y: 10800
-        width: 1200
-        height: 1200
+        x: 1821
+        y: 1612
+        width: 184
+        height: 232
       alignment: 9
-      pivot: {x: 0.4191667, y: 0.19}
+      pivot: {x: 0.61651725, y: 0.024612065}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 50cdade54eae0d0459cb0afc1913e256
-      internalID: -835869195
+      spriteID: 84ab06b33d7afc6b0800000000000000
+      internalID: -5273812112951428536
       vertices: []
       indices: 
       edges: []
@@ -236,19 +236,19 @@ TextureImporter:
       name: albeeSheet_4
       rect:
         serializedVersion: 2
-        x: 4800
-        y: 10800
-        width: 1200
-        height: 1200
+        x: 1587
+        y: 1371
+        width: 188
+        height: 233
       alignment: 9
-      pivot: {x: 0.4191667, y: 0.19}
+      pivot: {x: 0.64063394, y: 0.024506433}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 24a08fb25acb81c4d8fdd8ad3cbbd41b
-      internalID: 2111103525
+      spriteID: f75d0ffef089d6570800000000000000
+      internalID: 8461586469116499327
       vertices: []
       indices: 
       edges: []
@@ -257,19 +257,19 @@ TextureImporter:
       name: albeeSheet_5
       rect:
         serializedVersion: 2
-        x: 6000
-        y: 10800
-        width: 1200
-        height: 1200
+        x: 1398
+        y: 1371
+        width: 187
+        height: 236
       alignment: 9
-      pivot: {x: 0.4191667, y: 0.19}
+      pivot: {x: 0.66545016, y: 0.024194911}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e04ec6bc3e5996a46b32eb3fd7ca8cd9
-      internalID: -730400826
+      spriteID: f456642fc77ff29c0800000000000000
+      internalID: -3949666232167930545
       vertices: []
       indices: 
       edges: []
@@ -278,19 +278,19 @@ TextureImporter:
       name: albeeSheet_6
       rect:
         serializedVersion: 2
-        x: 7200
-        y: 10800
-        width: 1200
-        height: 1200
+        x: 1202
+        y: 1371
+        width: 194
+        height: 235
       alignment: 9
-      pivot: {x: 0.4191667, y: 0.19}
+      pivot: {x: 0.60020196, y: 0.024297869}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 60583598a22af2145beb8b431128e5b6
-      internalID: 507457724
+      spriteID: 57b54ee7c7d241cd0800000000000000
+      internalID: -2588393873103103115
       vertices: []
       indices: 
       edges: []
@@ -299,19 +299,19 @@ TextureImporter:
       name: albeeSheet_7
       rect:
         serializedVersion: 2
-        x: 8400
-        y: 10800
-        width: 1200
-        height: 1200
+        x: 1860
+        y: 1141
+        width: 176
+        height: 224
       alignment: 9
-      pivot: {x: 0.4191667, y: 0.19}
+      pivot: {x: 0.638859, y: -0.041473217}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: bafb8a519c05ef74abddf65aff2ba9df
-      internalID: -12055813
+      spriteID: 10407bb887d2bf100800000000000000
+      internalID: 142757808955655169
       vertices: []
       indices: 
       edges: []
@@ -320,19 +320,19 @@ TextureImporter:
       name: albeeSheet_8
       rect:
         serializedVersion: 2
-        x: 9600
-        y: 10800
-        width: 1200
-        height: 1200
+        x: 0
+        y: 2279
+        width: 173
+        height: 223
       alignment: 9
-      pivot: {x: 0.4191667, y: 0.19}
+      pivot: {x: 0.6383768, y: -0.010269063}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f8b2ea2d653de964cacff042b9da4fb9
-      internalID: -933192062
+      spriteID: 5dc70719245569fa0800000000000000
+      internalID: -5794350126169293611
       vertices: []
       indices: 
       edges: []
@@ -341,19 +341,19 @@ TextureImporter:
       name: albeeSheet_9
       rect:
         serializedVersion: 2
-        x: 10800
-        y: 10800
-        width: 1200
-        height: 1200
+        x: 1777
+        y: 1371
+        width: 189
+        height: 229
       alignment: 9
-      pivot: {x: 0.4191667, y: 0.19}
+      pivot: {x: 0.6266623, y: 0.024934493}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9aa124924673c36488f5625f1147ed35
-      internalID: -186731104
+      spriteID: f9e60b208bfa2a280800000000000000
+      internalID: -9033464697697833313
       vertices: []
       indices: 
       edges: []
@@ -362,19 +362,19 @@ TextureImporter:
       name: albeeSheet_10
       rect:
         serializedVersion: 2
-        x: 0
-        y: 9600
-        width: 1200
-        height: 1200
+        x: 1457
+        y: 1612
+        width: 185
+        height: 232
       alignment: 9
-      pivot: {x: 0.4191667, y: 0.19}
+      pivot: {x: 0.64021176, y: 0.02030172}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9fb66c2bc13f3ee4da7de54698a40345
-      internalID: -185606751
+      spriteID: dae64417cf56d0450800000000000000
+      internalID: 6056609208789659309
       vertices: []
       indices: 
       edges: []
@@ -383,19 +383,19 @@ TextureImporter:
       name: albeeSheet_11
       rect:
         serializedVersion: 2
-        x: 1200
-        y: 9600
-        width: 1200
-        height: 1200
+        x: 1877
+        y: 1887
+        width: 166
+        height: 234
       alignment: 9
-      pivot: {x: 0.4191667, y: 0.19}
+      pivot: {x: 0.68336856, y: 0.024401706}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 59d442df2d1dfd1478cc36319dba0d08
-      internalID: 966249913
+      spriteID: ff1794346894310a0800000000000000
+      internalID: -6912100162080247297
       vertices: []
       indices: 
       edges: []
@@ -404,19 +404,19 @@ TextureImporter:
       name: albeeSheet_12
       rect:
         serializedVersion: 2
-        x: 2400
-        y: 9600
-        width: 1200
-        height: 1200
+        x: 340
+        y: 249
+        width: 1
+        height: 1
       alignment: 9
-      pivot: {x: 0.4191667, y: 0.19}
+      pivot: {x: 171.43918, y: 77.71}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 8210cd67a8004b242b5694b05740bba4
-      internalID: 864457597
+      spriteID: 9dce8e559fbfb8e20800000000000000
+      internalID: 3354051395814223065
       vertices: []
       indices: 
       edges: []
@@ -425,19 +425,19 @@ TextureImporter:
       name: albeeSheet_13
       rect:
         serializedVersion: 2
-        x: 3600
-        y: 9600
-        width: 1200
-        height: 1200
+        x: 340
+        y: 246
+        width: 1
+        height: 1
       alignment: 9
-      pivot: {x: 0.4191667, y: 0.19}
+      pivot: {x: 171.43918, y: 77.71}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 623a33f65e7d4fd49abf9cb33b935b02
-      internalID: 1571765469
+      spriteID: 921215bbf73dc1dc0800000000000000
+      internalID: -3666823451029462743
       vertices: []
       indices: 
       edges: []
@@ -446,19 +446,19 @@ TextureImporter:
       name: albeeSheet_14
       rect:
         serializedVersion: 2
-        x: 4800
-        y: 9600
-        width: 1200
-        height: 1200
+        x: 340
+        y: 243
+        width: 1
+        height: 1
       alignment: 9
-      pivot: {x: 0.4191667, y: 0.19}
+      pivot: {x: 171.43918, y: 77.71}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a493c5b4cfeec3640b5bada5cbdf194d
-      internalID: -402561758
+      spriteID: 6534b3e84ef1e2e00800000000000000
+      internalID: 1021789231958934358
       vertices: []
       indices: 
       edges: []
@@ -467,19 +467,19 @@ TextureImporter:
       name: albeeSheet_15
       rect:
         serializedVersion: 2
-        x: 6000
-        y: 9600
-        width: 1200
-        height: 1200
+        x: 340
+        y: 240
+        width: 1
+        height: 1
       alignment: 9
-      pivot: {x: 0.4191667, y: 0.19}
+      pivot: {x: 171.43918, y: 77.71}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 2e2a1c081f8f46548a71f832be75a6f7
-      internalID: -494990448
+      spriteID: 8f0033d4f2d845870800000000000000
+      internalID: 8670710416893214968
       vertices: []
       indices: 
       edges: []
@@ -488,19 +488,19 @@ TextureImporter:
       name: albeeSheet_16
       rect:
         serializedVersion: 2
-        x: 7200
-        y: 9600
-        width: 1200
-        height: 1200
+        x: 340
+        y: 237
+        width: 1
+        height: 1
       alignment: 9
-      pivot: {x: 0.4191667, y: 0.19}
+      pivot: {x: 171.43918, y: 77.71}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b0f7be9e87a04364ab9f2deedd4c1475
-      internalID: -1784696288
+      spriteID: a06c55a697a6168f0800000000000000
+      internalID: -549040609854896630
       vertices: []
       indices: 
       edges: []
@@ -509,19 +509,19 @@ TextureImporter:
       name: albeeSheet_17
       rect:
         serializedVersion: 2
-        x: 8400
-        y: 9600
-        width: 1200
-        height: 1200
+        x: 1076
+        y: 0
+        width: 261
+        height: 271
       alignment: 9
-      pivot: {x: 0.62666667, y: 0.19}
+      pivot: {x: 0.4149681, y: 0.024760144}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: cd9e7d6e760d7e744a950eb4e381adf1
-      internalID: 1297991505
+      spriteID: 5adda8a637efd48d0800000000000000
+      internalID: -2860350416648217179
       vertices: []
       indices: 
       edges: []
@@ -530,19 +530,19 @@ TextureImporter:
       name: albeeSheet_18
       rect:
         serializedVersion: 2
-        x: 9600
-        y: 9600
-        width: 1200
-        height: 1200
+        x: 340
+        y: 0
+        width: 406
+        height: 235
       alignment: 9
-      pivot: {x: 0.62666667, y: 0.19}
+      pivot: {x: 0.63129723, y: 0.032808505}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b4dd1f134d9381f4097514231fee7a7e
-      internalID: -1407719694
+      spriteID: 4eee82988725ecc70800000000000000
+      internalID: 8993216183556173540
       vertices: []
       indices: 
       edges: []
@@ -551,19 +551,19 @@ TextureImporter:
       name: albeeSheet_19
       rect:
         serializedVersion: 2
-        x: 10800
-        y: 9600
-        width: 1200
-        height: 1200
+        x: 1181
+        y: 841
+        width: 231
+        height: 242
       alignment: 9
-      pivot: {x: 0.62666667, y: 0.19}
+      pivot: {x: 0.39959598, y: 0.031859502}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4a58df7347433ac46ba202ed69ecad50
-      internalID: 1644055176
+      spriteID: de1626fb59276fc90800000000000000
+      internalID: -7136390572035382803
       vertices: []
       indices: 
       edges: []
@@ -572,19 +572,19 @@ TextureImporter:
       name: albeeSheet_20
       rect:
         serializedVersion: 2
-        x: 0
-        y: 8400
-        width: 1200
-        height: 1200
+        x: 727
+        y: 328
+        width: 240
+        height: 275
       alignment: 9
-      pivot: {x: 0.5833333, y: 0.19}
+      pivot: {x: 0.39826387, y: 0.024399996}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 1f35edc3218d830479d71cc72d1b41cd
-      internalID: 158171574
+      spriteID: 6dc21daef628a78c0800000000000000
+      internalID: -4000741901772706602
       vertices: []
       indices: 
       edges: []
@@ -593,19 +593,19 @@ TextureImporter:
       name: albeeSheet_21
       rect:
         serializedVersion: 2
-        x: 1200
-        y: 8400
-        width: 1200
-        height: 1200
+        x: 1339
+        y: 0
+        width: 250
+        height: 281
       alignment: 9
-      pivot: {x: 0.5833333, y: 0.19}
+      pivot: {x: 0.5983333, y: 0.023879}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ad3923bca8473ca43abb2fcf4ca90a81
-      internalID: -216644069
+      spriteID: c5b3404df71f388a0800000000000000
+      internalID: -6303929522068374692
       vertices: []
       indices: 
       edges: []
@@ -614,19 +614,19 @@ TextureImporter:
       name: albeeSheet_22
       rect:
         serializedVersion: 2
-        x: 2400
-        y: 8400
-        width: 1200
-        height: 1200
+        x: 381
+        y: 1612
+        width: 174
+        height: 262
       alignment: 9
-      pivot: {x: 0.48333332, y: 0.19}
+      pivot: {x: 0.6188697, y: 0.025610683}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 2543ea54929a45c438769a06a63228d3
-      internalID: 1120438206
+      spriteID: 6eea7c477422844e0800000000000000
+      internalID: -1997308744441549082
       vertices: []
       indices: 
       edges: []
@@ -635,19 +635,19 @@ TextureImporter:
       name: albeeSheet_23
       rect:
         serializedVersion: 2
-        x: 3600
-        y: 8400
-        width: 1200
-        height: 1200
+        x: 0
+        y: 1371
+        width: 216
+        height: 239
       alignment: 9
-      pivot: {x: 0.46666667, y: 0.19}
+      pivot: {x: 0.4299383, y: 0.04481171}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 211a839027ea81944821839700564612
-      internalID: 115935500
+      spriteID: b4fe5fe47aff824a0800000000000000
+      internalID: -6617758558371582133
       vertices: []
       indices: 
       edges: []
@@ -656,19 +656,19 @@ TextureImporter:
       name: albeeSheet_24
       rect:
         serializedVersion: 2
-        x: 4800
-        y: 8400
-        width: 1200
-        height: 1200
+        x: 0
+        y: 1612
+        width: 178
+        height: 273
       alignment: 9
-      pivot: {x: 0.41916665, y: 0.19}
+      pivot: {x: 0.45752338, y: 0.01358974}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 90a608fa2d31e0e4383fb2e27f768602
-      internalID: -685942673
+      spriteID: ead8a8536aba6ff90800000000000000
+      internalID: -6920155047056994898
       vertices: []
       indices: 
       edges: []
@@ -677,19 +677,19 @@ TextureImporter:
       name: albeeSheet_25
       rect:
         serializedVersion: 2
-        x: 6000
-        y: 8400
-        width: 1200
-        height: 1200
+        x: 1208
+        y: 328
+        width: 233
+        height: 269
       alignment: 9
-      pivot: {x: 0.4191667, y: 0.19}
+      pivot: {x: 0.7357905, y: 0.013791818}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 0811e94a195b55a49bcccf9f46ddb868
-      internalID: 61774064
+      spriteID: c951aba278f7a0d50800000000000000
+      internalID: 6704311213808555420
       vertices: []
       indices: 
       edges: []
@@ -698,19 +698,19 @@ TextureImporter:
       name: albeeSheet_26
       rect:
         serializedVersion: 2
-        x: 7200
-        y: 8400
-        width: 1200
-        height: 1200
+        x: 0
+        y: 2504
+        width: 165
+        height: 231
       alignment: 9
-      pivot: {x: 0.4191667, y: 0.19}
+      pivot: {x: 0.6208435, y: 0.020389607}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: d321586237b6da64aa93e55413683f2c
-      internalID: 583782809
+      spriteID: 6bbb823af1f27aeb0800000000000000
+      internalID: -4708743072464716874
       vertices: []
       indices: 
       edges: []
@@ -719,19 +719,19 @@ TextureImporter:
       name: albeeSheet_27
       rect:
         serializedVersion: 2
-        x: 8400
-        y: 8400
-        width: 1200
-        height: 1200
+        x: 1530
+        y: 1887
+        width: 172
+        height: 230
       alignment: 9
-      pivot: {x: 0.4191667, y: 0.19}
+      pivot: {x: 0.6362743, y: 0.01613043}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e0dae4f32ae0645459a3e8a723791ea2
-      internalID: -1201215761
+      spriteID: 12627994ecd2cf620800000000000000
+      internalID: 2809170631593502241
       vertices: []
       indices: 
       edges: []
@@ -740,19 +740,19 @@ TextureImporter:
       name: albeeSheet_28
       rect:
         serializedVersion: 2
-        x: 9600
-        y: 8400
-        width: 1200
-        height: 1200
+        x: 1704
+        y: 1887
+        width: 171
+        height: 230
       alignment: 9
-      pivot: {x: 0.4191667, y: 0.19}
+      pivot: {x: 0.6341472, y: 0.01613043}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 6cc0c248ab1dec7449574585e08a0729
-      internalID: -71274242
+      spriteID: d3645791935f3ff80800000000000000
+      internalID: -8073840081356110275
       vertices: []
       indices: 
       edges: []
@@ -761,19 +761,19 @@ TextureImporter:
       name: albeeSheet_29
       rect:
         serializedVersion: 2
-        x: 10800
-        y: 8400
-        width: 1200
-        height: 1200
+        x: 474
+        y: 841
+        width: 261
+        height: 224
       alignment: 9
-      pivot: {x: 0.41916665, y: 0.19}
+      pivot: {x: 0.22773626, y: 0.029955354}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 5e1f7eaca113e6a498507123b0989039
-      internalID: -2016796811
+      spriteID: 0fc6e9088c4a1be30800000000000000
+      internalID: 4517573082287598832
       vertices: []
       indices: 
       edges: []
@@ -782,19 +782,19 @@ TextureImporter:
       name: albeeSheet_30
       rect:
         serializedVersion: 2
-        x: 0
-        y: 7200
-        width: 1200
-        height: 1200
+        x: 1869
+        y: 0
+        width: 170
+        height: 295
       alignment: 9
-      pivot: {x: 0.41916665, y: 0.20666666}
+      pivot: {x: 0.43199506, y: 0.14415818}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b57cfe7ff562afb4f95ab5fb81b83930
-      internalID: -383750453
+      spriteID: 2ad697d484992e510800000000000000
+      internalID: 1576991355349593506
       vertices: []
       indices: 
       edges: []
@@ -803,19 +803,19 @@ TextureImporter:
       name: albeeSheet_31
       rect:
         serializedVersion: 2
-        x: 1200
-        y: 7200
-        width: 1200
-        height: 1200
+        x: 1644
+        y: 1612
+        width: 175
+        height: 245
       alignment: 9
-      pivot: {x: 0.41916665, y: 0.20666666}
+      pivot: {x: 0.4482238, y: 0.002149652}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 3d1316d4ddd21494b8bfa2533cda9d32
-      internalID: -1791214826
+      spriteID: 2cd66467275021bc0800000000000000
+      internalID: -3813979945260651070
       vertices: []
       indices: 
       edges: []
@@ -824,19 +824,19 @@ TextureImporter:
       name: albeeSheet_32
       rect:
         serializedVersion: 2
-        x: 2400
-        y: 7200
-        width: 1200
-        height: 1200
+        x: 490
+        y: 1887
+        width: 170
+        height: 243
       alignment: 9
-      pivot: {x: 0.41916665, y: 0.20666666}
+      pivot: {x: 0.46140686, y: -0.006063108}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 6c3943b0cb04ee2449b55f93ca109ffc
-      internalID: -1582383190
+      spriteID: 2990d9fb7e76c8ab0800000000000000
+      internalID: -5004510840865617518
       vertices: []
       indices: 
       edges: []
@@ -845,19 +845,19 @@ TextureImporter:
       name: albeeSheet_33
       rect:
         serializedVersion: 2
-        x: 3600
-        y: 7200
-        width: 1200
-        height: 1200
+        x: 557
+        y: 1612
+        width: 176
+        height: 253
       alignment: 9
-      pivot: {x: 0.41916665, y: 0.20666666}
+      pivot: {x: 0.5024952, y: -0.069064565}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 49287e55f64308243b46cd4f20cd12f7
-      internalID: 1989997614
+      spriteID: 68aa506d5b42f83d0800000000000000
+      internalID: -3202300446638757242
       vertices: []
       indices: 
       edges: []
@@ -866,19 +866,19 @@ TextureImporter:
       name: albeeSheet_34
       rect:
         serializedVersion: 2
-        x: 4800
-        y: 7200
-        width: 1200
-        height: 1200
+        x: 735
+        y: 1612
+        width: 174
+        height: 250
       alignment: 9
-      pivot: {x: 0.41916665, y: 0.215}
+      pivot: {x: 0.5197653, y: -0.06825998}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: beb19d2fe4ec3614cb97dc524ddcfca1
-      internalID: 183682057
+      spriteID: 63960c8786ca1fea0800000000000000
+      internalID: -5840697677020370634
       vertices: []
       indices: 
       edges: []
@@ -887,19 +887,19 @@ TextureImporter:
       name: albeeSheet_35
       rect:
         serializedVersion: 2
-        x: 6000
-        y: 7200
-        width: 1200
-        height: 1200
+        x: 1284
+        y: 1612
+        width: 171
+        height: 251
       alignment: 9
-      pivot: {x: 0.41916665, y: 0.20666666}
+      pivot: {x: 0.5405799, y: -0.08156707}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 743c2f4f98ab802419bd2c1722f96ea9
-      internalID: -502639587
+      spriteID: 8066a0b9ea1772a60800000000000000
+      internalID: 7649207486851474952
       vertices: []
       indices: 
       edges: []
@@ -908,19 +908,19 @@ TextureImporter:
       name: albeeSheet_36
       rect:
         serializedVersion: 2
-        x: 7200
-        y: 7200
-        width: 1200
-        height: 1200
+        x: 1110
+        y: 1612
+        width: 172
+        height: 250
       alignment: 9
-      pivot: {x: 0.41916665, y: 0.20666666}
+      pivot: {x: 0.543251, y: -0.08189334}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a7dc42d3e2432104a8ce9e18124df981
-      internalID: -1739334257
+      spriteID: 08e47543b62c685d0800000000000000
+      internalID: -3060545131056247168
       vertices: []
       indices: 
       edges: []
@@ -929,19 +929,19 @@ TextureImporter:
       name: albeeSheet_37
       rect:
         serializedVersion: 2
-        x: 8400
-        y: 7200
-        width: 1200
-        height: 1200
+        x: 1878
+        y: 841
+        width: 170
+        height: 250
       alignment: 9
-      pivot: {x: 0.4191667, y: 0.2066667}
+      pivot: {x: 0.5614069, y: -0.07789328}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 49512fc004c04ff459e266fb632999c7
-      internalID: -1117811877
+      spriteID: 8636663d4135805b0800000000000000
+      internalID: -5401976404119755928
       vertices: []
       indices: 
       edges: []
@@ -950,19 +950,19 @@ TextureImporter:
       name: albeeSheet_38
       rect:
         serializedVersion: 2
-        x: 9594
-        y: 7200
-        width: 1200
-        height: 1200
+        x: 1372
+        y: 1887
+        width: 156
+        height: 254
       alignment: 9
-      pivot: {x: 0.41916665, y: 0.20666666}
+      pivot: {x: 0.5605075, y: 0.021758523}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7cecf3a22c0bfec4c809ab5e78b88933
-      internalID: -1235993614
+      spriteID: 4b0ce6b4981586890800000000000000
+      internalID: -7464626732248678220
       vertices: []
       indices: 
       edges: []
@@ -971,19 +971,19 @@ TextureImporter:
       name: albeeSheet_39
       rect:
         serializedVersion: 2
-        x: 10800
-        y: 7200
-        width: 1200
-        height: 1200
+        x: 1019
+        y: 1887
+        width: 158
+        height: 255
       alignment: 9
-      pivot: {x: 0.41916665, y: 0.20666666}
+      pivot: {x: 0.585058, y: 0.029516332}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f8014cb161e83674a8491e3ab908dd6d
-      internalID: -677866492
+      spriteID: fb2d7400c6d062220800000000000000
+      internalID: 2460669003916890815
       vertices: []
       indices: 
       edges: []
@@ -993,18 +993,18 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 6000
-        width: 1200
-        height: 1200
+        y: 1887
+        width: 164
+        height: 259
       alignment: 9
-      pivot: {x: 0.4191667, y: 0.2066667}
+      pivot: {x: 0.44779986, y: 0.036782548}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e48fc8344040b9c4ca2647b7977833bb
-      internalID: 1716104919
+      spriteID: d86cc96c9d3f12c80800000000000000
+      internalID: -8349124117502572915
       vertices: []
       indices: 
       edges: []
@@ -1013,19 +1013,19 @@ TextureImporter:
       name: albeeSheet_41
       rect:
         serializedVersion: 2
-        x: 1200
-        y: 6000
-        width: 1200
-        height: 1200
+        x: 0
+        y: 3695
+        width: 155
+        height: 208
       alignment: 9
-      pivot: {x: 0.4191667, y: 0.2066667}
+      pivot: {x: 0.6286399, y: -0.1753525}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 3010e629b88bfd344a7081d7b478afec
-      internalID: -919161101
+      spriteID: 2521cbe652b4ea2c0800000000000000
+      internalID: -4418511560260185518
       vertices: []
       indices: 
       edges: []
@@ -1034,19 +1034,19 @@ TextureImporter:
       name: albeeSheet_42
       rect:
         serializedVersion: 2
-        x: 2400
-        y: 6000
-        width: 1200
-        height: 1200
+        x: 175
+        y: 2412
+        width: 154
+        height: 208
       alignment: 9
-      pivot: {x: 0.4191667, y: 0.2066667}
+      pivot: {x: 0.6067479, y: -0.1753525}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 3e8d59bd3e36895428399e9a7d9aff08
-      internalID: 302371017
+      spriteID: 42c711017c84d61f0800000000000000
+      internalID: -1050103118302184412
       vertices: []
       indices: 
       edges: []
@@ -1055,19 +1055,19 @@ TextureImporter:
       name: albeeSheet_43
       rect:
         serializedVersion: 2
-        x: 3600
-        y: 6000
-        width: 1200
-        height: 1200
+        x: 1709
+        y: 621
+        width: 273
+        height: 181
       alignment: 9
-      pivot: {x: 0.4191667, y: 0.2066667}
+      pivot: {x: 0.37523508, y: -0.33963162}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 154cf59df2369f64b83670ecf4162700
-      internalID: -1201987518
+      spriteID: 7ba8916fd7532ab20800000000000000
+      internalID: 3144134304974080695
       vertices: []
       indices: 
       edges: []
@@ -1076,19 +1076,19 @@ TextureImporter:
       name: albeeSheet_44
       rect:
         serializedVersion: 2
-        x: 4800
-        y: 6000
-        width: 1200
-        height: 1200
+        x: 841
+        y: 1887
+        width: 176
+        height: 229
       alignment: 9
-      pivot: {x: 0.4191667, y: 0.19}
+      pivot: {x: 0.5252226, y: 0.0031004327}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b9a735385bba43b4e8a9579e56ee47c0
-      internalID: -2103294439
+      spriteID: 57e97f43d5fc8e450800000000000000
+      internalID: 6118368093010370165
       vertices: []
       indices: 
       edges: []
@@ -1097,19 +1097,19 @@ TextureImporter:
       name: albeeSheet_45
       rect:
         serializedVersion: 2
-        x: 6000
-        y: 6000
-        width: 1200
-        height: 1200
+        x: 1179
+        y: 1887
+        width: 191
+        height: 209
       alignment: 9
-      pivot: {x: 0.4191667, y: 0.19}
+      pivot: {x: 0.6043936, y: 0.03210526}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ad7b7be95ee2bed4e97f34366c21d92a
-      internalID: 690374359
+      spriteID: 467c9d1fda1e0f8d0800000000000000
+      internalID: -2814501629903386780
       vertices: []
       indices: 
       edges: []
@@ -1118,19 +1118,19 @@ TextureImporter:
       name: albeeSheet_46
       rect:
         serializedVersion: 2
-        x: 7200
-        y: 6000
-        width: 1200
-        height: 1200
+        x: 234
+        y: 1141
+        width: 230
+        height: 228
       alignment: 9
-      pivot: {x: 0.4, y: 0.19}
+      pivot: {x: 0.42434785, y: 0.029429821}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7c48a0d2c4b1fd048a8d2c690eff195c
-      internalID: 1635648903
+      spriteID: c555f08bd1321b500800000000000000
+      internalID: 410147651616462172
       vertices: []
       indices: 
       edges: []
@@ -1139,19 +1139,19 @@ TextureImporter:
       name: albeeSheet_47
       rect:
         serializedVersion: 2
-        x: 8400
-        y: 6000
-        width: 1200
-        height: 1200
+        x: 771
+        y: 1371
+        width: 209
+        height: 227
       alignment: 9
-      pivot: {x: 0.40166667, y: 0.19}
+      pivot: {x: 0.32670653, y: 0.020748895}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b275c5c1530a23d44ae959623e792201
-      internalID: -1505412067
+      spriteID: f16486c9090287bf0800000000000000
+      internalID: -326475167512902113
       vertices: []
       indices: 
       edges: []
@@ -1160,19 +1160,19 @@ TextureImporter:
       name: albeeSheet_48
       rect:
         serializedVersion: 2
-        x: 9600
-        y: 6000
-        width: 1200
-        height: 1200
+        x: 0
+        y: 1141
+        width: 232
+        height: 228
       alignment: 9
-      pivot: {x: 0.3925, y: 0.19}
+      pivot: {x: 0.40315732, y: -0.014429828}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7859c29de9234dc478627dd3fbd443ed
-      internalID: -1684076047
+      spriteID: a36daf73c37ec4780800000000000000
+      internalID: -8697322534536030662
       vertices: []
       indices: 
       edges: []
@@ -1181,19 +1181,19 @@ TextureImporter:
       name: albeeSheet_49
       rect:
         serializedVersion: 2
-        x: 10800
-        y: 6000
-        width: 1200
-        height: 1200
+        x: 1414
+        y: 841
+        width: 232
+        height: 232
       alignment: 9
-      pivot: {x: 0.3925, y: 0.19}
+      pivot: {x: 0.38591596, y: 0.015991375}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 83da6a786f90d774080d1b47932da6e9
-      internalID: -663245081
+      spriteID: a1ec8062601adf390800000000000000
+      internalID: -7782887533246362086
       vertices: []
       indices: 
       edges: []
@@ -1202,19 +1202,19 @@ TextureImporter:
       name: albeeSheet_50
       rect:
         serializedVersion: 2
-        x: 0
-        y: 4800
-        width: 1200
-        height: 1200
+        x: 982
+        y: 1371
+        width: 218
+        height: 213
       alignment: 9
-      pivot: {x: 0.3925, y: 0.19}
+      pivot: {x: 0.26391056, y: 0.022112671}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 52229691e35b4ab4d908799ed7580a96
-      internalID: -813209333
+      spriteID: f0d70e204aa3e5c90800000000000000
+      internalID: -7179236279884677873
       vertices: []
       indices: 
       edges: []
@@ -1223,19 +1223,19 @@ TextureImporter:
       name: albeeSheet_51
       rect:
         serializedVersion: 2
-        x: 1200
-        y: 4800
-        width: 1200
-        height: 1200
+        x: 911
+        y: 1612
+        width: 197
+        height: 219
       alignment: 9
-      pivot: {x: 0.40166667, y: 0.19}
+      pivot: {x: 0.21970387, y: 0.021506846}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a3948006c07d7ef4681995ede346cff2
-      internalID: -1559968802
+      spriteID: e0ce913698305ebd0800000000000000
+      internalID: -2601669321128547314
       vertices: []
       indices: 
       edges: []
@@ -1244,19 +1244,19 @@ TextureImporter:
       name: albeeSheet_52
       rect:
         serializedVersion: 2
-        x: 2400
-        y: 4800
-        width: 1200
-        height: 1200
+        x: 662
+        y: 1887
+        width: 177
+        height: 229
       alignment: 9
-      pivot: {x: 0.7583333, y: 0.19}
+      pivot: {x: 0.4585216, y: -0.0449345}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 81ea5266f4da45545917fe3673b5e833
-      internalID: 423932593
+      spriteID: 36029a3a404b94650800000000000000
+      internalID: 6217698692580319331
       vertices: []
       indices: 
       edges: []
@@ -1265,19 +1265,19 @@ TextureImporter:
       name: albeeSheet_53
       rect:
         serializedVersion: 2
-        x: 3600
-        y: 4800
-        width: 1200
-        height: 1200
+        x: 1626
+        y: 1141
+        width: 232
+        height: 208
       alignment: 9
-      pivot: {x: 0.7583333, y: 0.19}
+      pivot: {x: 0.7248204, y: -0.12158655}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 2a591f001b6649c4390cc32db11ca1b4
-      internalID: -1181576841
+      spriteID: f2c7d710732e3c3e0800000000000000
+      internalID: -2034533880765252561
       vertices: []
       indices: 
       edges: []
@@ -1286,19 +1286,19 @@ TextureImporter:
       name: albeeSheet_54
       rect:
         serializedVersion: 2
-        x: 4800
-        y: 4800
-        width: 1200
-        height: 1200
+        x: 466
+        y: 1141
+        width: 280
+        height: 176
       alignment: 9
-      pivot: {x: 0.7583333, y: 0.19}
+      pivot: {x: 0.7934226, y: -0.28005683}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: b372d52661e87ce4eb6c7ee5b2b830d3
-      internalID: 775576260
+      spriteID: 8557edcd093044e10800000000000000
+      internalID: 2180872040269903192
       vertices: []
       indices: 
       edges: []
@@ -1307,19 +1307,19 @@ TextureImporter:
       name: albeeSheet_55
       rect:
         serializedVersion: 2
-        x: 6000
-        y: 4800
-        width: 1200
-        height: 1200
+        x: 555
+        y: 621
+        width: 295
+        height: 192
       alignment: 9
-      pivot: {x: 0.7583333, y: 0.19}
+      pivot: {x: 0.8920621, y: -0.24630208}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 2e58649adc55d5843999f943db775a23
-      internalID: -1095496763
+      spriteID: e40a4dc74e494e540800000000000000
+      internalID: 5036313992374820942
       vertices: []
       indices: 
       edges: []
@@ -1328,19 +1328,19 @@ TextureImporter:
       name: albeeSheet_56
       rect:
         serializedVersion: 2
-        x: 7200
-        y: 4800
-        width: 1200
-        height: 1200
+        x: 279
+        y: 621
+        width: 274
+        height: 209
       alignment: 9
-      pivot: {x: 0.7583333, y: 0.19}
+      pivot: {x: 1.0224756, y: -0.27411485}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: bbf9c0ecb687c504fa8bc8701d7258af
-      internalID: -1755627394
+      spriteID: 642ed8eba10617540800000000000000
+      internalID: 5003886328967717446
       vertices: []
       indices: 
       edges: []
@@ -1349,19 +1349,19 @@ TextureImporter:
       name: albeeSheet_57
       rect:
         serializedVersion: 2
-        x: 8400
-        y: 4800
-        width: 1200
-        height: 1200
+        x: 1443
+        y: 328
+        width: 220
+        height: 284
       alignment: 9
-      pivot: {x: 0.7583333, y: 0.19}
+      pivot: {x: 1.2279924, y: -0.0045422567}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 84d4d1f54d8cc8143a80841b228b16b9
-      internalID: -1671982463
+      spriteID: e577682ee0d2a5160800000000000000
+      internalID: 7014968911536224094
       vertices: []
       indices: 
       edges: []
@@ -1370,19 +1370,19 @@ TextureImporter:
       name: albeeSheet_58
       rect:
         serializedVersion: 2
-        x: 9600
-        y: 4800
-        width: 1200
-        height: 1200
+        x: 0
+        y: 841
+        width: 200
+        height: 298
       alignment: 9
-      pivot: {x: 0.7583333, y: 0.19}
+      pivot: {x: 1.4657916, y: 0.06278523}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c9107b6d0dcfdd746baef3c6a5092af1
-      internalID: 658409768
+      spriteID: 47d73c22680b45ae0800000000000000
+      internalID: -1561429080635376268
       vertices: []
       indices: 
       edges: []
@@ -1391,19 +1391,19 @@ TextureImporter:
       name: albeeSheet_59
       rect:
         serializedVersion: 2
-        x: 10800
-        y: 4800
-        width: 1200
-        height: 1200
+        x: 969
+        y: 328
+        width: 237
+        height: 270
       alignment: 9
-      pivot: {x: 0.7583333, y: 0.19}
+      pivot: {x: 1.308685, y: 0.061888885}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: eeadfe07bf11bd148b90b472f6bfb048
-      internalID: -1502207854
+      spriteID: c4f9df04d67518330800000000000000
+      internalID: 3711343694683414348
       vertices: []
       indices: 
       edges: []
@@ -1412,19 +1412,19 @@ TextureImporter:
       name: albeeSheet_60
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3600
-        width: 1200
-        height: 1200
+        x: 235
+        y: 328
+        width: 234
+        height: 286
       alignment: 9
-      pivot: {x: 0.7583333, y: 0.19}
+      pivot: {x: 1.2784544, y: 0.023461536}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 274ef8a6faf6db343b7f8a1a4d075de0
-      internalID: -619718850
+      spriteID: b25c34f3b92934980800000000000000
+      internalID: -8555833671594818261
       vertices: []
       indices: 
       edges: []
@@ -1433,19 +1433,19 @@ TextureImporter:
       name: albeeSheet_61
       rect:
         serializedVersion: 2
-        x: 1200
-        y: 3600
-        width: 1200
-        height: 1200
+        x: 0
+        y: 328
+        width: 233
+        height: 291
       alignment: 9
-      pivot: {x: 0.7583333, y: 0.19}
+      pivot: {x: 1.2667739, y: 0.06429553}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a93c6dda4f5faab4ba1320f8e7858046
-      internalID: -378862977
+      spriteID: 31102d4022e0b56d0800000000000000
+      internalID: -3000789187439754989
       vertices: []
       indices: 
       edges: []
@@ -1454,19 +1454,19 @@ TextureImporter:
       name: albeeSheet_62
       rect:
         serializedVersion: 2
-        x: 2400
-        y: 3600
-        width: 1200
-        height: 1200
+        x: 748
+        y: 0
+        width: 326
+        height: 238
       alignment: 9
-      pivot: {x: 0.7583333, y: 0.19}
+      pivot: {x: 0.9299335, y: 0.16684873}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ae7262fe6cc935542a47be9020792328
-      internalID: -1511020036
+      spriteID: f800b101a6293fff0800000000000000
+      internalID: -3498190462844785
       vertices: []
       indices: 
       edges: []
@@ -1475,19 +1475,19 @@ TextureImporter:
       name: albeeSheet_63
       rect:
         serializedVersion: 2
-        x: 3600
-        y: 3600
-        width: 1200
-        height: 1200
+        x: 218
+        y: 1371
+        width: 335
+        height: 144
       alignment: 9
-      pivot: {x: 0.7583333, y: 0.19}
+      pivot: {x: 0.9049502, y: 0.27576387}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 0877daf54d634de4f91d3d3937d778ad
-      internalID: -801164564
+      spriteID: 4de018a1e35cee620800000000000000
+      internalID: 2805396488421707476
       vertices: []
       indices: 
       edges: []
@@ -1496,19 +1496,19 @@ TextureImporter:
       name: albeeSheet_64
       rect:
         serializedVersion: 2
-        x: 4800
-        y: 3600
-        width: 1200
-        height: 1200
+        x: 166
+        y: 1887
+        width: 322
+        height: 129
       alignment: 9
-      pivot: {x: 0.7583333, y: 0.19}
+      pivot: {x: 0.94148546, y: 0.30782944}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9567f3b73d8d85c42b0322f5dbeb1453
-      internalID: -1757009727
+      spriteID: f0a956ce7a9dbca40800000000000000
+      internalID: 5389640694327777807
       vertices: []
       indices: 
       edges: []
@@ -1517,19 +1517,19 @@ TextureImporter:
       name: albeeSheet_65
       rect:
         serializedVersion: 2
-        x: 6000
-        y: 3600
-        width: 1200
-        height: 1200
+        x: 0
+        y: 2148
+        width: 304
+        height: 129
       alignment: 9
-      pivot: {x: 0.7583333, y: 0.19}
+      pivot: {x: 1.0005208, y: 0.30782944}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4be03b54051542946b1685190ff89939
-      internalID: -609948966
+      spriteID: 5353af2b161349800800000000000000
+      internalID: 618173344540931381
       vertices: []
       indices: 
       edges: []
@@ -1538,19 +1538,19 @@ TextureImporter:
       name: albeeSheet_66
       rect:
         serializedVersion: 2
-        x: 7200
-        y: 3600
-        width: 1200
-        height: 1200
+        x: 306
+        y: 2148
+        width: 295
+        height: 129
       alignment: 9
-      pivot: {x: 0.7583333, y: 0.19}
+      pivot: {x: 1.0276554, y: 0.30782944}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 65845945c8d0e924ea89d6aaa8f9729a
-      internalID: 149831870
+      spriteID: c991df257d47e82c0800000000000000
+      internalID: -4427472915499509348
       vertices: []
       indices: 
       edges: []
@@ -1559,19 +1559,19 @@ TextureImporter:
       name: albeeSheet_67
       rect:
         serializedVersion: 2
-        x: 8400
-        y: 3600
-        width: 1200
-        height: 1200
+        x: 175
+        y: 2279
+        width: 279
+        height: 131
       alignment: 9
-      pivot: {x: 0.7583333, y: 0.19}
+      pivot: {x: 1.086589, y: 0.31839693}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c13556fffbdadad40a4cbf705c7e8d83
-      internalID: 4868078
+      spriteID: d763ae81b931dad40800000000000000
+      internalID: 5597151468750255741
       vertices: []
       indices: 
       edges: []
@@ -1580,19 +1580,19 @@ TextureImporter:
       name: albeeSheet_68
       rect:
         serializedVersion: 2
-        x: 9600
-        y: 3600
-        width: 1200
-        height: 1200
+        x: 456
+        y: 2279
+        width: 279
+        height: 131
       alignment: 9
-      pivot: {x: 0.7583333, y: 0.19}
+      pivot: {x: 1.086589, y: 0.31839693}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4b6c902fea65df9418b2eabfcec49b64
-      internalID: -1942596149
+      spriteID: 0fca3bfd0cf5ffb40800000000000000
+      internalID: 5476200953897266416
       vertices: []
       indices: 
       edges: []
@@ -1601,19 +1601,19 @@ TextureImporter:
       name: albeeSheet_69
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2400
-        width: 1200
-        height: 1200
+        x: 471
+        y: 328
+        width: 254
+        height: 260
       alignment: 9
-      pivot: {x: 0.40333334, y: 0.175}
+      pivot: {x: 0.5628478, y: 0.029134603}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 67ae6e35d4c20d74183862e9923559d7
-      internalID: -870660297
+      spriteID: cb405fe3adc765a40800000000000000
+      internalID: 5356606083604743356
       vertices: []
       indices: 
       edges: []
@@ -1622,19 +1622,19 @@ TextureImporter:
       name: albeeSheet_70
       rect:
         serializedVersion: 2
-        x: 1200
-        y: 2400
-        width: 1200
-        height: 1200
+        x: 0
+        y: 0
+        width: 338
+        height: 326
       alignment: 9
-      pivot: {x: 0.39166668, y: 0.19}
+      pivot: {x: 0.37038955, y: 0.017515335}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 235cabbda6b790b41b117f9b83422bbf
-      internalID: 835655973
+      spriteID: 198c787d5def2aab0800000000000000
+      internalID: -4998152442030339951
       vertices: []
       indices: 
       edges: []
@@ -1643,19 +1643,19 @@ TextureImporter:
       name: albeeSheet_71
       rect:
         serializedVersion: 2
-        x: 2400
-        y: 2400
-        width: 1200
-        height: 1200
+        x: 1591
+        y: 0
+        width: 276
+        height: 254
       alignment: 9
-      pivot: {x: 0.39166668, y: 0.19}
+      pivot: {x: 0.17460749, y: 0.038228344}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f1c6a2c06f1bbc34da682b174a43dee5
-      internalID: -1008083016
+      spriteID: 42b98902f016ec760800000000000000
+      internalID: 7480022748708248356
       vertices: []
       indices: 
       edges: []
@@ -1664,19 +1664,19 @@ TextureImporter:
       name: albeeSheet_72
       rect:
         serializedVersion: 2
-        x: 3600
-        y: 2400
-        width: 1200
-        height: 1200
+        x: 0
+        y: 621
+        width: 277
+        height: 218
       alignment: 9
-      pivot: {x: 0.39166668, y: 0.19}
+      pivot: {x: 0.17036702, y: 0.039954126}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7e3f8a5659ad6634ca36614f32ba0bde
-      internalID: 1895614225
+      spriteID: 9b603c98e42ada490800000000000000
+      internalID: -7733346526922864967
       vertices: []
       indices: 
       edges: []
@@ -1685,19 +1685,19 @@ TextureImporter:
       name: albeeSheet_73
       rect:
         serializedVersion: 2
-        x: 4800
-        y: 2400
-        width: 1200
-        height: 1200
+        x: 202
+        y: 841
+        width: 270
+        height: 219
       alignment: 9
-      pivot: {x: 0.39166668, y: 0.19}
+      pivot: {x: 0.17478395, y: 0.039771684}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: bd1809d7948f5c6459894a8aced1fce8
-      internalID: 499568291
+      spriteID: e59dc82a3b74a7dc0800000000000000
+      internalID: -3640518511923766946
       vertices: []
       indices: 
       edges: []
@@ -1706,19 +1706,19 @@ TextureImporter:
       name: albeeSheet_74
       rect:
         serializedVersion: 2
-        x: 6000
-        y: 2400
-        width: 1200
-        height: 1200
+        x: 1665
+        y: 328
+        width: 247
+        height: 247
       alignment: 9
-      pivot: {x: 0.39166668, y: 0.19}
+      pivot: {x: 0.1141363, y: 0.03121457}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: bda084fc60f4ae148a8c4cfa60257d40
-      internalID: 732276879
+      spriteID: f1f3780d5645f1070800000000000000
+      internalID: 8079269052792913695
       vertices: []
       indices: 
       edges: []
@@ -1727,19 +1727,19 @@ TextureImporter:
       name: albeeSheet_75
       rect:
         serializedVersion: 2
-        x: 7200
-        y: 2400
-        width: 1200
-        height: 1200
+        x: 180
+        y: 1612
+        width: 199
+        height: 241
       alignment: 9
-      pivot: {x: 0.51666665, y: 0.19}
+      pivot: {x: 0.4538526, y: 0.02784232}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ef33f15183940684e9533c27545d0d35
-      internalID: 1749537725
+      spriteID: f437744d8e9acd050800000000000000
+      internalID: 5826718835369538383
       vertices: []
       indices: 
       edges: []
@@ -1748,19 +1748,19 @@ TextureImporter:
       name: albeeSheet_76
       rect:
         serializedVersion: 2
-        x: 8400
-        y: 2400
-        width: 1200
-        height: 1200
+        x: 0
+        y: 2965
+        width: 142
+        height: 260
       alignment: 9
-      pivot: {x: 0.51666665, y: 0.19}
+      pivot: {x: 0.45997652, y: 0.025807688}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 6f160f46b74368c4ca72996c8618561c
-      internalID: -782988703
+      spriteID: 8a05e07fd0ac60060800000000000000
+      internalID: 6919440038829641896
       vertices: []
       indices: 
       edges: []
@@ -1769,19 +1769,19 @@ TextureImporter:
       name: albeeSheet_77
       rect:
         serializedVersion: 2
-        x: 9600
-        y: 2400
-        width: 1200
-        height: 1200
+        x: 1648
+        y: 841
+        width: 228
+        height: 234
       alignment: 9
-      pivot: {x: 0.51666665, y: 0.19}
+      pivot: {x: 0.5101608, y: 0.020128202}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 51cc9ce8633c6a74cb856cbedd68885a
-      internalID: 1641804230
+      spriteID: 09c93329c86a6ff00800000000000000
+      internalID: 1150289877518228624
       vertices: []
       indices: 
       edges: []
@@ -1790,19 +1790,19 @@ TextureImporter:
       name: albeeSheet_78
       rect:
         serializedVersion: 2
-        x: 10800
-        y: 2400
-        width: 1200
-        height: 1200
+        x: 940
+        y: 841
+        width: 239
+        height: 235
       alignment: 9
-      pivot: {x: 0.51666665, y: 0.19}
+      pivot: {x: 0.3569735, y: 0.06685106}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7c97c9c22656f724ebce62bdaf7f3b12
-      internalID: 1496227237
+      spriteID: 21795df63bf57c1a0800000000000000
+      internalID: -6789352688957679854
       vertices: []
       indices: 
       edges: []
@@ -1811,19 +1811,19 @@ TextureImporter:
       name: albeeSheet_79
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1200
-        width: 1200
-        height: 1200
+        x: 969
+        y: 1141
+        width: 219
+        height: 225
       alignment: 9
-      pivot: {x: 0.51666665, y: 0.19}
+      pivot: {x: 0.34847793, y: 0.03426666}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: adbbbb208607a674f9305b19c0ae217d
-      internalID: -887977147
+      spriteID: 75c576c46ce6ee6f0800000000000000
+      internalID: -653463097957721001
       vertices: []
       indices: 
       edges: []
@@ -1832,19 +1832,19 @@ TextureImporter:
       name: albeeSheet_80
       rect:
         serializedVersion: 2
-        x: 1200
-        y: 1200
-        width: 1200
-        height: 1200
+        x: 748
+        y: 1141
+        width: 219
+        height: 225
       alignment: 9
-      pivot: {x: 0.51666665, y: 0.19}
+      pivot: {x: 0.3439117, y: 0.03426666}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 494e1d1ca85c0a043bb54e96f1efa328
-      internalID: -1537783842
+      spriteID: 11dc44e9e1ae877b0800000000000000
+      internalID: -5226169950338233071
       vertices: []
       indices: 
       edges: []
@@ -1853,19 +1853,19 @@ TextureImporter:
       name: albeeSheet_81
       rect:
         serializedVersion: 2
-        x: 10800
-        y: 3600
-        width: 1200
-        height: 1200
+        x: 737
+        y: 841
+        width: 201
+        height: 280
       alignment: 9
-      pivot: {x: 0.41916665, y: 0.19}
+      pivot: {x: 0.12158788, y: 0.02753571}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4f279ea2423ef6c42b2842ad27b5f8d2
-      internalID: 687274040
+      spriteID: 063847fc49928b4f0800000000000000
+      internalID: -812854013627956384
       vertices: []
       indices: 
       edges: []
@@ -1874,19 +1874,19 @@ TextureImporter:
       name: albeeSheet_82
       rect:
         serializedVersion: 2
-        x: 2400
-        y: 1200
-        width: 1200
-        height: 1200
+        x: 1408
+        y: 1141
+        width: 216
+        height: 225
       alignment: 9
-      pivot: {x: 0.51666665, y: 0.19}
+      pivot: {x: 0.3533179, y: 0.03426666}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 349379dc696d9ec48a6fc53d7dd60b9f
-      internalID: 458923974
+      spriteID: 161db16fd38f39b30800000000000000
+      internalID: 4293047814819926369
       vertices: []
       indices: 
       edges: []
@@ -1895,19 +1895,19 @@ TextureImporter:
       name: albeeSheet_83
       rect:
         serializedVersion: 2
-        x: 3600
-        y: 1200
-        width: 1200
-        height: 1200
+        x: 1190
+        y: 1141
+        width: 216
+        height: 225
       alignment: 9
-      pivot: {x: 0.51666665, y: 0.19}
+      pivot: {x: 0.3533179, y: 0.03426666}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c9c66e819bcf2734489cd97bf90899df
-      internalID: 160897102
+      spriteID: 42df64511d66aee50800000000000000
+      internalID: 6839392032306691364
       vertices: []
       indices: 
       edges: []
@@ -1916,19 +1916,19 @@ TextureImporter:
       name: albeeSheet_84
       rect:
         serializedVersion: 2
-        x: 4800
-        y: 1200
-        width: 1200
-        height: 1200
+        x: 555
+        y: 1371
+        width: 214
+        height: 225
       alignment: 9
-      pivot: {x: 0.51666665, y: 0.19}
+      pivot: {x: 0.35194704, y: 0.03426666}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 53c643dec17224d4badd9dff30968fca
-      internalID: -30286855
+      spriteID: 2dea50cdac2177830800000000000000
+      internalID: 4068741450836586194
       vertices: []
       indices: 
       edges: []
@@ -1937,19 +1937,19 @@ TextureImporter:
       name: albeeSheet_85
       rect:
         serializedVersion: 2
-        x: 6000
-        y: 1200
-        width: 1200
-        height: 1200
+        x: 1137
+        y: 621
+        width: 286
+        height: 183
       alignment: 9
-      pivot: {x: 0.41916665, y: 0.20666666}
+      pivot: {x: 0.41761944, y: -0.34138435}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 74ce5192a10fcbc40a89733abe725059
-      internalID: -689196254
+      spriteID: fb80f6c2153fb8c00800000000000000
+      internalID: 904083680181291199
       vertices: []
       indices: 
       edges: []
@@ -1958,19 +1958,19 @@ TextureImporter:
       name: albeeSheet_86
       rect:
         serializedVersion: 2
-        x: 7200
-        y: 1200
-        width: 1200
-        height: 1200
+        x: 852
+        y: 621
+        width: 283
+        height: 185
       alignment: 9
-      pivot: {x: 0.41916665, y: 0.20666666}
+      pivot: {x: 0.41497937, y: -0.3376937}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: ecab05a7252a3044ab305e427a70ac52
-      internalID: 984413233
+      spriteID: 133b1655a9524d5c0800000000000000
+      internalID: -4191684008387431631
       vertices: []
       indices: 
       edges: []
@@ -1979,19 +1979,19 @@ TextureImporter:
       name: albeeSheet_87
       rect:
         serializedVersion: 2
-        x: 8400
-        y: 1200
-        width: 1200
-        height: 1200
+        x: 1425
+        y: 621
+        width: 282
+        height: 183
       alignment: 9
-      pivot: {x: 0.41916665, y: 0.20666666}
+      pivot: {x: 0.41645095, y: -0.34138435}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 6c5780d93fc1b334d91e22855d25d6c4
-      internalID: -615059935
+      spriteID: 7c171b4e5bc4b58e0800000000000000
+      internalID: -1703683689919974969
       vertices: []
       indices: 
       edges: []
@@ -2007,94 +2007,94 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      albeeSheet_0: -675471589
-      albeeSheet_1: -534820593
-      albeeSheet_10: -185606751
-      albeeSheet_11: 966249913
-      albeeSheet_12: 864457597
-      albeeSheet_13: 1571765469
-      albeeSheet_14: -402561758
-      albeeSheet_15: -494990448
-      albeeSheet_16: -1784696288
-      albeeSheet_17: 1297991505
-      albeeSheet_18: -1407719694
-      albeeSheet_19: 1644055176
-      albeeSheet_2: 275900874
-      albeeSheet_20: 158171574
-      albeeSheet_21: -216644069
-      albeeSheet_22: 1120438206
-      albeeSheet_23: 115935500
-      albeeSheet_24: -685942673
-      albeeSheet_25: 61774064
-      albeeSheet_26: 583782809
-      albeeSheet_27: -1201215761
-      albeeSheet_28: -71274242
-      albeeSheet_29: -2016796811
-      albeeSheet_3: -835869195
-      albeeSheet_30: -383750453
-      albeeSheet_31: -1791214826
-      albeeSheet_32: -1582383190
-      albeeSheet_33: 1989997614
-      albeeSheet_34: 183682057
-      albeeSheet_35: -502639587
-      albeeSheet_36: -1739334257
-      albeeSheet_37: -1117811877
-      albeeSheet_38: -1235993614
-      albeeSheet_39: -677866492
-      albeeSheet_4: 2111103525
-      albeeSheet_40: 1716104919
-      albeeSheet_41: -919161101
-      albeeSheet_42: 302371017
-      albeeSheet_43: -1201987518
-      albeeSheet_44: -2103294439
-      albeeSheet_45: 690374359
-      albeeSheet_46: 1635648903
-      albeeSheet_47: -1505412067
-      albeeSheet_48: -1684076047
-      albeeSheet_49: -663245081
-      albeeSheet_5: -730400826
-      albeeSheet_50: -813209333
-      albeeSheet_51: -1559968802
-      albeeSheet_52: 423932593
-      albeeSheet_53: -1181576841
-      albeeSheet_54: 775576260
-      albeeSheet_55: -1095496763
-      albeeSheet_56: -1755627394
-      albeeSheet_57: -1671982463
-      albeeSheet_58: 658409768
-      albeeSheet_59: -1502207854
-      albeeSheet_6: 507457724
-      albeeSheet_60: -619718850
-      albeeSheet_61: -378862977
-      albeeSheet_62: -1511020036
-      albeeSheet_63: -801164564
-      albeeSheet_64: -1757009727
-      albeeSheet_65: -609948966
-      albeeSheet_66: 149831870
-      albeeSheet_67: 4868078
-      albeeSheet_68: -1942596149
-      albeeSheet_69: -870660297
-      albeeSheet_7: -12055813
-      albeeSheet_70: 835655973
-      albeeSheet_71: -1008083016
-      albeeSheet_72: 1895614225
-      albeeSheet_73: 499568291
-      albeeSheet_74: 732276879
-      albeeSheet_75: 1749537725
-      albeeSheet_76: -782988703
-      albeeSheet_77: 1641804230
-      albeeSheet_78: 1496227237
-      albeeSheet_79: -887977147
-      albeeSheet_8: -933192062
-      albeeSheet_80: -1537783842
-      albeeSheet_81: 687274040
-      albeeSheet_82: 458923974
-      albeeSheet_83: 160897102
-      albeeSheet_84: -30286855
-      albeeSheet_85: -689196254
-      albeeSheet_86: 984413233
-      albeeSheet_87: -615059935
-      albeeSheet_9: -186731104
+      albeeSheet_0: 7317504731469432590
+      albeeSheet_1: 9049336994366602306
+      albeeSheet_10: 6056609208789659309
+      albeeSheet_11: -6912100162080247297
+      albeeSheet_12: 3354051395814223065
+      albeeSheet_13: -3666823451029462743
+      albeeSheet_14: 1021789231958934358
+      albeeSheet_15: 8670710416893214968
+      albeeSheet_16: -549040609854896630
+      albeeSheet_17: -2860350416648217179
+      albeeSheet_18: 8993216183556173540
+      albeeSheet_19: -7136390572035382803
+      albeeSheet_2: -4765147044713853829
+      albeeSheet_20: -4000741901772706602
+      albeeSheet_21: -6303929522068374692
+      albeeSheet_22: -1997308744441549082
+      albeeSheet_23: -6617758558371582133
+      albeeSheet_24: -6920155047056994898
+      albeeSheet_25: 6704311213808555420
+      albeeSheet_26: -4708743072464716874
+      albeeSheet_27: 2809170631593502241
+      albeeSheet_28: -8073840081356110275
+      albeeSheet_29: 4517573082287598832
+      albeeSheet_3: -5273812112951428536
+      albeeSheet_30: 1576991355349593506
+      albeeSheet_31: -3813979945260651070
+      albeeSheet_32: -5004510840865617518
+      albeeSheet_33: -3202300446638757242
+      albeeSheet_34: -5840697677020370634
+      albeeSheet_35: 7649207486851474952
+      albeeSheet_36: -3060545131056247168
+      albeeSheet_37: -5401976404119755928
+      albeeSheet_38: -7464626732248678220
+      albeeSheet_39: 2460669003916890815
+      albeeSheet_4: 8461586469116499327
+      albeeSheet_40: -8349124117502572915
+      albeeSheet_41: -4418511560260185518
+      albeeSheet_42: -1050103118302184412
+      albeeSheet_43: 3144134304974080695
+      albeeSheet_44: 6118368093010370165
+      albeeSheet_45: -2814501629903386780
+      albeeSheet_46: 410147651616462172
+      albeeSheet_47: -326475167512902113
+      albeeSheet_48: -8697322534536030662
+      albeeSheet_49: -7782887533246362086
+      albeeSheet_5: -3949666232167930545
+      albeeSheet_50: -7179236279884677873
+      albeeSheet_51: -2601669321128547314
+      albeeSheet_52: 6217698692580319331
+      albeeSheet_53: -2034533880765252561
+      albeeSheet_54: 2180872040269903192
+      albeeSheet_55: 5036313992374820942
+      albeeSheet_56: 5003886328967717446
+      albeeSheet_57: 7014968911536224094
+      albeeSheet_58: -1561429080635376268
+      albeeSheet_59: 3711343694683414348
+      albeeSheet_6: -2588393873103103115
+      albeeSheet_60: -8555833671594818261
+      albeeSheet_61: -3000789187439754989
+      albeeSheet_62: -3498190462844785
+      albeeSheet_63: 2805396488421707476
+      albeeSheet_64: 5389640694327777807
+      albeeSheet_65: 618173344540931381
+      albeeSheet_66: -4427472915499509348
+      albeeSheet_67: 5597151468750255741
+      albeeSheet_68: 5476200953897266416
+      albeeSheet_69: 5356606083604743356
+      albeeSheet_7: 142757808955655169
+      albeeSheet_70: -4998152442030339951
+      albeeSheet_71: 7480022748708248356
+      albeeSheet_72: -7733346526922864967
+      albeeSheet_73: -3640518511923766946
+      albeeSheet_74: 8079269052792913695
+      albeeSheet_75: 5826718835369538383
+      albeeSheet_76: 6919440038829641896
+      albeeSheet_77: 1150289877518228624
+      albeeSheet_78: -6789352688957679854
+      albeeSheet_79: -653463097957721001
+      albeeSheet_8: -5794350126169293611
+      albeeSheet_80: -5226169950338233071
+      albeeSheet_81: -812854013627956384
+      albeeSheet_82: 4293047814819926369
+      albeeSheet_83: 6839392032306691364
+      albeeSheet_84: 4068741450836586194
+      albeeSheet_85: 904083680181291199
+      albeeSheet_86: -4191684008387431631
+      albeeSheet_87: -1703683689919974969
+      albeeSheet_9: -9033464697697833313
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

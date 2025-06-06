@@ -8,10 +8,13 @@ public class motherBoss : MonoBehaviour
     int currentAttack;
     public GameObject tentacleSlamObj, tentacleBeamObj, tentacleRiddle;
     boss bossScript;
+    bool startVulnerable;
+    Animator anim;
     // Start is called before the first frame update
     void Start()
     {
         bossScript = GetComponent<boss>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -51,6 +54,25 @@ public class motherBoss : MonoBehaviour
                     break;
             }
         }
+        if (bossScript.vulnerable)
+        {
+            if (!startVulnerable)
+            {
+                startVulnerable = true;
+                anim.SetTrigger("Slam");
+            }
+        }
+        else
+        {
+            if (startVulnerable)
+            {
+                startVulnerable = false;
+                anim.SetTrigger("Rise");
+            }
+
+        }
+
+
     }
     
     public void attackOver()//individual attacks call this when they end

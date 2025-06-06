@@ -10,7 +10,7 @@ public class boss : MonoBehaviour
     bossState currentState = bossState.Attack;
 
     int attackCounter = 0;
-
+    public int numberofattacks;
     public bool attackReady = true;
     bool attackFinished = true;
     public float cooldown =1;
@@ -22,7 +22,8 @@ public class boss : MonoBehaviour
     public int maxHealth;
     int currentHealth;
     public float bonusSize;
-
+    public bool vulnerable = false;
+    public float vulnerableTime=5;
     
     public ColoredFlash coloredFlashScript;
     private void Start()
@@ -38,12 +39,24 @@ public class boss : MonoBehaviour
         }
         if(currentState == bossState.Vulnerable)
         {
-
+            vulnerable = true;
+            if (timer < vulnerableTime)
+            {
+                timer += Time.deltaTime;
+            }
+            else 
+            {
+                currentState = bossState.Attack;
+                attackFinished = true;
+                timer = 0;
+                attackCounter = 0;
+            }
         }
         else
         {
-            vulnerableDamage = 0;
+            vulnerable = false;
         }
+        
     }
 
 
@@ -55,15 +68,23 @@ public class boss : MonoBehaviour
             {
                 timer += Time.deltaTime;
             }
-            else
+            else if (attackCounter< numberofattacks)
             {
+                attackCounter += 1;
                 bonusCooldown = 0;
                 attackReady = true;
                 Debug.Log("bossAttackReady");
                 attackFinished = false;
             }
+            else
+            {
+                currentState = bossState.Vulnerable;
+                timer = 0;
+            }
                 
         }
+        
+
         //pick attack from list
         //wait for attack to finish
         //wait for cooldowntimer,
@@ -104,10 +125,17 @@ public class boss : MonoBehaviour
         if(currentState == bossState.Vulnerable)
         {
             vulnerableDamage += damage;
-            if(vulnerableDamage < maxVulnerableDamage)
+            if(vulnerableDamage > maxVulnerableDamage)
             {
                 currentState = bossState.Attack;
+                attackFinished = true;
+                timer = 0;
+                attackCounter = 0;
             }
+        }
+        else
+        {
+            vulnerableDamage = 0;
         }
 
         if (currentHealth > maxHealth)

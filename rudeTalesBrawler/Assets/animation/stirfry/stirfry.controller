@@ -712,6 +712,7 @@ MonoBehaviour:
   hitStopDuration: 0
   attackStrength: 2
   damageType: 0
+  multiHit: 1
 --- !u!1102 &-3436186991080658417
 AnimatorState:
   serializedVersion: 6
@@ -859,6 +860,7 @@ MonoBehaviour:
   hitStopDuration: 0
   attackStrength: 3
   damageType: 0
+  multiHit: 0
 --- !u!1102 &-1848644902206855849
 AnimatorState:
   serializedVersion: 6
@@ -1609,6 +1611,7 @@ MonoBehaviour:
   hitStopDuration: 0
   attackStrength: 3
   damageType: 0
+  multiHit: 1
 --- !u!114 &3115678291636681262
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1942,6 +1945,7 @@ MonoBehaviour:
   hitStopDuration: 0
   attackStrength: 3
   damageType: 0
+  multiHit: 0
 --- !u!114 &5932003082801694101
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1972,6 +1976,7 @@ MonoBehaviour:
   hitStopDuration: 0
   attackStrength: 3
   damageType: 0
+  multiHit: 0
 --- !u!1101 &6209502972454148330
 AnimatorStateTransition:
   m_ObjectHideFlags: 1

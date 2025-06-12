@@ -187,6 +187,7 @@ GameObject:
   - component: {fileID: 5556903167088138546}
   - component: {fileID: 7946907798496256512}
   - component: {fileID: 8442832048685986074}
+  - component: {fileID: 8543467272124569967}
   m_Layer: 0
   m_Name: FoxSprite
   m_TagString: Untagged
@@ -301,6 +302,19 @@ MonoBehaviour:
   rends:
   - {fileID: 5556903167088138546}
   offset: 0
+--- !u!114 &8543467272124569967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900750538073422767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 942ab9aedcbc93740b6bb16b740e2f1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dmgScript: {fileID: 742424760236508461}
 --- !u!1 &1039653989066871460
 GameObject:
   m_ObjectHideFlags: 0
@@ -404,6 +418,8 @@ MonoBehaviour:
   hitOnce: 0
   hitParticles: {fileID: 8663745972045859412, guid: ad6c6782a6ebd9043bc432c114fb70eb, type: 3}
   specificHurtPitchRange: {x: 0.9, y: 1.1}
+  attackID: 0
+  multiHit: 0
 --- !u!1 &3585114107013869924
 GameObject:
   m_ObjectHideFlags: 0
@@ -515,6 +531,7 @@ MonoBehaviour:
   rb: {fileID: 1967860514389242414}
   knockbackMultiplyer: 250
   flashScript: {fileID: 8568871456052618067}
+  bonusWidth: 0
 --- !u!114 &8568871456052618067
 MonoBehaviour:
   m_ObjectHideFlags: 0

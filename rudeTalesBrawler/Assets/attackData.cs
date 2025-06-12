@@ -12,6 +12,7 @@ public class attackData : StateMachineBehaviour
     [Tooltip("0 = physical, 1 = electric")]
     public int damageType; 
     protected hitboxDamage dmgScript;
+    public bool multiHit;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -25,6 +26,10 @@ public class attackData : StateMachineBehaviour
             dmgScript.hitStopDuration = hitStopDuration;
             dmgScript.attackStrength = attackStrength;
             dmgScript.damageType = damageType;
+            dmgScript.multiHit = multiHit;
+            dmgScript.attackID++;
+            if (dmgScript.attackID > 9)
+                dmgScript.attackID = 0;
         }
         
         

@@ -295,7 +295,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1714172111
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: -477004873, guid: cbc40518f35038246ae0065b7d568bdb, type: 3}
   m_Color: {r: 0.11320752, g: 0.10003557, b: 0.10003557, a: 0.9882353}
@@ -431,8 +431,34 @@ MonoBehaviour:
   checkObject: {fileID: 0}
   damageType: 1
   attackStrength: 3
+  hitSounds: []
   hitOnce: 0
   hitParticles: {fileID: 6539284756768627142, guid: d3f98676eb13ad341a224f7e5eb149dc, type: 3}
+  specificHurtPitchRange: {x: 0.9, y: 1.1}
+  attackID: 0
+  prevID: 0
+  multiHit: 0
+  prevTarget:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!61 &1819785726872349775
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -465,7 +491,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.1, y: 2.63}
+  m_Offset: {x: 0.099999905, y: 5.1960516}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -476,5 +502,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.27, y: 4.57}
+  m_Size: {x: 6.27, y: 9.702101}
   m_EdgeRadius: 0

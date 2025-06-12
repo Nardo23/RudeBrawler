@@ -355,7 +355,9 @@ MonoBehaviour:
   flashMaterial: {fileID: 2100000, guid: 32a14d021bfb093458ba7bc40c0e7858, type: 2}
   duration: 0.1
   color: {r: 0.8867924, g: 0.3736938, b: 0.2760768, a: 1}
+  useRenderArray: 0
   spriteRenderer: {fileID: 5818849709553923146}
+  spriteRendereArray: []
 --- !u!114 &602809156425492607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -649,7 +651,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1714172111
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 97
   m_Sprite: {fileID: 833766308, guid: cc432fd78cf2ad2469bc54eec21e61ab, type: 3}
   m_Color: {r: 0.08235294, g: 0.08627451, b: 0.13333334, a: 0.6117647}

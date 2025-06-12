@@ -10,6 +10,7 @@ public class motherBoss : MonoBehaviour
     boss bossScript;
     bool startVulnerable;
     Animator anim;
+    public Animator orrificeAnim;
     // Start is called before the first frame update
     void Start()
     {
@@ -52,6 +53,18 @@ public class motherBoss : MonoBehaviour
                     tentacleRiddle.SetActive(true);
                     bossScript.attackReady = false;
                     break;
+                case 4:
+                    if (!orrificeAnim.GetComponent<motherBearOwlspawn>().spawning)
+                    {
+                        //Debug.Log("number of bears: "+GameObject.FindGameObjectsWithTag("MotherBearOwl").Length);
+                        if (GameObject.FindGameObjectsWithTag("MotherBearOwl").Length < 2)
+                        {
+                            orrificeAnim.SetTrigger("Spawn");
+                            bossScript.attackReady = false;
+                            break;
+                        }                    
+                    }                        
+                    break;
             }
         }
         if (bossScript.vulnerable)
@@ -68,6 +81,7 @@ public class motherBoss : MonoBehaviour
             {
                 startVulnerable = false;
                 anim.SetTrigger("Rise");
+                spawnBearOwl();
             }
 
         }
@@ -75,6 +89,12 @@ public class motherBoss : MonoBehaviour
 
     }
     
+    public void spawnBearOwl()
+    {
+        if (GameObject.FindGameObjectsWithTag("MotherBearOwl").Length < 2)
+            orrificeAnim.SetTrigger("Spawn");
+    }
+
     public void attackOver()//individual attacks call this when they end
     {
         bossScript.endCurrentAttack();

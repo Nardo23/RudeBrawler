@@ -20,7 +20,7 @@ public class boss : MonoBehaviour
     public int maxVulnerableDamage;
 
     public int maxHealth;
-    int currentHealth;
+    public int currentHealth;
     public float bonusSize;
     public bool vulnerable = false;
     public float vulnerableTime=5;
@@ -101,9 +101,12 @@ public class boss : MonoBehaviour
     public void endCurrentAttack()
     {
         //called by boss when they finish an attack
-        timer = 0;
-        attackFinished = true;
-        attackCounter ++;
+        if (currentState == bossState.Attack)
+        {
+            timer = 0;
+            attackFinished = true;
+            attackCounter++;
+        }   
     }
 
     void vulnerableTick()

@@ -241,7 +241,7 @@ public class Enemy : MonoBehaviour
             rb.velocity = Vector2.zero;
 
             charRB.gravityScale = 0;
-            //Debug.Log("setting velocity to zero");
+            Debug.Log("setting velocity to zero");
         }
         if (charRB.transform.localPosition.y + charDefaultRelPos.y < rb.transform.localPosition.y)
         {

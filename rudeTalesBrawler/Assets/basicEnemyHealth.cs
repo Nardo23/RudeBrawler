@@ -10,6 +10,7 @@ public class basicEnemyHealth : MonoBehaviour
     public Rigidbody2D rb;
     public float knockbackMultiplyer =1;
     public ColoredFlash flashScript;
+    public float bonusWidth;
     // Start is called before the first frame update
     private void Start()
     {

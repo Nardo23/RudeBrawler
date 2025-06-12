@@ -273,6 +273,7 @@ MonoBehaviour:
   rb: {fileID: 817067986708599453}
   knockbackMultiplyer: 1
   flashScript: {fileID: 1391030037981927632}
+  bonusWidth: 0.7
 --- !u!114 &1391030037981927632
 MonoBehaviour:
   m_ObjectHideFlags: 0

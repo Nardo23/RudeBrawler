@@ -196,7 +196,7 @@ public class hitboxDamage : MonoBehaviour
             basicEnemyHealth basicScript = collision.GetComponentInParent<basicEnemyHealth>();
             if (basicScript != null)
             {
-                if (Mathf.Abs(basicScript.transform.position.y - yCheckTransform.position.y) <= yRange)
+                if (Mathf.Abs(basicScript.transform.position.y - yCheckTransform.position.y) <= yRange+basicScript.bonusWidth)
                 {
                     GameObject particles = Instantiate(hitParticles, new Vector2(collision.transform.position.x, collision.transform.position.y), Quaternion.identity);
                     particles.transform.parent = collision.transform.parent;

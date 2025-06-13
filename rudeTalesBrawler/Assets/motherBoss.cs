@@ -11,6 +11,12 @@ public class motherBoss : MonoBehaviour
     bool startVulnerable;
     Animator anim;
     public Animator orrificeAnim;
+    float riddleChance = 100; //percent
+    public GameObject flames1;
+    public GameObject flames2;
+    public GameObject flames3;
+    public GameObject flames4;
+    public GameObject flames5;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +27,17 @@ public class motherBoss : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (bossScript.currentHealth < bossScript.maxHealth * .70f)
+            flames1.SetActive(true);
+        if (bossScript.currentHealth < bossScript.maxHealth * .55f)
+            flames2.SetActive(true);
+        if (bossScript.currentHealth < bossScript.maxHealth * .39f)
+            flames3.SetActive(true);
+        if (bossScript.currentHealth < bossScript.maxHealth * .27f)
+            flames4.SetActive(true);
+        if (bossScript.currentHealth < bossScript.maxHealth * .18f)
+            flames5.SetActive(true);
+
         if (bossScript.attackReady)
         {
             currentAttack = bossScript.pickAttack(numOfAttacks);
@@ -41,15 +58,19 @@ public class motherBoss : MonoBehaviour
                         
                         break;
                     }
+                    anim.SetTrigger("Pulse");
                     tentacleBeamObj.SetActive(true);
                     bossScript.attackReady = false;
                     break;
                 case 3:
                     if (tentacleRiddle.activeSelf)
-                    {
-                        
+                    {                        
                         break;
                     }
+                    if (Random.Range(0, 100) > riddleChance)
+                        break;
+                    riddleChance *= .6f;
+                    anim.SetTrigger("Pulse");
                     tentacleRiddle.SetActive(true);
                     bossScript.attackReady = false;
                     break;
@@ -79,6 +100,7 @@ public class motherBoss : MonoBehaviour
         {
             if (startVulnerable)
             {
+                riddleChance = 100;
                 startVulnerable = false;
                 anim.SetTrigger("Rise");
                 spawnBearOwl();

@@ -24,7 +24,9 @@ public class boss : MonoBehaviour
     public float bonusSize;
     public bool vulnerable = false;
     public float vulnerableTime=5;
-    
+
+    public GameObject enableOnDeath;
+
     public ColoredFlash coloredFlashScript;
     private void Start()
     {
@@ -149,7 +151,9 @@ public class boss : MonoBehaviour
         {
             //die
             currentState = bossState.Idle;
-            Debug.Log("Boss Dead!");
+            //Debug.Log("Boss Dead!");
+            enableOnDeath.SetActive(true);
+            currentState = bossState.Idle;
         }
     }
 

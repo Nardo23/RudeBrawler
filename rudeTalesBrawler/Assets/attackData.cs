@@ -11,7 +11,7 @@ public class attackData : StateMachineBehaviour
     public int attackStrength;
     [Tooltip("0 = physical, 1 = electric")]
     public int damageType; 
-    protected hitboxDamage dmgScript;
+     hitboxDamage dmgScript;
     public bool multiHit;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
@@ -20,7 +20,9 @@ public class attackData : StateMachineBehaviour
         dmgScript = animator.transform.GetComponentInChildren<hitboxDamage>(true);
         if(dmgScript != null)
         {
+            //Debug.Log(dmgScript.transform.parent.name + " found dmgScrpt");
             dmgScript.damage = damage;
+            //Debug.Log("damageTest " + dmgScript.damage + ", " + damage);
             dmgScript.yRange = yRange;
             dmgScript.knockbackForce = knockbackForce;
             dmgScript.hitStopDuration = hitStopDuration;

@@ -321,6 +321,7 @@ MonoBehaviour:
   hitStopDuration: 0.1
   attackStrength: 3
   damageType: 0
+  multiHit: 0
 --- !u!1102 &-3163096013248562111
 AnimatorState:
   serializedVersion: 6
@@ -367,6 +368,7 @@ MonoBehaviour:
   hitStopDuration: 0.2
   attackStrength: 3
   damageType: 0
+  multiHit: 0
 --- !u!1101 &-2116436055549770766
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -451,12 +453,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dfd194c5ef691cb4e8e992f4619b7a18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 12
+  damage: 15
   yRange: 0.8
   knockbackForce: 1
   hitStopDuration: 0.2
   attackStrength: 0
   damageType: 0
+  multiHit: 0
 --- !u!91 &9100000
 AnimatorController:
   m_ObjectHideFlags: 0

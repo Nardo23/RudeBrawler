@@ -59,7 +59,7 @@ public class hitboxDamage : MonoBehaviour
             //Debug.Log("clearingPRevTargets");
             prevTargetIndex = 0;
         }
-        Debug.Log(transform.parent.name + " collided with " + collision.transform.parent.name);
+        //Debug.Log(transform.parent.name + " collided with " + collision.transform.parent.name); // CAREFUL this breaks projectiles that dont have parents
         if (isPlayer)
         {
             if (collision.tag == "EnemyHurt")

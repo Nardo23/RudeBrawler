@@ -11,6 +11,7 @@ public class motherBoss : MonoBehaviour
     bool startVulnerable;
     Animator anim;
     public Animator orrificeAnim;
+    bool died = false;
     float riddleChance = 100; //percent
     public GameObject flames1;
     public GameObject flames2;
@@ -94,6 +95,11 @@ public class motherBoss : MonoBehaviour
             {
                 startVulnerable = true;
                 anim.SetTrigger("Slam");
+                bossScript.cooldown -= 1;
+                if (bossScript.cooldown < 0)
+                {
+                    bossScript.cooldown = 0;
+                }
             }
         }
         else
@@ -107,8 +113,19 @@ public class motherBoss : MonoBehaviour
             }
 
         }
-
-
+        if(bossScript.currentHealth <= 0 &&!died)
+        {
+            died = true;
+            anim.SetTrigger("Die");
+            tentacleSlamObj.SetActive(false);
+            tentacleBeamObj.SetActive(false);
+            tentacleRiddle.SetActive(false);
+            foreach (GameObject b in GameObject.FindGameObjectsWithTag("MotherBearOwl"))
+            {
+                b.GetComponent<enemyHealth>().changeHealth(-999);
+            }
+        }
+        
     }
     
     public void spawnBearOwl()

@@ -242,6 +242,30 @@ MonoBehaviour:
   hitOnce: 0
   hitParticles: {fileID: 0}
   specificHurtPitchRange: {x: 0.9, y: 1.1}
+  attackID: 0
+  prevID: 0
+  multiHit: 0
+  prevTarget:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &3124073799786860920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -290,9 +314,9 @@ Transform:
   m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8219779176676795440}
-  - {fileID: 8992695357109645450}
   - {fileID: 4302143082683592803}
+  - {fileID: 8992695357109645450}
+  - {fileID: 8219779176676795440}
   m_Father: {fileID: 7019020111041070974}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &599370342502858237

@@ -157,7 +157,11 @@ public class characterSelect : MonoBehaviour
 
         P1Cursor.transform.position = new Vector3(iconPositions[P1count].position.x - .65f, iconPositions[P1count].position.y, 0);
         P2Cursor.transform.position = new Vector3(iconPositions[P2count].position.x + .65f, iconPositions[P2count].position.y, 0);
-        if (p1Selected)
+        if (Input.GetButtonDown("Enter")&& !inCharacterselect)
+        {
+            StartGame();
+        }
+            if (p1Selected)
         {
             if (Input.GetButtonDown("Enter"))
                 goToLevelSelect();
@@ -173,6 +177,7 @@ public class characterSelect : MonoBehaviour
             P1Icons[P1count].SetActive(true);
             P1Check.SetActive(true);
             anim1.SetBool("Selected", true);
+            
             
         }
         if (Input.GetButtonDown("Attack") && !hovering)
@@ -289,8 +294,8 @@ public class characterSelect : MonoBehaviour
     {
         inCharacterselect = true;
         startButton.SetActive(false);
-        LevelSelect.SetActive(true);
-        characterSelectArt.SetActive(false);
+        LevelSelect.SetActive(false);
+        characterSelectArt.SetActive(true);
         levelSelectArt.SetActive(false);
     }
     public void setLevel(int levelnum)

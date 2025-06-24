@@ -111,7 +111,7 @@ public class hitboxDamage : MonoBehaviour
                         }
 
                         soundEffects s = collision.gameObject.GetComponentInParent<soundEffects>();
-                        if(s != null && hitSounds !=null)
+                        if(s != null && hitSounds != null)
                         {
                             s.recievedHit = true;
                             s.specificHit = hitSounds;
@@ -168,7 +168,7 @@ public class hitboxDamage : MonoBehaviour
             }
             if(collision.tag == "BossHurt")
             {
-                Debug.Log(transform.parent.name + " bosshurt");
+                //Debug.Log(transform.parent.name + " bosshurt");
                 if (checkFromParent)
                 {
                     yCheckTransform = transform.parent.transform;
@@ -188,7 +188,15 @@ public class hitboxDamage : MonoBehaviour
                         prevTarget[prevTargetIndex] = collision.gameObject;
                         prevTargetIndex++;
                         hitValid = true;
-                        
+
+                        soundEffects s = collision.gameObject.GetComponentInParent<soundEffects>();
+                        if (s != null && hitSounds != null)
+                        {
+                            s.recievedHit = true;
+                            s.specificHit = hitSounds;
+                            s.specificHurtPitchRange = specificHurtPitchRange;
+                            s.Hurt();
+                        }
                     }
                 }
             }
@@ -257,6 +265,15 @@ public class hitboxDamage : MonoBehaviour
                     prevTarget[prevTargetIndex] = collision.gameObject;
                     prevTargetIndex++;
                     hitValid = true;
+
+                    soundEffects s = collision.gameObject.GetComponentInParent<soundEffects>();
+                    if (s != null && hitSounds != null)
+                    {
+                        s.recievedHit = true;
+                        s.specificHit = hitSounds;
+                        s.specificHurtPitchRange = specificHurtPitchRange;
+                        s.Hurt();
+                    }
                 }
             }
 

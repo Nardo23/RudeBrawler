@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 8551813210492860859}
   - component: {fileID: 1391030037981927632}
   - component: {fileID: 5900387214219716378}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: rowboat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -157,7 +157,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 536
   m_Sprite: {fileID: 21300000, guid: 30694f4b675247f478dedffb68b6a441, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

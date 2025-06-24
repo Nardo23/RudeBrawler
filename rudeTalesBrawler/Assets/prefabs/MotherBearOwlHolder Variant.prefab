@@ -5150,6 +5150,10 @@ PrefabInstance:
       value: MotherBearOwl
       objectReference: {fileID: 0}
     - target: {fileID: 1061610350972648537, guid: 20784157e04e75a43a4f2a7d923d0d7a, type: 3}
+      propertyPath: Armor
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1061610350972648537, guid: 20784157e04e75a43a4f2a7d923d0d7a, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}

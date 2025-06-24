@@ -348,7 +348,7 @@ MonoBehaviour:
   damage: 10
   yRange: 1
   knockbackForce: 0.2
-  hitStopDuration: 0
+  hitStopDuration: 0.15
   checkFromParent: 0
   checkObject: {fileID: 3880874929693606227}
   damageType: 0
@@ -361,6 +361,30 @@ MonoBehaviour:
   hitOnce: 1
   hitParticles: {fileID: 8663745972045859412, guid: ad6c6782a6ebd9043bc432c114fb70eb, type: 3}
   specificHurtPitchRange: {x: 1.1, y: 1.3}
+  attackID: 0
+  prevID: 0
+  multiHit: 0
+  prevTarget:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!82 &6969674364317780832
 AudioSource:
   m_ObjectHideFlags: 0

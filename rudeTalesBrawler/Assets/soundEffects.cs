@@ -102,7 +102,8 @@ public class soundEffects : MonoBehaviour
             Debug.Log("hitsound");
             specificHurtSor.pitch = Random.Range(specificHurtPitchRange.x, specificHurtPitchRange.y);
             recievedHit = false;
-            specificHurtSor.PlayOneShot(specificHit[Random.Range(0, specificHit.Length)]);   
+            if (specificHit.Length>0)
+                specificHurtSor.PlayOneShot(specificHit[Random.Range(0, specificHit.Length)]);   
         }
     }
 

@@ -61,7 +61,7 @@ public class lineProjectile : MonoBehaviour
         {
             if (isPlayer)
             {
-                if (collision.tag == "EnemyHurt" )
+                if (collision.tag == "EnemyHurt" || collision.tag == "BasicHurt"|| collision.tag == "BossHurt"|| collision.tag == "SimpleEnemyHurt" )
                 {
                     if (checkFromParent)
                     {
@@ -71,7 +71,23 @@ public class lineProjectile : MonoBehaviour
                     {
                         yCheckTransform = checkObject.transform;
                     }
-                    if (Mathf.Abs(collision.transform.parent.transform.position.y - yCheckTransform.position.y) <= yRange)// check if bases are within a certain y range
+                    if (collision.tag == "BossHurt")
+                    {
+                        boss bossS = collision.GetComponentInParent<boss>();
+                        if (Mathf.Abs(bossS.transform.position.y - yCheckTransform.position.y) <= yRange + bossS.bonusSize)
+                            hit();
+                    }
+                    else if (collision.tag == "EnemyHurt")
+                    {
+                        if (Mathf.Abs(collision.transform.parent.transform.position.y - yCheckTransform.position.y) <= yRange + collision.GetComponentInParent<enemyAnimator>().bonusYSize)
+                            hit();
+                    }
+                    else if(collision.tag == "SimpleEnemyHurt")
+                    {
+                        if (Mathf.Abs(collision.transform.parent.transform.position.y - yCheckTransform.position.y) <= yRange + collision.GetComponentInParent<simpleEnemyAnimator>().bonusYSize)
+                            hit();
+                    }
+                    else if (Mathf.Abs(collision.transform.parent.transform.position.y - yCheckTransform.position.y) <= yRange )// check if bases are within a certain y range
                     {
                         hit();
                     }

@@ -70,7 +70,8 @@ public class ChickenFoxSpawner : MonoBehaviour
 
         for (int i = 0; i < cornAmount; i++)
         {
-            GameObject cornInst = Instantiate(corn, transform.position, Quaternion.identity);
+            Vector3 pos = new Vector3(transform.position.x, transform.position.y - 1, 0);
+            GameObject cornInst = Instantiate(corn, pos, Quaternion.identity);
             float x = Random.Range(CornForceX.x, CornForceX.y);
             float y = Random.Range(cornForceY.x, cornForceY.y);
             Vector2 xy = new Vector2(x, y);
@@ -85,7 +86,8 @@ public class ChickenFoxSpawner : MonoBehaviour
 
         for (int i = 0; i < chickenAmount; i++)
         {
-            GameObject chickenInst = Instantiate(chicken, transform.position, Quaternion.identity);
+            Vector3 pos = new Vector3(transform.position.x, transform.position.y - 1, 0);
+            GameObject chickenInst = Instantiate(chicken, pos, Quaternion.identity);
             float x = Random.Range(ChickenForceX.x, ChickenForceX.y);
             float y = Random.Range(ChickenForceY.x, ChickenForceY.y);
             Vector2 xy = new Vector2(x, y);
@@ -99,7 +101,7 @@ public class ChickenFoxSpawner : MonoBehaviour
 
         for (int i = 0; i < foxAmount; i++)
         {
-            Instantiate(fox, new Vector3(transform.position.x, transform.position.y+i, 0), Quaternion.identity);
+            Instantiate(fox, new Vector3(transform.position.x, transform.position.y-1.5f, 0), Quaternion.identity);
         }
     }
 

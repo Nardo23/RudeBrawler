@@ -239,6 +239,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wanderRadius: 16
   wanderTimer: 2.6
+  timer: 0
   anim: {fileID: 3834349465161621201}
 --- !u!195 &2025524794935547157
 NavMeshAgent:
@@ -291,6 +292,7 @@ MonoBehaviour:
   rb: {fileID: 8345194208484169604}
   knockbackMultiplyer: 150
   flashScript: {fileID: 1395778751028416732}
+  bonusWidth: 0
 --- !u!1 &6237129574319526010
 GameObject:
   m_ObjectHideFlags: 0
@@ -443,7 +445,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 536
   m_Sprite: {fileID: -14800700, guid: fa388840e78581d48871821ccc0f30f3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

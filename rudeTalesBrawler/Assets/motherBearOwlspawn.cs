@@ -21,18 +21,22 @@ public class motherBearOwlspawn : MonoBehaviour
 
     void SpawnBearOwl()
     {
-        spawning = true;
-        Vector3 spawnPos = new Vector3(motherShadow.transform.position.x, motherShadow.transform.position.y - 1, 0);
-        GameObject spawnedBear = Instantiate(motherBearOwl, spawnPos, Quaternion.identity);
-        Transform bearForm = spawnedBear.GetComponentInChildren<enemyAnimator>().gameObject.transform;
-        spawnedBear.GetComponentInChildren<enemyAnimator>().gameObject.transform.position = new Vector3(bearForm.position.x, transform.position.y,bearForm.position.z);
-
-        if (bossScript.currentHealth < bossScript.maxHealth * .45f)
+        if (bossScript.currentHealth > 0)
         {
-            spawnedBear.transform.Find("bearOwl/BearOwl Sprite/flames").gameObject.SetActive(true);
+            spawning = true;
+            Vector3 spawnPos = new Vector3(motherShadow.transform.position.x, motherShadow.transform.position.y - 1, 0);
+            GameObject spawnedBear = Instantiate(motherBearOwl, spawnPos, Quaternion.identity);
+            Transform bearForm = spawnedBear.GetComponentInChildren<enemyAnimator>().gameObject.transform;
+            spawnedBear.GetComponentInChildren<enemyAnimator>().gameObject.transform.position = new Vector3(bearForm.position.x, transform.position.y, bearForm.position.z);
+
+            if (bossScript.currentHealth < bossScript.maxHealth * .45f)
+            {
+                spawnedBear.transform.Find("bearOwl/BearOwl Sprite/flames").gameObject.SetActive(true);
+            }
+            else
+                spawnedBear.transform.Find("bearOwl/BearOwl Sprite/flames").gameObject.SetActive(false); 
         }
-        else
-            spawnedBear.transform.Find("bearOwl/BearOwl Sprite/flames").gameObject.SetActive(false); ;
+        
 
     }
 

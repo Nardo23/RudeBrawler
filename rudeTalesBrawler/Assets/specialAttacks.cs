@@ -206,6 +206,17 @@ public class specialAttacks : MonoBehaviour
         }
         
     }
+    public void ResetFireBall()
+    {
+        speed = minSpeed;
+        lifetime = minLifeTime;
+        damage = MinFireballDamage;
+        size = minBallSize;
+        chargeTime = 0;
+        coolTimer = 0;
+        //wasCharging = false;
+    }
+
     public GameObject punchSquare;
     IEnumerator punch()
     {
@@ -367,11 +378,18 @@ public class specialAttacks : MonoBehaviour
     [Header("AirDaggers")]
     public GameObject airDagger;
     public Transform daggerSpawn;
+    float daggerTimer =0;
     void airDaggers()
     {
-        if (controls.SpecialAttackStartState && !animScript.specialing)
+        if(daggerTimer < .21f)
         {
+            daggerTimer += Time.deltaTime;
+        }
+        if (controls.SpecialAttackStartState && !animScript.specialing && daggerTimer>= .21f)
+        {
+            daggerTimer = 0;
             anim.SetBool("attacking", false);
+            anim.SetBool("specialing", true);
             
             GameObject dagger = Instantiate(airDagger, transform.position, Quaternion.identity);           
             if (!moveScript.facingRight)         
@@ -427,6 +445,8 @@ public class specialAttacks : MonoBehaviour
         {
             anim.SetTrigger("special");
             anim.SetFloat("specialNum", 1);
+            wasCharging = false;
+            setErupt(0);
         }
     }
 

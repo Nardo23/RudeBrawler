@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class boss : MonoBehaviour
 {
     enum bossState {Idle, Attack, Vulnerable}
@@ -24,7 +23,7 @@ public class boss : MonoBehaviour
     public float bonusSize;
     public bool vulnerable = false;
     public float vulnerableTime=5;
-
+    public float damageReduction;
     public GameObject enableOnDeath;
 
     public ColoredFlash coloredFlashScript;
@@ -126,6 +125,13 @@ public class boss : MonoBehaviour
         {
             coloredFlashScript.Flash();
         }
+
+        if (currentState != bossState.Vulnerable)
+        {
+            float dmgCalc = damage * damageReduction;
+            damage = (int)dmgCalc;
+        }
+         
         currentHealth += damage;
         if(currentState == bossState.Vulnerable)
         {

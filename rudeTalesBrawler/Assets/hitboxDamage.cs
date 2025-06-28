@@ -182,8 +182,9 @@ public class hitboxDamage : MonoBehaviour
                 {
                     if (Mathf.Abs(bossScript.transform.position.y - yCheckTransform.position.y) <= yRange + bossScript.bonusSize && !hitPreviously(collision.gameObject))// check if bases are within a certain y range
                     {
-                        GameObject particles = Instantiate(hitParticles, new Vector2(collision.transform.position.x, collision.transform.position.y), Quaternion.identity);
+                        GameObject particles = Instantiate(hitParticles, new Vector2(collision.transform.position.x-.5f, collision.transform.position.y+.5f), Quaternion.identity);
                         particles.transform.parent = collision.transform.parent;
+                        particles.transform.localScale = new Vector3(1.1f, 1.1f, 1.1f);
                         bossScript.changeHealth(-damage);
                         prevTarget[prevTargetIndex] = collision.gameObject;
                         prevTargetIndex++;
@@ -210,34 +211,53 @@ public class hitboxDamage : MonoBehaviour
                 AnimtorController c = collision.gameObject.GetComponentInParent<AnimtorController>();
                 if(c != null)
                 {
-                    if (checkFromParent) 
+                    bool groundHitboxCheck =false;
+                    if (transform.tag == "GroundHitbox" && transform.tag == c.hitString)
                     {
-                        yCheckTransform = transform.parent.transform;
+                        groundHitboxCheck = true;
+                        Debug.Log("groundcheck true!");
                     }
-                    else
+                        
+                    if (!groundHitboxCheck)
                     {
-                        yCheckTransform = checkObject.transform;
+                        if (checkFromParent)
+                        {
+                            yCheckTransform = transform.parent.transform;
+                        }
+                        else
+                        {
+                            yCheckTransform = checkObject.transform;
+                        }
+                        if (Mathf.Abs(c.transform.parent.transform.position.y - yCheckTransform.position.y) <= yRange && !hitPreviously(collision.gameObject))// check if bases are within a certain y range
+                        {
+                            if (c != null)
+                            {
+                                c.hurt(transform.position.x, knockbackForce);
+                            }
+                            if (hitParticles != null)
+                            {
+                                GameObject particles = Instantiate(hitParticles, new Vector2(collision.transform.position.x, collision.transform.position.y+2f), Quaternion.identity);
+                                particles.transform.parent = collision.transform.parent;
+                            }
+                            PlayerHealth p = collision.gameObject.GetComponentInParent<PlayerHealth>();
+                            if (p != null)
+                            {
+                                p.changeHealth(-damage);
+
+                            }
+                            if (hitOnce)
+                            {
+                                GetComponent<Collider2D>().enabled = false;
+                            }
+                            prevTarget[prevTargetIndex] = collision.gameObject;
+                            prevTargetIndex++;
+                            hitValid = true;
+                            c.hitString = transform.tag;
+                        }
                     }
-                    if (Mathf.Abs(c.transform.parent.transform.position.y - yCheckTransform.position.y) <= yRange && !hitPreviously(collision.gameObject))// check if bases are within a certain y range
-                    {
-                        if (c != null)
-                        {
-                            c.hurt(transform.position.x, knockbackForce);
-                        }
-                        PlayerHealth p = collision.gameObject.GetComponentInParent<PlayerHealth>();
-                        if (p != null)
-                        {
-                            p.changeHealth(-damage);
-                            
-                        }
-                        if (hitOnce)
-                        {
-                            GetComponent<Collider2D>().enabled = false;
-                        }
-                        prevTarget[prevTargetIndex] = collision.gameObject;
-                        prevTargetIndex++;
-                        hitValid = true;
-                    }
+                      
+
+                    
                 }
 
                 
@@ -258,8 +278,12 @@ public class hitboxDamage : MonoBehaviour
             {
                 if (Mathf.Abs(basicScript.transform.position.y - yCheckTransform.position.y) <= yRange+basicScript.bonusWidth && !hitPreviously(collision.gameObject))
                 {
-                    GameObject particles = Instantiate(hitParticles, new Vector2(collision.transform.position.x, collision.transform.position.y), Quaternion.identity);
-                    particles.transform.parent = collision.transform.parent;
+                    if (hitParticles != null)
+                    {
+                        GameObject particles = Instantiate(hitParticles, new Vector2(collision.transform.position.x, collision.transform.position.y+.2f), Quaternion.identity);
+                        particles.transform.parent = collision.transform.parent;
+                        particles.transform.localScale = new Vector3(.9f, .9f, .9f);
+                    }                        
                     basicScript.changeHealth(-damage);
                     basicScript.knockback(knockbackForce, transform.position.x);
                     prevTarget[prevTargetIndex] = collision.gameObject;
@@ -285,4 +309,7 @@ public class hitboxDamage : MonoBehaviour
             prevTargetIndex = 0;
 
     }
+
+
+
 }

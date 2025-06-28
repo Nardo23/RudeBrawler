@@ -42,6 +42,13 @@ public class motherBoss : MonoBehaviour
         if (bossScript.attackReady)
         {
             currentAttack = bossScript.pickAttack(numOfAttacks);
+            if(bossScript.attackCounter >3 && riddleChance == 100)
+            {
+                if(Random.Range(0,100) > 50)
+                {
+                    currentAttack = 3;
+                }
+            }
             switch (currentAttack)
             {
                 case 1:
@@ -95,7 +102,7 @@ public class motherBoss : MonoBehaviour
             {
                 startVulnerable = true;
                 anim.SetTrigger("Slam");
-                bossScript.cooldown -= 1;
+                bossScript.cooldown -= 1.2f;
                 if (bossScript.cooldown < 0)
                 {
                     bossScript.cooldown = 0;

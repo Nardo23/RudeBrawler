@@ -28,6 +28,8 @@ AnimationClip:
       value: {fileID: 2054458286, guid: dc2aab6ca813acf40b8597720b631b82, type: 3}
     - time: 0.29166666
       value: {fileID: 1639623068, guid: dc2aab6ca813acf40b8597720b631b82, type: 3}
+    - time: 0.41666666
+      value: {fileID: 1639623068, guid: dc2aab6ca813acf40b8597720b631b82, type: 3}
     attribute: m_Sprite
     path: stirfrySprite
     classID: 212
@@ -54,12 +56,13 @@ AnimationClip:
     - {fileID: 2112415205, guid: dc2aab6ca813acf40b8597720b631b82, type: 3}
     - {fileID: 2054458286, guid: dc2aab6ca813acf40b8597720b631b82, type: 3}
     - {fileID: 1639623068, guid: dc2aab6ca813acf40b8597720b631b82, type: 3}
+    - {fileID: 1639623068, guid: dc2aab6ca813acf40b8597720b631b82, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.3333333
+    m_StopTime: 0.4583333
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -100,14 +103,14 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.29166666
+  - time: 0.375
     functionName: endSpecial
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.29166666
+  - time: 0.375
     functionName: endAttack
     data: 
     objectReferenceParameter: {fileID: 0}

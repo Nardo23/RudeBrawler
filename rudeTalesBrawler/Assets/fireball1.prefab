@@ -359,7 +359,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 9fefdf52e3cd96a48ac0148ba391fbd7, type: 3}
   - {fileID: 8300000, guid: 1cdac4bbdc4632c4ab2750c0106be523, type: 3}
   hitOnce: 1
-  hitParticles: {fileID: 8663745972045859412, guid: ad6c6782a6ebd9043bc432c114fb70eb, type: 3}
+  hitParticles: {fileID: 5500256638685959022, guid: 49b6aff9e7280424a990095e7d7f1516, type: 3}
   specificHurtPitchRange: {x: 1.1, y: 1.3}
   attackID: 0
   prevID: 0

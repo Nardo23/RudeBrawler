@@ -32,6 +32,8 @@ public class AnimtorController : MonoBehaviour
     public string CharacterID; // A =albee, B = bellow, C =cordelia, D= deBonesby, S= stirfry
     public specialAttacks specialScript;
     public bool specialing = false;
+    //[HideInInspector]
+    public string hitString;
     // Start is called before the first frame update
     void Start()
     {
@@ -228,6 +230,11 @@ public class AnimtorController : MonoBehaviour
     }
     private void LateUpdate()
     {
+        if(hitString == "GroundHitbox")
+        {
+            //StopCoroutine(resetGround(hitString));
+            StartCoroutine(resetGround());
+        }
         if (controls.SpecialAttackStartState && !attacking)
         {
 
@@ -414,6 +421,18 @@ public class AnimtorController : MonoBehaviour
         //CharRb.velocity = Vector3.zero;
         CharRb.velocity = new Vector3(i * distance+ 0,0, 0);
         //Debug.Log("distance: " + distance);
+    }
+
+    IEnumerator resetGround()
+    {
+        float timer = 0;
+        while (timer < 1)
+        {
+            timer += Time.deltaTime;
+
+            yield return null;
+        }
+        hitString = "";
     }
 
 }

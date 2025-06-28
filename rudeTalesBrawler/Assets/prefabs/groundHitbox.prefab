@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7921851842541447451}
   m_Layer: 0
   m_Name: groundHitbox
-  m_TagString: Untagged
+  m_TagString: GroundHitbox
   m_Icon: {fileID: 7148428337604731935, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81,7 +81,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  damage: 5
+  damage: 12
   yRange: 0.6
   knockbackForce: 0.7
   hitStopDuration: 0

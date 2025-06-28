@@ -148,8 +148,32 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 9fefdf52e3cd96a48ac0148ba391fbd7, type: 3}
   - {fileID: 8300000, guid: 1cdac4bbdc4632c4ab2750c0106be523, type: 3}
   hitOnce: 0
-  hitParticles: {fileID: 8663745972045859412, guid: ad6c6782a6ebd9043bc432c114fb70eb, type: 3}
+  hitParticles: {fileID: 5500256638685959022, guid: 49b6aff9e7280424a990095e7d7f1516, type: 3}
   specificHurtPitchRange: {x: 0.9, y: 1.1}
+  attackID: 0
+  prevID: 0
+  multiHit: 0
+  prevTarget:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &6021351691155874493
 GameObject:
   m_ObjectHideFlags: 0
@@ -222,7 +246,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1714172111
-  m_SortingLayer: -1
+  m_SortingLayer: -2
   m_SortingOrder: 0
   m_Sprite: {fileID: 779516507, guid: a5aa343031046764fa18ac0da25fc4be, type: 3}
   m_Color: {r: 1, g: 0.9411765, b: 0.4862745, a: 0.38039216}

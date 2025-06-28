@@ -51,7 +51,7 @@ public class enemyAnimator : MonoBehaviour
     void Update()
     {
         if (alive)
-            tick();
+            tick();     
     }
     
    
@@ -240,4 +240,7 @@ public class enemyAnimator : MonoBehaviour
         //if(attacking)
         //charRb.velocity = deltaPosition;
     }
+
+    
+
 }

@@ -8,7 +8,7 @@ public class boss : MonoBehaviour
 
     bossState currentState = bossState.Attack;
 
-    int attackCounter = 0;
+    public int attackCounter = 0;
     public int numberofattacks;
     public bool attackReady = true;
     bool attackFinished = true;

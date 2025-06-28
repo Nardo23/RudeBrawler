@@ -98,7 +98,7 @@ public class cameraController : MonoBehaviour
 
             if (distanceX > deadZoneX || prevPos != transform.position)
             {
-                Debug.Log("lerping");
+                //Debug.Log("lerping");
                 position.x = Mathf.Lerp(this.transform.position.x, currentTarget.transform.position.x, (speed + distanceX * .7f) * Time.deltaTime);
                
             }

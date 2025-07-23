@@ -33,11 +33,17 @@ public class airGust : MonoBehaviour
 
                     enemyScrpt.gameObject.GetComponent<Rigidbody2D>().AddForce((gustDirection * force * enemyScrpt.knockbackMultiplyer), ForceMode2D.Force);
                 }
-
-
             }
-
         }
+        if(collision.tag == "BasicHurt")
+        {
+            if(Mathf.Abs(collision.transform.parent.position.y - character.transform.position.y) <= yRange)
+            {
+                Vector2 gustDirection = new Vector2(collision.transform.parent.position.x - character.transform.position.x, collision.transform.parent.position.y - character.transform.position.y).normalized;
+                collision.GetComponentInParent<Rigidbody2D>().AddForce((gustDirection * force * collision.GetComponentInParent<basicEnemyHealth>().knockbackMultiplyer), ForceMode2D.Force);
+            }
+        }
+
     }
 
     public GameObject reflectProjectile;

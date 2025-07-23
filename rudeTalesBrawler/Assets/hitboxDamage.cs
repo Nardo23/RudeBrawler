@@ -13,7 +13,7 @@ public class hitboxDamage : MonoBehaviour
     public float hitStopDuration; // ditto
     public bool checkFromParent = true; //yrange check should occur from parent object ie the shadow position. only disable for projectiles
     public GameObject checkObject; // used if checkFromParen = false
-    public int damageType; // 0 = phsical, 1 = electric determens what hurt animation to play
+    public float damageType; // 0 = phsical, 1 = electric determens what hurt animation to play
     public int attackStrength = 3; // compare this to the the target's armor to determine if the character takes reduced damage or knockback
     Transform yCheckTransform;
     [SerializeField]

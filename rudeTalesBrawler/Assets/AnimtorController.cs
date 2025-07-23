@@ -285,7 +285,7 @@ public class AnimtorController : MonoBehaviour
         anim.SetBool("idleReturn", false);
     }
 
-    void endAttack()
+    public void endAttack()
     {
         //Debug.Log("piss");
         moveScript.canMove = true;

@@ -54,8 +54,12 @@ public class specialAttacks : MonoBehaviour
         {
             if (moveScript.onBase && moveScript.landLag <= 0)
             {
-                
-                groundDagger();
+                if(anim.GetFloat("specialNum") == 1 && anim.GetBool("specialing"))
+                {
+
+                }
+                else
+                    groundDagger();
                 daffy();
                     
             }
@@ -125,7 +129,7 @@ public class specialAttacks : MonoBehaviour
             //onCooldown = true;
             moveScript.canMove = true;
         }
-        if (controls.SpecialAttackState && Mathf.Abs(controls.HorizontalMove) <= sideThreshold && anim.GetFloat("specialNum")==0 && !anim.GetBool("Hit"))
+        if (controls.SpecialAttackState && Mathf.Abs(controls.HorizontalMove) <= sideThreshold && anim.GetFloat("specialNum")==0 && !anim.GetBool("hit"))
         {
             //wasCharging = true;
             //moveScript.canMove = false;
@@ -153,7 +157,7 @@ public class specialAttacks : MonoBehaviour
             }
             
         }
-        else if (!controls.SpecialAttackState && animScript.specialing && !anim.GetBool("Hit"))
+        else if (!controls.SpecialAttackState && animScript.specialing && !anim.GetBool("hit") && anim.GetFloat("specialNum")==0)
         {
             
             if (wasCharging)
@@ -240,9 +244,9 @@ public class specialAttacks : MonoBehaviour
     public float lightningXPos;
     public void lightning()
     {
-        if (controls.SpecialAttackStartState && Mathf.Abs(controls.HorizontalMove) > sideThreshold)
+        if (controls.SpecialAttackStartState && Mathf.Abs(controls.HorizontalMove) > sideThreshold && !controls.AttackState)
         {
-            Debug.Log("lightning");
+            //Debug.Log("lightning");
 
             moveScript.canMove = false;
             anim.SetTrigger("special");

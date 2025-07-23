@@ -394,7 +394,7 @@ AnimatorState:
   - {fileID: -3992456460731864288}
   m_StateMachineBehaviours:
   - {fileID: -3894121852142484450}
-  - {fileID: 8129357696005956905}
+  - {fileID: -2490414140290502559}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -841,6 +841,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b3ab8f735cfe3f14eab342447bc8a08f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-2490414140290502559
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e21386fc859eb14c9857aa2b9684451, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &-2280298087994451887
@@ -1455,7 +1467,7 @@ AnimatorStateMachine:
     m_Position: {x: 410, y: -20, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1357057914053798957}
-    m_Position: {x: 620, y: 110, z: 0}
+    m_Position: {x: 610, y: 100, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6041048075715734963}
     m_Position: {x: 720, y: 190, z: 0}
@@ -1494,7 +1506,7 @@ AnimatorStateMachine:
     m_Position: {x: -260, y: 630, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6179199913311765357}
-    m_Position: {x: 80, y: 490, z: 0}
+    m_Position: {x: 90, y: 490, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 430619231315556952}
     m_Position: {x: 130, y: 580, z: 0}
@@ -2239,18 +2251,6 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!114 &8129357696005956905
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e21386fc859eb14c9857aa2b9684451, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1101 &8156581282673909659
 AnimatorStateTransition:
   m_ObjectHideFlags: 1

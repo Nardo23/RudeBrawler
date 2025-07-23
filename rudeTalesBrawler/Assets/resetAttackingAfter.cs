@@ -2,43 +2,39 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class eruptUnstuck : StateMachineBehaviour
+public class resetAttackingAfter : StateMachineBehaviour
 {
-    PlayerInput inputScript;
-    Controls controls = new Controls();
-
+    public float resetTime;
+    float timer;
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        inputScript = animator.GetComponentInParent<PlayerInput>();
-
-
+        timer = 0;
     }
+    //{
+    //    
+    //}
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        controls = inputScript.GetInput();
-        if (animator.GetFloat("specialNum") == 0)
+        if(timer>= resetTime)
         {
-            //Debug.Log("animatorInt: " + animator.GetInteger("specialNum"));
-            if (!controls.SpecialAttackState)
-            {
-                animator.SetTrigger("special");
-            }
+            animator.SetBool("attacking", false);
+            animator.GetComponent<AnimtorController>().endAttack();
         }
-        else
-            animator.ResetTrigger("special");
-        
-        
+        timer += Time.deltaTime;
 
     }
+    //{
+    //    
+    //}
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
-    override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    {
-        animator.ResetTrigger("special");
-    }
+    //override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    //{
+    //    
+    //}
 
     // OnStateMove is called right after Animator.OnAnimatorMove()
     //override public void OnStateMove(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)

@@ -408,6 +408,7 @@ MonoBehaviour:
   CharacterID: S
   specialScript: {fileID: 8617345644548700391}
   specialing: 0
+  hitString: 
   maxAttackBTime: 0.5
 --- !u!114 &8617345644548700391
 MonoBehaviour:
@@ -11411,6 +11412,30 @@ MonoBehaviour:
   hitOnce: 0
   hitParticles: {fileID: 8663745972045859412, guid: ad6c6782a6ebd9043bc432c114fb70eb, type: 3}
   specificHurtPitchRange: {x: 0.9, y: 1.1}
+  attackID: 0
+  prevID: 0
+  multiHit: 0
+  prevTarget:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &4219057820139032969
 MonoBehaviour:
   m_ObjectHideFlags: 0

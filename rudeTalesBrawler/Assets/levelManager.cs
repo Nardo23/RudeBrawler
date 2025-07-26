@@ -12,10 +12,10 @@ public class levelManager : MonoBehaviour
     public GameObject[] livingPlayers;
     public bool albeeIn, stirfryIn, debonesbyIn;
     public bool testMode;
-    public Transform P1Spawn, P2Spawn;
+    public Transform P1Spawn, P2Spawn, P3Spawn, P4Spawn;
     public GameObject Albee, Stirfry, Debonesby;
-    public Image heathBarMed, healthBarMedP2, healthBarMedP3, healthBarSmallP1, healthBarSmallP2, healthBarSmallP3;
-    public Image IconP1, IconP2, IconP3;
+    public Image heathBarMed, healthBarMedP2, healthBarMedP3, healthBarMedP4, healthBarSmallP1, healthBarSmallP2, healthBarSmallP3, healthBarSmallP4;
+    public Image IconP1, IconP2, IconP3, IconP4;
     public bool gameoverMessage;
     public GameObject gameoverText;
     public bool gameover = false;
@@ -64,7 +64,38 @@ public class levelManager : MonoBehaviour
             {
                 healthBarSmallP2.transform.parent.gameObject.SetActive(false);
             }
-            healthBarMedP3.transform.parent.gameObject.SetActive(false);
+            if (ValidId(MainManager.Instance.P3Char)) //Player 3
+            {
+                GameObject char3 = SpawnCharacter(MainManager.Instance.P3Char);
+                char3.transform.position = P3Spawn.position;
+                setInput(char3.GetComponent<PlayerInput>(), 3);
+                totalPlayers++;
+                char3.name = "Player3";
+                char3.GetComponent<PlayerHealth>().healthBarMed = healthBarMedP3;
+                char3.GetComponent<PlayerHealth>().healthBarSmall = healthBarSmallP3;
+                char3.GetComponent<PlayerHealth>().icon = IconP3;
+                char3.SetActive(true);
+            }
+            else
+            {
+                healthBarSmallP3.transform.parent.gameObject.SetActive(false);
+            }
+            if (ValidId(MainManager.Instance.P4Char)) //Player 4
+            {
+                GameObject char4 = SpawnCharacter(MainManager.Instance.P4Char);
+                char4.transform.position = P3Spawn.position;
+                setInput(char4.GetComponent<PlayerInput>(), 3);
+                totalPlayers++;
+                char4.name = "Player4";
+                char4.GetComponent<PlayerHealth>().healthBarMed = healthBarMedP3;
+                char4.GetComponent<PlayerHealth>().healthBarSmall = healthBarSmallP3;
+                char4.GetComponent<PlayerHealth>().icon = IconP3;
+                char4.SetActive(true);
+            }
+            else
+            {
+                healthBarSmallP4.transform.parent.gameObject.SetActive(false);
+            }
         }
         livingPlayersCount = totalPlayers;
         setCheckpointCounts();
@@ -123,7 +154,7 @@ public class levelManager : MonoBehaviour
         inputScript.SpecialButton = "Special";
         if (playerNumber > 1)
         {
-            Debug.Log("inputP2+");
+            //Debug.Log("inputP2+");
             inputScript.HorizontalControls = inputScript.HorizontalControls + "P" + playerNumber;
             inputScript.VerticalControls = inputScript.VerticalControls + "P" + playerNumber;
             inputScript.JumpButton = inputScript.JumpButton + "P" + playerNumber;
